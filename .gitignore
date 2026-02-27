@@ -1,0 +1,15 @@
+data/
+results/
+logs/
+__pycache__/
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.ckpt
+.venv/
+.env
+.vscode/
+.idea/
+*.pyc
+hf_cache/
