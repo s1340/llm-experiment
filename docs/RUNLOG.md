@@ -118,3 +118,19 @@
   - Ordinal gradient (routine < ambiguous < nonroutine) confirmed in all three models on 7pt scale.
   - LLaMA P(N) 3-class also ** on 7pt (was ** on 5pt too). LLaMA P(A) drops to n.s. on 7pt.
   - Full table in docs/results_self_report_correlation.md.
+
+---
+
+## 2026-02-28
+
+- Date: 2026-02-28
+- Machine: Berlin rig, RTX 5090, conda env `llmstate`
+- Command: `python scripts/21_deep_analyses.py results/correlation results/correlation_7pt data/tasks_v2_hard.json results/correlation`
+- Commit: (this commit)
+- Output dirs: `results/correlation/deep_analyses/`
+- Notes / errors: Zero-compute — joins and statistics on existing joined CSVs only.
+- Key results:
+  - **A (Dissociation):** "False nonroutine" dominates (probe low, rating high). F17 logic puzzles notable: probe assigns P(N)≥0.90 but self-report ≤4 — structural complexity detected but not self-reported. 9 prompts flagged in all 3 models. "Blind nonroutine" rare (1–5 per model).
+  - **B (Distribution):** AUROC P(N) for N vs R — Qwen 0.950, Gemma 0.985, LLaMA 0.985. Ambiguous prompts polarise toward R-pole (60–70% in R-range across all models), not genuinely intermediate.
+  - **C (Cross-model agreement):** P(N) Spearman r=+0.88/+0.84/+0.89*** across pairs; RN margin r=+0.87/+0.90/+0.94***. Signal is architectural, not model-idiosyncratic. Self-report 5pt Qwen–Gemma near zero (r=+0.005) due to Qwen ceiling; 7pt improves to r=+0.53***.
+  - Full results: docs/results_deep_analyses.md
