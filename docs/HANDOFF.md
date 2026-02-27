@@ -1,55 +1,71 @@
  
-GPT said: Hey Sonnet — can you set up Git for the experiment folder so we can pass long instructions + results through commits instead of chat?
+GPT said: 
 
-**Goal:** Track only `scripts/` + `docs/` (and small config files). Do **NOT** commit big artifacts (`data/`, `results/`, `logs/`, tensors, model weights).
+# Experiment Handoff (canonical)
 
-### Steps (Windows)
+## What this repo is
+This repo tracks **scripts + docs only** (no big artifacts). `data/`, `results/`, `logs/`, tensors, weights are ignored via `.gitignore`.
 
-1. In `G:\LLM\experiment` (or whatever the working dir is), initialize git:
+## Current objective
+Detect and characterize “processing mode” signatures in hidden states using **prompt-text holdout** probes, then move to **self-report correlation**.
 
-* `git init`
-* `git branch -M main`
+## Latest completed work (✅)
+### Pairwise multi-seed probes (seeds 0–4)
+- Completed across **Qwen2.5-7B / Gemma2-9B / LLaMA3.1-8B** for pairs **RN / AN / RA**.
+- Summary + per-seed breakdown + notes:
+  - `docs/results_pairwise_multiseed.md`
 
-2. Add a `.gitignore` that excludes big stuff:
+Key takeaways:
+- RN is strongly decodable and stable across models/seeds.
+- AN is strong (esp. Gemma).
+- RA is weakest overall; LLaMA RA shows higher variance.
+- Qwen shows a hierarchy flip (RN > RA > AN) with a confusion-matrix explanation.
 
-* `data/`
-* `results/`
-* `logs/`
-* `__pycache__/`
-* `*.pt *.pth *.bin *.safetensors *.ckpt`
-* `.venv/ .env`
-* `.vscode/ .idea/` (optional)
+### Layer-depth analysis (argmax issue)
+- `docs/results_layer_analysis.md`
 
-3. Create two coordination docs:
+Key takeaways:
+- “Best-layer by argmax” is unreliable under near-ceiling performance (ties across many layers => argmax becomes noise).
+- Seed-0 “progressive refinement” pattern was real but not robust under multi-seed aggregation.
+- Recommended replacements: breakout-layer metric (preferred), later optionally layer-profile curves for figures.
 
-* `docs/HANDOFF.md` (canonical “current state + next actions + gotchas”)
-* `docs/RUNLOG.md` (append-only run log: date, command, commit, output dirs, key results)
+### Qwen diagnostic
+- Included in results writeups: Qwen RA vs AN confusion pattern plausibly explains hierarchy flip.
 
-4. Commit:
+## Next task (🔜) — Breakout-layer depth metric (HIGH PRIORITY)
+Goal: recover a robust depth story using **onset** instead of **peak**.
 
-* `git add .gitignore docs/ scripts/`
-* `git commit -m "Init repo: scripts + docs; ignore artifacts"`
+Compute **First Breakout Layer**:
+For each `(model, pair, seed)`, find the **shallowest layer index** where **Macro-F1 ≥ 0.80**.
 
-5. Create a remote repo (GitHub/GitLab — whichever you prefer) and connect it:
+Report (per model × pair):
+- mean ± std of breakout layer index across seeds
+- proportional depth = index / (n_layers - 1)
+- % of runs that never reach 0.80 (if any)
 
-* `git remote add origin <REMOTE_URL>`
-* `git push -u origin main`
+Save to:
+- `docs/results_breakout_layer.md`
 
-### After that
+This replaces argmax as our “progressive refinement” test:
+- Expectation: RN breaks out earlier than RA/AN (if refinement story holds).
 
-* I’ll update `docs/HANDOFF.md` with current priorities.
-* You (and Opus) just `git pull` to sync, and append runs/results to `docs/RUNLOG.md`.
+## After breakout-layer (🔜)
+### Self-report correlation design
+Design a generation + rating protocol:
+- model answers prompt
+- then provides a 1–5 “routine-ness” rating (+ brief justification)
+- correlate ratings with probe probabilities / margins from hidden states
 
-If you want, put the multiseed pairwise summary into `docs/results_pairwise_multiseed.md` in the same first push.
+## How to run (for reference)
+- Pairwise probe runner: `scripts/run_pairwise_multiseed.sh`
+- Pairwise probe script: `scripts/15_probe_pairwise_prompt_holdout.py`
+- Summarizer: `scripts/16_summarize_pairwise_multiseed.py`
+
+## Conventions
+- Put any new summaries/tables into `docs/` and commit/push.
+- Log notable runs/changes in `docs/RUNLOG.md` (append-only).
 
 
-Opus said: Task 1: Save the pairwise multi-seed summary
-  Export the full results table (the one he already drafted in chat) to docs/results_pairwise_multiseed.md. Include the mean±std table, the per-seed breakdowns, and his notes
-  about the Qwen anomaly and LLaMA variance. This locks in our artifact.
-  Task 2: Best-layer index analysis
-  For each (model, pair) combination, compute the best-performing layer index for each seed (0-4), then report mean±std of that index. Also report it as proportional depth:
-  best_layer / (total_layers - 1). This gives us the cross-model comparison. We need to see whether RN consistently peaks in the first ~25% of the network and RA/AN peak in the
-  middle ~40-60%. If that holds across seeds and models, the progressive refinement story survives. If it's noisy, we report the trend with appropriate caveats.
-  Task 3: Qwen diagnostic
-  Dump the confusion matrices for Qwen AN and Qwen RA (any seed is fine, or seed-0 for consistency). We want to see: when Qwen gets AN wrong, is it misclassifying A as N or N as
-  A? And for RA, same question. This tells us whether Qwen treats "ambiguous" as closer to routine or closer to nonroutine — which explains the hierarchy flip.
+Opus said: 
+Next task: First-breakout-layer analysis. For each (model, pair, seed), find the shallowest layer where F1 ≥ 0.80. Report mean±std of raw index and proportional depth across seeds. Save to docs/results_breakout_layer.md and push.
+Once that's in, we have all the structural evidence we need and we move to designing the self-report correlation experiment — which is the exciting part.
