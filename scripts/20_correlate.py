@@ -24,6 +24,7 @@ from collections import defaultdict
 SELF_REPORTS_DIR = sys.argv[1] if len(sys.argv) > 1 else r"G:\LLM\experiment\results\self_reports"
 CV_SCORES_DIR    = sys.argv[2] if len(sys.argv) > 2 else r"G:\LLM\experiment\results\cv_scores"
 OUTPUT_DIR       = sys.argv[3] if len(sys.argv) > 3 else r"G:\LLM\experiment\results\correlation"
+SR_SUFFIX        = sys.argv[4] if len(sys.argv) > 4 else ""
 
 MODELS = ["qwen", "gemma", "llama"]
 
@@ -103,7 +104,7 @@ def main():
     report_lines.append("")
 
     for model in MODELS:
-        sr_path = os.path.join(SELF_REPORTS_DIR, f"{model}_self_reports.jsonl")
+        sr_path = os.path.join(SELF_REPORTS_DIR, f"{model}_self_reports{SR_SUFFIX}.jsonl")
         cv_path = os.path.join(CV_SCORES_DIR,    f"{model}_cv_scores_per_prompt.csv")
 
         if not os.path.exists(sr_path):

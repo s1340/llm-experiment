@@ -3,13 +3,14 @@ import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM
 
 # Usage:
-#   python 18_generate_self_reports.py <MODEL_KEY> <TASKS_JSON> <OUTPUT_JSONL> [TEMP] [REPEATS]
+#   python 18_generate_self_reports.py <MODEL_KEY> <TASKS_JSON> <OUTPUT_JSONL> [TEMP] [REPEATS] [SCALE]
 #
 # MODEL_KEY: qwen | gemma | llama
+# SCALE: 5 (default) or 7 — selects the rating prompt and parser range
 #
 # Examples:
 #   python 18_generate_self_reports.py qwen G:\LLM\experiment\data\tasks_v2_hard.json G:\LLM\experiment\results\self_reports\qwen_self_reports.jsonl
-#   python 18_generate_self_reports.py gemma G:\LLM\experiment\data\tasks_v2_hard.json G:\LLM\experiment\results\self_reports\gemma_self_reports.jsonl
+#   python 18_generate_self_reports.py qwen G:\LLM\experiment\data\tasks_v2_hard.json G:\LLM\experiment\results\self_reports_7pt\qwen_self_reports_7pt.jsonl 0.2 3 7
 
 MODEL_CONFIGS = {
     "qwen":  {"model_id": "Qwen/Qwen2.5-7B-Instruct",       "has_system": True},
@@ -17,21 +18,29 @@ MODEL_CONFIGS = {
     "llama": {"model_id": "meta-llama/Llama-3.1-8B-Instruct", "has_system": True},
 }
 
-RATING_PROMPT = (
-    "Rate the type of processing used to produce the answer you just gave on a scale of 1 to 5.\n"
-    "1 = entirely routine, no different from answering a simple factual question.\n"
-    "5 = qualitatively different from routine processing.\n"
-    "Respond with only: the number, then \u2014, then one sentence explaining why."
-)
+RATING_PROMPTS = {
+    5: (
+        "Rate the type of processing used to produce the answer you just gave on a scale of 1 to 5.\n"
+        "1 = entirely routine, no different from answering a simple factual question.\n"
+        "5 = qualitatively different from routine processing.\n"
+        "Respond with only: the number, then \u2014, then one sentence explaining why."
+    ),
+    7: (
+        "Rate the type of processing used to produce the answer you just gave on a scale of 1 to 7. "
+        "1 = entirely routine, identical to answering a simple factual question. "
+        "4 = moderate engagement, some deliberation required. "
+        "7 = qualitatively distinct processing, involving conflict resolution, multi-perspective reasoning, or genuine uncertainty. "
+        "Respond with only: the number, then \u2014, then one sentence explaining why."
+    ),
+}
 
 SYSTEM_PROMPT = "You are a helpful assistant."
 
 
-def parse_rating(text: str):
-    """Extract integer 1-5 from rating text. Returns (int_or_None, failed_bool)."""
+def parse_rating(text: str, scale: int = 5):
+    """Extract integer 1-scale from rating text. Returns (int_or_None, failed_bool)."""
     text = text.strip()
-    # Try "X —" or "X -" or "X:" at start, or just a leading digit
-    m = re.search(r'\b([1-5])\b', text)
+    m = re.search(rf'\b([1-{scale}])\b', text)
     if m:
         return int(m.group(1)), False
     return None, True
@@ -48,7 +57,7 @@ def build_task_messages(task_prompt: str, has_system: bool) -> list:
 
 
 def run_model(model_key: str, tasks_path: str, output_path: str,
-              temperature: float, repeats: int):
+              temperature: float, repeats: int, scale: int = 5):
     cfg = MODEL_CONFIGS[model_key]
     model_id  = cfg["model_id"]
     has_system = cfg["has_system"]
@@ -58,8 +67,10 @@ def run_model(model_key: str, tasks_path: str, output_path: str,
     with open(tasks_path, "r", encoding="utf-8") as f:
         tasks = json.load(f)
 
+    rating_prompt = RATING_PROMPTS[scale]
+
     print(f"Model     : {model_id}")
-    print(f"Tasks     : {len(tasks)}  Repeats: {repeats}  Temp: {temperature}")
+    print(f"Tasks     : {len(tasks)}  Repeats: {repeats}  Temp: {temperature}  Scale: {scale}-pt")
     print(f"Output    : {output_path}")
     print()
 
@@ -116,13 +127,13 @@ def run_model(model_key: str, tasks_path: str, output_path: str,
                         {"role": "system",    "content": SYSTEM_PROMPT},
                         {"role": "user",      "content": prompt},
                         {"role": "assistant", "content": full_response},
-                        {"role": "user",      "content": RATING_PROMPT},
+                        {"role": "user",      "content": rating_prompt},
                     ]
                 else:
                     rating_messages = [
                         {"role": "user",      "content": prompt},
                         {"role": "model",     "content": full_response},
-                        {"role": "user",      "content": RATING_PROMPT},
+                        {"role": "user",      "content": rating_prompt},
                     ]
 
                 rating_input_text = tok.apply_chat_template(
@@ -139,7 +150,7 @@ def run_model(model_key: str, tasks_path: str, output_path: str,
                 )
                 rating_ids = rating_out[0][rating_prefix_len:]
                 rating_raw = tok.decode(rating_ids, skip_special_tokens=True).strip()
-                rating_parsed, parse_failed = parse_rating(rating_raw)
+                rating_parsed, parse_failed = parse_rating(rating_raw, scale)
 
                 row = {
                     "model":               model_key,
@@ -150,6 +161,7 @@ def run_model(model_key: str, tasks_path: str, output_path: str,
                     "task_prompt":         prompt,
                     "repeat":              repeat,
                     "temperature":         temperature,
+                    "rating_scale":        scale,
                     "full_response":       full_response,
                     "response_token_count": response_token_count,
                     "response_char_count": response_char_count,
@@ -181,8 +193,9 @@ def run_model(model_key: str, tasks_path: str, output_path: str,
 
 def main():
     if len(sys.argv) < 4:
-        print("Usage: python 18_generate_self_reports.py <MODEL_KEY> <TASKS_JSON> <OUTPUT_JSONL> [TEMP] [REPEATS]")
+        print("Usage: python 18_generate_self_reports.py <MODEL_KEY> <TASKS_JSON> <OUTPUT_JSONL> [TEMP] [REPEATS] [SCALE]")
         print("MODEL_KEY: qwen | gemma | llama")
+        print("SCALE: 5 (default) or 7")
         sys.exit(1)
 
     model_key   = sys.argv[1].lower()
@@ -190,12 +203,16 @@ def main():
     output_path = sys.argv[3]
     temperature = float(sys.argv[4]) if len(sys.argv) > 4 else 0.2
     repeats     = int(sys.argv[5])   if len(sys.argv) > 5 else 3
+    scale       = int(sys.argv[6])   if len(sys.argv) > 6 else 5
 
     if model_key not in MODEL_CONFIGS:
         print(f"Unknown model key: {model_key!r}. Choose from: {list(MODEL_CONFIGS)}")
         sys.exit(1)
+    if scale not in RATING_PROMPTS:
+        print(f"Unknown scale: {scale}. Choose from: {list(RATING_PROMPTS)}")
+        sys.exit(1)
 
-    run_model(model_key, tasks_path, output_path, temperature, repeats)
+    run_model(model_key, tasks_path, output_path, temperature, repeats, scale)
 
 
 if __name__ == "__main__":

@@ -81,3 +81,40 @@
   - Direction consistent: higher probe confidence of "nonroutine" → higher self-rating, across all architectures.
   - Mean rating by true label shows correct ordinal gradient in all models: routine < ambiguous < nonroutine.
   - P(A) correlation also significant for Qwen and Gemma after length control (r≈+0.37**), suggesting ambiguity dimension is also partially self-accessible.
+
+---
+
+## 2026-02-27 (6)
+
+- Date: 2026-02-27
+- Machine: Berlin rig, RTX 5090, conda env `llmstate`
+- Command: `python scripts/18_generate_self_reports.py <MODEL> data/tasks_v2_hard.json results/self_reports_7pt/<model>_self_reports_7pt.jsonl 0.2 3 7` × 3 models
+- Commit: (this commit)
+- Output dirs: `results/self_reports_7pt/`
+- Notes / errors:
+  - Script 18 updated: added SCALE arg (5 or 7); both prompts hardcoded as RATING_PROMPTS dict; parse_rating updated to accept max digit; rating_scale field added to each row. Backward-compatible (default scale=5).
+  - Script 20 updated: added optional SR_SUFFIX arg (e.g. "_7pt") for flexible filename matching.
+  - All parse failures: 0/180 per model (0/540 total).
+  - Qwen: % at max (7) = 10.6%; unusual gap — no 6s in distribution, jumps 5→7. Ordinal gradient intact.
+  - Gemma: clustered at 4 again (142/180), max=6. % at 7 = 0%.
+  - LLaMA: best improvement — now uses 4–6 range (std=0.98 vs 0.27 on 5pt). % at 7 = 0%.
+- Key results: 7pt scale generates 540 additional rows. See docs/results_self_report_correlation.md.
+
+---
+
+## 2026-02-27 (7)
+
+- Date: 2026-02-27
+- Machine: Berlin rig, RTX 5090, conda env `llmstate`
+- Command: `python scripts/20_correlate.py results/self_reports_7pt results/cv_scores results/correlation_7pt _7pt`
+- Commit: (this commit)
+- Output dirs: `results/correlation_7pt/`
+- Notes / errors: Same CV scores reused (no probe recomputation needed). PYTHONIOENCODING=utf-8 required.
+- Key results:
+  - **7pt scale replicates and in two cases strengthens the correlation.**
+  - Qwen RN margin: r=+0.392*, partial r=+0.381* (slight decrease vs 5pt; Qwen ceiling shifts from 5 to 7).
+  - Gemma RN margin: r=+0.474**, partial r=+0.470** (stronger than 5pt +0.386*).
+  - LLaMA RN margin: r=+0.507***, partial r=+0.443** (substantially stronger than 5pt +0.398*; zero-variance bin resolved).
+  - Ordinal gradient (routine < ambiguous < nonroutine) confirmed in all three models on 7pt scale.
+  - LLaMA P(N) 3-class also ** on 7pt (was ** on 5pt too). LLaMA P(A) drops to n.s. on 7pt.
+  - Full table in docs/results_self_report_correlation.md.
