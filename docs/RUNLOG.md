@@ -149,3 +149,33 @@
   - Sentence-embedding baseline (all-MiniLM-L6-v2, random 70/30 prompt-split, seeds 0–4) is **identical across all three models**: MacroF1 = 0.4488 ± 0.1697, ACC = 0.4333 ± 0.1771. Expected: text-only embeddings of 60 shared prompts; same seed → same split → same vectors regardless of model.
   - TF-IDF baseline likewise identical across all three models: MacroF1 = 0.1084 ± 0.0600.
   - Full baseline comparison table: `docs/results_baseline_comparison.md`, CSV: `results/correlation/baseline_table.csv`.
+
+---
+
+## 2026-02-28 (3)
+
+- Date: 2026-02-28
+- Machine: Berlin rig, RTX 5090, conda env `llmstate`
+- Command: `python scripts/23_stats_robustness.py` + `python scripts/24_baseline_lofo.py` (sequential, CPU-only)
+- Commit: (this commit)
+- Output dirs: `docs/` only
+- Notes / errors: LLaMA 5pt bootstrap CI = [nan, nan] — expected (zero-variance nonroutine bin on 5pt; 7pt resolves it). Noted in doc.
+- Key results:
+  - **Stats robustness (script 23):** 5/12 primary tests survive Holm correction at α=0.05. RN-margin survives in at least one scale per model: Qwen 5pt (p_adj=0.034*), Gemma 7pt (p_adj=0.020*), LLaMA 7pt (p_adj=0.010*). Bootstrap 95% CIs exclude zero for all RN-margin signals on 7pt. Full table: `docs/results_stats_robustness.md`.
+  - **Baseline LOFO (script 24):** Sentence-embedding (MiniLM) LOFO: MacroF1=0.6817. Probe LOFO at 30% depth (from cv_scores): Qwen 0.715, Gemma 0.758, LLaMA 0.689. Probe advantage holds (+0.7–7.6 pp) under matched protocol. Full doc: `docs/baseline_lofo.md`.
+
+---
+
+## 2026-02-28 (4)
+
+- Date: 2026-02-28
+- Machine: Berlin rig, RTX 5090, conda env `llmstate`
+- Command: `python scripts/22_threshold_sweep.py docs/results_threshold_sweep.md` (CPU-only)
+- Commit: (this commit)
+- Output dirs: `docs/` only
+- Notes / errors: Clean exit.
+- Key results:
+  - Breakout ordering RN < AN < RA confirmed at every threshold 0.70–0.90 across all models.
+  - At F1≥0.80: Qwen RN 0.321±0.270 [2/5 excl.], Gemma RN 0.095±0.097 [1/5 excl.], LLaMA RN 0.300±0.133.
+  - RA is hardest: never reaches F1=0.80 in 3–4/5 seeds for all models.
+  - Full table: `docs/results_threshold_sweep.md`.
