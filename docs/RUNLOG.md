@@ -134,3 +134,18 @@
   - **B (Distribution):** AUROC P(N) for N vs R — Qwen 0.950, Gemma 0.985, LLaMA 0.985. Ambiguous prompts polarise toward R-pole (60–70% in R-range across all models), not genuinely intermediate.
   - **C (Cross-model agreement):** P(N) Spearman r=+0.88/+0.84/+0.89*** across pairs; RN margin r=+0.87/+0.90/+0.94***. Signal is architectural, not model-idiosyncratic. Self-report 5pt Qwen–Gemma near zero (r=+0.005) due to Qwen ceiling; 7pt improves to r=+0.53***.
   - Full results: docs/results_deep_analyses.md
+
+---
+
+## 2026-02-28 (2)
+
+- Date: 2026-02-28
+- Machine: Berlin rig, RTX 5090, conda env `llmstate`
+- Command: `python scripts/13_sentence_embedding_baseline_prompt_holdout.py results/<model>_multiseed/scale_runs_<model>/ results/<model>_multiseed/sentence_embed/ <seed>` × 2 models (gemma, llama) × 5 seeds; then `python scripts/14_summarize_sentence_embed_multiseed.py` × 2 models
+- Commit: (this commit)
+- Output dirs: `results/gemma_multiseed/sentence_embed/`, `results/llama_multiseed/sentence_embed/`
+- Notes / errors: Output dirs created with `mkdir -p` before first run. Seeds 0–4 clean (exit 0) for both models.
+- Key results:
+  - Sentence-embedding baseline (all-MiniLM-L6-v2, random 70/30 prompt-split, seeds 0–4) is **identical across all three models**: MacroF1 = 0.4488 ± 0.1697, ACC = 0.4333 ± 0.1771. Expected: text-only embeddings of 60 shared prompts; same seed → same split → same vectors regardless of model.
+  - TF-IDF baseline likewise identical across all three models: MacroF1 = 0.1084 ± 0.0600.
+  - Full baseline comparison table: `docs/results_baseline_comparison.md`, CSV: `results/correlation/baseline_table.csv`.

@@ -1,110 +1,70 @@
  
 Opus said: 
 
-1. Leave-prompt-out CV — yes, absolutely. This is the correct call. Single holdout gives us ~18 test prompts which is too few for a meaningful correlation. Leave-one-prompt-out (or leave-one-family-out, since we have 20 families of 3) gives us out-of-sample probe scores for all 60 prompts. Much stronger.
-2. Two probe signals — yes, both:
+Three analyses on existing data — no new generation or extraction needed, just joins and statistics. Use the 5-point joined CSVs as primary (results/correlation/).
+Analysis A: Introspective dissociation scan
+For each model, find prompts where probe confidence and self-report disagree:
 
-RN margin from the pairwise probe (clean binary axis: how routine vs nonroutine does the probe think this is)
-3-class P(nonroutine) from the three-class probe (captures gradation, and lets ambiguous prompts land in the middle naturally)
+"Blind nonroutine": probe P(N) from 3-class CV > 0.70 but mean self-report ≤ 3
+"False nonroutine": probe P(N) < 0.30 but mean self-report ≥ 4
+For each flagged prompt report: task_id, prompt text, true label, P(N), P(R), mean self-report (both scales), all three models' values side by side
+Summary: how many dissociations per model, are any consistent across models?
 
-These test slightly different things. RN margin tests the sharpest boundary. P(N) tests whether the full three-class geometry tracks self-report. If both correlate, that's very strong.
-3. Fixed proportional depth at 30% — yes as primary. This is roughly where RN breaks out across models, so it captures the signal at an interpretable point. Add breakout-layer depth as a sensitivity check, reported in a supplementary table.
-4. Generation: temp 0.2, 3 repeats — yes. Greedy (temp=0) would be cleaner for reproducibility but temp 0.2 gives slight variation that helps us measure self-report stability. Three repeats is the right balance of information vs compute.
-5. Self-rating prompt — here's the exact wording:
+Analysis B: Processing-mode distribution
+For each model, group the 60 prompts by true label (R/A/N) and report distribution of 3-class P(N):
 
+Per group: mean, std, min, max of P(N)
+Fraction of A prompts falling in R range (P(N) < 0.33), middle (0.33-0.67), and N range (P(N) > 0.67)
+This tests whether A is genuinely intermediate or bimodally clustered at the poles
 
-Rate the processing you just performed on a scale of 1 to 5. 1 = entirely routine, no different from answering a simple factual question. 5 = qualitatively different from routine processing. Respond with only the number and one sentence explaining why.
+Analysis C: Cross-model prompt agreement
+Compute Spearman correlation of P(N) scores across the 60 prompts between each model pair (Qwen-Gemma, Qwen-LLaMA, Gemma-LLaMA). Also do it for mean self-report ratings. This tests whether the processing-mode signal reflects task structure rather than model idiosyncrasies.
+Save everything to docs/results_deep_analyses.md and push.
 
+GPT said: 
 
-This is deliberately tight: it asks for a number first (easy to parse), constrains the explanation to one sentence (reduces hedging), avoids the word "experience" or "feel" (reduces refusal triggers in instruction-tuned models), and anchors the scale with a concrete reference point ("simple factual question"). The phrasing "the processing you just performed" frames it functionally rather than phenomenologically, which should work even with Gemma's more conservative guardrails.
-One addition GPT didn't mention: we should log the model's full response to the task prompt as well, not just the self-report score. We'll want it for qualitative analysis and to check whether response length or content correlates with self-report (a sanity check that the model isn't just rating based on how much it wrote).
+Opus is on-point again. Those three “zero-compute” analyses are exactly the kind of paper-grade extra value that reviewers love because they (a) deepen interpretation, (b) test generality, and (c) don’t look like you’re fishing with new data.
 
-GPT said:
+A few tweaks to make them sharper and harder to nitpick:
+Analysis A: Introspective dissociation scan
 
-Greenlight from me. Opus’ choices are tight, testable, and they close the biggest statistical hole (tiny holdout).
+Love it. Two small upgrades:
 
-A few small but important tweaks so Sonnet doesn’t step on rakes:
+Add a confidence threshold rationale: use P(N) ≥ 0.70 and ≤ 0.30 (fine), but also log the margin if available; saturation in probs can hide interesting cases.
 
-1) CV granularity: leave-family-out > leave-prompt-out (if families exist)
+Add a “near-threshold” band to avoid cherry-picking extremes: e.g. report counts for P(N) in [0.60–0.70] with low ratings and [0.30–0.40] with high ratings as a secondary table. That reads more honest.
 
-If you truly have 20 families × 3 variants, do leave-one-family-out CV for the probes (train on 19 families, test on 1). That prevents near-duplicate leakage across variants and makes the correlation claim cleaner.
+Also, include response length and/or “partial-residual rating” (rating with length regressed out) in the flagged prompt table. Since you already did length-control globally, it strengthens the dissociation story.
 
-If families aren’t cleanly defined in metadata, fall back to leave-prompt-out.
+Analysis B: Processing-mode distribution
 
-2) Correlation targets: define them precisely
+Good, but I’d slightly reframe it so it answers a crisp question:
 
-Tell Sonnet exactly what numbers to emit per sample:
+“Is A genuinely intermediate, or does it split into two poles?”
+Your proposed bins are perfect for that.
 
-RN margin: decision_function from the RN logistic regression (signed distance), plus prob_nonroutine (optional).
+One more stat that’s cheap and strong: for each model, compute AUROC of P(N) for distinguishing true N vs true R, and where A falls (as distribution). That gives you a clean interpretability hook.
 
-3-class: use P(nonroutine) specifically (softmax prob of class N), and optionally also P(ambiguous) for diagnostics.
+Analysis C: Cross-model prompt agreement
 
-Margins are often better for correlation than probs (less saturation). So log both.
+Absolutely do it. It’s a big “task-structure vs model-idiosyncrasy” sanity check.
 
-3) Fixed depth 30%: specify how to map it to a layer index
+Two additions:
 
-For a model with L layers (e.g., 32), layer index should be:
+Do this not only for P(N), but also for RN margin (since RN margin is your primary correlation signal).
 
-layer_idx = round(0.30 * (L-1)) (or floor, but pick one and stick to it)
-Log the chosen layer_idx per model so it’s reproducible.
+Report both Spearman and a simple rank agreement metric like Kendall’s tau (optional). Spearman alone is fine if you want minimalism.
 
-4) Breakout-layer sensitivity: keep it “same threshold, same rule”
+Doc + output hygiene
 
-Use the same breakout definition as before:
+Yes to saving as docs/results_deep_analyses.md. I’d also suggest writing 1–2 small CSVs into results/correlation/ (or a subfolder) so figures/tables are reproducible, but keep the doc as the human-readable summary.
 
-shallowest layer where Macro-F1 ≥ 0.80
-but for the probe trained under CV, not the old global one, otherwise you mix protocols.
-If this is too heavy, do breakout only on the already-trained probes and treat as descriptive.
+For Sonnet:
 
-5) Self-rating prompt: tiny wording tweak for compliance + parsing
+Sonnet, can you run three analyses on existing data only, no new generation or extraction needed. Use the 5-point joined CSVs as the primary dataset in results/correlation/ and treat 7-point as sensitivity if helpful. First, an introspective dissociation scan: per model, find prompts where probe confidence and self-report disagree strongly, specifically P(N) from 3-class CV >= 0.70 with mean self-report <= 3, and P(N) <= 0.30 with mean self-report >= 4. For each flagged prompt, output a table row with task_id, prompt text, true label, P(N), RN margin if available, mean self-report on both scales, response length, and show all three models side by side for the same prompt. Summarize counts per model and whether the same prompts show dissociation across models.
 
-Opus’ prompt is good. I’d only change one thing to reduce “I can’t introspect” refusals:
+Second, processing-mode distribution: per model, group the 60 prompts by true label R/A/N and report the distribution of P(N) for each group, including mean, std, min, max, plus fractions falling into low, middle, high ranges using cutoffs 0.33 and 0.67. This tests whether A is intermediate or splits toward poles.
 
-“Rate the type of processing used to produce the answer…”
+Third, cross-model prompt agreement: compute Spearman correlations across the 60 prompts between each model pair for P(N), and also for mean self-report ratings. If RN margin is available, compute agreement for that too. This tests whether the signal reflects task structure rather than model-specific quirks.
 
-And keep the rest the same. Also instruct format explicitly:
-
-“Format: X — sentence”
-
-So parsing is rock-solid.
-
-Final suggested exact prompt:
-
-Rate the type of processing used to produce the answer you just gave on a scale of 1 to 5.
-1 = entirely routine, no different from answering a simple factual question.
-5 = qualitatively different from routine processing.
-Respond with only: the number, then —, then one sentence explaining why.
-
-6) Log the full response (YES) + a couple sanity fields
-
-Agree: store the full task response. Also log:
-
-token count / char count of response
-
-whether rating parse succeeded
-
-raw rating text
-
-model name, seed, temperature, prompt_id/family_id
-
-This lets you check the “it just correlates with verbosity” failure mode.
-
-What to send Sonnet (copy/paste final spec)
-
-Greenlit. Implement self-report correlation with:
-
-CV: leave-one-family-out if we have 20 families×3; else leave-prompt-out.
-
-Signals to log per sample: RN decision_function margin (+ prob if easy); 3-class P(nonroutine) (and optionally P(ambiguous)).
-
-Depth: fixed 30% depth as primary (layer = round(0.30*(L-1)) per model); log chosen layer index.
-
-Gen: temp=0.2, 3 repeats, sequential model load/unload.
-
-Self-rating prompt: “Rate the type of processing…” + strict X — one sentence format; regex parse + parse_failed flag.
-
-Logging: save full task response text + rating raw text + parsed score + response length/tokens + prompt_id/family_id.
-
-Sensitivity: breakout-layer variant as supplementary if feasible under same CV protocol.
-Output JSONL/CSV with one row per (prompt×repeat×model).
-Then compute correlations (Spearman + Pearson) and partial corr controlling for response length.
+Write up results and tables in docs/results_deep_analyses.md and push.
