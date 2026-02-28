@@ -179,3 +179,19 @@
   - At F1≥0.80: Qwen RN 0.321±0.270 [2/5 excl.], Gemma RN 0.095±0.097 [1/5 excl.], LLaMA RN 0.300±0.133.
   - RA is hardest: never reaches F1=0.80 in 3–4/5 seeds for all models.
   - Full table: `docs/results_threshold_sweep.md`.
+
+---
+
+## 2026-02-28 (5)
+
+- Date: 2026-02-28
+- Machine: Berlin rig, RTX 5090, conda env `llmstate`
+- Command: `python scripts/25_behavioral_grounding.py results/self_reports results/cv_scores results/correlation all`
+- Commit: (this commit)
+- Output dirs: `results/correlation/behavioral_grounding.csv`, `docs/results_behavioral_grounding.md`
+- Notes / errors: Clean exit all 3 models.
+- Key results:
+  - **NLL gradient:** NLL(routine) < NLL(ambiguous) < NLL(nonroutine) in all 3 models — models produce less stereotypical outputs for harder prompts. Self-BLEU shows same direction (routine > ambiguous > nonroutine). Both behavioural measures are themselves signatures of processing mode.
+  - **Correlation with NLL control:** After controlling for response length + NLL, probe-rating correlation drops to n.s. in all 3 models (Qwen r=+0.236, Gemma r=+0.181, LLaMA r=+0.022). Cannot distinguish confounding from mediation without intervention design.
+  - **Honest framing:** NLL mediates or confounds the probe-rating link. Primary claim should rest on probe accuracy, cross-model agreement, and NLL gradient — not probe-rating partial correlations alone.
+  - Full doc: `docs/results_behavioral_grounding.md`.
