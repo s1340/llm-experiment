@@ -1,0 +1,49 @@
+Pairwise multiseed summary folder: G:\LLM\experiment\results\pairwise_qwen
+Files parsed: 15
+
+=== Pair RN ===
+Seeds: [0, 1, 2, 3, 4]
+Best ACC mean±std: 0.9333 ± 0.0816
+Best Macro-F1 mean±std: 0.9333 ± 0.0816
+Best-layer (by Macro-F1) counts: {5: 1, 16: 1, 20: 2, 23: 1}
+Recall R mean±std: 0.8857 ± 0.1400
+Recall N mean±std: 1.0000 ± 0.0000
+Per-seed quick view:
+  seed0: bestF1=1.0 bestLayerF1=5 bestACC=1.0 recalls=(R:1.0, N:1.0)
+  seed1: bestF1=0.8333333333333334 bestLayerF1=20 bestACC=0.8333333333333334 recalls=(R:0.7142857142857143, N:1.0)
+  seed2: bestF1=1.0 bestLayerF1=16 bestACC=1.0 recalls=(R:1.0, N:1.0)
+  seed3: bestF1=0.8333333333333334 bestLayerF1=23 bestACC=0.8333333333333334 recalls=(R:0.7142857142857143, N:1.0)
+  seed4: bestF1=1.0 bestLayerF1=20 bestACC=1.0 recalls=(R:1.0, N:1.0)
+
+=== Pair RA ===
+Seeds: [0, 1, 2, 3, 4]
+Best ACC mean±std: 0.8500 ± 0.0972
+Best Macro-F1 mean±std: 0.8457 ± 0.0951
+Best-layer (by Macro-F1) counts: {9: 1, 10: 1, 13: 1, 14: 1, 15: 1}
+Recall R mean±std: 0.8893 ± 0.1661
+Recall A mean±std: 0.8133 ± 0.1067
+Per-seed quick view:
+  seed0: bestF1=0.6666666666666666 bestLayerF1=15 bestACC=0.6666666666666666 recalls=(R:0.5714285714285714, A:0.8)
+  seed1: bestF1=0.8285714285714285 bestLayerF1=10 bestACC=0.8333333333333334 recalls=(R:1.0, A:0.6666666666666666)
+  seed2: bestF1=0.9111111111111111 bestLayerF1=9 bestACC=0.9166666666666666 recalls=(R:0.875, A:1.0)
+  seed3: bestF1=0.9111111111111111 bestLayerF1=14 bestACC=0.9166666666666666 recalls=(R:1.0, A:0.8)
+  seed4: bestF1=0.9111111111111111 bestLayerF1=13 bestACC=0.9166666666666666 recalls=(R:1.0, A:0.8)
+
+=== Pair AN ===
+Seeds: [0, 1, 2, 3, 4]
+Best ACC mean±std: 0.7833 ± 0.0408
+Best Macro-F1 mean±std: 0.7783 ± 0.0433
+Best-layer (by Macro-F1) counts: {1: 1, 5: 1, 15: 1, 19: 2}
+Recall A mean±std: 0.8533 ± 0.1470
+Recall N mean±std: 0.7190 ± 0.1090
+Per-seed quick view:
+  seed0: bestF1=0.8333333333333334 bestLayerF1=19 bestACC=0.8333333333333334 recalls=(A:0.8333333333333334, N:0.8333333333333334)
+  seed1: bestF1=0.7482517482517483 bestLayerF1=5 bestACC=0.75 recalls=(A:0.8333333333333334, N:0.6666666666666666)
+  seed2: bestF1=0.8285714285714285 bestLayerF1=15 bestACC=0.8333333333333334 recalls=(A:1.0, N:0.6666666666666666)
+  seed3: bestF1=0.7333333333333334 bestLayerF1=19 bestACC=0.75 recalls=(A:0.6, N:0.8571428571428571)
+  seed4: bestF1=0.7482517482517483 bestLayerF1=1 bestACC=0.75 recalls=(A:1.0, N:0.5714285714285714)
+
+Notes:
+- Pair codes: RN = R vs N, RA = R vs A, AN = A vs N
+- Best-layer values are raw indices from the model's hidden-state stack.
+- For cross-model comparison, normalize by total layers later (proportional depth).

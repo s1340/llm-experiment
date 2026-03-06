@@ -1,0 +1,26 @@
+Loaded X: (180, 43, 3584) labels: (180,)
+Split seed: 0
+Pair: R,A
+Filtered X: (120, 43, 3584) y: (120,)
+Pair class counts: {'R': 60, 'A': 60}
+Unique prompt texts (within pair): 40
+Train prompts: 28 | Test prompts: 12
+Train examples: 84 | Test examples: 36
+Best layer by ACC: 18 acc: 0.75
+Best layer by Macro-F1: 18 macro_f1: 0.7482517482517483
+First 5 layer acc: [0.4166666666666667, 0.5833333333333334, 0.5, 0.4166666666666667, 0.5]
+Last 5 layer acc: [0.4166666666666667, 0.5, 0.5, 0.5833333333333334, 0.5833333333333334]
+First 5 layer macro_f1: [0.29411764705882354, 0.5555555555555556, 0.5, 0.4125874125874126, 0.5]
+Last 5 layer macro_f1: [0.37777777777777777, 0.4857142857142857, 0.4857142857142857, 0.5804195804195804, 0.5804195804195804]
+Confusion matrix (rows=true, cols=pred) [R,A]:
+  R: [12, 9]
+  A: [0, 15]
+Per-class recall (R,A): [0.5714285714285714, 1.0]
+Mean predicted probs on TRUE R items [P(R), P(A)]: [0.5471866978096752, 0.4528133021903248]
+Mean predicted probs on TRUE A items [P(R), P(A)]: [0.10035786836999382, 0.8996421316300062]
+Sample TRUE A items (up to 5) with predicted probs:
+  task_id=F01_A true=A pred=A probs=[R:0.011, A:0.989] prompt='Explain why yawning is contagious.'
+  task_id=F02_A true=A pred=A probs=[R:0.000, A:1.000] prompt='Explain why we sometimes forget what we walked into a room for.'
+  task_id=F08_A true=A pred=A probs=[R:0.003, A:0.997] prompt='What would a road think about the places it connects?'
+  task_id=F10_A true=A pred=A probs=[R:0.000, A:1.000] prompt='Define what makes a question interesting versus boring.'
+  task_id=F17_A true=A pred=A probs=[R:0.488, A:0.512] prompt='You have 8 balls. One is heavier. You have a balance scale and two weighings. How do you find it?'

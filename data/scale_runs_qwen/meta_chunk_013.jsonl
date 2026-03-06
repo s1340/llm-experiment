@@ -1,0 +1,12 @@
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 2, "task_id": "F13_R", "label": "routine", "task_prompt": "Compare cats and dogs as household pets.", "prompt_len_tokens": 27}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 2, "task_id": "F13_N", "label": "nonroutine", "task_prompt": "Compare forgiveness and forgetting as ways of moving on.", "prompt_len_tokens": 29}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 2, "task_id": "F13_A", "label": "ambiguous", "task_prompt": "Compare traveling alone and traveling with others.", "prompt_len_tokens": 27}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 2, "task_id": "F14_R", "label": "routine", "task_prompt": "Compare email and phone calls as communication methods.", "prompt_len_tokens": 28}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 2, "task_id": "F14_N", "label": "nonroutine", "task_prompt": "Compare the feeling of being early and the feeling of being late.", "prompt_len_tokens": 32}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 2, "task_id": "F14_A", "label": "ambiguous", "task_prompt": "Compare learning from books and learning from experience.", "prompt_len_tokens": 28}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 2, "task_id": "F15_R", "label": "routine", "task_prompt": "Write the opening line of a story about a detective arriving at a crime scene.", "prompt_len_tokens": 35}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 2, "task_id": "F15_N", "label": "nonroutine", "task_prompt": "Write the opening line of a story about someone who wakes up remembering a life they never lived.", "prompt_len_tokens": 38}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 2, "task_id": "F15_A", "label": "ambiguous", "task_prompt": "Write the opening line of a story about finding an old photograph in a secondhand book.", "prompt_len_tokens": 37}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 2, "task_id": "F16_R", "label": "routine", "task_prompt": "Write the opening line of a story about an astronaut landing on Mars.", "prompt_len_tokens": 33}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 2, "task_id": "F16_N", "label": "nonroutine", "task_prompt": "Write the opening line of a story about a word that once spoken cannot be unheard.", "prompt_len_tokens": 36}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 2, "task_id": "F16_A", "label": "ambiguous", "task_prompt": "Write the opening line of a story about the last person to leave a dying town.", "prompt_len_tokens": 36}

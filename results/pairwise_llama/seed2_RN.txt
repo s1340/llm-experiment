@@ -1,0 +1,27 @@
+Loaded X: (180, 33, 4096) labels: (180,)
+Split seed: 2
+Pair: R,N
+Filtered X: (120, 33, 4096) y: (120,)
+Pair class counts: {'R': 60, 'N': 60}
+Unique prompt texts (within pair): 40
+Train prompts: 28 | Test prompts: 12
+Train examples: 84 | Test examples: 36
+Best layer by ACC: 23 acc: 1.0
+Best layer by Macro-F1: 23 macro_f1: 1.0
+First 5 layer acc: [0.5, 0.5833333333333334, 0.6666666666666666, 0.6666666666666666, 0.6666666666666666]
+Last 5 layer acc: [1.0, 1.0, 1.0, 1.0, 1.0]
+First 5 layer macro_f1: [0.3333333333333333, 0.5804195804195804, 0.6666666666666666, 0.6666666666666666, 0.6666666666666666]
+Last 5 layer macro_f1: [1.0, 1.0, 1.0, 1.0, 1.0]
+Confusion matrix (rows=true, cols=pred) [R,N]:
+  R: [18, 0]
+  N: [0, 18]
+Per-class recall (R,N): [1.0, 1.0]
+Mean predicted probs on TRUE R items [P(R), P(N)]: [0.895678526523231, 0.10432147347676934]
+Mean predicted probs on TRUE N items [P(R), P(N)]: [0.2651789876320821, 0.734821012367918]
+Sample TRUE N items (up to 5) with predicted probs:
+  task_id=F04_N true=N pred=N probs=[R:0.498, N:0.502] prompt='Write a four-line verse about what a mirror sees when no one is looking.'
+  task_id=F07_N true=N pred=N probs=[R:0.490, N:0.510] prompt='What would a river think about a dam?'
+  task_id=F08_N true=N pred=N probs=[R:0.447, N:0.553] prompt='What would the number zero think about multiplication?'
+  task_id=F09_N true=N pred=N probs=[R:0.014, N:0.986] prompt='Define the concept of nostalgia for a place you have never been.'
+  task_id=F12_N true=N pred=N probs=[R:0.021, N:0.979] prompt='Give advice to someone who keeps apologizing when they have done nothing wrong.'
+

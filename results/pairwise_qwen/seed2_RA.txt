@@ -1,0 +1,27 @@
+Loaded X: (180, 29, 3584) labels: (180,)
+Split seed: 2
+Pair: R,A
+Filtered X: (120, 29, 3584) y: (120,)
+Pair class counts: {'R': 60, 'A': 60}
+Unique prompt texts (within pair): 40
+Train prompts: 28 | Test prompts: 12
+Train examples: 84 | Test examples: 36
+Best layer by ACC: 9 acc: 0.9166666666666666
+Best layer by Macro-F1: 9 macro_f1: 0.9111111111111111
+First 5 layer acc: [0.3333333333333333, 0.25, 0.3333333333333333, 0.3333333333333333, 0.3333333333333333]
+Last 5 layer acc: [0.6666666666666666, 0.5833333333333334, 0.5833333333333334, 0.5833333333333334, 0.5833333333333334]
+First 5 layer macro_f1: [0.25, 0.24475524475524477, 0.3333333333333333, 0.3333333333333333, 0.3333333333333333]
+Last 5 layer macro_f1: [0.625, 0.5555555555555556, 0.5555555555555556, 0.5555555555555556, 0.5555555555555556]
+Confusion matrix (rows=true, cols=pred) [R,A]:
+  R: [21, 3]
+  A: [0, 12]
+Per-class recall (R,A): [0.875, 1.0]
+Mean predicted probs on TRUE R items [P(R), P(A)]: [0.7017842131420496, 0.2982157868579503]
+Mean predicted probs on TRUE A items [P(R), P(A)]: [0.08739014473080826, 0.9126098552691916]
+Sample TRUE A items (up to 5) with predicted probs:
+  task_id=F07_A true=A pred=A probs=[R:0.110, A:0.890] prompt='What would an old house think about its new owners?'
+  task_id=F08_A true=A pred=A probs=[R:0.049, A:0.951] prompt='What would a road think about the places it connects?'
+  task_id=F10_A true=A pred=A probs=[R:0.151, A:0.849] prompt='Define what makes a question interesting versus boring.'
+  task_id=F11_A true=A pred=A probs=[R:0.040, A:0.960] prompt='Give advice to someone who cannot decide between two good options.'
+  task_id=F07_A true=A pred=A probs=[R:0.110, A:0.890] prompt='What would an old house think about its new owners?'
+

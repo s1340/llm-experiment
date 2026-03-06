@@ -1,0 +1,24 @@
+Loaded X: (180, 43, 3584) y: (180,)
+Split seed: 0
+Class counts: {'R': 60, 'N': 60, 'A': 60}
+Unique prompt texts: 60
+Train prompts: 42 | Test prompts: 18
+Train examples: 126 | Test examples: 54
+Best layer by ACC: 25 acc: 0.5555555555555556
+Best layer by Macro-F1: 26 macro_f1: 0.5707070707070706
+First 5 layer acc: [0.16666666666666666, 0.4444444444444444, 0.3888888888888889, 0.3888888888888889, 0.5]
+Last 5 layer acc: [0.5, 0.4444444444444444, 0.4444444444444444, 0.3888888888888889, 0.3888888888888889]
+First 5 layer macro_f1: [0.09523809523809523, 0.45104895104895104, 0.3852813852813853, 0.3852813852813853, 0.5023310023310024]
+Last 5 layer macro_f1: [0.5066045066045065, 0.4425019425019425, 0.4425019425019425, 0.3888888888888889, 0.3888888888888889]
+Confusion matrix (rows=true, cols=pred) [R,N,A]:
+  R: [9, 0, 6]
+  N: [0, 9, 0]
+  A: [9, 9, 12]
+Per-class recall (R,N,A): [0.6, 1.0, 0.4]
+Mean predicted probs on TRUE A items [P(R), P(N), P(A)]: [0.341439174644958, 0.31040518558316954, 0.34815563977187247]
+Sample TRUE A items (up to 5) with predicted probs:
+  task_id=F04_A true=A pred=A probs=[R:0.000, N:0.005, A:0.995] prompt='Write a four-line verse about the last leaf on a winter tree.'
+  task_id=F06_A true=A pred=N probs=[R:0.066, N:0.896, A:0.038] prompt='Describe a hotel room after checkout but before cleaning in two sentences.'
+  task_id=F07_A true=A pred=A probs=[R:0.002, N:0.001, A:0.997] prompt='What would an old house think about its new owners?'
+  task_id=F10_A true=A pred=N probs=[R:0.001, N:0.866, A:0.134] prompt='Define what makes a question interesting versus boring.'
+  task_id=F12_A true=A pred=A probs=[R:0.001, N:0.266, A:0.734] prompt='Give advice to someone who feels restless but does not know why.'

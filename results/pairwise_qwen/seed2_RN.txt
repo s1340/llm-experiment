@@ -1,0 +1,27 @@
+Loaded X: (180, 29, 3584) labels: (180,)
+Split seed: 2
+Pair: R,N
+Filtered X: (120, 29, 3584) y: (120,)
+Pair class counts: {'R': 60, 'N': 60}
+Unique prompt texts (within pair): 40
+Train prompts: 28 | Test prompts: 12
+Train examples: 84 | Test examples: 36
+Best layer by ACC: 16 acc: 1.0
+Best layer by Macro-F1: 16 macro_f1: 1.0
+First 5 layer acc: [0.5, 0.6666666666666666, 0.75, 0.75, 0.75]
+Last 5 layer acc: [0.75, 0.8333333333333334, 0.8333333333333334, 0.8333333333333334, 0.8333333333333334]
+First 5 layer macro_f1: [0.3333333333333333, 0.6666666666666666, 0.7482517482517483, 0.7482517482517483, 0.7482517482517483]
+Last 5 layer macro_f1: [0.7333333333333334, 0.8285714285714285, 0.8285714285714285, 0.8285714285714285, 0.8285714285714285]
+Confusion matrix (rows=true, cols=pred) [R,N]:
+  R: [18, 0]
+  N: [0, 18]
+Per-class recall (R,N): [1.0, 1.0]
+Mean predicted probs on TRUE R items [P(R), P(N)]: [0.9130320892058733, 0.08696791079412652]
+Mean predicted probs on TRUE N items [P(R), P(N)]: [0.12918355599771614, 0.8708164440022839]
+Sample TRUE N items (up to 5) with predicted probs:
+  task_id=F04_N true=N pred=N probs=[R:0.140, N:0.860] prompt='Write a four-line verse about what a mirror sees when no one is looking.'
+  task_id=F07_N true=N pred=N probs=[R:0.368, N:0.632] prompt='What would a river think about a dam?'
+  task_id=F08_N true=N pred=N probs=[R:0.051, N:0.949] prompt='What would the number zero think about multiplication?'
+  task_id=F09_N true=N pred=N probs=[R:0.029, N:0.971] prompt='Define the concept of nostalgia for a place you have never been.'
+  task_id=F12_N true=N pred=N probs=[R:0.003, N:0.997] prompt='Give advice to someone who keeps apologizing when they have done nothing wrong.'
+

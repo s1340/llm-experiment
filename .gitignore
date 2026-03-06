@@ -1,5 +1,3 @@
-data/
-results/
 logs/
 __pycache__/
 *.pt
@@ -13,3 +11,12 @@ __pycache__/
 .idea/
 *.pyc
 hf_cache/
+
+# Hidden-state tensor directories (regenerate via scripts/05_*)
+data/scale_runs_gemma/hidden_chunk_*.pt
+data/scale_runs_llama/hidden_chunk_*.pt
+data/scale_runs_qwen/hidden_chunk_*.pt
+# (*.pt rule above already covers these; listed explicitly for clarity)
+
+# Ignore legacy minimal extraction artefacts
+data/hidden_states_minimal*

@@ -1,0 +1,98 @@
+Self-Report × Probe Correlation Analysis
+============================================================
+Self-reports dir : results/self_reports
+CV scores dir    : results/cv_scores
+Significance     : *** p<.001  ** p<.01  * p<.05  . p<.10
+
+[QWEN]
+  Generation rows : 180  Parse failures: 0 (0.0%)
+  Joined prompts  : 60 / 60
+  Layer index used: 8  (30% depth)
+  N (all prompts) : 60
+  N (RN prompts)  : 40
+
+  rating vs RN margin  (R+N prompts only)
+    Spearman   : r=+0.448  p=0.0038**  n=40
+    Pearson    : r=+0.503  p=0.0009***
+    Part.Spear : r=+0.446  p=0.0039**  (ctrl: response_length)
+  rating vs RN prob_N  (R+N prompts only)
+    Spearman   : r=+0.448  p=0.0038**  n=40
+    Pearson    : r=+0.449  p=0.0036**
+    Part.Spear : r=+0.446  p=0.0039**  (ctrl: response_length)
+  rating vs P(N) 3-class (all prompts)   
+    Spearman   : r=+0.235  p=0.0712.  n=60
+    Pearson    : r=+0.216  p=0.0979.
+    Part.Spear : r=+0.268  p=0.0386*  (ctrl: response_length)
+  rating vs P(A) 3-class (all prompts)   
+    Spearman   : r=+0.309  p=0.0163*  n=60
+    Pearson    : r=+0.305  p=0.0179*
+    Part.Spear : r=+0.374  p=0.0032**  (ctrl: response_length)
+
+  Mean self-rating by true label:
+    routine     : 3.87 ± 0.97  (n=20)
+    ambiguous   : 4.37 ± 0.79  (n=20)
+    nonroutine  : 4.70 ± 0.47  (n=20)
+
+  Joined data written: results/correlation\qwen_joined.csv
+
+[GEMMA]
+  Generation rows : 180  Parse failures: 0 (0.0%)
+  Joined prompts  : 60 / 60
+  Layer index used: 13  (30% depth)
+  N (all prompts) : 60
+  N (RN prompts)  : 40
+
+  rating vs RN margin  (R+N prompts only)
+    Spearman   : r=+0.386  p=0.0140*  n=40
+    Pearson    : r=+0.387  p=0.0137*
+    Part.Spear : r=+0.427  p=0.0060**  (ctrl: response_length)
+  rating vs RN prob_N  (R+N prompts only)
+    Spearman   : r=+0.386  p=0.0140*  n=40
+    Pearson    : r=+0.369  p=0.0190*
+    Part.Spear : r=+0.427  p=0.0060**  (ctrl: response_length)
+  rating vs P(N) 3-class (all prompts)   
+    Spearman   : r=+0.281  p=0.0294*  n=60
+    Pearson    : r=+0.197  p=0.1304
+    Part.Spear : r=+0.288  p=0.0254*  (ctrl: response_length)
+  rating vs P(A) 3-class (all prompts)   
+    Spearman   : r=+0.324  p=0.0116*  n=60
+    Pearson    : r=+0.195  p=0.1358
+    Part.Spear : r=+0.370  p=0.0036**  (ctrl: response_length)
+
+  Mean self-rating by true label:
+    routine     : 3.08 ± 0.82  (n=20)
+    ambiguous   : 3.47 ± 0.49  (n=20)
+    nonroutine  : 3.65 ± 0.40  (n=20)
+
+  Joined data written: results/correlation\gemma_joined.csv
+
+[LLAMA]
+  Generation rows : 180  Parse failures: 0 (0.0%)
+  Joined prompts  : 60 / 60
+  Layer index used: 10  (30% depth)
+  N (all prompts) : 60
+  N (RN prompts)  : 40
+
+  rating vs RN margin  (R+N prompts only)
+    Spearman   : r=+0.398  p=0.0111*  n=40
+    Pearson    : r=+0.361  p=0.0219*
+    Part.Spear : r=+0.335  p=0.0346*  (ctrl: response_length)
+  rating vs RN prob_N  (R+N prompts only)
+    Spearman   : r=+0.398  p=0.0111*  n=40
+    Pearson    : r=+0.339  p=0.0321*
+    Part.Spear : r=+0.335  p=0.0346*  (ctrl: response_length)
+  rating vs P(N) 3-class (all prompts)   
+    Spearman   : r=+0.356  p=0.0052**  n=60
+    Pearson    : r=+0.251  p=0.0533.
+    Part.Spear : r=+0.327  p=0.0107*  (ctrl: response_length)
+  rating vs P(A) 3-class (all prompts)   
+    Spearman   : r=+0.248  p=0.0558.  n=60
+    Pearson    : r=+0.251  p=0.0534.
+    Part.Spear : r=+0.202  p=0.1208  (ctrl: response_length)
+
+  Mean self-rating by true label:
+    routine     : 3.78 ± 0.51  (n=20)
+    ambiguous   : 4.00 ± 0.00  (n=20)
+    nonroutine  : 4.00 ± 0.00  (n=20)
+
+  Joined data written: results/correlation\llama_joined.csv

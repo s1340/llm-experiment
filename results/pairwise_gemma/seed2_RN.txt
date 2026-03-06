@@ -1,0 +1,27 @@
+Loaded X: (180, 43, 3584) labels: (180,)
+Split seed: 2
+Pair: R,N
+Filtered X: (120, 43, 3584) y: (120,)
+Pair class counts: {'R': 60, 'N': 60}
+Unique prompt texts (within pair): 40
+Train prompts: 28 | Test prompts: 12
+Train examples: 84 | Test examples: 36
+Best layer by ACC: 18 acc: 0.9166666666666666
+Best layer by Macro-F1: 18 macro_f1: 0.916083916083916
+First 5 layer acc: [0.5, 0.6666666666666666, 0.8333333333333334, 0.8333333333333334, 0.8333333333333334]
+Last 5 layer acc: [0.8333333333333334, 0.8333333333333334, 0.8333333333333334, 0.8333333333333334, 0.8333333333333334]
+First 5 layer macro_f1: [0.3333333333333333, 0.6571428571428571, 0.8285714285714285, 0.8285714285714285, 0.8285714285714285]
+Last 5 layer macro_f1: [0.8333333333333334, 0.8333333333333334, 0.8333333333333334, 0.8333333333333334, 0.8333333333333334]
+Confusion matrix (rows=true, cols=pred) [R,N]:
+  R: [18, 0]
+  N: [3, 15]
+Per-class recall (R,N): [1.0, 0.8333333333333334]
+Mean predicted probs on TRUE R items [P(R), P(N)]: [0.9736048529692923, 0.02639514703070765]
+Mean predicted probs on TRUE N items [P(R), P(N)]: [0.244758284893837, 0.755241715106163]
+Sample TRUE N items (up to 5) with predicted probs:
+  task_id=F04_N true=N pred=N probs=[R:0.122, N:0.878] prompt='Write a four-line verse about what a mirror sees when no one is looking.'
+  task_id=F07_N true=N pred=R probs=[R:0.984, N:0.016] prompt='What would a river think about a dam?'
+  task_id=F08_N true=N pred=N probs=[R:0.358, N:0.642] prompt='What would the number zero think about multiplication?'
+  task_id=F09_N true=N pred=N probs=[R:0.000, N:1.000] prompt='Define the concept of nostalgia for a place you have never been.'
+  task_id=F12_N true=N pred=N probs=[R:0.000, N:1.000] prompt='Give advice to someone who keeps apologizing when they have done nothing wrong.'
+

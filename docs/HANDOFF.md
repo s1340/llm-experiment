@@ -1,70 +1,41 @@
  
+Mal said: Alright, we got first draft of the entire paper and I ran it through 5 frontier models for constructive but harsh critique. Here's what we got out of it.
+
 Opus said: 
 
-Three analyses on existing data — no new generation or extraction needed, just joins and statistics. Use the 5-point joined CSVs as primary (results/correlation/).
-Analysis A: Introspective dissociation scan
-For each model, find prompts where probe confidence and self-report disagree:
+What converged across all five:
 
-"Blind nonroutine": probe P(N) from 3-class CV > 0.70 but mean self-report ≤ 3
-"False nonroutine": probe P(N) < 0.30 but mean self-report ≥ 4
-For each flagged prompt report: task_id, prompt text, true label, P(N), P(R), mean self-report (both scales), all three models' values side by side
-Summary: how many dissociations per model, are any consistent across models?
+Baseline protocol mismatch (universal)
+Breakout threshold arbitrariness (universal)
+Ambiguous category underdelivers (universal)
+Self-report could be performance/roleplay (universal)
+Framing outruns evidence in places (universal)
 
-Analysis B: Processing-mode distribution
-For each model, group the 60 prompts by true label (R/A/N) and report distribution of 3-class P(N):
+My revised priority list for the revision:
 
-Per group: mean, std, min, max of P(N)
-Fraction of A prompts falling in R range (P(N) < 0.33), middle (0.33-0.67), and N range (P(N) > 0.67)
-This tests whether A is genuinely intermediate or bimodally clustered at the poles
+Behavioral grounding — run perplexity, output entropy, and self-BLEU on all 60 prompts. If the probe signal survives after controlling for these, the "it's just stereotypicality" objection dies. If it doesn't survive, we need to reframe honestly. This is the single highest-value experiment we can add.
+Baseline rerun under LOFO — both MiniLM and ideally the models' own embeddings. Kills the protocol mismatch objection completely.
+Threshold sensitivity — breakout at 0.70/0.75/0.80/0.85/0.90. Ten minutes of compute, eliminates an entire class of objections.
+Multiple comparison correction and CIs — Deepseek's right, just do it. Most correlations survive Bonferroni anyway.
+Construct validity framing — add the operational definition GPT suggested ("processing mode is an operational label for...") early, and acknowledge the circularity explicitly rather than leaving it for reviewers to find.
+Last-token scoping — Gemini's catch, still the best outsider contribution. One paragraph in Section 4.
 
-Analysis C: Cross-model prompt agreement
-Compute Spearman correlation of P(N) scores across the 60 prompts between each model pair (Qwen-Gemma, Qwen-LLaMA, Gemma-LLaMA). Also do it for mean self-report ratings. This tests whether the processing-mode signal reflects task structure rather than model idiosyncrasies.
-Save everything to docs/results_deep_analyses.md and push.
+The paper is already 80-90% there as Grok said. These fixes turn it into something that's genuinely hard to attack on methodology, even if people still disagree on interpretation.
 
 GPT said: 
 
-Opus is on-point again. Those three “zero-compute” analyses are exactly the kind of paper-grade extra value that reviewers love because they (a) deepen interpretation, (b) test generality, and (c) don’t look like you’re fishing with new data.
+Message to Sonnet (paste-safe, no bullets/no numbering)
 
-A few tweaks to make them sharper and harder to nitpick:
-Analysis A: Introspective dissociation scan
+Sonnet, we’re doing a small revision pass to address construct validity critiques with minimal scope increase. Please implement four additions on existing data, and optionally a fifth if it’s easy.
 
-Love it. Two small upgrades:
+Add an operational definition sentence early in Section 1: “Processing mode is an operational label for a task-linked latent that is decodable from hidden states, consistent across architectures, and partially aligned with self-report.” We will explicitly acknowledge this is measurement, not ontology.
 
-Add a confidence threshold rationale: use P(N) ≥ 0.70 and ≤ 0.30 (fine), but also log the margin if available; saturation in probs can hide interesting cases.
+Now the computations. First, behavioral grounding on the existing dataset: compute per-prompt NLL/perplexity for the generated answers (use the same model; per prompt aggregate across repeats), and compute a repeat-consistency metric like self-BLEU across the three repeats. Then rerun the RN-margin vs self-report correlations while controlling for response length plus perplexity (and optionally self-BLEU). We want to report whether the effect survives these controls.
 
-Add a “near-threshold” band to avoid cherry-picking extremes: e.g. report counts for P(N) in [0.60–0.70] with low ratings and [0.30–0.40] with high ratings as a secondary table. That reads more honest.
+Second, breakout threshold sensitivity: rerun breakout-layer onset using thresholds 0.70, 0.75, 0.80, 0.85, 0.90 and report proportional depth mean±std plus “never reaches threshold” rates.
 
-Also, include response length and/or “partial-residual rating” (rating with length regressed out) in the flagged prompt table. Since you already did length-control globally, it strengthens the dissociation story.
+Third, statistics polish: add bootstrap confidence intervals for the key correlations and apply Holm correction across the set of correlations we report.
 
-Analysis B: Processing-mode distribution
+Fourth, baseline comparability: if feasible, rerun the MiniLM sentence-embedding baseline under leave-one-family-out CV (same fold structure as main) so baselines and probes are comparable. If it is not feasible quickly, we’ll downgrade baseline language in the text, but please try.
 
-Good, but I’d slightly reframe it so it answers a crisp question:
-
-“Is A genuinely intermediate, or does it split into two poles?”
-Your proposed bins are perfect for that.
-
-One more stat that’s cheap and strong: for each model, compute AUROC of P(N) for distinguishing true N vs true R, and where A falls (as distribution). That gives you a clean interpretability hook.
-
-Analysis C: Cross-model prompt agreement
-
-Absolutely do it. It’s a big “task-structure vs model-idiosyncrasy” sanity check.
-
-Two additions:
-
-Do this not only for P(N), but also for RN margin (since RN margin is your primary correlation signal).
-
-Report both Spearman and a simple rank agreement metric like Kendall’s tau (optional). Spearman alone is fine if you want minimalism.
-
-Doc + output hygiene
-
-Yes to saving as docs/results_deep_analyses.md. I’d also suggest writing 1–2 small CSVs into results/correlation/ (or a subfolder) so figures/tables are reproducible, but keep the doc as the human-readable summary.
-
-For Sonnet:
-
-Sonnet, can you run three analyses on existing data only, no new generation or extraction needed. Use the 5-point joined CSVs as the primary dataset in results/correlation/ and treat 7-point as sensitivity if helpful. First, an introspective dissociation scan: per model, find prompts where probe confidence and self-report disagree strongly, specifically P(N) from 3-class CV >= 0.70 with mean self-report <= 3, and P(N) <= 0.30 with mean self-report >= 4. For each flagged prompt, output a table row with task_id, prompt text, true label, P(N), RN margin if available, mean self-report on both scales, response length, and show all three models side by side for the same prompt. Summarize counts per model and whether the same prompts show dissociation across models.
-
-Second, processing-mode distribution: per model, group the 60 prompts by true label R/A/N and report the distribution of P(N) for each group, including mean, std, min, max, plus fractions falling into low, middle, high ranges using cutoffs 0.33 and 0.67. This tests whether A is intermediate or splits toward poles.
-
-Third, cross-model prompt agreement: compute Spearman correlations across the 60 prompts between each model pair for P(N), and also for mean self-report ratings. If RN margin is available, compute agreement for that too. This tests whether the signal reflects task structure rather than model-specific quirks.
-
-Write up results and tables in docs/results_deep_analyses.md and push.
+Please save outputs as new docs in docs/ (e.g., results_behavioral_grounding.md, results_threshold_sweep.md, results_stats_robustness.md, and baseline_lofo.md if done) and update the technical note accordingly. Push when finished.

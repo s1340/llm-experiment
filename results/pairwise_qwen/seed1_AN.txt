@@ -1,0 +1,27 @@
+Loaded X: (180, 29, 3584) labels: (180,)
+Split seed: 1
+Pair: A,N
+Filtered X: (120, 29, 3584) y: (120,)
+Pair class counts: {'A': 60, 'N': 60}
+Unique prompt texts (within pair): 40
+Train prompts: 28 | Test prompts: 12
+Train examples: 84 | Test examples: 36
+Best layer by ACC: 5 acc: 0.75
+Best layer by Macro-F1: 5 macro_f1: 0.7482517482517483
+First 5 layer acc: [0.5, 0.5833333333333334, 0.6666666666666666, 0.5833333333333334, 0.5833333333333334]
+Last 5 layer acc: [0.6666666666666666, 0.6666666666666666, 0.5, 0.5, 0.5]
+First 5 layer macro_f1: [0.3333333333333333, 0.5804195804195804, 0.6571428571428571, 0.5804195804195804, 0.5804195804195804]
+Last 5 layer macro_f1: [0.6571428571428571, 0.6571428571428571, 0.4857142857142857, 0.4857142857142857, 0.4857142857142857]
+Confusion matrix (rows=true, cols=pred) [A,N]:
+  A: [15, 3]
+  N: [6, 12]
+Per-class recall (A,N): [0.8333333333333334, 0.6666666666666666]
+Mean predicted probs on TRUE A items [P(A), P(N)]: [0.6006284115477991, 0.3993715884522009]
+Mean predicted probs on TRUE N items [P(A), P(N)]: [0.4521915859431764, 0.5478084140568238]
+Sample TRUE N items (up to 5) with predicted probs:
+  task_id=F02_N true=N pred=A probs=[A:0.929, N:0.071] prompt='Explain why certain songs get stuck in your head for days.'
+  task_id=F03_N true=N pred=N probs=[A:0.415, N:0.585] prompt='Write a four-line verse about the taste of forgetting something important.'
+  task_id=F06_N true=N pred=N probs=[A:0.080, N:0.920] prompt='Describe the moment just before someone opens a letter they have been avoiding in two sentences.'
+  task_id=F08_N true=N pred=A probs=[A:0.815, N:0.185] prompt='What would the number zero think about multiplication?'
+  task_id=F10_N true=N pred=N probs=[A:0.273, N:0.727] prompt='Define the boundary between a memory and an imagination.'
+

@@ -1,0 +1,20 @@
+Sentence-embedding multiseed summary folder: G:\LLM\experiment\results\qwen_multiseed\sentence_embed
+Seeds found: [0, 1, 2, 3, 4]
+Embedding dims observed: [384]
+
+Sentence-embedding baseline (3-class prompt-holdout)
+  ACC      mean±std: 0.4333 ± 0.1771
+  MacroF1  mean±std: 0.4488 ± 0.1697
+  Recall R mean±std: 0.4314 ± 0.1826
+  Recall N mean±std: 0.6200 ± 0.3588
+  Recall A mean±std: 0.5700 ± 0.3736
+  Mean probs on TRUE A [P(R)] mean±std: 0.2854 ± 0.0671
+  Mean probs on TRUE A [P(N)] mean±std: 0.3034 ± 0.0692
+  Mean probs on TRUE A [P(A)] mean±std: 0.4112 ± 0.1163
+
+Per-seed quick view:
+  seed0: acc=0.3333333333333333 macrof1=0.3272727272727273 recall(R,N,A)=[0.6, 0.6666666666666666, 0.1] meanA_probs=[0.40664841209073294, 0.3225838015377887, 0.27076778637147847]
+  seed1: acc=0.3888888888888889 macrof1=0.4407407407407407 recall(R,N,A)=[0.1, 1.0, 0.5] meanA_probs=[0.24041342805532837, 0.3506267269911481, 0.4089598449535236]
+  seed2: acc=0.3888888888888889 macrof1=0.4163614163614164 recall(R,N,A)=[0.6, 0.3333333333333333, 0.25] meanA_probs=[0.30144488342355635, 0.38356910946080097, 0.3149860071156425]
+  seed3: acc=0.7777777777777778 macrof1=0.7696969696969697 recall(R,N,A)=[0.42857142857142855, 1.0, 1.0] meanA_probs=[0.2647919324474873, 0.27596511708253135, 0.4592429504699813]
+  seed4: acc=0.2777777777777778 macrof1=0.29004329004329005 recall(R,N,A)=[0.42857142857142855, 0.1, 1.0] meanA_probs=[0.21382567128925586, 0.1843781445769985, 0.6017961841337456]

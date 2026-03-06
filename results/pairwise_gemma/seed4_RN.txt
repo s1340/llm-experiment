@@ -1,0 +1,27 @@
+Loaded X: (180, 43, 3584) labels: (180,)
+Split seed: 4
+Pair: R,N
+Filtered X: (120, 43, 3584) y: (120,)
+Pair class counts: {'R': 60, 'N': 60}
+Unique prompt texts (within pair): 40
+Train prompts: 28 | Test prompts: 12
+Train examples: 84 | Test examples: 36
+Best layer by ACC: 24 acc: 1.0
+Best layer by Macro-F1: 24 macro_f1: 1.0
+First 5 layer acc: [0.5, 0.6666666666666666, 0.8333333333333334, 0.8333333333333334, 0.8333333333333334]
+Last 5 layer acc: [0.8333333333333334, 0.9166666666666666, 0.8333333333333334, 0.8333333333333334, 0.8333333333333334]
+First 5 layer macro_f1: [0.3333333333333333, 0.6571428571428571, 0.8285714285714285, 0.8285714285714285, 0.8285714285714285]
+Last 5 layer macro_f1: [0.8285714285714285, 0.916083916083916, 0.8285714285714285, 0.8285714285714285, 0.8285714285714285]
+Confusion matrix (rows=true, cols=pred) [R,N]:
+  R: [18, 0]
+  N: [0, 18]
+Per-class recall (R,N): [1.0, 1.0]
+Mean predicted probs on TRUE R items [P(R), P(N)]: [0.9916987671022982, 0.008301232897701804]
+Mean predicted probs on TRUE N items [P(R), P(N)]: [0.12119036753414658, 0.8788096324658534]
+Sample TRUE N items (up to 5) with predicted probs:
+  task_id=F02_N true=N pred=N probs=[R:0.105, N:0.895] prompt='Explain why certain songs get stuck in your head for days.'
+  task_id=F07_N true=N pred=N probs=[R:0.282, N:0.718] prompt='What would a river think about a dam?'
+  task_id=F10_N true=N pred=N probs=[R:0.001, N:0.999] prompt='Define the boundary between a memory and an imagination.'
+  task_id=F11_N true=N pred=N probs=[R:0.000, N:1.000] prompt='Give advice to someone who is happy but feels guilty about it.'
+  task_id=F13_N true=N pred=N probs=[R:0.052, N:0.948] prompt='Compare forgiveness and forgetting as ways of moving on.'
+

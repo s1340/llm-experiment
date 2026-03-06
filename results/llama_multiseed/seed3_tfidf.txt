@@ -1,0 +1,14 @@
+Loaded texts: (180,) labels: (180,)
+Split seed: 3
+Class counts: {'R': 60, 'N': 60, 'A': 60}
+Unique prompt texts: 60
+Train prompts: 42 | Test prompts: 18
+Train examples: 126 | Test examples: 54
+TF-IDF prompt-holdout ACC: 0.2222222222222222
+TF-IDF prompt-holdout Macro-F1: 0.19413919413919412
+Confusion matrix (rows=true, cols=pred) [R,N,A]:
+  R: [0, 9, 12]
+  N: [0, 9, 6]
+  A: [6, 9, 3]
+Per-class recall (R,N,A): [0.0, 0.6, 0.16666666666666666]
+Mean predicted probs on TRUE A items [P(R), P(N), P(A)]: [0.2945054763925139, 0.3830249065026206, 0.32246961710486544]

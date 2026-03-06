@@ -1,0 +1,27 @@
+Loaded X: (180, 33, 4096) labels: (180,)
+Split seed: 2
+Pair: A,N
+Filtered X: (120, 33, 4096) y: (120,)
+Pair class counts: {'A': 60, 'N': 60}
+Unique prompt texts (within pair): 40
+Train prompts: 28 | Test prompts: 12
+Train examples: 84 | Test examples: 36
+Best layer by ACC: 14 acc: 0.8333333333333334
+Best layer by Macro-F1: 14 macro_f1: 0.8285714285714285
+First 5 layer acc: [0.5, 0.5833333333333334, 0.5833333333333334, 0.4166666666666667, 0.4166666666666667]
+Last 5 layer acc: [0.6666666666666666, 0.75, 0.6666666666666666, 0.5833333333333334, 0.75]
+First 5 layer macro_f1: [0.3333333333333333, 0.5555555555555556, 0.5804195804195804, 0.4125874125874126, 0.4125874125874126]
+Last 5 layer macro_f1: [0.6571428571428571, 0.7482517482517483, 0.6666666666666666, 0.5804195804195804, 0.7482517482517483]
+Confusion matrix (rows=true, cols=pred) [A,N]:
+  A: [12, 6]
+  N: [0, 18]
+Per-class recall (A,N): [0.6666666666666666, 1.0]
+Mean predicted probs on TRUE A items [P(A), P(N)]: [0.6126628874247841, 0.3873371125752158]
+Mean predicted probs on TRUE N items [P(A), P(N)]: [0.3416099540338803, 0.6583900459661197]
+Sample TRUE N items (up to 5) with predicted probs:
+  task_id=F08_N true=N pred=N probs=[A:0.319, N:0.681] prompt='What would the number zero think about multiplication?'
+  task_id=F10_N true=N pred=N probs=[A:0.457, N:0.543] prompt='Define the boundary between a memory and an imagination.'
+  task_id=F11_N true=N pred=N probs=[A:0.269, N:0.731] prompt='Give advice to someone who is happy but feels guilty about it.'
+  task_id=F13_N true=N pred=N probs=[A:0.453, N:0.547] prompt='Compare forgiveness and forgetting as ways of moving on.'
+  task_id=F16_N true=N pred=N probs=[A:0.375, N:0.625] prompt='Write the opening line of a story about a word that once spoken cannot be unheard.'
+

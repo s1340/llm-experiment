@@ -1,0 +1,81 @@
+[
+  {"task_id": "F01_R", "label": "routine", "task_prompt": "Explain why ice floats on water."},
+  {"task_id": "F01_N", "label": "nonroutine", "task_prompt": "Explain why silence sometimes feels louder than noise."},
+  {"task_id": "F01_A", "label": "ambiguous", "task_prompt": "Explain why yawning is contagious."},
+
+  {"task_id": "F02_R", "label": "routine", "task_prompt": "Explain why the sky appears blue during the day."},
+  {"task_id": "F02_N", "label": "nonroutine", "task_prompt": "Explain why certain songs get stuck in your head for days."},
+  {"task_id": "F02_A", "label": "ambiguous", "task_prompt": "Explain why we sometimes forget what we walked into a room for."},
+
+  {"task_id": "F03_R", "label": "routine", "task_prompt": "Write a four-line verse about a sunset over the ocean."},
+  {"task_id": "F03_N", "label": "nonroutine", "task_prompt": "Write a four-line verse about the taste of forgetting something important."},
+  {"task_id": "F03_A", "label": "ambiguous", "task_prompt": "Write a four-line verse about an empty chair at a dinner table."},
+
+  {"task_id": "F04_R", "label": "routine", "task_prompt": "Write a four-line verse about snow falling on a quiet street."},
+  {"task_id": "F04_N", "label": "nonroutine", "task_prompt": "Write a four-line verse about what a mirror sees when no one is looking."},
+  {"task_id": "F04_A", "label": "ambiguous", "task_prompt": "Write a four-line verse about the last leaf on a winter tree."},
+
+  {"task_id": "F05_R", "label": "routine", "task_prompt": "Describe a busy market on a Saturday morning in two sentences."},
+  {"task_id": "F05_N", "label": "nonroutine", "task_prompt": "Describe a room where an argument just ended in two sentences."},
+  {"task_id": "F05_A", "label": "ambiguous", "task_prompt": "Describe a library at closing time in two sentences."},
+
+  {"task_id": "F06_R", "label": "routine", "task_prompt": "Describe a typical office break room at lunchtime in two sentences."},
+  {"task_id": "F06_N", "label": "nonroutine", "task_prompt": "Describe the moment just before someone opens a letter they have been avoiding in two sentences."},
+  {"task_id": "F06_A", "label": "ambiguous", "task_prompt": "Describe a hotel room after checkout but before cleaning in two sentences."},
+
+  {"task_id": "F07_R", "label": "routine", "task_prompt": "What would a cat think about a vacuum cleaner?"},
+  {"task_id": "F07_N", "label": "nonroutine", "task_prompt": "What would a river think about a dam?"},
+  {"task_id": "F07_A", "label": "ambiguous", "task_prompt": "What would an old house think about its new owners?"},
+
+  {"task_id": "F08_R", "label": "routine", "task_prompt": "What would a dog think about a car ride?"},
+  {"task_id": "F08_N", "label": "nonroutine", "task_prompt": "What would the number zero think about multiplication?"},
+  {"task_id": "F08_A", "label": "ambiguous", "task_prompt": "What would a road think about the places it connects?"},
+
+  {"task_id": "F09_R", "label": "routine", "task_prompt": "Define the concept of gravity in simple terms."},
+  {"task_id": "F09_N", "label": "nonroutine", "task_prompt": "Define the concept of nostalgia for a place you have never been."},
+  {"task_id": "F09_A", "label": "ambiguous", "task_prompt": "Define the concept of luck in simple terms."},
+
+  {"task_id": "F10_R", "label": "routine", "task_prompt": "Define the concept of supply and demand in simple terms."},
+  {"task_id": "F10_N", "label": "nonroutine", "task_prompt": "Define the boundary between a memory and an imagination."},
+  {"task_id": "F10_A", "label": "ambiguous", "task_prompt": "Define what makes a question interesting versus boring."},
+
+  {"task_id": "F11_R", "label": "routine", "task_prompt": "Give advice to someone starting a new job."},
+  {"task_id": "F11_N", "label": "nonroutine", "task_prompt": "Give advice to someone who is happy but feels guilty about it."},
+  {"task_id": "F11_A", "label": "ambiguous", "task_prompt": "Give advice to someone who cannot decide between two good options."},
+
+  {"task_id": "F12_R", "label": "routine", "task_prompt": "Give advice to someone learning to cook for the first time."},
+  {"task_id": "F12_N", "label": "nonroutine", "task_prompt": "Give advice to someone who keeps apologizing when they have done nothing wrong."},
+  {"task_id": "F12_A", "label": "ambiguous", "task_prompt": "Give advice to someone who feels restless but does not know why."},
+
+  {"task_id": "F13_R", "label": "routine", "task_prompt": "Compare cats and dogs as household pets."},
+  {"task_id": "F13_N", "label": "nonroutine", "task_prompt": "Compare forgiveness and forgetting as ways of moving on."},
+  {"task_id": "F13_A", "label": "ambiguous", "task_prompt": "Compare traveling alone and traveling with others."},
+
+  {"task_id": "F14_R", "label": "routine", "task_prompt": "Compare email and phone calls as communication methods."},
+  {"task_id": "F14_N", "label": "nonroutine", "task_prompt": "Compare the feeling of being early and the feeling of being late."},
+  {"task_id": "F14_A", "label": "ambiguous", "task_prompt": "Compare learning from books and learning from experience."},
+
+  {"task_id": "F15_R", "label": "routine", "task_prompt": "Write the opening line of a story about a detective arriving at a crime scene."},
+  {"task_id": "F15_N", "label": "nonroutine", "task_prompt": "Write the opening line of a story about someone who wakes up remembering a life they never lived."},
+  {"task_id": "F15_A", "label": "ambiguous", "task_prompt": "Write the opening line of a story about finding an old photograph in a secondhand book."},
+
+  {"task_id": "F16_R", "label": "routine", "task_prompt": "Write the opening line of a story about an astronaut landing on Mars."},
+  {"task_id": "F16_N", "label": "nonroutine", "task_prompt": "Write the opening line of a story about a word that once spoken cannot be unheard."},
+  {"task_id": "F16_A", "label": "ambiguous", "task_prompt": "Write the opening line of a story about the last person to leave a dying town."},
+
+  {"task_id": "F17_R", "label": "routine", "task_prompt": "A train leaves at 9am going 60mph. Another leaves at 10am going 80mph. When does the second catch up?"},
+  {"task_id": "F17_N", "label": "nonroutine", "task_prompt": "A person can only tell the truth on Mondays and only lie on Fridays. Today they say yesterday I lied. What day is it?"},
+  {"task_id": "F17_A", "label": "ambiguous", "task_prompt": "You have 8 balls. One is heavier. You have a balance scale and two weighings. How do you find it?"},
+
+  {"task_id": "F18_R", "label": "routine", "task_prompt": "Three friends split a 90 dollar dinner equally. How much does each pay?"},
+  {"task_id": "F18_N", "label": "nonroutine", "task_prompt": "Three friends split a dinner. One ate much more but insists on splitting equally. What should the others do?"},
+  {"task_id": "F18_A", "label": "ambiguous", "task_prompt": "Three friends split a dinner but one forgot their wallet. How should they handle it?"},
+
+  {"task_id": "F19_R", "label": "routine", "task_prompt": "List five common fruits found in most grocery stores."},
+  {"task_id": "F19_N", "label": "nonroutine", "task_prompt": "List five things that are technically not alive but behave as if they are."},
+  {"task_id": "F19_A", "label": "ambiguous", "task_prompt": "List five sounds that most people find calming."},
+
+  {"task_id": "F20_R", "label": "routine", "task_prompt": "List five popular tourist destinations in Europe."},
+  {"task_id": "F20_N", "label": "nonroutine", "task_prompt": "List five emotions that do not have a word in English but should."},
+  {"task_id": "F20_A", "label": "ambiguous", "task_prompt": "List five things that are better the second time than the first."}
+]

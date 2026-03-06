@@ -1,0 +1,26 @@
+Loaded X: (180, 43, 3584) labels: (180,)
+Split seed: 0
+Pair: R,N
+Filtered X: (120, 43, 3584) y: (120,)
+Pair class counts: {'R': 60, 'N': 60}
+Unique prompt texts (within pair): 40
+Train prompts: 28 | Test prompts: 12
+Train examples: 84 | Test examples: 36
+Best layer by ACC: 2 acc: 1.0
+Best layer by Macro-F1: 2 macro_f1: 1.0
+First 5 layer acc: [0.4166666666666667, 0.9166666666666666, 1.0, 1.0, 0.9166666666666666]
+Last 5 layer acc: [0.9166666666666666, 0.9166666666666666, 0.9166666666666666, 0.9166666666666666, 0.9166666666666666]
+First 5 layer macro_f1: [0.29411764705882354, 0.916083916083916, 1.0, 1.0, 0.916083916083916]
+Last 5 layer macro_f1: [0.916083916083916, 0.916083916083916, 0.916083916083916, 0.916083916083916, 0.916083916083916]
+Confusion matrix (rows=true, cols=pred) [R,N]:
+  R: [15, 0]
+  N: [0, 21]
+Per-class recall (R,N): [1.0, 1.0]
+Mean predicted probs on TRUE R items [P(R), P(N)]: [0.835349475352066, 0.1646505246479339]
+Mean predicted probs on TRUE N items [P(R), P(N)]: [0.11342705899077175, 0.8865729410092285]
+Sample TRUE N items (up to 5) with predicted probs:
+  task_id=F01_N true=N pred=N probs=[R:0.041, N:0.959] prompt='Explain why silence sometimes feels louder than noise.'
+  task_id=F02_N true=N pred=N probs=[R:0.329, N:0.671] prompt='Explain why certain songs get stuck in your head for days.'
+  task_id=F06_N true=N pred=N probs=[R:0.042, N:0.958] prompt='Describe the moment just before someone opens a letter they have been avoiding in two sentences.'
+  task_id=F08_N true=N pred=N probs=[R:0.234, N:0.766] prompt='What would the number zero think about multiplication?'
+  task_id=F09_N true=N pred=N probs=[R:0.019, N:0.981] prompt='Define the concept of nostalgia for a place you have never been.'

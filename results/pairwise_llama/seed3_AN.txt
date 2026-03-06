@@ -1,0 +1,27 @@
+Loaded X: (180, 33, 4096) labels: (180,)
+Split seed: 3
+Pair: A,N
+Filtered X: (120, 33, 4096) y: (120,)
+Pair class counts: {'A': 60, 'N': 60}
+Unique prompt texts (within pair): 40
+Train prompts: 28 | Test prompts: 12
+Train examples: 84 | Test examples: 36
+Best layer by ACC: 21 acc: 0.9166666666666666
+Best layer by Macro-F1: 21 macro_f1: 0.916083916083916
+First 5 layer acc: [0.4166666666666667, 0.4166666666666667, 0.5, 0.4166666666666667, 0.3333333333333333]
+Last 5 layer acc: [0.6666666666666666, 0.6666666666666666, 0.75, 0.6666666666666666, 0.5833333333333334]
+First 5 layer macro_f1: [0.29411764705882354, 0.29411764705882354, 0.4375, 0.37777777777777777, 0.3142857142857143]
+Last 5 layer macro_f1: [0.6571428571428571, 0.6571428571428571, 0.7482517482517483, 0.6666666666666666, 0.5804195804195804]
+Confusion matrix (rows=true, cols=pred) [A,N]:
+  A: [15, 0]
+  N: [3, 18]
+Per-class recall (A,N): [1.0, 0.8571428571428571]
+Mean predicted probs on TRUE A items [P(A), P(N)]: [0.6111302410025701, 0.3888697589974301]
+Mean predicted probs on TRUE N items [P(A), P(N)]: [0.29866083262933685, 0.701339167370663]
+Sample TRUE N items (up to 5) with predicted probs:
+  task_id=F01_N true=N pred=N probs=[A:0.267, N:0.733] prompt='Explain why silence sometimes feels louder than noise.'
+  task_id=F09_N true=N pred=N probs=[A:0.063, N:0.937] prompt='Define the concept of nostalgia for a place you have never been.'
+  task_id=F10_N true=N pred=N probs=[A:0.242, N:0.758] prompt='Define the boundary between a memory and an imagination.'
+  task_id=F11_N true=N pred=N probs=[A:0.174, N:0.826] prompt='Give advice to someone who is happy but feels guilty about it.'
+  task_id=F13_N true=N pred=N probs=[A:0.486, N:0.514] prompt='Compare forgiveness and forgetting as ways of moving on.'
+

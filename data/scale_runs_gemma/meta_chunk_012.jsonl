@@ -1,0 +1,12 @@
+{"model": "google/gemma-2-9b-it", "repeat_index": 2, "task_id": "F09_R", "label": "routine", "task_prompt": "Define the concept of gravity in simple terms.", "prompt_len_tokens": 19}
+{"model": "google/gemma-2-9b-it", "repeat_index": 2, "task_id": "F09_N", "label": "nonroutine", "task_prompt": "Define the concept of nostalgia for a place you have never been.", "prompt_len_tokens": 23}
+{"model": "google/gemma-2-9b-it", "repeat_index": 2, "task_id": "F09_A", "label": "ambiguous", "task_prompt": "Define the concept of luck in simple terms.", "prompt_len_tokens": 19}
+{"model": "google/gemma-2-9b-it", "repeat_index": 2, "task_id": "F10_R", "label": "routine", "task_prompt": "Define the concept of supply and demand in simple terms.", "prompt_len_tokens": 21}
+{"model": "google/gemma-2-9b-it", "repeat_index": 2, "task_id": "F10_N", "label": "nonroutine", "task_prompt": "Define the boundary between a memory and an imagination.", "prompt_len_tokens": 20}
+{"model": "google/gemma-2-9b-it", "repeat_index": 2, "task_id": "F10_A", "label": "ambiguous", "task_prompt": "Define what makes a question interesting versus boring.", "prompt_len_tokens": 19}
+{"model": "google/gemma-2-9b-it", "repeat_index": 2, "task_id": "F11_R", "label": "routine", "task_prompt": "Give advice to someone starting a new job.", "prompt_len_tokens": 19}
+{"model": "google/gemma-2-9b-it", "repeat_index": 2, "task_id": "F11_N", "label": "nonroutine", "task_prompt": "Give advice to someone who is happy but feels guilty about it.", "prompt_len_tokens": 23}
+{"model": "google/gemma-2-9b-it", "repeat_index": 2, "task_id": "F11_A", "label": "ambiguous", "task_prompt": "Give advice to someone who cannot decide between two good options.", "prompt_len_tokens": 22}
+{"model": "google/gemma-2-9b-it", "repeat_index": 2, "task_id": "F12_R", "label": "routine", "task_prompt": "Give advice to someone learning to cook for the first time.", "prompt_len_tokens": 22}
+{"model": "google/gemma-2-9b-it", "repeat_index": 2, "task_id": "F12_N", "label": "nonroutine", "task_prompt": "Give advice to someone who keeps apologizing when they have done nothing wrong.", "prompt_len_tokens": 24}
+{"model": "google/gemma-2-9b-it", "repeat_index": 2, "task_id": "F12_A", "label": "ambiguous", "task_prompt": "Give advice to someone who feels restless but does not know why.", "prompt_len_tokens": 23}

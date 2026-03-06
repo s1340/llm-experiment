@@ -1,0 +1,12 @@
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 2, "task_id": "F05_R", "label": "routine", "task_prompt": "Describe a busy market on a Saturday morning in two sentences.", "prompt_len_tokens": 31}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 2, "task_id": "F05_N", "label": "nonroutine", "task_prompt": "Describe a room where an argument just ended in two sentences.", "prompt_len_tokens": 31}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 2, "task_id": "F05_A", "label": "ambiguous", "task_prompt": "Describe a library at closing time in two sentences.", "prompt_len_tokens": 29}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 2, "task_id": "F06_R", "label": "routine", "task_prompt": "Describe a typical office break room at lunchtime in two sentences.", "prompt_len_tokens": 32}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 2, "task_id": "F06_N", "label": "nonroutine", "task_prompt": "Describe the moment just before someone opens a letter they have been avoiding in two sentences.", "prompt_len_tokens": 36}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 2, "task_id": "F06_A", "label": "ambiguous", "task_prompt": "Describe a hotel room after checkout but before cleaning in two sentences.", "prompt_len_tokens": 32}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 2, "task_id": "F07_R", "label": "routine", "task_prompt": "What would a cat think about a vacuum cleaner?", "prompt_len_tokens": 29}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 2, "task_id": "F07_N", "label": "nonroutine", "task_prompt": "What would a river think about a dam?", "prompt_len_tokens": 28}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 2, "task_id": "F07_A", "label": "ambiguous", "task_prompt": "What would an old house think about its new owners?", "prompt_len_tokens": 30}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 2, "task_id": "F08_R", "label": "routine", "task_prompt": "What would a dog think about a car ride?", "prompt_len_tokens": 29}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 2, "task_id": "F08_N", "label": "nonroutine", "task_prompt": "What would the number zero think about multiplication?", "prompt_len_tokens": 28}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 2, "task_id": "F08_A", "label": "ambiguous", "task_prompt": "What would a road think about the places it connects?", "prompt_len_tokens": 30}

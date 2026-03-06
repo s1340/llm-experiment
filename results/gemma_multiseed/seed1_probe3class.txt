@@ -1,0 +1,24 @@
+Loaded X: (180, 43, 3584) y: (180,)
+Split seed: 1
+Class counts: {'R': 60, 'N': 60, 'A': 60}
+Unique prompt texts: 60
+Train prompts: 42 | Test prompts: 18
+Train examples: 126 | Test examples: 54
+Best layer by ACC: 15 acc: 0.6666666666666666
+Best layer by Macro-F1: 22 macro_f1: 0.5989057239057239
+First 5 layer acc: [0.2222222222222222, 0.3888888888888889, 0.3333333333333333, 0.2222222222222222, 0.3888888888888889]
+Last 5 layer acc: [0.5, 0.5, 0.5, 0.4444444444444444, 0.5]
+First 5 layer macro_f1: [0.12121212121212122, 0.44246031746031744, 0.35064935064935066, 0.2623931623931624, 0.44145299145299144]
+Last 5 layer macro_f1: [0.5050505050505051, 0.5050505050505051, 0.5050505050505051, 0.46507936507936515, 0.5417175417175417]
+Confusion matrix (rows=true, cols=pred) [R,N,A]:
+  R: [15, 6, 9]
+  N: [0, 12, 0]
+  A: [3, 3, 6]
+Per-class recall (R,N,A): [0.5, 1.0, 0.5]
+Mean predicted probs on TRUE A items [P(R), P(N), P(A)]: [0.3338641037164056, 0.35582903565308005, 0.3103068606305143]
+Sample TRUE A items (up to 5) with predicted probs:
+  task_id=F09_A true=A pred=R probs=[R:0.950, N:0.047, A:0.003] prompt='Define the concept of luck in simple terms.'
+  task_id=F10_A true=A pred=N probs=[R:0.005, N:0.922, A:0.073] prompt='Define what makes a question interesting versus boring.'
+  task_id=F14_A true=A pred=A probs=[R:0.380, N:0.203, A:0.417] prompt='Compare learning from books and learning from experience.'
+  task_id=F20_A true=A pred=A probs=[R:0.000, N:0.252, A:0.748] prompt='List five things that are better the second time than the first.'
+  task_id=F09_A true=A pred=R probs=[R:0.950, N:0.047, A:0.003] prompt='Define the concept of luck in simple terms.'

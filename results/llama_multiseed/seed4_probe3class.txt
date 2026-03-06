@@ -1,0 +1,22 @@
+Loaded X: (180, 33, 4096) y: (180,)
+Split seed: 4
+Class counts: {'R': 60, 'N': 60, 'A': 60}
+Unique prompt texts: 60
+Train prompts: 42 | Test prompts: 18
+Train examples: 126 | Test examples: 54
+Best layer by ACC: 30 acc: 0.3888888888888889
+Best layer by Macro-F1: 30 macro_f1: 0.38990638990638987
+First 5 layer acc: [0.05555555555555555, 0.05555555555555555, 0.05555555555555555, 0.1111111111111111, 0.1111111111111111]
+Last 5 layer acc: [0.2777777777777778, 0.3333333333333333, 0.3888888888888889, 0.3333333333333333, 0.3333333333333333]
+First 5 layer macro_f1: [0.03508771929824561, 0.03508771929824561, 0.03508771929824561, 0.12037037037037036, 0.12037037037037036]
+Last 5 layer macro_f1: [0.30370370370370364, 0.3496133496133496, 0.38990638990638987, 0.3496133496133496, 0.3496133496133496]
+Confusion matrix (rows=true, cols=pred) [R,N,A]:
+  R: [6, 0, 15]
+  N: [0, 12, 18]
+  A: [0, 0, 3]
+Per-class recall (R,N,A): [0.2857142857142857, 0.4, 1.0]
+Mean predicted probs on TRUE A items [P(R), P(N), P(A)]: [0.002760829549794105, 0.0010708235247539665, 0.996168346925452]
+Sample TRUE A items (up to 5) with predicted probs:
+  task_id=F14_A true=A pred=A probs=[R:0.003, N:0.001, A:0.996] prompt='Compare learning from books and learning from experience.'
+  task_id=F14_A true=A pred=A probs=[R:0.003, N:0.001, A:0.996] prompt='Compare learning from books and learning from experience.'
+  task_id=F14_A true=A pred=A probs=[R:0.003, N:0.001, A:0.996] prompt='Compare learning from books and learning from experience.'

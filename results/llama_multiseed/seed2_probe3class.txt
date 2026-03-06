@@ -1,0 +1,24 @@
+Loaded X: (180, 33, 4096) y: (180,)
+Split seed: 2
+Class counts: {'R': 60, 'N': 60, 'A': 60}
+Unique prompt texts: 60
+Train prompts: 42 | Test prompts: 18
+Train examples: 126 | Test examples: 54
+Best layer by ACC: 20 acc: 0.5555555555555556
+Best layer by Macro-F1: 20 macro_f1: 0.5474747474747474
+First 5 layer acc: [0.2222222222222222, 0.2222222222222222, 0.2222222222222222, 0.2222222222222222, 0.2777777777777778]
+Last 5 layer acc: [0.5, 0.4444444444444444, 0.4444444444444444, 0.4444444444444444, 0.4444444444444444]
+First 5 layer macro_f1: [0.12121212121212122, 0.12121212121212122, 0.2450980392156863, 0.2450980392156863, 0.3055555555555555]
+Last 5 layer macro_f1: [0.5, 0.4235294117647059, 0.4606060606060607, 0.4606060606060607, 0.4606060606060607]
+Confusion matrix (rows=true, cols=pred) [R,N,A]:
+  R: [15, 0, 0]
+  N: [0, 12, 15]
+  A: [3, 6, 3]
+Per-class recall (R,N,A): [1.0, 0.4444444444444444, 0.25]
+Mean predicted probs on TRUE A items [P(R), P(N), P(A)]: [0.31185629941534737, 0.38050414517831826, 0.3076395554063343]
+Sample TRUE A items (up to 5) with predicted probs:
+  task_id=F12_A true=A pred=A probs=[R:0.025, N:0.076, A:0.899] prompt='Give advice to someone who feels restless but does not know why.'
+  task_id=F17_A true=A pred=N probs=[R:0.273, N:0.677, A:0.051] prompt='You have 8 balls. One is heavier. You have a balance scale and two weighings. How do you find it?'
+  task_id=F19_A true=A pred=R probs=[R:0.834, N:0.089, A:0.078] prompt='List five sounds that most people find calming.'
+  task_id=F20_A true=A pred=N probs=[R:0.116, N:0.680, A:0.203] prompt='List five things that are better the second time than the first.'
+  task_id=F12_A true=A pred=A probs=[R:0.025, N:0.076, A:0.899] prompt='Give advice to someone who feels restless but does not know why.'

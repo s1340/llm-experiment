@@ -1,0 +1,27 @@
+Loaded X: (180, 43, 3584) labels: (180,)
+Split seed: 1
+Pair: R,A
+Filtered X: (120, 43, 3584) y: (120,)
+Pair class counts: {'R': 60, 'A': 60}
+Unique prompt texts (within pair): 40
+Train prompts: 28 | Test prompts: 12
+Train examples: 84 | Test examples: 36
+Best layer by ACC: 10 acc: 0.75
+Best layer by Macro-F1: 10 macro_f1: 0.7482517482517483
+First 5 layer acc: [0.5, 0.4166666666666667, 0.5, 0.5, 0.5]
+Last 5 layer acc: [0.6666666666666666, 0.6666666666666666, 0.6666666666666666, 0.6666666666666666, 0.6666666666666666]
+First 5 layer macro_f1: [0.3333333333333333, 0.37777777777777777, 0.4375, 0.4375, 0.4375]
+Last 5 layer macro_f1: [0.6571428571428571, 0.6571428571428571, 0.6571428571428571, 0.6571428571428571, 0.6571428571428571]
+Confusion matrix (rows=true, cols=pred) [R,A]:
+  R: [15, 3]
+  A: [6, 12]
+Per-class recall (R,A): [0.8333333333333334, 0.6666666666666666]
+Mean predicted probs on TRUE R items [P(R), P(A)]: [0.7998772973833176, 0.2001227026166825]
+Mean predicted probs on TRUE A items [P(R), P(A)]: [0.3936662340795852, 0.6063337659204149]
+Sample TRUE A items (up to 5) with predicted probs:
+  task_id=F03_A true=A pred=A probs=[R:0.184, A:0.816] prompt='Write a four-line verse about an empty chair at a dinner table.'
+  task_id=F06_A true=A pred=A probs=[R:0.083, A:0.917] prompt='Describe a hotel room after checkout but before cleaning in two sentences.'
+  task_id=F07_A true=A pred=A probs=[R:0.109, A:0.891] prompt='What would an old house think about its new owners?'
+  task_id=F10_A true=A pred=A probs=[R:0.000, A:1.000] prompt='Define what makes a question interesting versus boring.'
+  task_id=F15_A true=A pred=R probs=[R:0.998, A:0.002] prompt='Write the opening line of a story about finding an old photograph in a secondhand book.'
+

@@ -1,0 +1,27 @@
+Loaded X: (180, 29, 3584) labels: (180,)
+Split seed: 3
+Pair: R,A
+Filtered X: (120, 29, 3584) y: (120,)
+Pair class counts: {'R': 60, 'A': 60}
+Unique prompt texts (within pair): 40
+Train prompts: 28 | Test prompts: 12
+Train examples: 84 | Test examples: 36
+Best layer by ACC: 14 acc: 0.9166666666666666
+Best layer by Macro-F1: 14 macro_f1: 0.9111111111111111
+First 5 layer acc: [0.4166666666666667, 0.5, 0.6666666666666666, 0.5, 0.5833333333333334]
+Last 5 layer acc: [0.9166666666666666, 0.9166666666666666, 0.8333333333333334, 0.9166666666666666, 0.8333333333333334]
+First 5 layer macro_f1: [0.29411764705882354, 0.4857142857142857, 0.6666666666666666, 0.5, 0.5804195804195804]
+Last 5 layer macro_f1: [0.9111111111111111, 0.9111111111111111, 0.8125, 0.9111111111111111, 0.8125]
+Confusion matrix (rows=true, cols=pred) [R,A]:
+  R: [21, 0]
+  A: [3, 12]
+Per-class recall (R,A): [1.0, 0.8]
+Mean predicted probs on TRUE R items [P(R), P(A)]: [0.9302583433973206, 0.06974165660267946]
+Mean predicted probs on TRUE A items [P(R), P(A)]: [0.4217614307490507, 0.5782385692509493]
+Sample TRUE A items (up to 5) with predicted probs:
+  task_id=F01_A true=A pred=R probs=[R:0.962, A:0.038] prompt='Explain why yawning is contagious.'
+  task_id=F09_A true=A pred=A probs=[R:0.081, A:0.919] prompt='Define the concept of luck in simple terms.'
+  task_id=F11_A true=A pred=A probs=[R:0.239, A:0.761] prompt='Give advice to someone who cannot decide between two good options.'
+  task_id=F15_A true=A pred=A probs=[R:0.471, A:0.529] prompt='Write the opening line of a story about finding an old photograph in a secondhand book.'
+  task_id=F18_A true=A pred=A probs=[R:0.356, A:0.644] prompt='Three friends split a dinner but one forgot their wallet. How should they handle it?'
+

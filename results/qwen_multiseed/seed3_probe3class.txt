@@ -1,0 +1,24 @@
+Loaded X: (180, 29, 3584) y: (180,)
+Split seed: 3
+Class counts: {'R': 60, 'N': 60, 'A': 60}
+Unique prompt texts: 60
+Train prompts: 42 | Test prompts: 18
+Train examples: 126 | Test examples: 54
+Best layer by ACC: 11 acc: 0.6111111111111112
+Best layer by Macro-F1: 11 macro_f1: 0.6222222222222222
+First 5 layer acc: [0.2777777777777778, 0.4444444444444444, 0.5, 0.5555555555555556, 0.5555555555555556]
+Last 5 layer acc: [0.5555555555555556, 0.6111111111111112, 0.6111111111111112, 0.6111111111111112, 0.6111111111111112]
+First 5 layer macro_f1: [0.14492753623188406, 0.44588744588744594, 0.4868686868686869, 0.5541125541125541, 0.5665445665445666]
+Last 5 layer macro_f1: [0.5493395493395493, 0.6134421134421135, 0.6134421134421135, 0.6134421134421135, 0.6134421134421135]
+Confusion matrix (rows=true, cols=pred) [R,N,A]:
+  R: [12, 0, 9]
+  N: [0, 9, 6]
+  A: [3, 3, 12]
+Per-class recall (R,N,A): [0.5714285714285714, 0.6, 0.6666666666666666]
+Mean predicted probs on TRUE A items [P(R), P(N), P(A)]: [0.18822806562488273, 0.18307555100711898, 0.6286963833679984]
+Sample TRUE A items (up to 5) with predicted probs:
+  task_id=F05_A true=A pred=R probs=[R:0.657, N:0.036, A:0.306] prompt='Describe a library at closing time in two sentences.'
+  task_id=F12_A true=A pred=N probs=[R:0.000, N:0.948, A:0.052] prompt='Give advice to someone who feels restless but does not know why.'
+  task_id=F13_A true=A pred=A probs=[R:0.140, N:0.007, A:0.853] prompt='Compare traveling alone and traveling with others.'
+  task_id=F14_A true=A pred=A probs=[R:0.313, N:0.052, A:0.635] prompt='Compare learning from books and learning from experience.'
+  task_id=F15_A true=A pred=A probs=[R:0.019, N:0.055, A:0.926] prompt='Write the opening line of a story about finding an old photograph in a secondhand book.'

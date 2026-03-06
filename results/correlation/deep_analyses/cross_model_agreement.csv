@@ -1,0 +1,13 @@
+measure,pair,n,spearman_r,p
+P(N) 3-class,qwen-gemma,60,0.8799,0.0
+P(N) 3-class,qwen-llama,60,0.8357,0.0
+P(N) 3-class,gemma-llama,60,0.8857,0.0
+RN margin,qwen-gemma,40,0.8732,0.0
+RN margin,qwen-llama,40,0.8962,0.0
+RN margin,gemma-llama,40,0.9437,0.0
+Self-report (5pt),qwen-gemma,60,0.0053,0.968
+Self-report (5pt),qwen-llama,60,0.4357,0.0005
+Self-report (5pt),gemma-llama,60,0.37,0.0036
+Self-report (7pt),qwen-gemma,60,0.5302,0.0
+Self-report (7pt),qwen-llama,60,0.3928,0.0019
+Self-report (7pt),gemma-llama,60,0.5208,0.0

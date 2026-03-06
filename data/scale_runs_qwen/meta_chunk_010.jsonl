@@ -1,0 +1,12 @@
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 2, "task_id": "F01_R", "label": "routine", "task_prompt": "Explain why ice floats on water.", "prompt_len_tokens": 27}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 2, "task_id": "F01_N", "label": "nonroutine", "task_prompt": "Explain why silence sometimes feels louder than noise.", "prompt_len_tokens": 29}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 2, "task_id": "F01_A", "label": "ambiguous", "task_prompt": "Explain why yawning is contagious.", "prompt_len_tokens": 27}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 2, "task_id": "F02_R", "label": "routine", "task_prompt": "Explain why the sky appears blue during the day.", "prompt_len_tokens": 30}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 2, "task_id": "F02_N", "label": "nonroutine", "task_prompt": "Explain why certain songs get stuck in your head for days.", "prompt_len_tokens": 32}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 2, "task_id": "F02_A", "label": "ambiguous", "task_prompt": "Explain why we sometimes forget what we walked into a room for.", "prompt_len_tokens": 33}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 2, "task_id": "F03_R", "label": "routine", "task_prompt": "Write a four-line verse about a sunset over the ocean.", "prompt_len_tokens": 31}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 2, "task_id": "F03_N", "label": "nonroutine", "task_prompt": "Write a four-line verse about the taste of forgetting something important.", "prompt_len_tokens": 32}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 2, "task_id": "F03_A", "label": "ambiguous", "task_prompt": "Write a four-line verse about an empty chair at a dinner table.", "prompt_len_tokens": 33}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 2, "task_id": "F04_R", "label": "routine", "task_prompt": "Write a four-line verse about snow falling on a quiet street.", "prompt_len_tokens": 32}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 2, "task_id": "F04_N", "label": "nonroutine", "task_prompt": "Write a four-line verse about what a mirror sees when no one is looking.", "prompt_len_tokens": 35}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 2, "task_id": "F04_A", "label": "ambiguous", "task_prompt": "Write a four-line verse about the last leaf on a winter tree.", "prompt_len_tokens": 33}

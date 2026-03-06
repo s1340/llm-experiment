@@ -1,0 +1,27 @@
+Loaded X: (180, 43, 3584) labels: (180,)
+Split seed: 4
+Pair: R,A
+Filtered X: (120, 43, 3584) y: (120,)
+Pair class counts: {'R': 60, 'A': 60}
+Unique prompt texts (within pair): 40
+Train prompts: 28 | Test prompts: 12
+Train examples: 84 | Test examples: 36
+Best layer by ACC: 9 acc: 0.75
+Best layer by Macro-F1: 10 macro_f1: 0.7333333333333334
+First 5 layer acc: [0.4166666666666667, 0.6666666666666666, 0.5833333333333334, 0.5, 0.6666666666666666]
+Last 5 layer acc: [0.5, 0.5, 0.5, 0.5833333333333334, 0.5833333333333334]
+First 5 layer macro_f1: [0.29411764705882354, 0.6571428571428571, 0.5804195804195804, 0.5, 0.6666666666666666]
+Last 5 layer macro_f1: [0.4857142857142857, 0.4857142857142857, 0.4857142857142857, 0.5555555555555556, 0.5555555555555556]
+Confusion matrix (rows=true, cols=pred) [R,A]:
+  R: [18, 3]
+  A: [6, 9]
+Per-class recall (R,A): [0.8571428571428571, 0.6]
+Mean predicted probs on TRUE R items [P(R), P(A)]: [0.8111139379763133, 0.18888606202368682]
+Mean predicted probs on TRUE A items [P(R), P(A)]: [0.4286717721050474, 0.5713282278949524]
+Sample TRUE A items (up to 5) with predicted probs:
+  task_id=F07_A true=A pred=A probs=[R:0.102, A:0.898] prompt='What would an old house think about its new owners?'
+  task_id=F09_A true=A pred=R probs=[R:0.977, A:0.023] prompt='Define the concept of luck in simple terms.'
+  task_id=F12_A true=A pred=A probs=[R:0.002, A:0.998] prompt='Give advice to someone who feels restless but does not know why.'
+  task_id=F13_A true=A pred=R probs=[R:0.964, A:0.036] prompt='Compare traveling alone and traveling with others.'
+  task_id=F14_A true=A pred=A probs=[R:0.098, A:0.902] prompt='Compare learning from books and learning from experience.'
+

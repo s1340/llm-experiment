@@ -1,0 +1,10 @@
+model,method,acc_mean,acc_std,macrof1_mean,macrof1_std,recall_R_mean,recall_R_std,recall_N_mean,recall_N_std,recall_A_mean,recall_A_std,notes
+qwen,TF-IDF,0.1222,0.0648,0.1084,0.0600,,,,,,,"random 70/30 prompt-split; seeds 0-4"
+gemma,TF-IDF,0.1222,0.0648,0.1084,0.0600,,,,,,,"random 70/30 prompt-split; seeds 0-4"
+llama,TF-IDF,0.1222,0.0648,0.1084,0.0600,,,,,,,"random 70/30 prompt-split; seeds 0-4"
+qwen,sentence-embedding,0.4333,0.1771,0.4488,0.1697,0.4314,0.1826,0.6200,0.3588,0.5700,0.3736,"all-MiniLM-L6-v2; random 70/30 prompt-split; seeds 0-4"
+gemma,sentence-embedding,0.4333,0.1771,0.4488,0.1697,0.4314,0.1826,0.6200,0.3588,0.5700,0.3736,"all-MiniLM-L6-v2; random 70/30 prompt-split; seeds 0-4"
+llama,sentence-embedding,0.4333,0.1771,0.4488,0.1697,0.4314,0.1826,0.6200,0.3588,0.5700,0.3736,"all-MiniLM-L6-v2; random 70/30 prompt-split; seeds 0-4"
+qwen,hidden-state-probe,,,0.5681,0.0734,,,,,,,"best-layer MacroF1; leave-one-family-out CV; seeds 0-4"
+gemma,hidden-state-probe,,,0.5807,0.0935,,,,,,,"best-layer MacroF1; leave-one-family-out CV; seeds 0-4"
+llama,hidden-state-probe,,,0.5623,0.0940,,,,,,,"best-layer MacroF1; leave-one-family-out CV; seeds 0-4"

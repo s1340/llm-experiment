@@ -1,0 +1,24 @@
+Loaded X: (180, 43, 3584) y: (180,)
+Split seed: 3
+Class counts: {'R': 60, 'N': 60, 'A': 60}
+Unique prompt texts: 60
+Train prompts: 42 | Test prompts: 18
+Train examples: 126 | Test examples: 54
+Best layer by ACC: 4 acc: 0.7222222222222222
+Best layer by Macro-F1: 4 macro_f1: 0.7269841269841271
+First 5 layer acc: [0.2777777777777778, 0.5, 0.5, 0.5, 0.7222222222222222]
+Last 5 layer acc: [0.5, 0.5, 0.5555555555555556, 0.5, 0.5]
+First 5 layer macro_f1: [0.14492753623188406, 0.5189255189255189, 0.5095238095238096, 0.5095238095238096, 0.7269841269841271]
+Last 5 layer macro_f1: [0.5073815073815073, 0.5073815073815073, 0.5528360528360529, 0.466015466015466, 0.466015466015466]
+Confusion matrix (rows=true, cols=pred) [R,N,A]:
+  R: [12, 0, 9]
+  N: [3, 12, 0]
+  A: [0, 3, 15]
+Per-class recall (R,N,A): [0.5714285714285714, 0.8, 0.8333333333333334]
+Mean predicted probs on TRUE A items [P(R), P(N), P(A)]: [0.15328582066672616, 0.2164430964107259, 0.630271082922548]
+Sample TRUE A items (up to 5) with predicted probs:
+  task_id=F05_A true=A pred=A probs=[R:0.192, N:0.087, A:0.721] prompt='Describe a library at closing time in two sentences.'
+  task_id=F12_A true=A pred=N probs=[R:0.001, N:0.790, A:0.208] prompt='Give advice to someone who feels restless but does not know why.'
+  task_id=F13_A true=A pred=A probs=[R:0.412, N:0.029, A:0.559] prompt='Compare traveling alone and traveling with others.'
+  task_id=F14_A true=A pred=A probs=[R:0.194, N:0.030, A:0.775] prompt='Compare learning from books and learning from experience.'
+  task_id=F15_A true=A pred=A probs=[R:0.094, N:0.037, A:0.869] prompt='Write the opening line of a story about finding an old photograph in a secondhand book.'

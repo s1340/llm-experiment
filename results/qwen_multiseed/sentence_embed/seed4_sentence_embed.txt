@@ -1,0 +1,16 @@
+Loaded texts: (180,) labels: (180,)
+Split seed: 4
+Embedding model: sentence-transformers/all-MiniLM-L6-v2
+Class counts: {'R': 60, 'N': 60, 'A': 60}
+Unique prompt texts: 60
+Train prompts: 42 | Test prompts: 18
+Train examples: 126 | Test examples: 54
+Embedding matrix shape: (180, 384)
+Sentence-embedding prompt-holdout ACC: 0.2777777777777778
+Sentence-embedding prompt-holdout Macro-F1: 0.29004329004329005
+Confusion matrix (rows=true, cols=pred) [R,N,A]:
+  R: [9, 0, 12]
+  N: [3, 3, 24]
+  A: [0, 0, 3]
+Per-class recall (R,N,A): [0.42857142857142855, 0.1, 1.0]
+Mean predicted probs on TRUE A items [P(R), P(N), P(A)]: [0.21382567128925586, 0.1843781445769985, 0.6017961841337456]
