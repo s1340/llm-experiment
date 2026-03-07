@@ -224,4 +224,6 @@ python scripts/16_summarize_pairwise_multiseed.py results/pairwise_qwen/  qwen
 
 ## Citation / contact
 
-Manuscript in preparation. Contact: Mal (Berlin rig, RTX 5090).
+Manuscript in preparation.
+Author: s1340
+For questions or issues: [GitHub Issues](https://github.com/s1340/llm-experiment/issues)
