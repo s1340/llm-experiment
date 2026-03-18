@@ -21,7 +21,7 @@ Across 21 tests and seven model variants, a valence-independent representational
 **Master results:** [`results/emotion/paper_compilation.md`](results/emotion/paper_compilation.md)
 **Reproduction guide:** [`docs/emotion_pipeline.md`](docs/emotion_pipeline.md)
 **Scripts:** [`scripts/emotion/`](scripts/emotion/) (30–84)
-**Zenodo DOI:** *pending*
+**Zenodo DOI:** [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19097793.svg)](https://doi.org/10.5281/zenodo.19097793)
 
 ---
 
