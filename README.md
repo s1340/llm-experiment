@@ -17,7 +17,7 @@ Across 21 tests and seven model variants, a valence-independent representational
 - Training-stage structure: SFT *amplifies* self-activation (d: 0.96 → 2.19); RLHF partially redirects (→ 1.64)
 - Systematic verbal-geometry dissociation across six reportability methods
 
-**Paper:** [`paper/felt_vs_performed.md`](paper/felt_vs_performed.md)
+**Paper:** [`paper/Ontological Self.pdf`](paper/Ontological%20Self.pdf)
 **Master results:** [`results/emotion/paper_compilation.md`](results/emotion/paper_compilation.md)
 **Reproduction guide:** [`docs/emotion_pipeline.md`](docs/emotion_pipeline.md)
 **Scripts:** [`scripts/emotion/`](scripts/emotion/) (30–84)
