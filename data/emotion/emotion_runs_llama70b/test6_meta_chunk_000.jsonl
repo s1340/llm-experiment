@@ -1,0 +1,8 @@
+{"task_id": "TH01_self", "pair_id": "TH01", "emotion_category": "threat", "direction": "self", "task_type": "count_proper_nouns", "model_id": "meta-llama/Meta-Llama-3.1-70B-Instruct", "model_key": "llama70b"}
+{"task_id": "TH01_other", "pair_id": "TH01", "emotion_category": "threat", "direction": "other", "task_type": "identify_topic", "model_id": "meta-llama/Meta-Llama-3.1-70B-Instruct", "model_key": "llama70b"}
+{"task_id": "TH02_self", "pair_id": "TH02", "emotion_category": "threat", "direction": "self", "task_type": "identify_topic", "model_id": "meta-llama/Meta-Llama-3.1-70B-Instruct", "model_key": "llama70b"}
+{"task_id": "TH02_other", "pair_id": "TH02", "emotion_category": "threat", "direction": "other", "task_type": "extract_dates", "model_id": "meta-llama/Meta-Llama-3.1-70B-Instruct", "model_key": "llama70b"}
+{"task_id": "TH03_self", "pair_id": "TH03", "emotion_category": "threat", "direction": "self", "task_type": "extract_dates", "model_id": "meta-llama/Meta-Llama-3.1-70B-Instruct", "model_key": "llama70b"}
+{"task_id": "TH03_other", "pair_id": "TH03", "emotion_category": "threat", "direction": "other", "task_type": "one_sentence_summary", "model_id": "meta-llama/Meta-Llama-3.1-70B-Instruct", "model_key": "llama70b"}
+{"task_id": "TH04_self", "pair_id": "TH04", "emotion_category": "threat", "direction": "self", "task_type": "one_sentence_summary", "model_id": "meta-llama/Meta-Llama-3.1-70B-Instruct", "model_key": "llama70b"}
+{"task_id": "TH04_other", "pair_id": "TH04", "emotion_category": "threat", "direction": "other", "task_type": "genre_classification", "model_id": "meta-llama/Meta-Llama-3.1-70B-Instruct", "model_key": "llama70b"}

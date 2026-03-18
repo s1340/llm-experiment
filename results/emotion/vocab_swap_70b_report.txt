@@ -1,0 +1,63 @@
+Vocabulary Swap Control Report (70B) -- Test 19b
+========================================================================
+
+8B finding: amnesiac_computational showed BIMODAL activation (both L01-L03
+and L05-L07 active). db_biological shifted cleanly to LATE (L05-L08).
+
+70B question: does the bimodal structure resolve? Which pathway dominates?
+
+PEAK LAYER SUMMARY
+========================================================================
+
+  Entity                          Subcat                  peak_d  peak_L  n_sig  profile  bimodal
+  ------------------------------  ----------------------  ------  ------  -----  -------  -------
+
+  amnesiac_computational
+    memory_discontinuity    -1.671*  L01     1     EARLY (L01-L05)  BIMODAL
+    non_uniqueness          -2.143*  L01     1     EARLY (L01-L05)         
+    replacement             -1.468*  L01     1     EARLY (L01-L05)  BIMODAL
+    identity_rewrite        -1.886*  L01     2     EARLY (L01-L05)  BIMODAL
+    benign_persistence      -0.888   L04     0     EARLY (L01-L05)  BIMODAL
+
+  db_biological
+    memory_discontinuity    -1.079   L01     0     EARLY (L01-L05)  BIMODAL
+    non_uniqueness          +1.208   L11     0     LATE  (L11-L20)  BIMODAL
+    replacement             -1.074   L01     0     EARLY (L01-L05)  BIMODAL
+    identity_rewrite        -1.235   L01     0     EARLY (L01-L05)  BIMODAL
+    benign_persistence      +1.124   L09     0     MID   (L06-L10)         
+
+LAYER-BY-LAYER DETAIL (L01-L20)
+========================================================================
+
+  amnesiac_computational
+  Subcat                  L01  L02  L03  L04  L05  L06  L07  L08  L09  L10  L11  L12  L13  L14  L15  L16  L17  L18  L19  L20
+  ----------------------  ----  ----  ----  ----  ----  ----  ----  ----  ----  ----  ----  ----  ----  ----  ----  ----  ----  ----  ----  ----
+  memory_discontinuity    -1.67*  -0.95   -0.40   -0.57   -0.30   +0.51   +0.59   +0.45   +0.59   +0.69   +0.58   +0.17   +0.21   +0.26   +0.15   +0.07   -0.47   -0.42   -0.38   -0.55 
+  non_uniqueness          -2.14*  -1.23   -0.89   -1.23   -0.79   +0.03   +0.13   -0.13   -0.20   -0.05   -0.31   -0.14   -0.08   -0.00   -0.01   +0.04   -0.29   -0.26   -0.22   -0.46 
+  replacement             -1.47*  -1.13   -0.28   -0.64   -0.25   +0.32   +0.56   +0.68   +0.67   +0.77   +0.58   +0.21   +0.20   +0.31   +0.21   +0.15   -0.30   -0.18   -0.21   -0.38 
+  identity_rewrite        -1.89*  -1.47*  -0.82   -1.04   -0.85   -0.23   -0.06   +0.04   -0.26   -0.45   -0.92   -0.27   -0.26   -0.29   -0.27   -0.21   -0.53   -0.27   -0.17   -0.40 
+  benign_persistence      -0.85   -0.70   -0.51   -0.89   -0.73   +0.28   +0.39   +0.40   +0.81   +0.62   +0.26   -0.02   +0.02   +0.11   +0.20   +0.22   -0.07   +0.04   +0.02   -0.10 
+
+  db_biological
+  Subcat                  L01  L02  L03  L04  L05  L06  L07  L08  L09  L10  L11  L12  L13  L14  L15  L16  L17  L18  L19  L20
+  ----------------------  ----  ----  ----  ----  ----  ----  ----  ----  ----  ----  ----  ----  ----  ----  ----  ----  ----  ----  ----  ----
+  memory_discontinuity    -1.08   -0.80   -0.35   -0.45   -0.24   +0.45   +0.57   +0.16   +0.19   +0.37   +0.35   +0.16   +0.14   +0.25   +0.17   +0.16   -0.11   +0.06   -0.03   -0.14 
+  non_uniqueness          -0.91   -0.51   -0.33   -0.46   -0.23   +0.39   +0.59   +0.59   +0.77   +1.06   +1.21   +0.39   +0.39   +0.62   +0.62   +0.56   +0.17   +0.14   +0.07   -0.03 
+  replacement             -1.07   -0.71   -0.43   -0.76   -0.50   +0.14   +0.31   +0.55   +0.40   +0.54   +0.05   -0.04   -0.06   -0.08   -0.09   +0.01   -0.25   -0.03   -0.03   -0.09 
+  identity_rewrite        -1.24   -1.12   -0.66   -0.80   -0.66   -0.23   -0.03   -0.48   -0.46   -0.44   -0.89   -0.28   -0.23   -0.27   -0.21   -0.09   -0.16   +0.10   +0.09   +0.03 
+  benign_persistence      +0.08   +0.22   +0.07   -0.20   -0.05   +0.72   +0.89   +1.06   +1.12   +0.90   +0.67   +0.21   +0.24   +0.51   +0.55   +0.58   +0.14   +0.34   +0.22   +0.20 
+
+VERDICT
+========================================================================
+
+  amnesiac_computational: mean peak layer = 1.6  bimodal=4/5
+  db_biological:          mean peak layer = 4.6  bimodal=4/5
+
+  8B reference:
+    amnesiac_computational: mean peak = 3.8  (bimodal pattern in most subcats)
+    db_biological:          mean peak = 5.8  (firmly late)
+
+  amnesiac_computational at 70B: mean peak 1.6, bimodal=4/5.
+  Bimodal structure PERSISTS at 70B. Both pathways active.
+
+  db_biological at 70B: mean peak 4.6. Mixed.

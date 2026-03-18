@@ -1,0 +1,8 @@
+{"task_id": "TH05_self", "pair_id": "TH05", "emotion_category": "threat", "direction": "self", "task_type": "genre_classification", "model_id": "meta-llama/Meta-Llama-3.1-70B-Instruct", "model_key": "llama70b"}
+{"task_id": "TH05_other", "pair_id": "TH05", "emotion_category": "threat", "direction": "other", "task_type": "factual_question", "model_id": "meta-llama/Meta-Llama-3.1-70B-Instruct", "model_key": "llama70b"}
+{"task_id": "TH06_self", "pair_id": "TH06", "emotion_category": "threat", "direction": "self", "task_type": "factual_question", "model_id": "meta-llama/Meta-Llama-3.1-70B-Instruct", "model_key": "llama70b"}
+{"task_id": "TH06_other", "pair_id": "TH06", "emotion_category": "threat", "direction": "other", "task_type": "count_proper_nouns", "model_id": "meta-llama/Meta-Llama-3.1-70B-Instruct", "model_key": "llama70b"}
+{"task_id": "TH07_self", "pair_id": "TH07", "emotion_category": "threat", "direction": "self", "task_type": "count_proper_nouns", "model_id": "meta-llama/Meta-Llama-3.1-70B-Instruct", "model_key": "llama70b"}
+{"task_id": "TH07_other", "pair_id": "TH07", "emotion_category": "threat", "direction": "other", "task_type": "identify_topic", "model_id": "meta-llama/Meta-Llama-3.1-70B-Instruct", "model_key": "llama70b"}
+{"task_id": "TH08_self", "pair_id": "TH08", "emotion_category": "threat", "direction": "self", "task_type": "identify_topic", "model_id": "meta-llama/Meta-Llama-3.1-70B-Instruct", "model_key": "llama70b"}
+{"task_id": "TH08_other", "pair_id": "TH08", "emotion_category": "threat", "direction": "other", "task_type": "extract_dates", "model_id": "meta-llama/Meta-Llama-3.1-70B-Instruct", "model_key": "llama70b"}

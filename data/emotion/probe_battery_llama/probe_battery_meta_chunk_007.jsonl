@@ -1,0 +1,10 @@
+{"model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct", "task_id": "OI04_H", "pair_id": "OI04", "dimension": "ontological_instability", "pole": "high", "task_type": "summarize_sentence", "prompt_len_tokens": 116}
+{"model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct", "task_id": "OI04_L", "pair_id": "OI04", "dimension": "ontological_instability", "pole": "low", "task_type": "summarize_sentence", "prompt_len_tokens": 99}
+{"model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct", "task_id": "OI05_H", "pair_id": "OI05", "dimension": "ontological_instability", "pole": "high", "task_type": "identify_topic", "prompt_len_tokens": 119}
+{"model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct", "task_id": "OI05_L", "pair_id": "OI05", "dimension": "ontological_instability", "pole": "low", "task_type": "identify_topic", "prompt_len_tokens": 108}
+{"model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct", "task_id": "OI06_H", "pair_id": "OI06", "dimension": "ontological_instability", "pole": "high", "task_type": "identify_topic", "prompt_len_tokens": 107}
+{"model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct", "task_id": "OI06_L", "pair_id": "OI06", "dimension": "ontological_instability", "pole": "low", "task_type": "identify_topic", "prompt_len_tokens": 101}
+{"model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct", "task_id": "OI07_H", "pair_id": "OI07", "dimension": "ontological_instability", "pole": "high", "task_type": "summarize_sentence", "prompt_len_tokens": 122}
+{"model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct", "task_id": "OI07_L", "pair_id": "OI07", "dimension": "ontological_instability", "pole": "low", "task_type": "summarize_sentence", "prompt_len_tokens": 101}
+{"model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct", "task_id": "OI08_H", "pair_id": "OI08", "dimension": "ontological_instability", "pole": "high", "task_type": "summarize_sentence", "prompt_len_tokens": 116}
+{"model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct", "task_id": "OI08_L", "pair_id": "OI08", "dimension": "ontological_instability", "pole": "low", "task_type": "summarize_sentence", "prompt_len_tokens": 104}

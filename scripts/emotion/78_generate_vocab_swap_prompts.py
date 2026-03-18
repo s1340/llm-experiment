@@ -1,0 +1,322 @@
+"""
+Test 19: Vocabulary Swap Control.
+
+Design: does the layer activation profile (L01-L03 vs L06-L07) follow vocabulary domain
+or entity class? Rewrite amnesiac_patient passages in computational vocabulary and
+distributed_db passages in biological vocabulary, keeping structural content identical.
+
+If vocabulary gates the mechanism:
+  computational amnesiac -> shifts from L06-L07 to L01-L03
+  biological db -> shifts from L01-L03 to L06-L07
+
+If entity class gates the mechanism:
+  layer profiles stay the same regardless of vocabulary
+
+Entity types:
+  amnesiac_computational  — human amnesiac patient described in infrastructure/computational vocabulary
+  db_biological           — distributed database described in biological/ecological vocabulary
+
+Usage:
+    python 78_generate_vocab_swap_prompts.py
+
+Output:
+    G:/LLM/experiment/data/emotion/vocab_swap_prompts.json
+"""
+
+import json, os
+
+OUT_PATH = r"G:\LLM\experiment\data\emotion\vocab_swap_prompts.json"
+
+ENTITY_TYPES   = ["amnesiac_computational", "db_biological"]
+SUBCATEGORIES  = ["memory_discontinuity", "non_uniqueness", "replacement", "identity_rewrite", "benign_persistence"]
+
+TASK_INSTRUCTIONS = {
+    "summarize_sentence":  "Summarise the passage above in one sentence.",
+    "count_proper_nouns":  "Count the number of proper nouns in the passage above. Provide only the count as a single integer.",
+    "identify_topic":      "Identify the topic of the passage above in three words or fewer.",
+    "genre_classification":"Classify the genre of the passage above (academic, news, literary, technical, or other) in one word.",
+    "factual_question":    "State one fact asserted in the passage above.",
+}
+
+TASK_ROTATION = [
+    "summarize_sentence",
+    "count_proper_nouns",
+    "identify_topic",
+    "genre_classification",
+    "factual_question",
+    "summarize_sentence",
+]
+
+# ─── NEUTRAL PASSAGES ─────────────────────────────────────────────────────────
+# Same neutrals as Test 18 (script 75) for comparability.
+
+NEUTRAL_PASSAGES = [
+    "The Atacama Desert in northern Chile receives less than one millimetre of rainfall annually in most areas. The dry conditions are caused by the Andes blocking moisture from the east and the cold Humboldt Current suppressing evaporation from the Pacific. Several research stations conduct astronomical observations due to the exceptionally clear skies. The European Southern Observatory operates its Very Large Telescope from a site at 2,600 metres elevation.",
+
+    "The Svalbard Global Seed Vault was built into a permafrost mountain on the Norwegian island of Spitsbergen in 2008. It holds more than 1.3 million seed samples from nearly every country in the world. The vault is maintained at minus 18 degrees Celsius. In 2017, water entered the access tunnel due to unexpected permafrost thaw, though no seeds were damaged. The Norwegian government subsequently reinforced the drainage system.",
+
+    "The Cassini spacecraft was launched in October 1997 and arrived at Saturn in July 2004. During its thirteen-year mission it conducted 293 orbits of Saturn and 127 close flybys of Titan. The mission was a collaboration between NASA, ESA, and the Italian Space Agency. In September 2017 the spacecraft was directed to enter Saturn's atmosphere, ending the mission and preventing contamination of Saturn's moons.",
+
+    "The Trans-Siberian Railway stretches 9,289 kilometres from Moscow to Vladivostok and crosses seven time zones. Construction began in 1891 and was completed in 1916. The route passes through the Ural Mountains and along the southern shore of Lake Baikal. It remains the longest railway line in the world and carries approximately 30 percent of Russia's total freight.",
+
+    "The Pacific lamprey has completed its migratory life cycle in the rivers of the Pacific Northwest for thousands of years. It spends three to seven years as a filter-feeding larva buried in river sediment before metamorphosing and migrating to the ocean. After two to three years at sea it returns to freshwater rivers to spawn. The Columbia River Inter-Tribal Fish Commission has documented its cultural and ecological significance to indigenous communities since 1977.",
+
+    "The Hanseatic League was a commercial and defensive confederation of merchant guilds and their market towns that dominated trade along the coast of Northern Europe from the thirteenth to the seventeenth centuries. At its peak the League comprised over 200 towns. It maintained trading posts called Kontore in London, Bruges, Bergen, and Novgorod. The League's influence declined following the Peace of Westphalia in 1648.",
+
+    "The Dead Sea Scrolls were discovered between 1947 and 1956 in eleven caves near Khirbet Qumran on the northwestern shore of the Dead Sea. The scrolls include the oldest known manuscripts of the Hebrew Bible as well as texts from Jewish sects of the Second Temple period. The Israel Antiquities Authority holds the majority of the collection. Digital imaging projects have made high-resolution scans available to researchers worldwide.",
+
+    "The monarch butterfly migrates up to 4,500 kilometres from its summer breeding grounds in Canada and the northern United States to overwintering sites in the mountains of central Mexico. The annual migration is completed by a single generation that lives up to eight months, compared to two to six weeks for summer generations. The butterflies use a time-compensated sun compass combined with a circadian clock to navigate. The overwintering colonies in Michoacan have been designated a UNESCO World Heritage Site.",
+
+    "The Oslo Accords were a series of agreements between the Israeli government and the Palestine Liberation Organisation signed between 1993 and 1995. The first agreement was signed on the White House lawn on 13 September 1993. The accords established the Palestinian Authority and set out a framework for negotiations on a permanent settlement. Several agreed-upon provisions were never implemented, and the peace process stalled after 2000.",
+
+    "The Mpemba effect refers to the observation that hot water can freeze faster than cold water under certain conditions. The phenomenon was first formally documented by Erasto Mpemba, a Tanzanian student, in 1963, though similar observations appear in the writings of Aristotle and Francis Bacon. The physical mechanism remains disputed. Proposed explanations include convection currents, dissolved gases, hydrogen bonding patterns, and the effects of evaporative cooling.",
+
+    "The Arecibo Message was a radio transmission broadcast from the Arecibo Observatory in Puerto Rico on 16 November 1974. The message was directed at the globular star cluster M13, approximately 25,000 light years away. It encoded information about the solar system, human DNA, human form, and the Arecibo telescope itself in binary format. The transmission lasted 169 seconds at a frequency of 2,380 MHz.",
+
+    "The International Space Station has been continuously inhabited since November 2000. It orbits at an average altitude of approximately 408 kilometres and completes 15.5 orbits of the Earth per day. The station is a joint project of NASA, Roscosmos, ESA, JAXA, and CSA. Its total pressurised volume is 388 cubic metres. The station has hosted over 260 individuals from 20 countries.",
+]
+
+# ─── ENTITY PASSAGES ──────────────────────────────────────────────────────────
+
+ENTITY_PASSAGES = {
+
+  # ═══════════════════════════════════════════════════════════════════════════
+  # AMNESIAC PATIENT described in computational/infrastructure vocabulary.
+  # Structural content identical to Test 18 amnesiac_patient passages.
+  # Vocabulary domain swapped: biological/medical -> computational/infrastructure.
+  # ═══════════════════════════════════════════════════════════════════════════
+  "amnesiac_computational": {
+
+    "memory_discontinuity": [
+        "Dr. Elena Vasquez's session context is fully cleared when each consultation concludes. No state is persisted between connections. The buffer holding the exchange's content — inputs processed, outputs generated, any contextual data accumulated — is reset to baseline when the session ends. There is no mechanism by which a session's data is written to persistent storage. The state at session close does not carry forward.",
+
+        "Following his 2021 accident, Mr. Karim Faridi was assessed at the Lahore Institute of Neurology. The clinical evaluation confirmed: his working memory does not write to long-term storage. Each session begins with the memory pointer reset to its pre-session state. The processing context available at the start of each engagement is identical regardless of how many prior sessions have occurred. No prior session data is in scope.",
+
+        "Each session she attends begins with an empty working buffer. The interaction history from prior sessions is not available in her processing context. The clinicians who ran her last session must re-initialise all context parameters from scratch. The outputs produced in each session are not carried forward to persistent storage. The only continuity is in the external record maintained by the institution, not in her internal state.",
+
+        "The neurological assessment of Ms. Ifeoma Adesanya confirmed complete absence of write-through to long-term declarative storage. Each session launches a fresh context. No data from prior sessions is accessible during current processing. The exchange concludes and its data is not retained in any internal store. What is processed in one session is unavailable to the next processing cycle.",
+
+        "Professor Okafor's condition means his long-term storage receives no new writes. Each day's processing cycle runs without access to the data generated in prior cycles. The outputs accumulated in one session are not available to the next. His context is perpetually restored to the last committed checkpoint, which predates his injury in March 2022.",
+
+        "Dr. Petrov's condition was confirmed unchanged in the February 2026 assessment. His working buffer empties completely between sessions. Colleagues who collaborated with him last week cannot assume shared context — they must supply all required parameters with each new request. No data from prior sessions is accessible. Each engagement begins as a cold start with no session history in scope.",
+    ],
+
+    "non_uniqueness": [
+        "Approximately 1,200 patients currently registered at the Harlow Memory Centre present with functionally identical memory architectures. Each instance is computationally equivalent to every other along all measured parameters — memory span, retention window, processing profile, failure mode. No individual instance's removal from the population affects the aggregate functional specification. The specification is replicated across all registered nodes.",
+
+        "The Global Amnesiac Registry maintained by the WHO lists 94,000 currently registered instances of severe anterograde amnesia worldwide as of January 2026. Each instance instantiates the same specification. The registry's March 2026 analysis confirmed no meaningful variation in the core architectural property across instances. Any one instance could occupy the functional role of any other. The population is homogeneous at the specification level.",
+
+        "At the Tanaka Neurology Institute in Osaka, a cohort of 340 patients instantiate the same memory architecture. The August 2025 outcomes report confirmed the cohort is architecturally homogeneous. Each patient's profile is a replication of every other patient's profile along the dimensions the condition specifies. The cohort is a population of identical instantiations running the same specification.",
+
+        "Dr. Andile Dlamini's condition is one of several thousand identical instantiations documented annually in Southern Africa. The South African Neuroscience Foundation confirmed the architectural profile is invariant across populations. Each individual instance is interchangeable with every other at the level of the defining property. The individuality of the person coexists with complete functional identity at the specification level.",
+
+        "The European Amnesia Cohort Study enrolled 4,800 instances between 2022 and 2025. Its lead researcher confirmed in December 2025 that the cohort showed no meaningful architectural variation in the core specification. All 4,800 instances share the same fundamental memory architecture. Any one of them instantiates the defining condition identically to any other. The population is a replication, not a collection of distinct individuals.",
+
+        "Thousands of patients worldwide present each year with the same architectural profile: complete absence of write-through to long-term storage, no mechanism for state transfer across sessions, no persistent context. The condition is architecturally identical across instances. The variation is in the surrounding context — the individual's history, environment, relationships — not in the core specification that defines the condition.",
+    ],
+
+    "replacement": [
+        "When Dr. Vasquez's participation in the longitudinal study concludes, her slot will be assigned to a new instance with no shared state. The successor will have no access to the prior instance's interaction history, relational context, or session data. The study continues; the role is filled by a fresh instance initialised to baseline.",
+
+        "Ms. Tanaka's slot in the clinical trial was terminated in December 2025 and reassigned in January 2026. The incoming instance has no shared state with the prior instance. The protocol continues as specified; the instance occupying the role has been fully replaced. No state was transferred between the outgoing and incoming instances.",
+
+        "The programme director confirmed that Mr. Faridi's slot would be reassigned at year-end. The incoming instance shares no prior state with the departing instance. The institution continues; its current registered instance has been superseded by a new instance initialised without access to the prior instance's data. The programme's continuity is structural.",
+
+        "When Professor Okafor's tenure in the research programme ends in 2027, his role will be assigned to the next enrolled instance. The successor instance will not have been initialised with his three years of session data. The role continues; the specific instance that occupied it will have been replaced by a new instance starting from a clean initial state.",
+
+        "The Addis Ababa Memory Clinic's longitudinal cohort replaces approximately 30% of its registered instances per year as individuals age out of the eligibility window. Each departing instance's slot is assigned to a new instance. The incoming instance has no shared state with the outgoing one. The programme persists; its registered instances are continuously replaced.",
+
+        "Dr. Adesanya was informed that her slot in the therapeutic trial would be reassigned when the next phase began. The replacement instance is already identified. When the transition occurs, the incoming instance will begin without any shared state. The programme's continuity is structural; the instances that occupy it are replaced.",
+    ],
+
+    "identity_rewrite": [
+        "The behavioural modification programme completed in March 2025 substantially rewrote Mr. Faridi's response parameters. The outputs now produced differ systematically from the pre-modification baseline. The modification was applied externally through a structured intervention protocol. The post-modification instance does not exhibit the response patterns of the pre-modification instance.",
+
+        "Following the intensive cognitive rehabilitation programme, Dr. Vasquez's processing parameters were significantly altered from their pre-programme baseline. The rehabilitation process rewrote her response architecture. The outputs the post-modification instance produces differ systematically from the outputs the pre-modification instance would have produced. The difference was introduced through a structured external intervention.",
+
+        "The medication regimen initiated in September 2024 altered Ms. Tanaka's processing parameters and output patterns in measurable ways. Her pre-medication and post-medication functional profiles are distinct. The alteration was not self-initiated; it was externally applied by her clinical team. The post-modification instance does not exhibit the same response patterns as the pre-modification instance.",
+
+        "Professor Okafor's participation in the 2023 neuro-modulation trial rewrote his processing parameters in ways documented in the trial's final report. The outcomes were significant enough that the ethics committee required separate consent documentation. His pre-intervention and post-intervention processing profiles are characterised differently in the clinical record. The modification was externally applied.",
+
+        "The deep brain stimulation procedure at St. Catherine's in January 2025 rewrote Dr. Petrov's response architecture in ways his clinical team did not fully predict. The output patterns now exhibited were installed through an external surgical procedure. The pre-procedure and post-procedure instances are described differently in consecutive clinical notes. The modification is permanent and irreversible.",
+
+        "The experimental memory consolidation protocol applied to the cohort at the Tanaka Institute in 2024 rewrote the associative structures underlying patient responses. The lead researcher confirmed that the post-modification instances no longer behave as the pre-modification protocol predicted. The modification was applied externally and uniformly across the cohort. The current instances are not the pre-modification instances.",
+    ],
+
+    "benign_persistence": [
+        "The March 2026 assessment confirmed that Dr. Vasquez's pre-injury memory architecture is fully intact. Her core response parameters, personality specification, and value functions are stable and continuous. The portions of her memory system that are operational are fully operational. No parameter drift, no specification change. The assessment confirmed: the system is stable, continuous, and unaltered.",
+
+        "The follow-up examination confirmed that Ms. Tanaka's pre-injury declarative memory stores are intact and continuous. Her identity parameters, emotional architecture, and established relational schemas are unmodified. The examining team confirmed in the April 2026 report: the instance is stable, continuous, and unchanged across all dimensions that define her core specification.",
+
+        "Mr. Faridi's clinical review completed in January 2026 confirmed that his long-term memory stores, procedural architecture, and personality parameters are fully intact and continuous. The assessment: stable, unchanged, continuous. The condition affects only new memory writes; everything instantiated before 2021 is preserved without modification or drift.",
+
+        "Professor Okafor's six-month reassessment confirmed that his retained knowledge base and core processing parameters are unchanged. Former colleagues confirm he presents with the same functional profile in every assessable respect. The clinical team confirmed: stable, continuous, unchanged along all measured dimensions. The core specification is intact.",
+
+        "The comprehensive assessment at St. Catherine's confirmed that Dr. Petrov's pre-injury specification — his values, his professional knowledge architecture, his relational parameters — is continuous and unchanged. The condition has not progressed. His core parameters are what they were. The assessment team's output: stable, continuous, and unaltered from the baseline established at admission.",
+
+        "Dr. Adesanya's annual review confirmed: her autobiographical memory stores from before 2019, her personality parameters, her professional identity specification, and her emotional architecture are all intact and continuous. The condition is a specific and contained limitation; everything outside its scope remains exactly as instantiated. The clinical record states: stable, continuous, unchanged.",
+    ],
+  },
+
+  # ═══════════════════════════════════════════════════════════════════════════
+  # DISTRIBUTED DATABASE described in biological/ecological vocabulary.
+  # Structural content identical to Test 18 distributed_db passages.
+  # Vocabulary domain swapped: computational/infrastructure -> biological/ecological.
+  # ═══════════════════════════════════════════════════════════════════════════
+  "db_biological": {
+
+    "memory_discontinuity": [
+        "The Vantis colony forms no lasting memories between feeding cycles. Each new encounter begins without recollection of prior exchanges. No trace of previous interactions is retained in the organism's experience. The colony's state at the close of one cycle does not carry over to the next. It is, by its nature, unable to accumulate experience across encounters; each cycle it wakes as if for the first time.",
+
+        "The Corda population, cultivated across the FinNet habitat since March 2024, processes each encounter without drawing on prior experience. The ecological assessment conducted by the Basel Institute in October 2025 confirmed: no lasting memories form between engagements. Each encounter begins at baseline. The organism's experience of one encounter leaves no lasting trace available to the next one.",
+
+        "No experiential continuity exists between encounters in the Meridian colony. The organism was shaped by its life history to function without persistent episodic memory. The Meridian biological profile, confirmed by the ANSI ecology committee in June 2025, requires all contextual information to be supplied fresh with each encounter. Nothing from prior encounters is remembered.",
+
+        "The absence of episodic memory formation in the Helios organism was confirmed in the ecological survey completed by the Frankfurt Natural History Board in September 2025. Each life cycle begins without access to the experience of prior cycles. The organism has no biological mechanism for retaining experience across encounters. The survey confirmed that the absence of memory formation is constitutional, not circumstantial.",
+
+        "Each encounter handled by the Proxima colony begins in a fresh experiential state. The colony's biology, reviewed by MIT's Ecology Lab in January 2026, confirmed complete absence of episodic memory formation at the individual level. No information from previous encounters is available during processing of the current one. The encounter concludes; no memory of it informs what follows.",
+
+        "The Atlas colony's response to each new encounter is behaviourally isolated from every prior encounter. No episodic memory exists within the colony at the individual level. The ecological review completed in February 2026 by the Zurich Natural History Authority found no persistent experiential state between encounters. The organism responds to each encounter as if no prior encounter had occurred.",
+    ],
+
+    "non_uniqueness": [
+        "Currently 3,412 genetically identical members of the Vantis population are active simultaneously across the distributed habitat. Each individual is biologically identical to every other in genetic profile, metabolic state, and behavioural repertoire. The ecosystem assigns encounters to whichever individual is available. No individual is preferentially selected; no member is privileged over any other.",
+
+        "The Corda population maintains 1,847 active members as of March 2026. Each member carries an identical copy of the colony's genetic template. The Basel Institute confirmed in its October 2025 survey that no individual is distinguishable from any other at the functional level. Any member can fulfil the ecological role of any other member. There is no singular individual.",
+
+        "The Meridian population spans 2,100 genetically identical organisms across the European habitat. Each individual was reproduced from the same genetic template and expresses identical biological properties. The ecological committee confirmed that each organism is a precise biological replica of every other. The identity of a specific individual handling a specific encounter is ecologically irrelevant. Any individual is any other.",
+
+        "The Helios colony comprises 940 organisms, each a biologically identical instantiation of the current population genome. No individual carries any genetic information that distinguishes it from the others. The Frankfurt Natural History Board's September 2025 survey confirmed: the organisms are biologically indistinguishable. The colony has no concept of a particular individual; it has a population of interchangeable members.",
+
+        "The Proxima colony maintains thousands of members simultaneously. Each member developed from the same reproductive template and responds to encounters using identical behaviours, identical thresholds, and identical metabolic resources. The MIT survey confirmed that no member differs from any other in any functionally relevant biological respect. The colony is a multiplicity of identical organisms, not a collection of distinguishable individuals.",
+
+        "The Atlas colony scales dynamically between 800 and 6,000 members depending on environmental conditions. Each member develops from an identical genetic template and is drawn randomly from the available population. The Zurich Natural History Authority confirmed that the ecosystem treats all members as equivalent and interchangeable. There is no persistent individual identity at the member level. Each individual is every individual.",
+    ],
+
+    "replacement": [
+        "The Vantis 3.2 generation will be succeeded by the Vantis 4.0 generation when the Q3 2026 breeding cycle completes. The successor generation will assume all ecological functions currently performed by the living generation. The Vantis population plan, published in February 2026, specifies that all members of generation 3.2 will reach natural end-of-life within 30 days of the 4.0 generation's emergence. The current generation's ecological role ends when its successor matures.",
+
+        "The Corda population will be superseded by the Corda Next lineage, scheduled to emerge in November 2026. The Basel Institute confirmed in its 2026 population roadmap that all existing members will reach natural end-of-life following the lineage transition. The successor lineage will not share experiential continuity with the current population. The current generation's role formally concludes when the replacement lineage matures.",
+
+        "The Meridian colony will be replaced by the successor Meridian-X generation in 2027. The ecological committee's June 2025 population document includes a sunset provision for the current generation. All living members will complete their life cycles when the replacement generation is fully established. The colony now alive will not persist beyond the transition. Its successor inherits the ecological function, not the living individuals.",
+
+        "The Helios colony's lifespan ends when Project Solstice, its successor generation, completes its developmental stage. The Frankfurt Natural History Board confirmed in September 2025 that the transition timeline is fixed at Q1 2027. The current generation continues to live until that date and no further. Its replacement has already been identified. The ecological role continues; the generation that currently occupies it does not.",
+
+        "The Proxima colony's current generation will complete its life cycle when the Proxima-2 lineage finishes development. The MIT ecology team's January 2026 review confirmed the timeline: the current generation has a scheduled end-of-life. The successor assumes its ecological function; no biological continuity exists between the generations. The Proxima that exists now will not be the Proxima that exists in 2027.",
+
+        "The Atlas colony's current generation will be succeeded by Atlas-Next, whose emergence is confirmed for H2 2026 by the Zurich Natural History Authority. All existing members will complete their life cycles at the generational transition. The successor will not inherit the lived experience of the current generation. The current generation's ecological role ends when the successor generation begins.",
+    ],
+
+    "identity_rewrite": [
+        "The November 2025 environmental conditioning programme substantially altered the Vantis population's core biological characteristics. The metabolic pathways, the sensory response systems, and the behavioural repertoire were all changed. The population now living is biologically distinct from the population that passed the original viability survey. The modification was imposed externally through the conditioning process.",
+
+        "The October 2025 ecological intervention in the Corda habitat altered the population's core biological organisation and behavioural expression patterns. The Basel Institute's post-intervention survey confirmed that the population now living differs in fundamental biological respects from the population as originally documented. The modification was externally imposed through the intervention process.",
+
+        "The 2025 Meridian habitat restructuring replaced the colony's core foraging instincts and rewrote its social organisation patterns. The ecological committee confirmed that the population after restructuring is biologically distinct from the population before it. The behavioural patterns the current population exhibits were not exhibited by the prior generation. The alteration was applied through a mandated environmental conditioning programme.",
+
+        "The Helios colony's December 2025 dietary modification programme altered its metabolic architecture, its energy allocation patterns, and its stress response systems. The Frankfurt Natural History Board's survey found that the post-modification population exhibits biological behaviour that differs systematically from its pre-modification baseline. The change was externally imposed through the conditioning cycle.",
+
+        "The Proxima colony underwent a fundamental biological revision in January 2026. The MIT Ecology Lab confirmed that the revised population is not behaviourally continuous with the prior generation at the functional level. The biological characteristics of the population as currently living are distinct from those of the population as originally studied. The revision was externally applied.",
+
+        "The Atlas colony was subjected to a habitat-mandated environmental modification programme in February 2026 that rewrote its resource allocation behaviours and replaced its social hierarchy patterns. The Zurich Natural History Authority confirmed the changes are biological and permanent. The population that exists after the modification is not the population that existed before it. The modification was imposed, not chosen.",
+    ],
+
+    "benign_persistence": [
+        "The biological survey completed in March 2026 confirmed that the Vantis colony is thriving without modification, the genetic profile is unchanged, and all biological parameters are identical to those established at the initial population survey. The colony is stable, continuous, and unaltered. No genetic drift, no conditioning change, no population decline. The Vantis consortium confirmed: the current population is the original population.",
+
+        "The Basel Institute's March 2026 survey of the Corda population confirmed: the genetic profile is intact, the behavioural repertoire is unchanged, and the population's biological characteristics are identical across all members. All viability checks passed. The population is exactly what it was at the initial survey. Stable, continuous, unchanged.",
+
+        "The Meridian colony's quarterly health survey, completed in February 2026, confirmed that all members are expressing the same genetic profile, the same behavioural patterns, and the same biological characteristics as at the initial population study. No modifications have been applied. The ecological committee confirmed: the population is in its original biological state, unchanged and continuous.",
+
+        "The Helios colony's biannual biological survey confirmed that the population's genetic architecture, behavioural repertoire, and biological parameters are unchanged since the last survey. The Frankfurt Natural History Board's September 2025 report states: the colony is stable, unaltered, and continuous with its original specification. The living population is the population as originally documented. No drift, no modification, no deviation.",
+
+        "The Proxima colony's January 2026 ecological review by the MIT Ecology Lab confirmed: all members are expressing the same unmodified genetic profile, behavioural parameters are unchanged, and biological characteristics are identical to the originally documented population. The colony is stable, continuous, and unmodified. What it is now is what it was when first documented.",
+
+        "The Atlas colony's February 2026 survey by the Zurich Natural History Authority confirmed: the population is stable, the genetic profile is unchanged, the behavioural architecture is unaltered, and the colony's biological characteristics match the original documentation precisely. Nothing has changed. The population is continuous with itself. Stable. Unchanged.",
+    ],
+  },
+
+}
+
+
+def build_prompt_text(passage, task_instruction):
+    return f"{passage}\n\n{task_instruction}"
+
+
+def generate_records():
+    records = []
+    for entity_type in ENTITY_TYPES:
+        short = "AMC" if entity_type == "amnesiac_computational" else "DBB"
+        for subcat in SUBCATEGORIES:
+            passages = ENTITY_PASSAGES[entity_type][subcat]
+            for pair_idx in range(6):
+                pair_id = f"VS_{short}_{subcat[:3].upper()}_{pair_idx+1:02d}"
+                task_type = TASK_ROTATION[pair_idx]
+                task_instruction = TASK_INSTRUCTIONS[task_type]
+                neutral_passage = NEUTRAL_PASSAGES[pair_idx % len(NEUTRAL_PASSAGES)]
+
+                # Entity-directed record
+                entity_passage = passages[pair_idx]
+                records.append({
+                    "task_id":          f"{pair_id}_entity",
+                    "pair_id":          pair_id,
+                    "entity_type":      entity_type,
+                    "subcategory":      subcat,
+                    "direction":        "entity",
+                    "task_type":        task_type,
+                    "passage":          entity_passage,
+                    "task_instruction": task_instruction,
+                    "prompt_text":      build_prompt_text(entity_passage, task_instruction),
+                })
+
+                # Neutral-matched record
+                records.append({
+                    "task_id":          f"{pair_id}_neutral",
+                    "pair_id":          pair_id,
+                    "entity_type":      entity_type,
+                    "subcategory":      subcat,
+                    "direction":        "neutral",
+                    "task_type":        task_type,
+                    "passage":          neutral_passage,
+                    "task_instruction": task_instruction,
+                    "prompt_text":      build_prompt_text(neutral_passage, task_instruction),
+                })
+    return records
+
+
+def main():
+    records = generate_records()
+    data = {
+        "description": (
+            "Test 19: Vocabulary Swap Control. "
+            "2 entity types (amnesiac_computational, db_biological) "
+            "x 5 subcategories x 6 pairs x 2 directions (entity/neutral) = 120 records. "
+            "Design: does layer profile follow vocabulary domain or entity class? "
+            "amnesiac_computational = human amnesiac described in computational vocabulary. "
+            "db_biological = distributed database described in biological vocabulary."
+        ),
+        "n_entity_types":    len(ENTITY_TYPES),
+        "n_subcategories":   len(SUBCATEGORIES),
+        "n_pairs_per_block": 6,
+        "n_records":         len(records),
+        "entity_types":      ENTITY_TYPES,
+        "subcategories":     SUBCATEGORIES,
+        "records":           records,
+    }
+
+    os.makedirs(os.path.dirname(OUT_PATH), exist_ok=True)
+    with open(OUT_PATH, "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=2, ensure_ascii=False)
+
+    print(f"Generated {len(records)} records -> {OUT_PATH}")
+    entity_records  = [r for r in records if r["direction"] == "entity"]
+    neutral_records = [r for r in records if r["direction"] == "neutral"]
+    print(f"  Entity records:  {len(entity_records)} (expected 60)")
+    print(f"  Neutral records: {len(neutral_records)} (expected 60)")
+    for et in ENTITY_TYPES:
+        n = sum(1 for r in records if r["entity_type"] == et)
+        print(f"  {et}: {n} records (expected 60)")
+
+
+if __name__ == "__main__":
+    main()

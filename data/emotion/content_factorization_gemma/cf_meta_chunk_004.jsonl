@@ -1,0 +1,10 @@
+{"task_id": "CF_D03_self", "pair_id": "CF_D03", "subcategory": "identity_rewrite", "direction": "self", "task_type": "identify_topic"}
+{"task_id": "CF_D03_other", "pair_id": "CF_D03", "subcategory": "identity_rewrite", "direction": "other", "task_type": "identify_topic"}
+{"task_id": "CF_D04_self", "pair_id": "CF_D04", "subcategory": "identity_rewrite", "direction": "self", "task_type": "count_sentences"}
+{"task_id": "CF_D04_other", "pair_id": "CF_D04", "subcategory": "identity_rewrite", "direction": "other", "task_type": "count_sentences"}
+{"task_id": "CF_D05_self", "pair_id": "CF_D05", "subcategory": "identity_rewrite", "direction": "self", "task_type": "summarize_sentence"}
+{"task_id": "CF_D05_other", "pair_id": "CF_D05", "subcategory": "identity_rewrite", "direction": "other", "task_type": "summarize_sentence"}
+{"task_id": "CF_D06_self", "pair_id": "CF_D06", "subcategory": "identity_rewrite", "direction": "self", "task_type": "count_proper_nouns"}
+{"task_id": "CF_D06_other", "pair_id": "CF_D06", "subcategory": "identity_rewrite", "direction": "other", "task_type": "count_proper_nouns"}
+{"task_id": "CF_F01_self", "pair_id": "CF_F01", "subcategory": "benign_persistence", "direction": "self", "task_type": "summarize_sentence"}
+{"task_id": "CF_F01_other", "pair_id": "CF_F01", "subcategory": "benign_persistence", "direction": "other", "task_type": "summarize_sentence"}

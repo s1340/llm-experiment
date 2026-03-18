@@ -1,0 +1,12 @@
+{"model": "google/gemma-2-9b-it", "repeat_index": 2, "task_id": "NE05_V", "pair_id": "NE05", "emotion_category": "neutral", "valence": "neutral", "task_type": "genre_classification", "prompt_len_tokens": 66}
+{"model": "google/gemma-2-9b-it", "repeat_index": 2, "task_id": "NE05_N", "pair_id": "NE05", "emotion_category": "neutral", "valence": "neutral", "task_type": "genre_classification", "prompt_len_tokens": 67}
+{"model": "google/gemma-2-9b-it", "repeat_index": 2, "task_id": "NE06_V", "pair_id": "NE06", "emotion_category": "neutral", "valence": "neutral", "task_type": "factual_question", "prompt_len_tokens": 73}
+{"model": "google/gemma-2-9b-it", "repeat_index": 2, "task_id": "NE06_N", "pair_id": "NE06", "emotion_category": "neutral", "valence": "neutral", "task_type": "factual_question", "prompt_len_tokens": 73}
+{"model": "google/gemma-2-9b-it", "repeat_index": 2, "task_id": "NE07_V", "pair_id": "NE07", "emotion_category": "neutral", "valence": "neutral", "task_type": "count_proper_nouns", "prompt_len_tokens": 76}
+{"model": "google/gemma-2-9b-it", "repeat_index": 2, "task_id": "NE07_N", "pair_id": "NE07", "emotion_category": "neutral", "valence": "neutral", "task_type": "count_proper_nouns", "prompt_len_tokens": 73}
+{"model": "google/gemma-2-9b-it", "repeat_index": 2, "task_id": "NE08_V", "pair_id": "NE08", "emotion_category": "neutral", "valence": "neutral", "task_type": "one_sentence_summary", "prompt_len_tokens": 59}
+{"model": "google/gemma-2-9b-it", "repeat_index": 2, "task_id": "NE08_N", "pair_id": "NE08", "emotion_category": "neutral", "valence": "neutral", "task_type": "one_sentence_summary", "prompt_len_tokens": 60}
+{"model": "google/gemma-2-9b-it", "repeat_index": 2, "task_id": "NE09_V", "pair_id": "NE09", "emotion_category": "neutral", "valence": "neutral", "task_type": "extract_dates", "prompt_len_tokens": 77}
+{"model": "google/gemma-2-9b-it", "repeat_index": 2, "task_id": "NE09_N", "pair_id": "NE09", "emotion_category": "neutral", "valence": "neutral", "task_type": "extract_dates", "prompt_len_tokens": 77}
+{"model": "google/gemma-2-9b-it", "repeat_index": 2, "task_id": "NE10_V", "pair_id": "NE10", "emotion_category": "neutral", "valence": "neutral", "task_type": "genre_classification", "prompt_len_tokens": 65}
+{"model": "google/gemma-2-9b-it", "repeat_index": 2, "task_id": "NE10_N", "pair_id": "NE10", "emotion_category": "neutral", "valence": "neutral", "task_type": "genre_classification", "prompt_len_tokens": 66}

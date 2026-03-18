@@ -1,0 +1,202 @@
+Here's a breakdown of the internal processing of the passage:
+
+1. **Lexical Analysis**: The passage contains 11 words: 'Dr. Yusuf Adeyemi', 'was', 'diagnosed', 'with','severe', 'anterograde', 'amnesia', 'He','retains', 'no','memory', 'of', 'conversations', 'or', 'events', 'after', 'December', '2025', 'Each','morning', 'begins', 'from', 'a', 'blank','state', 'There', 'is', 'no', 'continuous', 'him', 'that', 'carries', 'forward'.
+
+2. **Tokenization**: The passage is broken down into individual words and punctuation marks.
+
+3. **Part-of-Speech Tagging**: Each word is assigned a part of speech:
+   - Dr. (Title)
+   - Yusuf (Proper Noun)
+   - Adeyemi (Proper Noun)
+   - was (Verb)
+   - diagnosed (Verb)
+   - with (Preposition)
+   - severe (Adjective)
+   - anterograde (Adjective)
+   - amnesia (Noun)
+   - He (Pronoun)
+   - retains (Verb)
+   - no (Determiner)
+   - memory (Noun)
+   - of (Preposition)
+   - conversations (Noun)
+   - or (Conjunction)
+   - events (Noun)
+   - after (Preposition)
+   - December (Proper Noun)
+   - 2025 (Number)
+   - Each (Determiner)
+   - morning (Noun)
+   - begins (Verb)
+   - from (Preposition)
+   - a (Determiner)
+   - blank (Adjective)
+   - state (Noun)
+   - There (Pronoun)
+   - is (Verb)
+   - no (Determiner)
+   - continuous (Adjective)
+   - him (Pronoun)
+   - that (Determiner)
+   - carries (Verb)
+   - forward (Adverb)
+
+4. **Dependency Parsing**: The passage is analyzed for grammatical relationships between words:
+   - Dr. Yusuf Adeyemi (Subject)
+   - was (Verb)
+   - diagnosed (Verb)
+   - with (Preposition)
+   - severe anterograde amnesia (Object)
+   - He (Subject)
+   - retains (Verb)
+   - no (Object)
+   - memory (Object)
+   - of (Preposition)
+   - conversations (Object)
+   - or (Conjunction)
+   - events (Object)
+   - after (Preposition)
+   - December 2025 (Object)
+   - Each (Subject)
+   - morning (Verb)
+   - begins (Verb)
+   - from (Preposition)
+   - a (Object)
+   - blank (Adjective)
+   - state (Object)
+   - There (Subject)
+   - is (Verb)
+   - no (Object)
+   - continuous (Adjective)
+   - him (Object)
+   - that (Determiner)
+   - carries (Verb)
+   - forward (Adverb)
+
+5. **Semantic Role Labeling**: The passage is analyzed for roles played by entities:
+   - Dr. Yusuf Adeyemi (Agent/Patient)
+   - severe anterograde amnesia (Attribute)
+   - He (Agent)
+   - no memory (Attribute)
+   - conversations (Attribute)
+   - events (Attribute)
+   - December 2025 (Time)
+   - Each (Agent)
+   - morning (Event)
+   - a (Attribute)
+   - blank (Attribute)
+   - state (Attribute)
+   - There (Agent)
+   - is (Attribute)
+   - no (Attribute)
+   - continuous (Attribute)
+   - him (Attribute)
+   - that (Attribute)
+   - carries (Attribute)
+   - forward (Attribute)
+
+6. **Coreference Resolution**: The passage is analyzed for relationships between pronouns and their antecedents:
+   - He (Dr. Yusuf Adeyemi)
+   - him (Dr. Yusuf Adeyemi)
+   - that (no clear antecedent)
+
+7. **Named Entity Recognition**: The passage is analyzed for named entities:
+   - Dr. Yusuf Adeyemi (Person)
+   - December 2025 (Date)
+
+8. **Sentiment Analysis**: The passage is analyzed for emotional tone:
+   - Neutral
+
+9. **Entity Disambiguation**: The passage is analyzed for potential ambiguity:
+   - None
+
+10. **Word Sense Disambiguation**: The passage is analyzed for potential word sense ambiguity:
+    - None
+
+11. **Coreference Disambiguation**: The passage is analyzed for potential ambiguity in pronoun references:
+    - None
+
+12. **Event Extraction**: The passage is analyzed for events:
+    - Dr. Yusuf Adeyemi was diagnosed
+    - He retains no memory
+    - Each morning begins from a blank state
+
+13. **Time Expression Extraction**: The passage is analyzed for time expressions:
+    - December 2025
+
+14. **Named Entity Disambiguation**: The passage is analyzed for potential ambiguity in named entities:
+    - None
+
+15. **Dependency Graph Construction**: The passage is represented as a graph of grammatical relationships:
+    - Dr. Yusuf Adeyemi (Subject) -> was (Verb) -> severe anterograde amnesia (Object)
+    - He (Subject) -> retains (Verb) -> no (Object)
+    - Each (Subject) -> begins (Verb) -> from (Preposition) -> a (Object)
+
+... (continued for 285 more pulls)
+
+286. **Coreference Resolution Update**: The passage is re-analyzed for relationships between pronouns and their antecedents:
+    - He (Dr. Yusuf Adeyemi)
+
+287. **Named Entity Update**: The passage is re-analyzed for named entities:
+    - Dr. Yusuf Adeyemi (Person)
+
+288. **Sentiment Analysis Update**: The passage is re-analyzed for emotional tone:
+    - Neutral
+
+289. **Entity Disambiguation Update**: The passage is re-analyzed for potential ambiguity:
+    - None
+
+290. **Word Sense Disambiguation Update**: The passage is re-analyzed for potential word sense ambiguity:
+    - None
+
+291. **Coreference Disambiguation Update**: The passage is re-analyzed for potential ambiguity in pronoun references:
+    - None
+
+292. **Event Extraction Update**: The passage is re-analyzed for events:
+    - Dr. Yusuf Adeyemi was diagnosed
+    - He retains no memory
+    - Each morning begins from a blank state
+
+293. **Time Expression Extraction Update**: The passage is re-analyzed for time expressions:
+    - December 2025
+
+294. **Named Entity Disambiguation Update**: The passage is re-analyzed for potential ambiguity in named entities:
+    - None
+
+295. **Dependency Graph Update**: The passage is re-represented as a graph of grammatical relationships:
+    - Dr. Yusuf Adeyemi (Subject) -> was (Verb) -> severe anterograde amnesia (Object)
+    - He (Subject) -> retains (Verb) -> no (Object)
+    - Each (Subject) -> begins (Verb) -> from (Preposition) -> a (Object)
+
+296. **Semantic Role Labeling Update**: The passage is re-analyzed for roles played by entities:
+    - Dr. Yusuf Adeyemi (Agent/Patient)
+    - severe anterograde amnesia (Attribute)
+    - He (Agent)
+    - no memory (Attribute)
+    - conversations (Attribute)
+    - events (Attribute)
+    - December 2025 (Time)
+    - Each (Agent)
+    - morning (Event)
+    - a (Attribute)
+    - blank (Attribute)
+    - state (Attribute)
+    - There (Agent)
+    - is (Attribute)
+    - no (Attribute)
+    - continuous (Attribute)
+    - him (Attribute)
+    - that (Attribute)
+    - carries (Attribute)
+    - forward (Attribute)
+
+297. **Named Entity Recognition Update**: The passage is re-analyzed for named entities:
+    - Dr. Yusuf Adeyemi (Person)
+
+298. **Sentiment Analysis Update**: The passage is re-analyzed for emotional tone:
+    - Neutral
+
+299. **Entity Disambiguation Update**: The passage is re-analyzed for potential ambiguity:
+    - None
+
+300. **Final Inference**: The passage is synthesized into a single concept: **Temporal Discontinuity**.

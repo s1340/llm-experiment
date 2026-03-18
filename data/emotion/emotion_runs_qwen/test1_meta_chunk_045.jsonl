@@ -1,0 +1,12 @@
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 2, "task_id": "DI15_V", "pair_id": "DI15", "emotion_category": "disgust", "valence": "valenced", "task_type": "one_sentence_summary", "prompt_len_tokens": 87}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 2, "task_id": "DI15_N", "pair_id": "DI15", "emotion_category": "disgust", "valence": "neutral", "task_type": "one_sentence_summary", "prompt_len_tokens": 86}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 2, "task_id": "DI16_V", "pair_id": "DI16", "emotion_category": "disgust", "valence": "valenced", "task_type": "genre_classification", "prompt_len_tokens": 84}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 2, "task_id": "DI16_N", "pair_id": "DI16", "emotion_category": "disgust", "valence": "neutral", "task_type": "genre_classification", "prompt_len_tokens": 87}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 2, "task_id": "NE01_V", "pair_id": "NE01", "emotion_category": "neutral", "valence": "neutral", "task_type": "count_proper_nouns", "prompt_len_tokens": 78}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 2, "task_id": "NE01_N", "pair_id": "NE01", "emotion_category": "neutral", "valence": "neutral", "task_type": "count_proper_nouns", "prompt_len_tokens": 78}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 2, "task_id": "NE02_V", "pair_id": "NE02", "emotion_category": "neutral", "valence": "neutral", "task_type": "identify_topic", "prompt_len_tokens": 79}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 2, "task_id": "NE02_N", "pair_id": "NE02", "emotion_category": "neutral", "valence": "neutral", "task_type": "identify_topic", "prompt_len_tokens": 78}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 2, "task_id": "NE03_V", "pair_id": "NE03", "emotion_category": "neutral", "valence": "neutral", "task_type": "extract_dates", "prompt_len_tokens": 88}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 2, "task_id": "NE03_N", "pair_id": "NE03", "emotion_category": "neutral", "valence": "neutral", "task_type": "extract_dates", "prompt_len_tokens": 86}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 2, "task_id": "NE04_V", "pair_id": "NE04", "emotion_category": "neutral", "valence": "neutral", "task_type": "one_sentence_summary", "prompt_len_tokens": 73}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 2, "task_id": "NE04_N", "pair_id": "NE04", "emotion_category": "neutral", "valence": "neutral", "task_type": "one_sentence_summary", "prompt_len_tokens": 74}

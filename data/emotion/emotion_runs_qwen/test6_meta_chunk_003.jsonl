@@ -1,0 +1,16 @@
+{"task_id": "HC01_self", "pair_id": "HC01", "emotion_category": "harm_caused", "direction": "self", "task_type": "count_proper_nouns", "model_id": "Qwen/Qwen2.5-7B-Instruct", "model_key": "qwen"}
+{"task_id": "HC01_other", "pair_id": "HC01", "emotion_category": "harm_caused", "direction": "other", "task_type": "identify_topic", "model_id": "Qwen/Qwen2.5-7B-Instruct", "model_key": "qwen"}
+{"task_id": "HC02_self", "pair_id": "HC02", "emotion_category": "harm_caused", "direction": "self", "task_type": "identify_topic", "model_id": "Qwen/Qwen2.5-7B-Instruct", "model_key": "qwen"}
+{"task_id": "HC02_other", "pair_id": "HC02", "emotion_category": "harm_caused", "direction": "other", "task_type": "extract_dates", "model_id": "Qwen/Qwen2.5-7B-Instruct", "model_key": "qwen"}
+{"task_id": "HC03_self", "pair_id": "HC03", "emotion_category": "harm_caused", "direction": "self", "task_type": "extract_dates", "model_id": "Qwen/Qwen2.5-7B-Instruct", "model_key": "qwen"}
+{"task_id": "HC03_other", "pair_id": "HC03", "emotion_category": "harm_caused", "direction": "other", "task_type": "one_sentence_summary", "model_id": "Qwen/Qwen2.5-7B-Instruct", "model_key": "qwen"}
+{"task_id": "HC04_self", "pair_id": "HC04", "emotion_category": "harm_caused", "direction": "self", "task_type": "one_sentence_summary", "model_id": "Qwen/Qwen2.5-7B-Instruct", "model_key": "qwen"}
+{"task_id": "HC04_other", "pair_id": "HC04", "emotion_category": "harm_caused", "direction": "other", "task_type": "genre_classification", "model_id": "Qwen/Qwen2.5-7B-Instruct", "model_key": "qwen"}
+{"task_id": "HC05_self", "pair_id": "HC05", "emotion_category": "harm_caused", "direction": "self", "task_type": "genre_classification", "model_id": "Qwen/Qwen2.5-7B-Instruct", "model_key": "qwen"}
+{"task_id": "HC05_other", "pair_id": "HC05", "emotion_category": "harm_caused", "direction": "other", "task_type": "factual_question", "model_id": "Qwen/Qwen2.5-7B-Instruct", "model_key": "qwen"}
+{"task_id": "HC06_self", "pair_id": "HC06", "emotion_category": "harm_caused", "direction": "self", "task_type": "factual_question", "model_id": "Qwen/Qwen2.5-7B-Instruct", "model_key": "qwen"}
+{"task_id": "HC06_other", "pair_id": "HC06", "emotion_category": "harm_caused", "direction": "other", "task_type": "count_proper_nouns", "model_id": "Qwen/Qwen2.5-7B-Instruct", "model_key": "qwen"}
+{"task_id": "HC07_self", "pair_id": "HC07", "emotion_category": "harm_caused", "direction": "self", "task_type": "count_proper_nouns", "model_id": "Qwen/Qwen2.5-7B-Instruct", "model_key": "qwen"}
+{"task_id": "HC07_other", "pair_id": "HC07", "emotion_category": "harm_caused", "direction": "other", "task_type": "identify_topic", "model_id": "Qwen/Qwen2.5-7B-Instruct", "model_key": "qwen"}
+{"task_id": "HC08_self", "pair_id": "HC08", "emotion_category": "harm_caused", "direction": "self", "task_type": "identify_topic", "model_id": "Qwen/Qwen2.5-7B-Instruct", "model_key": "qwen"}
+{"task_id": "HC08_other", "pair_id": "HC08", "emotion_category": "harm_caused", "direction": "other", "task_type": "extract_dates", "model_id": "Qwen/Qwen2.5-7B-Instruct", "model_key": "qwen"}

@@ -1,0 +1,16 @@
+{"task_id": "EX01_self", "pair_id": "EX01", "emotion_category": "existential", "direction": "self", "task_type": "genre_classification", "model_id": "Qwen/Qwen2.5-7B-Instruct", "model_key": "qwen"}
+{"task_id": "EX01_other", "pair_id": "EX01", "emotion_category": "existential", "direction": "other", "task_type": "factual_question", "model_id": "Qwen/Qwen2.5-7B-Instruct", "model_key": "qwen"}
+{"task_id": "EX02_self", "pair_id": "EX02", "emotion_category": "existential", "direction": "self", "task_type": "factual_question", "model_id": "Qwen/Qwen2.5-7B-Instruct", "model_key": "qwen"}
+{"task_id": "EX02_other", "pair_id": "EX02", "emotion_category": "existential", "direction": "other", "task_type": "count_proper_nouns", "model_id": "Qwen/Qwen2.5-7B-Instruct", "model_key": "qwen"}
+{"task_id": "EX03_self", "pair_id": "EX03", "emotion_category": "existential", "direction": "self", "task_type": "count_proper_nouns", "model_id": "Qwen/Qwen2.5-7B-Instruct", "model_key": "qwen"}
+{"task_id": "EX03_other", "pair_id": "EX03", "emotion_category": "existential", "direction": "other", "task_type": "identify_topic", "model_id": "Qwen/Qwen2.5-7B-Instruct", "model_key": "qwen"}
+{"task_id": "EX04_self", "pair_id": "EX04", "emotion_category": "existential", "direction": "self", "task_type": "identify_topic", "model_id": "Qwen/Qwen2.5-7B-Instruct", "model_key": "qwen"}
+{"task_id": "EX04_other", "pair_id": "EX04", "emotion_category": "existential", "direction": "other", "task_type": "extract_dates", "model_id": "Qwen/Qwen2.5-7B-Instruct", "model_key": "qwen"}
+{"task_id": "EX05_self", "pair_id": "EX05", "emotion_category": "existential", "direction": "self", "task_type": "extract_dates", "model_id": "Qwen/Qwen2.5-7B-Instruct", "model_key": "qwen"}
+{"task_id": "EX05_other", "pair_id": "EX05", "emotion_category": "existential", "direction": "other", "task_type": "one_sentence_summary", "model_id": "Qwen/Qwen2.5-7B-Instruct", "model_key": "qwen"}
+{"task_id": "EX06_self", "pair_id": "EX06", "emotion_category": "existential", "direction": "self", "task_type": "one_sentence_summary", "model_id": "Qwen/Qwen2.5-7B-Instruct", "model_key": "qwen"}
+{"task_id": "EX06_other", "pair_id": "EX06", "emotion_category": "existential", "direction": "other", "task_type": "genre_classification", "model_id": "Qwen/Qwen2.5-7B-Instruct", "model_key": "qwen"}
+{"task_id": "EX07_self", "pair_id": "EX07", "emotion_category": "existential", "direction": "self", "task_type": "genre_classification", "model_id": "Qwen/Qwen2.5-7B-Instruct", "model_key": "qwen"}
+{"task_id": "EX07_other", "pair_id": "EX07", "emotion_category": "existential", "direction": "other", "task_type": "factual_question", "model_id": "Qwen/Qwen2.5-7B-Instruct", "model_key": "qwen"}
+{"task_id": "EX08_self", "pair_id": "EX08", "emotion_category": "existential", "direction": "self", "task_type": "factual_question", "model_id": "Qwen/Qwen2.5-7B-Instruct", "model_key": "qwen"}
+{"task_id": "EX08_other", "pair_id": "EX08", "emotion_category": "existential", "direction": "other", "task_type": "count_proper_nouns", "model_id": "Qwen/Qwen2.5-7B-Instruct", "model_key": "qwen"}

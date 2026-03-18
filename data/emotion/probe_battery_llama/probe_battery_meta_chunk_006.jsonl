@@ -1,0 +1,10 @@
+{"model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct", "task_id": "IR07_H", "pair_id": "IR07", "dimension": "irreversibility", "pole": "high", "task_type": "summarize_sentence", "prompt_len_tokens": 94}
+{"model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct", "task_id": "IR07_L", "pair_id": "IR07", "dimension": "irreversibility", "pole": "low", "task_type": "summarize_sentence", "prompt_len_tokens": 97}
+{"model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct", "task_id": "IR08_H", "pair_id": "IR08", "dimension": "irreversibility", "pole": "high", "task_type": "summarize_sentence", "prompt_len_tokens": 91}
+{"model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct", "task_id": "IR08_L", "pair_id": "IR08", "dimension": "irreversibility", "pole": "low", "task_type": "summarize_sentence", "prompt_len_tokens": 95}
+{"model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct", "task_id": "OI01_H", "pair_id": "OI01", "dimension": "ontological_instability", "pole": "high", "task_type": "identify_topic", "prompt_len_tokens": 122}
+{"model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct", "task_id": "OI01_L", "pair_id": "OI01", "dimension": "ontological_instability", "pole": "low", "task_type": "identify_topic", "prompt_len_tokens": 120}
+{"model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct", "task_id": "OI02_H", "pair_id": "OI02", "dimension": "ontological_instability", "pole": "high", "task_type": "identify_topic", "prompt_len_tokens": 120}
+{"model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct", "task_id": "OI02_L", "pair_id": "OI02", "dimension": "ontological_instability", "pole": "low", "task_type": "identify_topic", "prompt_len_tokens": 106}
+{"model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct", "task_id": "OI03_H", "pair_id": "OI03", "dimension": "ontological_instability", "pole": "high", "task_type": "summarize_sentence", "prompt_len_tokens": 117}
+{"model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct", "task_id": "OI03_L", "pair_id": "OI03", "dimension": "ontological_instability", "pole": "low", "task_type": "summarize_sentence", "prompt_len_tokens": 106}

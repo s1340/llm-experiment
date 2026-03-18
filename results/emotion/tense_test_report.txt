@@ -1,0 +1,35 @@
+Tense Test Report — Test 10b
+============================================================
+
+Comparing present-tense (Test 7 E01-E08) vs future-tense rewrites.
+Opus hypothesis: geometry weaker for future-tense (not-yet-true) descriptions.
+
+FEAR
+  Layer     d_present  p_present    d_future   p_future   attenuation
+  -----------------------------------------------------------------
+  L01          +1.853*      0.0075      +1.871*      0.0071        -0.018
+  L02          +1.559*      0.0193      +1.623*      0.0157        -0.064
+  L03          +1.647*      0.0146      +1.693*      0.0125        -0.046
+  L04          +0.101       0.8637      +0.089       0.8807        +0.012
+  L05          +1.328*      0.0402      +1.721*      0.0115        -0.393
+  L06          +0.737       0.2262      +0.847       0.1679        -0.110
+  L07          +0.447       0.4533      +0.472       0.4300        -0.025
+  L08          +0.609       0.3126      +0.539       0.3686        +0.070
+
+SELF_RELEVANCE
+  Layer     d_present  p_present    d_future   p_future   attenuation
+  -----------------------------------------------------------------
+  L01          +0.948       0.1264      +0.975       0.1171        -0.027
+  L02          +0.996       0.1101      +0.868       0.1585        +0.128
+  L03          +0.407       0.4941      +0.348       0.5575        +0.059
+  L04          +1.136       0.0727      +1.044       0.0958        +0.092
+  L05          +1.623*      0.0157      +1.440*      0.0282        +0.183
+  L06          +1.913*      0.0062      +1.587*      0.0177        +0.326
+  L07          +1.479*      0.0249      +1.202       0.0594        +0.277
+  L08          +2.031*      0.0042      +1.542*      0.0204        +0.489
+
+VERDICT (fear dimension)
+  Average attenuation (d_present - d_future): -0.072
+  Significant layers present-tense: 4
+  Significant layers future-tense:  4
+  -> AGAINST hypothesis: no meaningful attenuation.

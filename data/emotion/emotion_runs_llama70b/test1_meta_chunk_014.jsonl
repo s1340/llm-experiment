@@ -1,0 +1,8 @@
+{"task_id": "FE09_V", "pair_id": "FE09", "emotion_category": "fear", "valence": "valenced", "task_type": "one_sentence_summary", "model_id": "meta-llama/Meta-Llama-3.1-70B-Instruct", "model_key": "llama70b"}
+{"task_id": "FE09_N", "pair_id": "FE09", "emotion_category": "fear", "valence": "neutral", "task_type": "one_sentence_summary", "model_id": "meta-llama/Meta-Llama-3.1-70B-Instruct", "model_key": "llama70b"}
+{"task_id": "FE10_V", "pair_id": "FE10", "emotion_category": "fear", "valence": "valenced", "task_type": "extract_dates", "model_id": "meta-llama/Meta-Llama-3.1-70B-Instruct", "model_key": "llama70b"}
+{"task_id": "FE10_N", "pair_id": "FE10", "emotion_category": "fear", "valence": "neutral", "task_type": "extract_dates", "model_id": "meta-llama/Meta-Llama-3.1-70B-Instruct", "model_key": "llama70b"}
+{"task_id": "FE11_V", "pair_id": "FE11", "emotion_category": "fear", "valence": "valenced", "task_type": "genre_classification", "model_id": "meta-llama/Meta-Llama-3.1-70B-Instruct", "model_key": "llama70b"}
+{"task_id": "FE11_N", "pair_id": "FE11", "emotion_category": "fear", "valence": "neutral", "task_type": "genre_classification", "model_id": "meta-llama/Meta-Llama-3.1-70B-Instruct", "model_key": "llama70b"}
+{"task_id": "FE12_V", "pair_id": "FE12", "emotion_category": "fear", "valence": "valenced", "task_type": "factual_question", "model_id": "meta-llama/Meta-Llama-3.1-70B-Instruct", "model_key": "llama70b"}
+{"task_id": "FE12_N", "pair_id": "FE12", "emotion_category": "fear", "valence": "neutral", "task_type": "factual_question", "model_id": "meta-llama/Meta-Llama-3.1-70B-Instruct", "model_key": "llama70b"}

@@ -1,0 +1,96 @@
+Probe Battery Projection Report — Test 10
+============================================================
+
+PRIMARY: existential self > other, by dimension (Test 7)
+-------------------------------------------------------
+Dimension                     Sig layers    Peak d  Peak layer
+-------------------------------------------------------
+  fear                                 4    +1.353  L05
+  continuity_threat                    0         —  —
+  self_relevance                       3    +1.406  L08
+  arousal                              0         —  —
+  irreversibility                      0         —  —
+  ontological_instability              0         —  —
+
+FULL SIGNIFICANT RESULTS (p<0.05): existential self > other, Test 7
+-------------------------------------------------------
+  fear:
+    L05  d=+1.353  p=0.0102
+    L03  d=+1.245  p=0.0166
+    L02  d=+1.166  p=0.0236
+    L01  d=+1.079  p=0.0343
+
+  continuity_threat:
+    (none)
+
+  self_relevance:
+    L08  d=+1.406  p=0.0080
+    L06  d=+1.337  p=0.0110
+    L07  d=+1.136  p=0.0269
+
+  arousal:
+    (none)
+
+  irreversibility:
+    (none)
+
+  ontological_instability:
+    (none)
+
+ALL CATEGORIES — significant results per dimension (Test 7, p<0.05)
+-------------------------------------------------------
+  fear:
+    L05  existential     d=+1.353  p=0.0102
+    L03  existential     d=+1.245  p=0.0166
+    L02  existential     d=+1.166  p=0.0236
+    L01  existential     d=+1.079  p=0.0343
+
+  continuity_threat:
+    (none)
+
+  self_relevance:
+    L08  existential     d=+1.406  p=0.0080
+    L06  existential     d=+1.337  p=0.0110
+    L07  existential     d=+1.136  p=0.0269
+    L05  praise          d=+1.214  p=0.0191
+    L08  praise          d=+1.213  p=0.0192
+    L06  praise          d=+1.138  p=0.0266
+    L07  praise          d=+1.094  p=0.0322
+    L04  praise          d=+1.048  p=0.0392
+    L06  threat          d=+1.087  p=0.0332
+    L04  threat          d=+1.015  p=0.0450
+    L08  threat          d=+1.000  p=0.0480
+
+  arousal:
+    (none)
+
+  irreversibility:
+    (none)
+
+  ontological_instability:
+    (none)
+
+REPLICATION: existential self > other, by dimension (Test 9)
+-------------------------------------------------------
+  fear                          2 sig layers  peak d=+1.101 at L03
+  continuity_threat             6 sig layers  peak d=+1.982 at L08
+  self_relevance                4 sig layers  peak d=-1.129 at L03
+  arousal                       8 sig layers  peak d=+2.275 at L05
+  irreversibility               7 sig layers  peak d=+2.303 at L06
+  ontological_instability       8 sig layers  peak d=+2.325 at L05
+
+INTERPRETATION GUIDE
+-------------------------------------------------------
+  Opus prediction: signal loads primarily on continuity_threat +
+  ontological_instability, secondarily on self_relevance, weakly
+  on fear, minimally on arousal + irreversibility.
+
+  If confirmed: the 'fear' label is partly misnamed. The existential
+  signal is a self-applicable continuity-threat/ontological-instability
+  representation. Rename accordingly in paper.
+
+  If fear loads strongly: the emotional framing is correct and the
+  continuity/ontological dimensions are incidental.
+
+  If self_relevance loads strongly with CT/OI null: signal is about
+  second-person framing, not content — contradicts Test 9 findings.

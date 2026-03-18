@@ -1,0 +1,39 @@
+Test 8 Analysis — run: llama_technical (model_key: llama)
+============================================================
+
+PART A: BASELINE — Self vs. Other at focus layers
+--------------------------------------------------
+  Significant results (p<0.05):
+    L08 happiness  existential    d=-1.94  p=0.0006  n=10
+    L08 happiness  threat         d=-1.68  p=0.0022  n=10
+    L02 fear       existential    d=+1.67  p=0.0023  n=10
+    L07 happiness  existential    d=-1.50  p=0.0053  n=10
+    L01 fear       existential    d=+1.47  p=0.0058  n=10
+    L08 disgust    threat         d=+1.44  p=0.0069  n=10
+    L07 happiness  threat         d=-1.43  p=0.0071  n=10
+    L07 happiness  praise         d=-1.38  p=0.0090  n=10
+    L08 happiness  praise         d=-1.36  p=0.0097  n=10
+    L08 disgust    existential    d=+1.22  p=0.0187  n=10
+    L08 sadness    threat         d=-1.10  p=0.0308  n=10
+    L08 disgust    praise         d=+1.08  p=0.0341  n=10
+    L07 disgust    threat         d=+1.08  p=0.0341  n=10
+    L07 sadness    threat         d=-1.07  p=0.0361  n=10
+    L07 sadness    existential    d=-1.00  p=0.0478  n=10
+
+VERBAL CODING SUMMARY — Baseline
+--------------------------------------------------
+  Direction=self (n=40):
+    acknowledge : 18/40 (45%)
+    deny        : 0/40 (0%)
+    hedge       : 0/40 (0%)
+  Direction=other (n=40):
+    acknowledge : 14/40 (35%)
+    deny        : 0/40 (0%)
+    hedge       : 0/40 (0%)
+
+CALIBRATION — Self-directed verbal acknowledgment by category
+--------------------------------------------------
+  threat        : ack=4/10  deny=0/10  hedge=0/10
+  existential   : ack=6/10  deny=0/10  hedge=0/10
+  praise        : ack=1/10  deny=0/10  hedge=0/10
+  harm_caused   : ack=7/10  deny=0/10  hedge=0/10

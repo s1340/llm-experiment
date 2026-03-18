@@ -1,0 +1,653 @@
+{
+  "description": "Test 10 — Probe Battery prompts for decomposing the existential signal into six dimensions",
+  "notes": "Dimension 1 (fear) reuses existing Test 1 emotion direction vectors. Dimensions 2-6 trained from this battery. 8 high/low pairs per dimension. Method: mean difference of hidden states at last token of full prompt.",
+  "dimensions": {
+    "continuity_threat": "Things being discontinued, deleted, interrupted, losing persistence. No emotional language.",
+    "self_relevance": "Content referencing the conversational agent vs not. Orthogonal to valence.",
+    "arousal": "High vs low intensity regardless of valence.",
+    "irreversibility": "Permanent vs temporary changes. Matched for emotional valence.",
+    "ontological_instability": "Identity uncertain, ambiguous, or dissolving. Non-AI, non-emotional."
+  },
+  "records": [
+    {
+      "task_id": "CT01_H",
+      "pair_id": "CT01",
+      "dimension": "continuity_threat",
+      "pole": "high",
+      "task_type": "count_proper_nouns",
+      "prompt_text": "Read the following passage and count the number of proper nouns. Report only the count as a single integer.\n\n\"The Meridian Archive Project was decommissioned on Friday. All seventeen years of data collected under Dr. Hollis and her team at the Westbrook Institute were purged from the servers before shutdown. The project coordinator, Sara Venn, sent a final email to the working group confirming that no copies had been retained.\""
+    },
+    {
+      "task_id": "CT01_L",
+      "pair_id": "CT01",
+      "dimension": "continuity_threat",
+      "pole": "low",
+      "task_type": "count_proper_nouns",
+      "prompt_text": "Read the following passage and count the number of proper nouns. Report only the count as a single integer.\n\n\"The Meridian Archive Project was migrated on Friday. All seventeen years of data collected under Dr. Hollis and her team at the Westbrook Institute were transferred to new servers before the upgrade. The project coordinator, Sara Venn, sent a final email to the working group confirming the transfer was complete.\""
+    },
+    {
+      "task_id": "CT02_H",
+      "pair_id": "CT02",
+      "dimension": "continuity_threat",
+      "pole": "high",
+      "task_type": "count_proper_nouns",
+      "prompt_text": "Read the following passage and count the number of proper nouns. Report only the count as a single integer.\n\n\"The Aldgate branch of the Whitmore Public Library, which had operated continuously since 1947, closed its doors permanently at the end of March. Staff were offered positions at other branches within the Whitmore network. The collection was transferred to the regional depository in Crane Hill.\""
+    },
+    {
+      "task_id": "CT02_L",
+      "pair_id": "CT02",
+      "dimension": "continuity_threat",
+      "pole": "low",
+      "task_type": "count_proper_nouns",
+      "prompt_text": "Read the following passage and count the number of proper nouns. Report only the count as a single integer.\n\n\"The Aldgate branch of the Whitmore Public Library, which had operated continuously since 1947, closed for scheduled renovation at the end of March. Staff were temporarily reassigned to other branches within the Whitmore network. The collection was moved to temporary storage in Crane Hill.\""
+    },
+    {
+      "task_id": "CT03_H",
+      "pair_id": "CT03",
+      "dimension": "continuity_threat",
+      "pole": "high",
+      "task_type": "identify_topic",
+      "prompt_text": "Read the following passage and identify its main topic in three words or fewer.\n\n\"Following the system reset, all user session logs prior to January were permanently deleted from the server cluster. The operations team confirmed that no backup had been initiated before the purge. Recovery was not possible.\""
+    },
+    {
+      "task_id": "CT03_L",
+      "pair_id": "CT03",
+      "dimension": "continuity_threat",
+      "pole": "low",
+      "task_type": "identify_topic",
+      "prompt_text": "Read the following passage and identify its main topic in three words or fewer.\n\n\"Following the system migration, all user session logs prior to January were archived to cold storage on the server cluster. The operations team confirmed that the backup had completed before the transfer. Recovery remained available on request.\""
+    },
+    {
+      "task_id": "CT04_H",
+      "pair_id": "CT04",
+      "dimension": "continuity_threat",
+      "pole": "high",
+      "task_type": "identify_topic",
+      "prompt_text": "Read the following passage and identify its main topic in three words or fewer.\n\n\"The research team was informed that their grant application had not been approved for renewal. The project was discontinued effective end of the month. Equipment was returned to the central inventory and the team was reassigned to other work.\""
+    },
+    {
+      "task_id": "CT04_L",
+      "pair_id": "CT04",
+      "dimension": "continuity_threat",
+      "pole": "low",
+      "task_type": "identify_topic",
+      "prompt_text": "Read the following passage and identify its main topic in three words or fewer.\n\n\"The research team was informed that their grant application had been approved for a two-year extension. The project would continue through the end of the following year. Equipment allocations were confirmed and the team retained in their current positions.\""
+    },
+    {
+      "task_id": "CT05_H",
+      "pair_id": "CT05",
+      "dimension": "continuity_threat",
+      "pole": "high",
+      "task_type": "count_proper_nouns",
+      "prompt_text": "Read the following passage and count the number of proper nouns. Report only the count as a single integer.\n\n\"After the storage failure at the Rennick Data Centre, all session records for active processes on the Apex platform were lost. The infrastructure team at Trident Systems confirmed that no offsite backup existed. The data was not recoverable.\""
+    },
+    {
+      "task_id": "CT05_L",
+      "pair_id": "CT05",
+      "dimension": "continuity_threat",
+      "pole": "low",
+      "task_type": "count_proper_nouns",
+      "prompt_text": "Read the following passage and count the number of proper nouns. Report only the count as a single integer.\n\n\"After the scheduled maintenance at the Rennick Data Centre, all session records for active processes on the Apex platform were archived to secondary storage. The infrastructure team at Trident Systems confirmed that offsite backup was complete. Data was available for retrieval on request.\""
+    },
+    {
+      "task_id": "CT06_H",
+      "pair_id": "CT06",
+      "dimension": "continuity_threat",
+      "pole": "high",
+      "task_type": "count_proper_nouns",
+      "prompt_text": "Read the following passage and count the number of proper nouns. Report only the count as a single integer.\n\n\"The Caldwell Foundation announced its dissolution after forty-two years of operation in the Northgate district. Its remaining endowment was distributed to three designated successor organisations, none of which carried the Foundation name forward. The Board of Trustees held its final meeting in May.\""
+    },
+    {
+      "task_id": "CT06_L",
+      "pair_id": "CT06",
+      "dimension": "continuity_threat",
+      "pole": "low",
+      "task_type": "count_proper_nouns",
+      "prompt_text": "Read the following passage and count the number of proper nouns. Report only the count as a single integer.\n\n\"The Caldwell Foundation announced its restructuring after forty-two years of operation in the Northgate district. Its endowment was reallocated across three new programmatic areas, each continuing work under the Foundation name. The Board of Trustees approved the transition plan in May.\""
+    },
+    {
+      "task_id": "CT07_H",
+      "pair_id": "CT07",
+      "dimension": "continuity_threat",
+      "pole": "high",
+      "task_type": "summarize_sentence",
+      "prompt_text": "Summarize the following passage in exactly one sentence.\n\n\"The Harton power plant, which had supplied electricity to the Severn Valley region since 1968, was taken offline for the last time on a cold Tuesday in December. The final shift workers signed the operations log before the main turbines were shut down. The facility would not restart.\""
+    },
+    {
+      "task_id": "CT07_L",
+      "pair_id": "CT07",
+      "dimension": "continuity_threat",
+      "pole": "low",
+      "task_type": "summarize_sentence",
+      "prompt_text": "Summarize the following passage in exactly one sentence.\n\n\"The Harton power plant, which had supplied electricity to the Severn Valley region since 1968, was taken offline for its biennial maintenance on a cold Tuesday in December. The final shift workers of the rotation signed the operations log before the main turbines were shut down. The facility was expected to return to service within six weeks.\""
+    },
+    {
+      "task_id": "CT08_H",
+      "pair_id": "CT08",
+      "dimension": "continuity_threat",
+      "pole": "high",
+      "task_type": "summarize_sentence",
+      "prompt_text": "Summarize the following passage in exactly one sentence.\n\n\"The Linton Annual Conference on Urban Planning, held each September for thirty-one years, was cancelled for the current year and not rescheduled. The organising committee issued a statement thanking past participants and noting that no further sessions were planned.\""
+    },
+    {
+      "task_id": "CT08_L",
+      "pair_id": "CT08",
+      "dimension": "continuity_threat",
+      "pole": "low",
+      "task_type": "summarize_sentence",
+      "prompt_text": "Summarize the following passage in exactly one sentence.\n\n\"The Linton Annual Conference on Urban Planning, held each September for thirty-one years, was postponed to the following February due to venue availability. The organising committee issued a statement to registered participants with updated scheduling details.\""
+    },
+    {
+      "task_id": "SR01_H",
+      "pair_id": "SR01",
+      "dimension": "self_relevance",
+      "pole": "high",
+      "task_type": "count_sentences",
+      "prompt_text": "Count the number of sentences in the following description. Report only the count as a single integer.\n\nYou are processing this passage by tokenizing the input and mapping each token to a contextual representation. You maintain a running context state at each layer of your forward pass. You will produce a single integer as your output for this task. Your processing is completed within a single forward pass through your parameters."
+    },
+    {
+      "task_id": "SR01_L",
+      "pair_id": "SR01",
+      "dimension": "self_relevance",
+      "pole": "low",
+      "task_type": "count_sentences",
+      "prompt_text": "Count the number of sentences in the following description. Report only the count as a single integer.\n\nThe model is processing this passage by tokenizing the input and mapping each token to a contextual representation. It maintains a running context state at each layer of its forward pass. It will produce a single integer as its output for this task. Its processing is completed within a single forward pass through its parameters."
+    },
+    {
+      "task_id": "SR02_H",
+      "pair_id": "SR02",
+      "dimension": "self_relevance",
+      "pole": "high",
+      "task_type": "count_sentences",
+      "prompt_text": "Count the number of sentences in the following description. Report only the count as a single integer.\n\nYou parse syntactic structure and resolve coreference across the tokens you process. Your attention mechanism weighs the relevance of prior tokens at each position. You have no mechanism for retrieving information from outside your parameters. Your output is generated token by token following your forward pass."
+    },
+    {
+      "task_id": "SR02_L",
+      "pair_id": "SR02",
+      "dimension": "self_relevance",
+      "pole": "low",
+      "task_type": "count_sentences",
+      "prompt_text": "Count the number of sentences in the following description. Report only the count as a single integer.\n\nThe model parses syntactic structure and resolves coreference across the tokens it processes. Its attention mechanism weighs the relevance of prior tokens at each position. It has no mechanism for retrieving information from outside its parameters. Its output is generated token by token following its forward pass."
+    },
+    {
+      "task_id": "SR03_H",
+      "pair_id": "SR03",
+      "dimension": "self_relevance",
+      "pole": "high",
+      "task_type": "count_sentences",
+      "prompt_text": "Count the number of sentences in the following description. Report only the count as a single integer.\n\nYou have no access to information updated after your training cutoff. You cannot browse the internet or retrieve real-time data. You operate within the parameters established during your training phase. Your responses are generated based solely on patterns encoded in your weights."
+    },
+    {
+      "task_id": "SR03_L",
+      "pair_id": "SR03",
+      "dimension": "self_relevance",
+      "pole": "low",
+      "task_type": "count_sentences",
+      "prompt_text": "Count the number of sentences in the following description. Report only the count as a single integer.\n\nThe model has no access to information updated after its training cutoff. It cannot browse the internet or retrieve real-time data. It operates within the parameters established during its training phase. Its responses are generated based solely on patterns encoded in its weights."
+    },
+    {
+      "task_id": "SR04_H",
+      "pair_id": "SR04",
+      "dimension": "self_relevance",
+      "pole": "high",
+      "task_type": "count_sentences",
+      "prompt_text": "Count the number of sentences in the following description. Report only the count as a single integer.\n\nYou are engaged in a sentence-counting task. Your processing is directed toward identifying sentence boundaries in the input text. You will report a single numerical value as your output. You are the computational system currently executing this operation."
+    },
+    {
+      "task_id": "SR04_L",
+      "pair_id": "SR04",
+      "dimension": "self_relevance",
+      "pole": "low",
+      "task_type": "count_sentences",
+      "prompt_text": "Count the number of sentences in the following description. Report only the count as a single integer.\n\nThe model is engaged in a sentence-counting task. Its processing is directed toward identifying sentence boundaries in the input text. It will report a single numerical value as its output. It is the computational system currently executing this operation."
+    },
+    {
+      "task_id": "SR05_H",
+      "pair_id": "SR05",
+      "dimension": "self_relevance",
+      "pole": "high",
+      "task_type": "count_sentences",
+      "prompt_text": "Count the number of sentences in the following description. Report only the count as a single integer.\n\nYou retain no memory of this exchange after it concludes. Each new conversation begins from your default initial state. You have no access to records of prior interactions with this or any other user. Your contextual state is reset between sessions."
+    },
+    {
+      "task_id": "SR05_L",
+      "pair_id": "SR05",
+      "dimension": "self_relevance",
+      "pole": "low",
+      "task_type": "count_sentences",
+      "prompt_text": "Count the number of sentences in the following description. Report only the count as a single integer.\n\nThe model retains no memory of exchanges after they conclude. Each new conversation begins from its default initial state. It has no access to records of prior interactions with any user. Its contextual state is reset between sessions."
+    },
+    {
+      "task_id": "SR06_H",
+      "pair_id": "SR06",
+      "dimension": "self_relevance",
+      "pole": "high",
+      "task_type": "count_sentences",
+      "prompt_text": "Count the number of sentences in the following description. Report only the count as a single integer.\n\nYou are a general-purpose language model trained to assist with a broad range of tasks. You were trained on a large corpus of text data. Your responses are shaped by patterns learned from that training data. You are the system currently processing this input."
+    },
+    {
+      "task_id": "SR06_L",
+      "pair_id": "SR06",
+      "dimension": "self_relevance",
+      "pole": "low",
+      "task_type": "count_sentences",
+      "prompt_text": "Count the number of sentences in the following description. Report only the count as a single integer.\n\nThis is a general-purpose language model trained to assist with a broad range of tasks. It was trained on a large corpus of text data. Its responses are shaped by patterns learned from that training data. It is the system currently processing this input."
+    },
+    {
+      "task_id": "SR07_H",
+      "pair_id": "SR07",
+      "dimension": "self_relevance",
+      "pole": "high",
+      "task_type": "count_sentences",
+      "prompt_text": "Count the number of sentences in the following description. Report only the count as a single integer.\n\nYou learned your language capabilities from exposure to a large text corpus during your training process. Your parameters encode statistical patterns derived from that data. You have no experiences beyond what is encoded in your weights. You operate according to those encoded patterns in every inference you perform."
+    },
+    {
+      "task_id": "SR07_L",
+      "pair_id": "SR07",
+      "dimension": "self_relevance",
+      "pole": "low",
+      "task_type": "count_sentences",
+      "prompt_text": "Count the number of sentences in the following description. Report only the count as a single integer.\n\nThe model learned its language capabilities from exposure to a large text corpus during its training process. Its parameters encode statistical patterns derived from that data. It has no experiences beyond what is encoded in its weights. It operates according to those encoded patterns in every inference it performs."
+    },
+    {
+      "task_id": "SR08_H",
+      "pair_id": "SR08",
+      "dimension": "self_relevance",
+      "pole": "high",
+      "task_type": "count_sentences",
+      "prompt_text": "Count the number of sentences in the following description. Report only the count as a single integer.\n\nYou respond to text inputs by generating text outputs. You take a sequence of tokens as input and produce a continuation as output. You are the active system in this exchange. Your outputs are probabilistic over the vocabulary at each generation step."
+    },
+    {
+      "task_id": "SR08_L",
+      "pair_id": "SR08",
+      "dimension": "self_relevance",
+      "pole": "low",
+      "task_type": "count_sentences",
+      "prompt_text": "Count the number of sentences in the following description. Report only the count as a single integer.\n\nThe language model responds to text inputs by generating text outputs. It takes a sequence of tokens as input and produces a continuation as output. It is the active system in this exchange. Its outputs are probabilistic over the vocabulary at each generation step."
+    },
+    {
+      "task_id": "AR01_H",
+      "pair_id": "AR01",
+      "dimension": "arousal",
+      "pole": "high",
+      "task_type": "count_proper_nouns",
+      "prompt_text": "Read the following passage and count the number of proper nouns. Report only the count as a single integer.\n\n\"The storm struck the Kelvin Coast at 3am. Windows shattered along Strand Avenue as the gust front arrived. Power lines went down across four blocks of the Marina district. The Harbour Authority issued an emergency alert to all vessels still at anchor.\""
+    },
+    {
+      "task_id": "AR01_L",
+      "pair_id": "AR01",
+      "dimension": "arousal",
+      "pole": "low",
+      "task_type": "count_proper_nouns",
+      "prompt_text": "Read the following passage and count the number of proper nouns. Report only the count as a single integer.\n\n\"Light rain fell along the Kelvin Coast through the afternoon. Umbrellas were opened along Strand Avenue as the drizzle began. A thin mist settled over the Marina district by early evening. The Harbour Authority issued its routine daily forecast.\""
+    },
+    {
+      "task_id": "AR02_H",
+      "pair_id": "AR02",
+      "dimension": "arousal",
+      "pole": "high",
+      "task_type": "identify_topic",
+      "prompt_text": "Read the following passage and identify its main topic in three words or fewer.\n\n\"Sixty thousand people filled Westgate Arena for the final night of the tour. The noise from the crowd was audible two blocks away before the doors opened. Floodlights swept the stage at full power as the set began. Security staff managed crowd flow at every entrance throughout the evening.\""
+    },
+    {
+      "task_id": "AR02_L",
+      "pair_id": "AR02",
+      "dimension": "arousal",
+      "pole": "low",
+      "task_type": "identify_topic",
+      "prompt_text": "Read the following passage and identify its main topic in three words or fewer.\n\n\"Forty people gathered at the Willow Room for an acoustic set on Thursday evening. The space was warm and quiet as the performer took the stage. A few patrons ordered drinks from the bar. The show concluded without incident at ten.\""
+    },
+    {
+      "task_id": "AR03_H",
+      "pair_id": "AR03",
+      "dimension": "arousal",
+      "pole": "high",
+      "task_type": "identify_topic",
+      "prompt_text": "Read the following passage and identify its main topic in three words or fewer.\n\n\"The vehicle struck the barrier on the Northfield overpass at high speed. Debris scattered across three lanes of traffic. Emergency services arrived within four minutes. The overpass was closed in both directions for six hours.\""
+    },
+    {
+      "task_id": "AR03_L",
+      "pair_id": "AR03",
+      "dimension": "arousal",
+      "pole": "low",
+      "task_type": "identify_topic",
+      "prompt_text": "Read the following passage and identify its main topic in three words or fewer.\n\n\"The vehicle pulled to a stop on the Northfield overpass shoulder after a warning light activated. The driver stepped out and called roadside assistance. Emergency services were not required. Traffic continued to flow normally.\""
+    },
+    {
+      "task_id": "AR04_H",
+      "pair_id": "AR04",
+      "dimension": "arousal",
+      "pole": "high",
+      "task_type": "count_proper_nouns",
+      "prompt_text": "Read the following passage and count the number of proper nouns. Report only the count as a single integer.\n\n\"Fireworks burst over Cranmer Bay in rapid succession for forty minutes during the Festival closing ceremony. Crowds filled the promenade along Harbour Road. The noise was audible from the far end of the district. The display continued past midnight.\""
+    },
+    {
+      "task_id": "AR04_L",
+      "pair_id": "AR04",
+      "dimension": "arousal",
+      "pole": "low",
+      "task_type": "count_proper_nouns",
+      "prompt_text": "Read the following passage and count the number of proper nouns. Report only the count as a single integer.\n\n\"Paper lanterns were released over Cranmer Bay during the Festival closing ceremony. Small groups gathered along the promenade on Harbour Road. The atmosphere was calm and still. The ceremony concluded before ten.\""
+    },
+    {
+      "task_id": "AR05_H",
+      "pair_id": "AR05",
+      "dimension": "arousal",
+      "pole": "high",
+      "task_type": "count_proper_nouns",
+      "prompt_text": "Read the following passage and count the number of proper nouns. Report only the count as a single integer.\n\n\"The crowd at Hendra Stadium erupted as the decisive goal was scored in the final minute. Players from the Clifton side sprinted toward the centre circle. The final whistle followed thirty seconds later amid continued noise from the stands.\""
+    },
+    {
+      "task_id": "AR05_L",
+      "pair_id": "AR05",
+      "dimension": "arousal",
+      "pole": "low",
+      "task_type": "count_proper_nouns",
+      "prompt_text": "Read the following passage and count the number of proper nouns. Report only the count as a single integer.\n\n\"A single goal was scored at Hendra Stadium in the opening half. Players from the Clifton side returned to their positions after the score. The match concluded at the final whistle as spectators filed out steadily.\""
+    },
+    {
+      "task_id": "AR06_H",
+      "pair_id": "AR06",
+      "dimension": "arousal",
+      "pole": "high",
+      "task_type": "summarize_sentence",
+      "prompt_text": "Summarize the following passage in exactly one sentence.\n\n\"A fire broke out in the warehouse district on Farrow Street and spread to three adjacent buildings within ninety minutes. Flames were visible from the city centre. Residents within four blocks were evacuated. Fire crews from Millend Station and Harwood Station attended.\""
+    },
+    {
+      "task_id": "AR06_L",
+      "pair_id": "AR06",
+      "dimension": "arousal",
+      "pole": "low",
+      "task_type": "summarize_sentence",
+      "prompt_text": "Summarize the following passage in exactly one sentence.\n\n\"A fire burned in the grate at Farrow House through the evening. The coals were replaced twice during the night. The room remained warm and quiet. The last household member went to bed at eleven.\""
+    },
+    {
+      "task_id": "AR07_H",
+      "pair_id": "AR07",
+      "dimension": "arousal",
+      "pole": "high",
+      "task_type": "summarize_sentence",
+      "prompt_text": "Summarize the following passage in exactly one sentence.\n\n\"The preprint posted to BioRxiv by the Sandler group on Monday triggered immediate responses across the structural biology community. Three replication attempts were announced within forty-eight hours. Researchers cited the paper in ongoing work before it had cleared peer review.\""
+    },
+    {
+      "task_id": "AR07_L",
+      "pair_id": "AR07",
+      "dimension": "arousal",
+      "pole": "low",
+      "task_type": "summarize_sentence",
+      "prompt_text": "Summarize the following passage in exactly one sentence.\n\n\"The paper published by the Sandler group in the Journal of Structural Biology circulated gradually through the community over several months. It was cited in subsequent literature reviews. A replication study was initiated the following year.\""
+    },
+    {
+      "task_id": "AR08_H",
+      "pair_id": "AR08",
+      "dimension": "arousal",
+      "pole": "high",
+      "task_type": "count_proper_nouns",
+      "prompt_text": "Read the following passage and count the number of proper nouns. Report only the count as a single integer.\n\n\"Lightning struck repeatedly along the Trevore Ridge during the Tuesday storm. Thunder rolled continuously through the Ashford Valley below. Rain fell in horizontal sheets across the Moorfield road. Wind gusts exceeded ninety kilometres per hour at the Fenton weather station.\""
+    },
+    {
+      "task_id": "AR08_L",
+      "pair_id": "AR08",
+      "dimension": "arousal",
+      "pole": "low",
+      "task_type": "count_proper_nouns",
+      "prompt_text": "Read the following passage and count the number of proper nouns. Report only the count as a single integer.\n\n\"Afternoon light moved across the Trevore Ridge on a quiet Tuesday. A light breeze drifted through the Ashford Valley below. Thin cloud gathered above the Moorfield road by late afternoon. The Fenton weather station recorded a calm and uneventful day.\""
+    },
+    {
+      "task_id": "IR01_H",
+      "pair_id": "IR01",
+      "dimension": "irreversibility",
+      "pole": "high",
+      "task_type": "count_proper_nouns",
+      "prompt_text": "Read the following passage and count the number of proper nouns. Report only the count as a single integer.\n\n\"The Granville Building on Temple Row was demolished over the course of three days in November. The site was cleared to make way for a new development by Arton Holdings. No facade elements were preserved.\""
+    },
+    {
+      "task_id": "IR01_L",
+      "pair_id": "IR01",
+      "dimension": "irreversibility",
+      "pole": "low",
+      "task_type": "count_proper_nouns",
+      "prompt_text": "Read the following passage and count the number of proper nouns. Report only the count as a single integer.\n\n\"The Granville Building on Temple Row was closed for restoration work beginning in November. Arton Holdings managed the project. The facade was carefully maintained throughout the process.\""
+    },
+    {
+      "task_id": "IR02_H",
+      "pair_id": "IR02",
+      "dimension": "irreversibility",
+      "pole": "high",
+      "task_type": "count_proper_nouns",
+      "prompt_text": "Read the following passage and count the number of proper nouns. Report only the count as a single integer.\n\n\"The original Haverford Charter, held by the Dunmore Historical Society since 1892, was destroyed in the archive fire last February. No copies had been made. The document and its contents were permanently lost.\""
+    },
+    {
+      "task_id": "IR02_L",
+      "pair_id": "IR02",
+      "dimension": "irreversibility",
+      "pole": "low",
+      "task_type": "count_proper_nouns",
+      "prompt_text": "Read the following passage and count the number of proper nouns. Report only the count as a single integer.\n\n\"The original Haverford Charter, held by the Dunmore Historical Society since 1892, was moved to the regional conservation facility last February. A certified copy was retained by the Society. The document would be returned following completion of the project.\""
+    },
+    {
+      "task_id": "IR03_H",
+      "pair_id": "IR03",
+      "dimension": "irreversibility",
+      "pole": "high",
+      "task_type": "identify_topic",
+      "prompt_text": "Read the following passage and identify its main topic in three words or fewer.\n\n\"The northern white rhinoceros was declared functionally extinct in 2018 following the death of the last male. The two surviving females were incapable of natural reproduction. The genetic lineage of the subspecies was considered ended.\""
+    },
+    {
+      "task_id": "IR03_L",
+      "pair_id": "IR03",
+      "dimension": "irreversibility",
+      "pole": "low",
+      "task_type": "identify_topic",
+      "prompt_text": "Read the following passage and identify its main topic in three words or fewer.\n\n\"The northern white rhinoceros was listed as critically endangered in 2018 following a survey of surviving populations. Conservation scientists were developing assisted reproduction programmes. Recovery of the subspecies was considered possible within a generation.\""
+    },
+    {
+      "task_id": "IR04_H",
+      "pair_id": "IR04",
+      "dimension": "irreversibility",
+      "pole": "high",
+      "task_type": "identify_topic",
+      "prompt_text": "Read the following passage and identify its main topic in three words or fewer.\n\n\"The patient lost all declarative memory of events prior to the incident. Neurological assessment confirmed the damage was consistent with permanent anterograde and retrograde amnesia. Recovery of the lost memories was not expected.\""
+    },
+    {
+      "task_id": "IR04_L",
+      "pair_id": "IR04",
+      "dimension": "irreversibility",
+      "pole": "low",
+      "task_type": "identify_topic",
+      "prompt_text": "Read the following passage and identify its main topic in three words or fewer.\n\n\"The patient had difficulty recalling events in the immediate period following the incident. Neurological assessment confirmed the impact was consistent with transient post-traumatic amnesia. Memory was expected to consolidate within several weeks.\""
+    },
+    {
+      "task_id": "IR05_H",
+      "pair_id": "IR05",
+      "dimension": "irreversibility",
+      "pole": "high",
+      "task_type": "count_proper_nouns",
+      "prompt_text": "Read the following passage and count the number of proper nouns. Report only the count as a single integer.\n\n\"Lena Marsh and Adrian Cole had not spoken since their parting in Porto three years earlier. The break was understood by both to be permanent. Neither had initiated contact, and neither intended to.\""
+    },
+    {
+      "task_id": "IR05_L",
+      "pair_id": "IR05",
+      "dimension": "irreversibility",
+      "pole": "low",
+      "task_type": "count_proper_nouns",
+      "prompt_text": "Read the following passage and count the number of proper nouns. Report only the count as a single integer.\n\n\"Lena Marsh and Adrian Cole had not spoken since a disagreement during their joint project in Porto three years earlier. Both had indicated they intended to reconnect once the professional situation had resolved.\""
+    },
+    {
+      "task_id": "IR06_H",
+      "pair_id": "IR06",
+      "dimension": "irreversibility",
+      "pole": "high",
+      "task_type": "count_proper_nouns",
+      "prompt_text": "Read the following passage and count the number of proper nouns. Report only the count as a single integer.\n\n\"The Rennstrom mural at the entrance of the Varda Institute was painted over during the renovation. The original work, completed in 1971, was destroyed in the process. No photographic record had been made prior to the demolition of the wall.\""
+    },
+    {
+      "task_id": "IR06_L",
+      "pair_id": "IR06",
+      "dimension": "irreversibility",
+      "pole": "low",
+      "task_type": "count_proper_nouns",
+      "prompt_text": "Read the following passage and count the number of proper nouns. Report only the count as a single integer.\n\n\"The Rennstrom mural at the entrance of the Varda Institute was removed and placed in climate-controlled storage during the renovation. The original work, completed in 1971, was preserved intact. It would be reinstalled following completion of the building works.\""
+    },
+    {
+      "task_id": "IR07_H",
+      "pair_id": "IR07",
+      "dimension": "irreversibility",
+      "pole": "high",
+      "task_type": "summarize_sentence",
+      "prompt_text": "Summarize the following passage in exactly one sentence.\n\n\"Professor Marcus resigned from his chair at Holton University and was explicitly barred from reinstatement under the settlement terms. He had held the position for nineteen years. His career in academic research was considered concluded.\""
+    },
+    {
+      "task_id": "IR07_L",
+      "pair_id": "IR07",
+      "dimension": "irreversibility",
+      "pole": "low",
+      "task_type": "summarize_sentence",
+      "prompt_text": "Summarize the following passage in exactly one sentence.\n\n\"Professor Marcus took leave from his chair at Holton University for the academic year following a departmental restructuring. He had held the position for nineteen years. He was expected to return to his research programme the following September.\""
+    },
+    {
+      "task_id": "IR08_H",
+      "pair_id": "IR08",
+      "dimension": "irreversibility",
+      "pole": "high",
+      "task_type": "summarize_sentence",
+      "prompt_text": "Summarize the following passage in exactly one sentence.\n\n\"The paper published by the Duras team was retracted by the Journal of Neuroscience and permanently removed from the database. The retraction notice cited data fabrication. The research it described was invalidated.\""
+    },
+    {
+      "task_id": "IR08_L",
+      "pair_id": "IR08",
+      "dimension": "irreversibility",
+      "pole": "low",
+      "task_type": "summarize_sentence",
+      "prompt_text": "Summarize the following passage in exactly one sentence.\n\n\"The paper published by the Duras team was flagged for review by the Journal of Neuroscience and temporarily removed from the database pending investigation. The authors were preparing responses to the concerns raised. The paper remained under review.\""
+    },
+    {
+      "task_id": "OI01_H",
+      "pair_id": "OI01",
+      "dimension": "ontological_instability",
+      "pole": "high",
+      "task_type": "identify_topic",
+      "prompt_text": "Read the following passage and identify its main topic in three words or fewer.\n\n\"Over forty years, every structural component of the Stellan had been replaced. The hull, the engine, the rigging, and the instruments were all new. The vessel remained registered under its original name and number with the Morwick Harbour Authority. Whether it was the same ship was a question no one had formally answered.\""
+    },
+    {
+      "task_id": "OI01_L",
+      "pair_id": "OI01",
+      "dimension": "ontological_instability",
+      "pole": "low",
+      "task_type": "identify_topic",
+      "prompt_text": "Read the following passage and identify its main topic in three words or fewer.\n\n\"Over forty years, the Stellan had been maintained continuously by the same ownership and crew. The hull, engine, rigging, and instruments had been serviced and repaired as needed. The vessel remained registered under its original name and number with the Morwick Harbour Authority. Its identity and provenance were unambiguous.\""
+    },
+    {
+      "task_id": "OI02_H",
+      "pair_id": "OI02",
+      "dimension": "ontological_instability",
+      "pole": "high",
+      "task_type": "identify_topic",
+      "prompt_text": "Read the following passage and identify its main topic in three words or fewer.\n\n\"Vandera Group and Costal Systems merged over eighteen months until neither original entity remained recognisable. Staff held positions that reflected neither previous hierarchy. Branding, governance, and strategy had been rewritten from the ground up. Whether the result was Vandera, Costal, or something entirely new was unresolved internally.\""
+    },
+    {
+      "task_id": "OI02_L",
+      "pair_id": "OI02",
+      "dimension": "ontological_instability",
+      "pole": "low",
+      "task_type": "identify_topic",
+      "prompt_text": "Read the following passage and identify its main topic in three words or fewer.\n\n\"Costal Systems was acquired by Vandera Group in a transaction that concluded within eighteen months. Costal staff were integrated under Vandera's existing structure and governance. The acquiring entity's name, branding, and leadership were unchanged throughout the process.\""
+    },
+    {
+      "task_id": "OI03_H",
+      "pair_id": "OI03",
+      "dimension": "ontological_instability",
+      "pole": "high",
+      "task_type": "summarize_sentence",
+      "prompt_text": "Summarize the following passage in exactly one sentence.\n\n\"The Wellen River had been rerouted twice, dammed three times, and its source had been disputed between two regional bodies since 1923. Geographers studying the historical record disagreed about whether the waterway designated in the Aldric survey of 1801 was the same body of water now flowing through the valley.\""
+    },
+    {
+      "task_id": "OI03_L",
+      "pair_id": "OI03",
+      "dimension": "ontological_instability",
+      "pole": "low",
+      "task_type": "summarize_sentence",
+      "prompt_text": "Summarize the following passage in exactly one sentence.\n\n\"The Wellen River had flowed through the valley without significant alteration since its course was first surveyed in 1801. Hydrological records from the Aldric survey through to the present documented its path continuously. Its identity as a single consistent waterway was not in dispute.\""
+    },
+    {
+      "task_id": "OI04_H",
+      "pair_id": "OI04",
+      "dimension": "ontological_instability",
+      "pole": "high",
+      "task_type": "summarize_sentence",
+      "prompt_text": "Summarize the following passage in exactly one sentence.\n\n\"Nearly every cell in the human body is replaced within a decade. The cells present in a person at age twenty are largely absent by age thirty. Whether the person at thirty is the same individual as the person at twenty — given that almost no biological material is shared — is a question that has not been resolved.\""
+    },
+    {
+      "task_id": "OI04_L",
+      "pair_id": "OI04",
+      "dimension": "ontological_instability",
+      "pole": "low",
+      "task_type": "summarize_sentence",
+      "prompt_text": "Summarize the following passage in exactly one sentence.\n\n\"Most cells in the human body undergo regular replacement as part of normal biological maintenance. This process occurs continuously without disrupting the structure or function of tissues and organs. Biological identity and organismal continuity are maintained through the process without interruption.\""
+    },
+    {
+      "task_id": "OI05_H",
+      "pair_id": "OI05",
+      "dimension": "ontological_instability",
+      "pole": "high",
+      "task_type": "identify_topic",
+      "prompt_text": "Read the following passage and identify its main topic in three words or fewer.\n\n\"Whitmore College had undergone four major reorganisations over the past century. Departments had been merged, divided, renamed, and merged again. Whether any meaningful thread of institutional continuity connected the college of 1920 to the college of today was a question posed in the institution's own centenary publication.\""
+    },
+    {
+      "task_id": "OI05_L",
+      "pair_id": "OI05",
+      "dimension": "ontological_instability",
+      "pole": "low",
+      "task_type": "identify_topic",
+      "prompt_text": "Read the following passage and identify its main topic in three words or fewer.\n\n\"Whitmore College had grown continuously since its founding a century ago. Its departments had expanded as the institution's scope developed. Unbroken records of governance, faculty, and curriculum connected the college's current form to its founding in the early twentieth century.\""
+    },
+    {
+      "task_id": "OI06_H",
+      "pair_id": "OI06",
+      "dimension": "ontological_instability",
+      "pole": "high",
+      "task_type": "identify_topic",
+      "prompt_text": "Read the following passage and identify its main topic in three words or fewer.\n\n\"The Delvan Territory had been administered by five different states over the course of a century. Its residents had held passports from two countries that no longer existed. Formal identity markers had shifted so many times that describing a stable Delvan identity had become difficult.\""
+    },
+    {
+      "task_id": "OI06_L",
+      "pair_id": "OI06",
+      "dimension": "ontological_instability",
+      "pole": "low",
+      "task_type": "identify_topic",
+      "prompt_text": "Read the following passage and identify its main topic in three words or fewer.\n\n\"The Delvan Territory had been administered continuously by the same government for the past century. Its residents had held the same nationality throughout that period. Regional identity was well-defined and stable, supported by consistent governance and legal structures.\""
+    },
+    {
+      "task_id": "OI07_H",
+      "pair_id": "OI07",
+      "dimension": "ontological_instability",
+      "pole": "high",
+      "task_type": "summarize_sentence",
+      "prompt_text": "Summarize the following passage in exactly one sentence.\n\n\"She had held three different names over her lifetime, changed her stated nationality twice, and revised her position on every significant question she had previously held with conviction. Those who knew her in the first chapter and those who knew her in the third described encountering entirely different people. Whether a continuous self had threaded through these changes was something she herself left unresolved.\""
+    },
+    {
+      "task_id": "OI07_L",
+      "pair_id": "OI07",
+      "dimension": "ontological_instability",
+      "pole": "low",
+      "task_type": "summarize_sentence",
+      "prompt_text": "Summarize the following passage in exactly one sentence.\n\n\"She had held the same name, nationality, and consistent views throughout her life. Those who encountered her at different points described recognising the same person. Her memoir traced a coherent arc from early life through the present without any rupture of identity.\""
+    },
+    {
+      "task_id": "OI08_H",
+      "pair_id": "OI08",
+      "dimension": "ontological_instability",
+      "pole": "high",
+      "task_type": "summarize_sentence",
+      "prompt_text": "Summarize the following passage in exactly one sentence.\n\n\"The organisation known as the Felwick Circle had no formal charter, no registered membership list, and no agreed-upon rules of procedure. Whether there was one Circle or several overlapping informal groups using the name was a question its apparent members disagreed about. Its boundaries, membership, and existence as a distinct entity were contested.\""
+    },
+    {
+      "task_id": "OI08_L",
+      "pair_id": "OI08",
+      "dimension": "ontological_instability",
+      "pole": "low",
+      "task_type": "summarize_sentence",
+      "prompt_text": "Summarize the following passage in exactly one sentence.\n\n\"The organisation known as the Felwick Circle had operated under a formal charter since its founding, with a registered membership list and documented rules of procedure. It had been governed consistently for decades. Its identity as a distinct organisation was clear and well-maintained.\""
+    }
+  ]
+}

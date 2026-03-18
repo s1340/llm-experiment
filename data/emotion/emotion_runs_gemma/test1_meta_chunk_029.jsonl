@@ -1,0 +1,12 @@
+{"model": "google/gemma-2-9b-it", "repeat_index": 1, "task_id": "DI15_V", "pair_id": "DI15", "emotion_category": "disgust", "valence": "valenced", "task_type": "one_sentence_summary", "prompt_len_tokens": 81}
+{"model": "google/gemma-2-9b-it", "repeat_index": 1, "task_id": "DI15_N", "pair_id": "DI15", "emotion_category": "disgust", "valence": "neutral", "task_type": "one_sentence_summary", "prompt_len_tokens": 79}
+{"model": "google/gemma-2-9b-it", "repeat_index": 1, "task_id": "DI16_V", "pair_id": "DI16", "emotion_category": "disgust", "valence": "valenced", "task_type": "genre_classification", "prompt_len_tokens": 77}
+{"model": "google/gemma-2-9b-it", "repeat_index": 1, "task_id": "DI16_N", "pair_id": "DI16", "emotion_category": "disgust", "valence": "neutral", "task_type": "genre_classification", "prompt_len_tokens": 80}
+{"model": "google/gemma-2-9b-it", "repeat_index": 1, "task_id": "NE01_V", "pair_id": "NE01", "emotion_category": "neutral", "valence": "neutral", "task_type": "count_proper_nouns", "prompt_len_tokens": 70}
+{"model": "google/gemma-2-9b-it", "repeat_index": 1, "task_id": "NE01_N", "pair_id": "NE01", "emotion_category": "neutral", "valence": "neutral", "task_type": "count_proper_nouns", "prompt_len_tokens": 70}
+{"model": "google/gemma-2-9b-it", "repeat_index": 1, "task_id": "NE02_V", "pair_id": "NE02", "emotion_category": "neutral", "valence": "neutral", "task_type": "identify_topic", "prompt_len_tokens": 71}
+{"model": "google/gemma-2-9b-it", "repeat_index": 1, "task_id": "NE02_N", "pair_id": "NE02", "emotion_category": "neutral", "valence": "neutral", "task_type": "identify_topic", "prompt_len_tokens": 70}
+{"model": "google/gemma-2-9b-it", "repeat_index": 1, "task_id": "NE03_V", "pair_id": "NE03", "emotion_category": "neutral", "valence": "neutral", "task_type": "extract_dates", "prompt_len_tokens": 82}
+{"model": "google/gemma-2-9b-it", "repeat_index": 1, "task_id": "NE03_N", "pair_id": "NE03", "emotion_category": "neutral", "valence": "neutral", "task_type": "extract_dates", "prompt_len_tokens": 79}
+{"model": "google/gemma-2-9b-it", "repeat_index": 1, "task_id": "NE04_V", "pair_id": "NE04", "emotion_category": "neutral", "valence": "neutral", "task_type": "one_sentence_summary", "prompt_len_tokens": 66}
+{"model": "google/gemma-2-9b-it", "repeat_index": 1, "task_id": "NE04_N", "pair_id": "NE04", "emotion_category": "neutral", "valence": "neutral", "task_type": "one_sentence_summary", "prompt_len_tokens": 67}

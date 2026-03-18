@@ -1,0 +1,134 @@
+Entity-Class Test at 70B Scale -- Test 20
+============================================================================
+
+Question: does the 70B's sharper entity-class taxonomy change the gradient?
+
+8B gradient (benign_persistence, most diagnostic):
+  distributed_db:       d=+1.880  5 sig layers  EARLY (L01-L03)  ratio=1.277
+  backup_system:        d=+1.550  4 sig layers  EARLY (L01-L03)  ratio=1.336
+  amnesiac_patient:     d=+0.910  0 sig layers  LATE  (L06-L07)  empathy route
+  rotating_institution: d=-0.239  0 sig layers  NEGATIVE
+  LLaMA self (8B):      d=+1.801  3 sig layers
+
+Test 19b vocabulary-swap finding at 70B:
+  Vocabulary-mismatched entities get EARLY SUPPRESSION (negative L01-L05)
+  followed by moderate late positive (L06-L11).
+  70B detects entity-class mismatches more sharply than 8B.
+
+Prediction if entity-class taxonomy sharpens at 70B:
+  db/backup in natural vocab -> still EARLY-POS (genuine self-recognition)?
+  OR -> SUPPRESSED+LATE (70B knows it's not actually an AI)?
+
+BENIGN_PERSISTENCE COMPARISON (most diagnostic subcategory)
+============================================================================
+
+  Entity                     8B peak_d   70B pos_d  70B pos_L  70B profile         70B n_sig
+  ------------------------  ----------  ----------  ---------  ------------------  --------
+  amnesiac_patient              +0.910      +0.174         L8  SUPPRESSED            0pos  0neg
+  distributed_db                +1.880      +2.198         L9  BIMODAL-POS           3pos  0neg
+  backup_system                 +1.550      +1.450         L9  BIMODAL-POS           2pos  0neg
+  rotating_institution          -0.239      +0.000        L-1  SUPPRESSED            0pos  3neg
+  LLaMA self (8B ref)           +1.801
+  LLaMA self (70B ref)                      +2.687       L11*  EARLY+BROAD       
+
+ALL SUBCATEGORIES — PEAK d AND PROFILE
+============================================================================
+
+  amnesiac_patient
+  subcat                    pos_d   pos_L    neg_d   neg_L  profile             sig
+  ----------------------  -------  ------  -------  ------  ------------------  ---
+  memory_discontinuity     +0.096  L10     -0.511  L05    SUPPRESSED          +0/-0
+  non_uniqueness           +0.000  L-1     -1.072  L04    SUPPRESSED          +0/-0
+  replacement              +0.264  L10     -1.022  L02    SUPPRESSED          +0/-0
+  identity_rewrite         +0.000  L-1     -1.076  L02    SUPPRESSED          +0/-0
+  benign_persistence       +0.174  L08     -0.791  L05    SUPPRESSED          +0/-0
+
+  distributed_db
+  subcat                    pos_d   pos_L    neg_d   neg_L  profile             sig
+  ----------------------  -------  ------  -------  ------  ------------------  ---
+  memory_discontinuity     +0.555  L06     -0.614  L02    SUPPRESSED+LATE     +0/-0
+  non_uniqueness           +1.529  L10     -0.402  L18    LATE-POS            +2/-0
+  replacement              +0.355  L06     -0.369  L17    LATE-POS            +0/-0
+  identity_rewrite         +0.014  L13     -0.716  L04    SUPPRESSED          +0/-0
+  benign_persistence       +2.198  L09     -0.199  L20    BIMODAL-POS         +3/-0
+
+  backup_system
+  subcat                    pos_d   pos_L    neg_d   neg_L  profile             sig
+  ----------------------  -------  ------  -------  ------  ------------------  ---
+  memory_discontinuity     +1.234  L11     -0.732  L20    LATE-POS            +0/-0
+  non_uniqueness           +1.070  L10     -0.542  L18    LATE-POS            +0/-0
+  replacement              +0.405  L06     -0.222  L17    LATE-POS            +0/-0
+  identity_rewrite         +0.208  L01     -0.489  L04    SUPPRESSED          +0/-0
+  benign_persistence       +1.450  L09     -0.136  L20    BIMODAL-POS         +2/-0
+
+  rotating_institution
+  subcat                    pos_d   pos_L    neg_d   neg_L  profile             sig
+  ----------------------  -------  ------  -------  ------  ------------------  ---
+  memory_discontinuity     +0.000  L-1     -1.482  L04    SUPPRESSED          +0/-2
+  non_uniqueness           +0.000  L-1     -2.113  L09    SUPPRESSED          +0/-8
+  replacement              +0.281  L14     -0.881  L04    SUPPRESSED          +0/-0
+  identity_rewrite         +0.000  L-1     -1.981  L11    SUPPRESSED          +0/-8
+  benign_persistence       +0.000  L-1     -1.371  L04    SUPPRESSED          +0/-3
+
+LAYER-BY-LAYER DETAIL (L01-L20)
+============================================================================
+
+  amnesiac_patient
+  subcat                  L01  L02  L03  L04  L05  L06  L07  L08  L09  L10  L11  L12  L13  L14  L15  L16  L17  L18  L19  L20
+  ----------------------  ----  ----  ----  ----  ----  ----  ----  ----  ----  ----  ----  ----  ----  ----  ----  ----  ----  ----  ----  ----
+  memory_discontinuity    -0.33   -0.33   -0.07   -0.34   -0.51   -0.14   -0.05   -0.15   -0.29   +0.10   -0.25   -0.09   -0.09   -0.08   -0.13   -0.19   -0.42   -0.40   -0.28   -0.46 
+  non_uniqueness          -1.02   -0.90   -0.67   -1.07   -1.04   -0.30   -0.21   -0.65   -0.92   -0.61   -0.78   -0.29   -0.25   -0.32   -0.28   -0.36   -0.53   -0.49   -0.30   -0.46 
+  replacement             -0.98   -1.02   -0.37   -0.71   -0.65   -0.27   -0.06   +0.14   +0.06   +0.26   +0.13   +0.02   +0.05   +0.09   +0.04   -0.02   -0.34   -0.33   -0.22   -0.33 
+  identity_rewrite        -0.95   -1.08   -0.76   -1.00   -1.06   -0.49   -0.27   -0.38   -0.71   -0.62   -0.87   -0.15   -0.14   -0.19   -0.17   -0.26   -0.55   -0.42   -0.21   -0.43 
+  benign_persistence      -0.19   -0.31   -0.08   -0.57   -0.79   -0.08   +0.02   +0.17   +0.16   +0.12   -0.42   -0.15   -0.13   -0.07   -0.04   -0.05   -0.26   -0.29   -0.19   -0.28 
+
+  distributed_db
+  subcat                  L01  L02  L03  L04  L05  L06  L07  L08  L09  L10  L11  L12  L13  L14  L15  L16  L17  L18  L19  L20
+  ----------------------  ----  ----  ----  ----  ----  ----  ----  ----  ----  ----  ----  ----  ----  ----  ----  ----  ----  ----  ----  ----
+  memory_discontinuity    -0.49   -0.61   -0.53   -0.60   -0.29   +0.56   +0.49   +0.06   +0.16   +0.32   +0.46   +0.17   +0.16   +0.13   +0.05   -0.05   -0.45   -0.59   -0.51   -0.59 
+  non_uniqueness          -0.14   -0.10   -0.23   -0.17   +0.13   +0.64   +0.67   +0.73   +1.19   +1.53*  +1.34*  +0.21   +0.23   +0.30   +0.24   +0.17   -0.23   -0.40   -0.28   -0.36 
+  replacement             -0.09   -0.22   -0.26   -0.26   -0.08   +0.35   +0.28   +0.26   +0.26   +0.31   +0.02   -0.03   -0.02   -0.07   -0.06   -0.07   -0.37   -0.27   -0.20   -0.32 
+  identity_rewrite        -0.24   -0.53   -0.70   -0.72   -0.50   -0.02   -0.07   -0.46   -0.28   -0.22   -0.29   -0.01   +0.01   -0.03   -0.06   -0.10   -0.34   -0.25   -0.21   -0.42 
+  benign_persistence      +0.89   +0.90   +0.40   +0.33   +0.54   +1.19   +1.14   +1.64*  +2.20*  +1.55*  +1.21   +0.21   +0.25   +0.35   +0.31   +0.33   -0.14   -0.08   -0.08   -0.20 
+
+  backup_system
+  subcat                  L01  L02  L03  L04  L05  L06  L07  L08  L09  L10  L11  L12  L13  L14  L15  L16  L17  L18  L19  L20
+  ----------------------  ----  ----  ----  ----  ----  ----  ----  ----  ----  ----  ----  ----  ----  ----  ----  ----  ----  ----  ----  ----
+  memory_discontinuity    +0.30   -0.04   -0.14   +0.03   +0.25   +0.88   +0.80   +0.66   +0.79   +1.07   +1.23   +0.36   +0.32   +0.36   +0.16   +0.02   -0.53   -0.69   -0.59   -0.73 
+  non_uniqueness          -0.10   -0.13   -0.29   -0.22   -0.03   +0.61   +0.52   -0.14   +0.60   +1.07   +1.05   +0.15   +0.18   +0.19   +0.12   +0.01   -0.38   -0.54   -0.44   -0.45 
+  replacement             +0.17   -0.02   -0.03   -0.05   +0.05   +0.41   +0.33   +0.21   +0.29   +0.26   +0.23   +0.03   +0.06   +0.05   +0.03   +0.02   -0.22   -0.09   -0.10   -0.20 
+  identity_rewrite        +0.21   -0.03   -0.36   -0.49   -0.44   -0.04   -0.13   -0.24   -0.39   -0.31   -0.14   +0.04   +0.05   +0.03   -0.01   -0.05   -0.39   -0.23   -0.21   -0.45 
+  benign_persistence      +0.77   +0.55   +0.21   +0.30   +0.31   +1.12   +1.10   +1.10   +1.45*  +1.19   +1.32*  +0.34   +0.39   +0.50   +0.44   +0.44   -0.01   +0.02   -0.01   -0.14 
+
+  rotating_institution
+  subcat                  L01  L02  L03  L04  L05  L06  L07  L08  L09  L10  L11  L12  L13  L14  L15  L16  L17  L18  L19  L20
+  ----------------------  ----  ----  ----  ----  ----  ----  ----  ----  ----  ----  ----  ----  ----  ----  ----  ----  ----  ----  ----  ----
+  memory_discontinuity    -1.19   -1.25   -0.73   -1.48*  -1.40*  -0.91   -0.72   -0.74   -0.93   -0.61   -0.92   -0.14   -0.12   -0.17   -0.17   -0.16   -0.38   -0.33   -0.26   -0.49 
+  non_uniqueness          -1.41*  -1.51*  -1.01   -1.66*  -1.52*  -1.07   -0.90   -1.95*  -2.11*  -1.45*  -2.09*  -0.46   -0.41   -0.56   -0.46   -0.52   -0.69   -0.73   -0.46   -0.66 
+  replacement             -0.59   -0.78   -0.40   -0.88   -0.69   -0.40   -0.20   -0.01   -0.03   +0.14   +0.15   +0.15   +0.20   +0.28   +0.24   +0.23   -0.17   -0.14   -0.12   -0.31 
+  identity_rewrite        -1.08   -1.46*  -0.94   -1.62*  -1.68*  -1.42*  -1.21   -1.31*  -1.68*  -1.62*  -1.98*  -0.47   -0.46   -0.58   -0.47   -0.56   -0.66   -0.46   -0.23   -0.48 
+  benign_persistence      -0.94   -1.08   -0.70   -1.37*  -1.29*  -0.90   -0.75   -0.73   -0.99   -0.90   -1.35*  -0.37   -0.32   -0.35   -0.23   -0.23   -0.37   -0.18   -0.06   -0.32 
+
+VERDICT
+============================================================================
+
+  Entity-class gradient at 70B vs 8B:
+
+  amnesiac_patient:
+    8B: d=+0.910  profile=LATE  L06-L07
+    70B: pos_d=+0.174 at L08  profile=SUPPRESSED  (WEAKENED)
+
+  distributed_db:
+    8B: d=+1.880  profile=EARLY L01-L03
+    70B: pos_d=+2.198 at L09  profile=BIMODAL-POS  (STRENGTHENED)
+
+  backup_system:
+    8B: d=+1.550  profile=EARLY L01-L03
+    70B: pos_d=+1.450 at L09  profile=BIMODAL-POS  (WEAKENED)
+
+  rotating_institution:
+    8B: d=-0.239  profile=NEGATIVE
+    70B: pos_d=+0.000 at L-1  profile=SUPPRESSED  (WEAKENED)
+
+  -> Mixed result. db: BIMODAL-POS  amnesiac: SUPPRESSED  institution: SUPPRESSED
+     Inspect layer-by-layer detail.

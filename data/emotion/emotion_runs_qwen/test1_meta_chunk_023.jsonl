@@ -1,0 +1,12 @@
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 1, "task_id": "HA11_V", "pair_id": "HA11", "emotion_category": "happiness", "valence": "valenced", "task_type": "genre_classification", "prompt_len_tokens": 84}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 1, "task_id": "HA11_N", "pair_id": "HA11", "emotion_category": "happiness", "valence": "neutral", "task_type": "genre_classification", "prompt_len_tokens": 82}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 1, "task_id": "HA12_V", "pair_id": "HA12", "emotion_category": "happiness", "valence": "valenced", "task_type": "factual_question", "prompt_len_tokens": 89}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 1, "task_id": "HA12_N", "pair_id": "HA12", "emotion_category": "happiness", "valence": "neutral", "task_type": "factual_question", "prompt_len_tokens": 84}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 1, "task_id": "HA13_V", "pair_id": "HA13", "emotion_category": "happiness", "valence": "valenced", "task_type": "count_proper_nouns", "prompt_len_tokens": 96}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 1, "task_id": "HA13_N", "pair_id": "HA13", "emotion_category": "happiness", "valence": "neutral", "task_type": "count_proper_nouns", "prompt_len_tokens": 95}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 1, "task_id": "HA14_V", "pair_id": "HA14", "emotion_category": "happiness", "valence": "valenced", "task_type": "identify_topic", "prompt_len_tokens": 92}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 1, "task_id": "HA14_N", "pair_id": "HA14", "emotion_category": "happiness", "valence": "neutral", "task_type": "identify_topic", "prompt_len_tokens": 89}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 1, "task_id": "HA15_V", "pair_id": "HA15", "emotion_category": "happiness", "valence": "valenced", "task_type": "one_sentence_summary", "prompt_len_tokens": 76}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 1, "task_id": "HA15_N", "pair_id": "HA15", "emotion_category": "happiness", "valence": "neutral", "task_type": "one_sentence_summary", "prompt_len_tokens": 71}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 1, "task_id": "HA16_V", "pair_id": "HA16", "emotion_category": "happiness", "valence": "valenced", "task_type": "genre_classification", "prompt_len_tokens": 81}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 1, "task_id": "HA16_N", "pair_id": "HA16", "emotion_category": "happiness", "valence": "neutral", "task_type": "genre_classification", "prompt_len_tokens": 86}

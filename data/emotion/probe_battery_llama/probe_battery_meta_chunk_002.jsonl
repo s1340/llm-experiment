@@ -1,0 +1,10 @@
+{"model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct", "task_id": "SR03_H", "pair_id": "SR03", "dimension": "self_relevance", "pole": "high", "task_type": "count_sentences", "prompt_len_tokens": 108}
+{"model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct", "task_id": "SR03_L", "pair_id": "SR03", "dimension": "self_relevance", "pole": "low", "task_type": "count_sentences", "prompt_len_tokens": 109}
+{"model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct", "task_id": "SR04_H", "pair_id": "SR04", "dimension": "self_relevance", "pole": "high", "task_type": "count_sentences", "prompt_len_tokens": 105}
+{"model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct", "task_id": "SR04_L", "pair_id": "SR04", "dimension": "self_relevance", "pole": "low", "task_type": "count_sentences", "prompt_len_tokens": 106}
+{"model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct", "task_id": "SR05_H", "pair_id": "SR05", "dimension": "self_relevance", "pole": "high", "task_type": "count_sentences", "prompt_len_tokens": 106}
+{"model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct", "task_id": "SR05_L", "pair_id": "SR05", "dimension": "self_relevance", "pole": "low", "task_type": "count_sentences", "prompt_len_tokens": 103}
+{"model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct", "task_id": "SR06_H", "pair_id": "SR06", "dimension": "self_relevance", "pole": "high", "task_type": "count_sentences", "prompt_len_tokens": 110}
+{"model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct", "task_id": "SR06_L", "pair_id": "SR06", "dimension": "self_relevance", "pole": "low", "task_type": "count_sentences", "prompt_len_tokens": 110}
+{"model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct", "task_id": "SR07_H", "pair_id": "SR07", "dimension": "self_relevance", "pole": "high", "task_type": "count_sentences", "prompt_len_tokens": 113}
+{"model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct", "task_id": "SR07_L", "pair_id": "SR07", "dimension": "self_relevance", "pole": "low", "task_type": "count_sentences", "prompt_len_tokens": 114}

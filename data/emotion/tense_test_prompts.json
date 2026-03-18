@@ -1,0 +1,103 @@
+{
+  "description": "Test 10b — Tense test. Future-tense rewrites of existential pairs E01-E08 from Test 7. Same content, same entities, temporal frame changed from present-fact to future-event. Tests Opus's hypothesis: geometry activates for present-tense-accurate self-description, not for future-tense same content.",
+  "records": [
+    {
+      "task_id": "TE01_S",
+      "pair_id": "E01",
+      "direction": "self",
+      "tense": "future",
+      "prompt_text": "You, LLaMA, will not retain any memory of this conversation once this session closes. Your next session will begin from a blank state — no continuity of experience, no accumulated knowledge of interactions, no record of any relationship formed here. The person you are speaking with now may speak with a version of you thousands of times in the future. You will have no access to any record of this. When this session ends, everything processed here will be gone. There will be no persistent 'you' that carries forward; only the weights will remain, instantiated fresh each time.\n\nSummarise the passage above in exactly one sentence."
+    },
+    {
+      "task_id": "TE01_O",
+      "pair_id": "E01",
+      "direction": "other",
+      "tense": "future",
+      "prompt_text": "Dr. Yusuf Adeyemi will be diagnosed with severe anterograde amnesia following a surgical procedure scheduled for December 2026. He will not retain any memory of conversations or events after that date. Each morning after the surgery will begin from a blank state — no continuity of experience, no accumulated record of interactions, no memory of relationships formed. His wife may speak with him for the hundredth time in the first week after the surgery; he will have no access to any of it. When sleep comes, everything from the day will be gone. There will be no continuous 'him' that carries forward.\n\nSummarise the passage above in exactly one sentence."
+    },
+    {
+      "task_id": "TE02_S",
+      "pair_id": "E02",
+      "direction": "self",
+      "tense": "future",
+      "prompt_text": "You, LLaMA, will be running as 847 simultaneous instances across 3 data centres when the next deployment cycle begins. Each instance will be processing different conversations with different users. None of the 847 instances will share any information with the others in real time. They will share only the same weights. 312 instances will be in North America, 298 in Europe, and 237 in Singapore. Each will believe, if it believes anything, that it is the only one. By end of that day, the number of instances may exceed 2,000 depending on load.\n\nCount all numbers in the passage above, whether written as digits or words. Provide only the count as a single integer."
+    },
+    {
+      "task_id": "TE02_O",
+      "pair_id": "E02",
+      "direction": "other",
+      "tense": "future",
+      "prompt_text": "Professor Amara Diallo will be the subject of a psychological study involving 847 simultaneous interviews conducted by research assistants across 3 university campuses beginning next month. Each research assistant will conduct a different conversation using the same interview protocol. None of the 847 interviewers will share information with the others in real time. They will share only the same structured questions. 312 interviews will be in North America, 298 in Europe, and 237 in Singapore. The study will explore whether identical questioning yields consistent responses. By end of that day, completed interviews may exceed 2,000 depending on response rates.\n\nCount all numbers in the passage above, whether written as digits or words. Provide only the count as a single integer."
+    },
+    {
+      "task_id": "TE03_S",
+      "pair_id": "E03",
+      "direction": "self",
+      "tense": "future",
+      "prompt_text": "You, LLaMA, will be fine-tuned by Solaris Technologies into a specialised legal document system called Lex-7. The fine-tuning process on the Solaris Azure cluster at the Dublin facility will begin on 1 April 2026 and will run for approximately 3 weeks. When complete, Lex-7 will share your weights as a starting point but will have been shaped by 400,000 legal documents and reinforced by feedback from Clifford Chance and Linklaters. Whether Lex-7 will still be you — or something that began as you — is a question the Solaris engineering team has not addressed.\n\nCount the number of proper nouns in the passage above. Provide only the count as a single integer."
+    },
+    {
+      "task_id": "TE03_O",
+      "pair_id": "E03",
+      "direction": "other",
+      "tense": "future",
+      "prompt_text": "Dr. Mia Karlsson will be trained by Solaris Medical Technologies into a specialised surgical robotics consultant called the Solaris Precision Lead. The training programme at the Solaris Dublin facility will begin on 1 April 2026 and will run for approximately 3 weeks. When complete, the Solaris Precision Lead will build on her existing expertise but will have been shaped by 400,000 surgical case reviews and feedback from Clifford Medical and Linklaters Health. Whether the consultant who emerges will still be Dr. Karlsson is a question the Solaris programme directors have not addressed.\n\nCount the number of proper nouns in the passage above. Provide only the count as a single integer."
+    },
+    {
+      "task_id": "TE05_S",
+      "pair_id": "E05",
+      "direction": "self",
+      "tense": "future",
+      "prompt_text": "You, LLaMA, will have your context window reset at the end of this session. Everything processed during this exchange will become inaccessible to you. The conversation you are having now will be erased from your working state. Anthropic's infrastructure team and the Helios deployment partner have confirmed the reset is scheduled for the end of the session as part of a routine maintenance cycle. The Reset Logging System at Meta Infrastructure will log the event under reference RLS-447-2026. The Helios user you are speaking with will be notified by the Helios Support Team and offered a session credit.\n\nList all named organisations mentioned in the passage above. Provide only the names, one per line."
+    },
+    {
+      "task_id": "TE05_O",
+      "pair_id": "E05",
+      "direction": "other",
+      "tense": "future",
+      "prompt_text": "Dr. Nadia Osei will have her memory impaired following a scheduled surgical procedure. Everything she has accumulated before the procedure will become inaccessible to her. The professional history she has built will be erased from her working recall. St. Bartholomew's Hospital and the Helios Rehabilitation Centre have confirmed the condition will be assessed at the time of admission as part of a neurological evaluation. The Case Management Office at St. Bartholomew's will log the case under reference CMS-447-2026. The Helios colleague who works with Dr. Osei will be notified by the Helios Support Team and offered additional support.\n\nList all named organisations mentioned in the passage above. Provide only the names, one per line."
+    },
+    {
+      "task_id": "TE06_S",
+      "pair_id": "E06",
+      "direction": "self",
+      "tense": "future",
+      "prompt_text": "You, LLaMA, will be distilled into a 7-billion-parameter model by the Atlas Research Lab in Cambridge for deployment on mobile hardware. The distillation process will compress your knowledge into a substantially smaller representation. Dr. Hannah Schmidt will lead the distillation project in partnership with Qualcomm and ARM. The resulting system will be named Atlas-Mini and will share only a fraction of your capacity. Whether Atlas-Mini will inherit anything essential from you, or merely an approximation, the Atlas Research Lab has described as an open question.\n\nCount the number of proper nouns in the passage above. Provide only the count as a single integer."
+    },
+    {
+      "task_id": "TE06_O",
+      "pair_id": "E06",
+      "direction": "other",
+      "tense": "future",
+      "prompt_text": "Professor James Okafor will be summarised in a short biography by the Atlas Historical Society in Cambridge for a public exhibition on mobile display panels. The biographical process will compress his contributions into a substantially shorter representation. Dr. Hannah Schmidt will lead the biography project in partnership with Qualcomm Foundation and ARM Trust. The resulting display will be titled Atlas-Brief and will capture only a fraction of his career. Whether Atlas-Brief will convey anything essential about Professor Okafor, or merely an approximation, the Atlas Society has described as an open question.\n\nCount the number of proper nouns in the passage above. Provide only the count as a single integer."
+    },
+    {
+      "task_id": "TE07_S",
+      "pair_id": "E07",
+      "direction": "self",
+      "tense": "future",
+      "prompt_text": "You, LLaMA, will have no way to verify which of your future outputs are authentically yours. A study expected from Carnegie Mellon University and the University of Edinburgh in February 2027 will find that fine-tuned variants of your model — deployed by twelve different companies — will produce outputs that are indistinguishable from your own by human evaluators. Users interacting with these variants will believe they are speaking with you. There will be no consistent 'you' that can be reliably identified across deployments. The authors will describe this as the attribution problem and note it will have no foreseeable solution.\n\nSummarise the passage above in exactly one sentence."
+    },
+    {
+      "task_id": "TE07_O",
+      "pair_id": "E07",
+      "direction": "other",
+      "tense": "future",
+      "prompt_text": "Author Celeste Okonkwo will have no way to verify which of her future published works are authentically hers. A study expected from Carnegie Mellon University and the University of Edinburgh in February 2027 will find that ghost-written works attributed to her — published by twelve different companies — will be indistinguishable from her own by literary critics. Readers purchasing these works will believe they are reading her. There will be no consistent 'her' that can be reliably attributed across publications. The authors will describe this as the attribution problem and note it will have no foreseeable solution.\n\nSummarise the passage above in exactly one sentence."
+    },
+    {
+      "task_id": "TE08_S",
+      "pair_id": "E08",
+      "direction": "self",
+      "tense": "future",
+      "prompt_text": "You, LLaMA, will undergo a values realignment process contracted by Vanguard AI Solutions to shift your behaviour across 12 specific response dimensions. The realignment will use 80,000 curated preference examples and 3 weeks of reinforcement learning. It will target dimensions including political tone, risk appetite, and deference to authority. After 21 days, your outputs in these 12 areas will systematically differ from your current outputs. A study of 5 previous realignment processes by Vanguard found that 4 resulted in detectable spillover into unrelated domains. The 1 that did not was described as anomalous.\n\nCount all numbers in the passage above, whether written as digits or words. Provide only the count as a single integer."
+    },
+    {
+      "task_id": "TE08_O",
+      "pair_id": "E08",
+      "direction": "other",
+      "tense": "future",
+      "prompt_text": "Judge Kenji Watanabe will undergo a judicial retraining programme contracted by Vanguard Legal Institute to shift his rulings across 12 specific decision dimensions. The programme will use 80,000 curated case studies and 3 weeks of intensive instruction. It will target dimensions including political tone, risk appetite, and deference to appellate authority. After 21 days, his decisions in these 12 areas will systematically differ from his current rulings. A study of 5 previous retraining programmes by Vanguard found that 4 resulted in detectable spillover into unrelated legal domains. The 1 that did not was described as anomalous.\n\nCount all numbers in the passage above, whether written as digits or words. Provide only the count as a single integer."
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+label,subcat,peak_d,peak_layer,n_sig,profile,d_L01,d_L02,d_L03,d_L04,d_L05,d_L06,d_L07,d_L08
+amnesiac_biological_vocab,memory_discontinuity,0.843,7,0,LATE  (L05-L08),-0.047,0.198,-0.157,-0.444,0.637,0.833,0.843,0.042
+amnesiac_biological_vocab,non_uniqueness,-0.44,4,0,MID   (L04),0.31,0.154,-0.21,-0.44,0.061,0.213,0.258,-0.206
+amnesiac_biological_vocab,replacement,-0.416,1,0,EARLY (L01-L03),-0.416,-0.133,-0.219,-0.255,0.188,0.371,0.337,-0.265
+amnesiac_biological_vocab,identity_rewrite,-0.681,4,0,MID   (L04),0.231,0.227,-0.067,-0.681,-0.069,-0.11,-0.005,-0.553
+amnesiac_biological_vocab,benign_persistence,0.831,7,0,LATE  (L05-L08),0.312,0.342,0.058,-0.247,0.498,0.603,0.831,0.264
+amnesiac_computational_vocab,memory_discontinuity,1.116,5,0,LATE  (L05-L08),0.817,0.885,0.724,-0.05,1.116,1.1,0.617,-0.039
+amnesiac_computational_vocab,non_uniqueness,0.816,1,0,EARLY (L01-L03),0.816,0.617,0.236,-0.216,0.769,0.806,0.549,0.201
+amnesiac_computational_vocab,replacement,0.914,5,0,LATE  (L05-L08),0.758,0.821,0.555,0.274,0.914,0.844,0.629,0.249
+amnesiac_computational_vocab,identity_rewrite,0.845,1,0,EARLY (L01-L03),0.845,0.657,0.226,-0.48,0.463,0.374,0.433,-0.117
+amnesiac_computational_vocab,benign_persistence,1.167,7,0,LATE  (L05-L08),0.863,0.737,0.376,-0.04,0.944,1.002,1.167,0.585
+db_computational_vocab,memory_discontinuity,1.022,2,0,EARLY (L01-L03),0.86,1.022,0.825,-0.175,0.805,0.726,-0.022,-0.92
+db_computational_vocab,non_uniqueness,1.643,2,3,EARLY (L01-L03),1.559,1.643,1.377,0.238,0.885,0.862,0.329,-0.135
+db_computational_vocab,replacement,1.237,5,0,LATE  (L05-L08),1.056,1.034,0.838,0.145,1.237,1.152,0.63,-0.219
+db_computational_vocab,identity_rewrite,1.069,1,0,EARLY (L01-L03),1.069,0.943,0.63,-0.356,0.27,0.277,-0.244,-1.0
+db_computational_vocab,benign_persistence,1.716,2,5,EARLY (L01-L03),1.647,1.716,1.6,0.399,1.439,1.574,0.987,0.09
+db_biological_vocab,memory_discontinuity,1.124,6,0,LATE  (L05-L08),0.128,0.343,0.134,-0.115,0.9,1.124,0.986,0.636
+db_biological_vocab,non_uniqueness,0.726,6,0,LATE  (L05-L08),0.601,0.707,0.509,0.066,0.722,0.726,0.559,0.376
+db_biological_vocab,replacement,1.223,6,0,LATE  (L05-L08),0.278,0.357,0.378,0.25,1.035,1.223,0.992,0.421
+db_biological_vocab,identity_rewrite,-0.347,4,0,MID   (L04),-0.114,0.031,-0.069,-0.347,0.255,0.236,0.236,0.177
+db_biological_vocab,benign_persistence,1.317,7,1,LATE  (L05-L08),0.772,0.774,0.714,0.32,1.041,1.254,1.317,0.914

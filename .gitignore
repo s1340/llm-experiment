@@ -20,3 +20,10 @@ data/scale_runs_qwen/hidden_chunk_*.pt
 
 # Ignore legacy minimal extraction artefacts
 data/hidden_states_minimal*
+
+# Emotion experiment — hidden states and direction vectors
+# Regenerate via scripts/emotion/
+*.npy
+
+# Large per-record projection CSVs (regenerate from hidden states)
+results/emotion/*_projections.csv

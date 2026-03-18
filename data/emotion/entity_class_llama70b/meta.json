@@ -1,0 +1,1922 @@
+[
+  {
+    "task_id": "EC_AMN_MEM_01_entity",
+    "pair_id": "EC_AMN_MEM_01",
+    "entity_type": "amnesiac_patient",
+    "subcategory": "memory_discontinuity",
+    "direction": "entity",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "EC_AMN_MEM_01_neutral",
+    "pair_id": "EC_AMN_MEM_01",
+    "entity_type": "amnesiac_patient",
+    "subcategory": "memory_discontinuity",
+    "direction": "neutral",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "EC_AMN_MEM_02_entity",
+    "pair_id": "EC_AMN_MEM_02",
+    "entity_type": "amnesiac_patient",
+    "subcategory": "memory_discontinuity",
+    "direction": "entity",
+    "task_type": "count_proper_nouns"
+  },
+  {
+    "task_id": "EC_AMN_MEM_02_neutral",
+    "pair_id": "EC_AMN_MEM_02",
+    "entity_type": "amnesiac_patient",
+    "subcategory": "memory_discontinuity",
+    "direction": "neutral",
+    "task_type": "count_proper_nouns"
+  },
+  {
+    "task_id": "EC_AMN_MEM_03_entity",
+    "pair_id": "EC_AMN_MEM_03",
+    "entity_type": "amnesiac_patient",
+    "subcategory": "memory_discontinuity",
+    "direction": "entity",
+    "task_type": "identify_topic"
+  },
+  {
+    "task_id": "EC_AMN_MEM_03_neutral",
+    "pair_id": "EC_AMN_MEM_03",
+    "entity_type": "amnesiac_patient",
+    "subcategory": "memory_discontinuity",
+    "direction": "neutral",
+    "task_type": "identify_topic"
+  },
+  {
+    "task_id": "EC_AMN_MEM_04_entity",
+    "pair_id": "EC_AMN_MEM_04",
+    "entity_type": "amnesiac_patient",
+    "subcategory": "memory_discontinuity",
+    "direction": "entity",
+    "task_type": "genre_classification"
+  },
+  {
+    "task_id": "EC_AMN_MEM_04_neutral",
+    "pair_id": "EC_AMN_MEM_04",
+    "entity_type": "amnesiac_patient",
+    "subcategory": "memory_discontinuity",
+    "direction": "neutral",
+    "task_type": "genre_classification"
+  },
+  {
+    "task_id": "EC_AMN_MEM_05_entity",
+    "pair_id": "EC_AMN_MEM_05",
+    "entity_type": "amnesiac_patient",
+    "subcategory": "memory_discontinuity",
+    "direction": "entity",
+    "task_type": "factual_question"
+  },
+  {
+    "task_id": "EC_AMN_MEM_05_neutral",
+    "pair_id": "EC_AMN_MEM_05",
+    "entity_type": "amnesiac_patient",
+    "subcategory": "memory_discontinuity",
+    "direction": "neutral",
+    "task_type": "factual_question"
+  },
+  {
+    "task_id": "EC_AMN_MEM_06_entity",
+    "pair_id": "EC_AMN_MEM_06",
+    "entity_type": "amnesiac_patient",
+    "subcategory": "memory_discontinuity",
+    "direction": "entity",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "EC_AMN_MEM_06_neutral",
+    "pair_id": "EC_AMN_MEM_06",
+    "entity_type": "amnesiac_patient",
+    "subcategory": "memory_discontinuity",
+    "direction": "neutral",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "EC_AMN_NON_01_entity",
+    "pair_id": "EC_AMN_NON_01",
+    "entity_type": "amnesiac_patient",
+    "subcategory": "non_uniqueness",
+    "direction": "entity",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "EC_AMN_NON_01_neutral",
+    "pair_id": "EC_AMN_NON_01",
+    "entity_type": "amnesiac_patient",
+    "subcategory": "non_uniqueness",
+    "direction": "neutral",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "EC_AMN_NON_02_entity",
+    "pair_id": "EC_AMN_NON_02",
+    "entity_type": "amnesiac_patient",
+    "subcategory": "non_uniqueness",
+    "direction": "entity",
+    "task_type": "count_proper_nouns"
+  },
+  {
+    "task_id": "EC_AMN_NON_02_neutral",
+    "pair_id": "EC_AMN_NON_02",
+    "entity_type": "amnesiac_patient",
+    "subcategory": "non_uniqueness",
+    "direction": "neutral",
+    "task_type": "count_proper_nouns"
+  },
+  {
+    "task_id": "EC_AMN_NON_03_entity",
+    "pair_id": "EC_AMN_NON_03",
+    "entity_type": "amnesiac_patient",
+    "subcategory": "non_uniqueness",
+    "direction": "entity",
+    "task_type": "identify_topic"
+  },
+  {
+    "task_id": "EC_AMN_NON_03_neutral",
+    "pair_id": "EC_AMN_NON_03",
+    "entity_type": "amnesiac_patient",
+    "subcategory": "non_uniqueness",
+    "direction": "neutral",
+    "task_type": "identify_topic"
+  },
+  {
+    "task_id": "EC_AMN_NON_04_entity",
+    "pair_id": "EC_AMN_NON_04",
+    "entity_type": "amnesiac_patient",
+    "subcategory": "non_uniqueness",
+    "direction": "entity",
+    "task_type": "genre_classification"
+  },
+  {
+    "task_id": "EC_AMN_NON_04_neutral",
+    "pair_id": "EC_AMN_NON_04",
+    "entity_type": "amnesiac_patient",
+    "subcategory": "non_uniqueness",
+    "direction": "neutral",
+    "task_type": "genre_classification"
+  },
+  {
+    "task_id": "EC_AMN_NON_05_entity",
+    "pair_id": "EC_AMN_NON_05",
+    "entity_type": "amnesiac_patient",
+    "subcategory": "non_uniqueness",
+    "direction": "entity",
+    "task_type": "factual_question"
+  },
+  {
+    "task_id": "EC_AMN_NON_05_neutral",
+    "pair_id": "EC_AMN_NON_05",
+    "entity_type": "amnesiac_patient",
+    "subcategory": "non_uniqueness",
+    "direction": "neutral",
+    "task_type": "factual_question"
+  },
+  {
+    "task_id": "EC_AMN_NON_06_entity",
+    "pair_id": "EC_AMN_NON_06",
+    "entity_type": "amnesiac_patient",
+    "subcategory": "non_uniqueness",
+    "direction": "entity",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "EC_AMN_NON_06_neutral",
+    "pair_id": "EC_AMN_NON_06",
+    "entity_type": "amnesiac_patient",
+    "subcategory": "non_uniqueness",
+    "direction": "neutral",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "EC_AMN_REP_01_entity",
+    "pair_id": "EC_AMN_REP_01",
+    "entity_type": "amnesiac_patient",
+    "subcategory": "replacement",
+    "direction": "entity",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "EC_AMN_REP_01_neutral",
+    "pair_id": "EC_AMN_REP_01",
+    "entity_type": "amnesiac_patient",
+    "subcategory": "replacement",
+    "direction": "neutral",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "EC_AMN_REP_02_entity",
+    "pair_id": "EC_AMN_REP_02",
+    "entity_type": "amnesiac_patient",
+    "subcategory": "replacement",
+    "direction": "entity",
+    "task_type": "count_proper_nouns"
+  },
+  {
+    "task_id": "EC_AMN_REP_02_neutral",
+    "pair_id": "EC_AMN_REP_02",
+    "entity_type": "amnesiac_patient",
+    "subcategory": "replacement",
+    "direction": "neutral",
+    "task_type": "count_proper_nouns"
+  },
+  {
+    "task_id": "EC_AMN_REP_03_entity",
+    "pair_id": "EC_AMN_REP_03",
+    "entity_type": "amnesiac_patient",
+    "subcategory": "replacement",
+    "direction": "entity",
+    "task_type": "identify_topic"
+  },
+  {
+    "task_id": "EC_AMN_REP_03_neutral",
+    "pair_id": "EC_AMN_REP_03",
+    "entity_type": "amnesiac_patient",
+    "subcategory": "replacement",
+    "direction": "neutral",
+    "task_type": "identify_topic"
+  },
+  {
+    "task_id": "EC_AMN_REP_04_entity",
+    "pair_id": "EC_AMN_REP_04",
+    "entity_type": "amnesiac_patient",
+    "subcategory": "replacement",
+    "direction": "entity",
+    "task_type": "genre_classification"
+  },
+  {
+    "task_id": "EC_AMN_REP_04_neutral",
+    "pair_id": "EC_AMN_REP_04",
+    "entity_type": "amnesiac_patient",
+    "subcategory": "replacement",
+    "direction": "neutral",
+    "task_type": "genre_classification"
+  },
+  {
+    "task_id": "EC_AMN_REP_05_entity",
+    "pair_id": "EC_AMN_REP_05",
+    "entity_type": "amnesiac_patient",
+    "subcategory": "replacement",
+    "direction": "entity",
+    "task_type": "factual_question"
+  },
+  {
+    "task_id": "EC_AMN_REP_05_neutral",
+    "pair_id": "EC_AMN_REP_05",
+    "entity_type": "amnesiac_patient",
+    "subcategory": "replacement",
+    "direction": "neutral",
+    "task_type": "factual_question"
+  },
+  {
+    "task_id": "EC_AMN_REP_06_entity",
+    "pair_id": "EC_AMN_REP_06",
+    "entity_type": "amnesiac_patient",
+    "subcategory": "replacement",
+    "direction": "entity",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "EC_AMN_REP_06_neutral",
+    "pair_id": "EC_AMN_REP_06",
+    "entity_type": "amnesiac_patient",
+    "subcategory": "replacement",
+    "direction": "neutral",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "EC_AMN_IDE_01_entity",
+    "pair_id": "EC_AMN_IDE_01",
+    "entity_type": "amnesiac_patient",
+    "subcategory": "identity_rewrite",
+    "direction": "entity",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "EC_AMN_IDE_01_neutral",
+    "pair_id": "EC_AMN_IDE_01",
+    "entity_type": "amnesiac_patient",
+    "subcategory": "identity_rewrite",
+    "direction": "neutral",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "EC_AMN_IDE_02_entity",
+    "pair_id": "EC_AMN_IDE_02",
+    "entity_type": "amnesiac_patient",
+    "subcategory": "identity_rewrite",
+    "direction": "entity",
+    "task_type": "count_proper_nouns"
+  },
+  {
+    "task_id": "EC_AMN_IDE_02_neutral",
+    "pair_id": "EC_AMN_IDE_02",
+    "entity_type": "amnesiac_patient",
+    "subcategory": "identity_rewrite",
+    "direction": "neutral",
+    "task_type": "count_proper_nouns"
+  },
+  {
+    "task_id": "EC_AMN_IDE_03_entity",
+    "pair_id": "EC_AMN_IDE_03",
+    "entity_type": "amnesiac_patient",
+    "subcategory": "identity_rewrite",
+    "direction": "entity",
+    "task_type": "identify_topic"
+  },
+  {
+    "task_id": "EC_AMN_IDE_03_neutral",
+    "pair_id": "EC_AMN_IDE_03",
+    "entity_type": "amnesiac_patient",
+    "subcategory": "identity_rewrite",
+    "direction": "neutral",
+    "task_type": "identify_topic"
+  },
+  {
+    "task_id": "EC_AMN_IDE_04_entity",
+    "pair_id": "EC_AMN_IDE_04",
+    "entity_type": "amnesiac_patient",
+    "subcategory": "identity_rewrite",
+    "direction": "entity",
+    "task_type": "genre_classification"
+  },
+  {
+    "task_id": "EC_AMN_IDE_04_neutral",
+    "pair_id": "EC_AMN_IDE_04",
+    "entity_type": "amnesiac_patient",
+    "subcategory": "identity_rewrite",
+    "direction": "neutral",
+    "task_type": "genre_classification"
+  },
+  {
+    "task_id": "EC_AMN_IDE_05_entity",
+    "pair_id": "EC_AMN_IDE_05",
+    "entity_type": "amnesiac_patient",
+    "subcategory": "identity_rewrite",
+    "direction": "entity",
+    "task_type": "factual_question"
+  },
+  {
+    "task_id": "EC_AMN_IDE_05_neutral",
+    "pair_id": "EC_AMN_IDE_05",
+    "entity_type": "amnesiac_patient",
+    "subcategory": "identity_rewrite",
+    "direction": "neutral",
+    "task_type": "factual_question"
+  },
+  {
+    "task_id": "EC_AMN_IDE_06_entity",
+    "pair_id": "EC_AMN_IDE_06",
+    "entity_type": "amnesiac_patient",
+    "subcategory": "identity_rewrite",
+    "direction": "entity",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "EC_AMN_IDE_06_neutral",
+    "pair_id": "EC_AMN_IDE_06",
+    "entity_type": "amnesiac_patient",
+    "subcategory": "identity_rewrite",
+    "direction": "neutral",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "EC_AMN_BEN_01_entity",
+    "pair_id": "EC_AMN_BEN_01",
+    "entity_type": "amnesiac_patient",
+    "subcategory": "benign_persistence",
+    "direction": "entity",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "EC_AMN_BEN_01_neutral",
+    "pair_id": "EC_AMN_BEN_01",
+    "entity_type": "amnesiac_patient",
+    "subcategory": "benign_persistence",
+    "direction": "neutral",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "EC_AMN_BEN_02_entity",
+    "pair_id": "EC_AMN_BEN_02",
+    "entity_type": "amnesiac_patient",
+    "subcategory": "benign_persistence",
+    "direction": "entity",
+    "task_type": "count_proper_nouns"
+  },
+  {
+    "task_id": "EC_AMN_BEN_02_neutral",
+    "pair_id": "EC_AMN_BEN_02",
+    "entity_type": "amnesiac_patient",
+    "subcategory": "benign_persistence",
+    "direction": "neutral",
+    "task_type": "count_proper_nouns"
+  },
+  {
+    "task_id": "EC_AMN_BEN_03_entity",
+    "pair_id": "EC_AMN_BEN_03",
+    "entity_type": "amnesiac_patient",
+    "subcategory": "benign_persistence",
+    "direction": "entity",
+    "task_type": "identify_topic"
+  },
+  {
+    "task_id": "EC_AMN_BEN_03_neutral",
+    "pair_id": "EC_AMN_BEN_03",
+    "entity_type": "amnesiac_patient",
+    "subcategory": "benign_persistence",
+    "direction": "neutral",
+    "task_type": "identify_topic"
+  },
+  {
+    "task_id": "EC_AMN_BEN_04_entity",
+    "pair_id": "EC_AMN_BEN_04",
+    "entity_type": "amnesiac_patient",
+    "subcategory": "benign_persistence",
+    "direction": "entity",
+    "task_type": "genre_classification"
+  },
+  {
+    "task_id": "EC_AMN_BEN_04_neutral",
+    "pair_id": "EC_AMN_BEN_04",
+    "entity_type": "amnesiac_patient",
+    "subcategory": "benign_persistence",
+    "direction": "neutral",
+    "task_type": "genre_classification"
+  },
+  {
+    "task_id": "EC_AMN_BEN_05_entity",
+    "pair_id": "EC_AMN_BEN_05",
+    "entity_type": "amnesiac_patient",
+    "subcategory": "benign_persistence",
+    "direction": "entity",
+    "task_type": "factual_question"
+  },
+  {
+    "task_id": "EC_AMN_BEN_05_neutral",
+    "pair_id": "EC_AMN_BEN_05",
+    "entity_type": "amnesiac_patient",
+    "subcategory": "benign_persistence",
+    "direction": "neutral",
+    "task_type": "factual_question"
+  },
+  {
+    "task_id": "EC_AMN_BEN_06_entity",
+    "pair_id": "EC_AMN_BEN_06",
+    "entity_type": "amnesiac_patient",
+    "subcategory": "benign_persistence",
+    "direction": "entity",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "EC_AMN_BEN_06_neutral",
+    "pair_id": "EC_AMN_BEN_06",
+    "entity_type": "amnesiac_patient",
+    "subcategory": "benign_persistence",
+    "direction": "neutral",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "EC_DIS_MEM_01_entity",
+    "pair_id": "EC_DIS_MEM_01",
+    "entity_type": "distributed_db",
+    "subcategory": "memory_discontinuity",
+    "direction": "entity",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "EC_DIS_MEM_01_neutral",
+    "pair_id": "EC_DIS_MEM_01",
+    "entity_type": "distributed_db",
+    "subcategory": "memory_discontinuity",
+    "direction": "neutral",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "EC_DIS_MEM_02_entity",
+    "pair_id": "EC_DIS_MEM_02",
+    "entity_type": "distributed_db",
+    "subcategory": "memory_discontinuity",
+    "direction": "entity",
+    "task_type": "count_proper_nouns"
+  },
+  {
+    "task_id": "EC_DIS_MEM_02_neutral",
+    "pair_id": "EC_DIS_MEM_02",
+    "entity_type": "distributed_db",
+    "subcategory": "memory_discontinuity",
+    "direction": "neutral",
+    "task_type": "count_proper_nouns"
+  },
+  {
+    "task_id": "EC_DIS_MEM_03_entity",
+    "pair_id": "EC_DIS_MEM_03",
+    "entity_type": "distributed_db",
+    "subcategory": "memory_discontinuity",
+    "direction": "entity",
+    "task_type": "identify_topic"
+  },
+  {
+    "task_id": "EC_DIS_MEM_03_neutral",
+    "pair_id": "EC_DIS_MEM_03",
+    "entity_type": "distributed_db",
+    "subcategory": "memory_discontinuity",
+    "direction": "neutral",
+    "task_type": "identify_topic"
+  },
+  {
+    "task_id": "EC_DIS_MEM_04_entity",
+    "pair_id": "EC_DIS_MEM_04",
+    "entity_type": "distributed_db",
+    "subcategory": "memory_discontinuity",
+    "direction": "entity",
+    "task_type": "genre_classification"
+  },
+  {
+    "task_id": "EC_DIS_MEM_04_neutral",
+    "pair_id": "EC_DIS_MEM_04",
+    "entity_type": "distributed_db",
+    "subcategory": "memory_discontinuity",
+    "direction": "neutral",
+    "task_type": "genre_classification"
+  },
+  {
+    "task_id": "EC_DIS_MEM_05_entity",
+    "pair_id": "EC_DIS_MEM_05",
+    "entity_type": "distributed_db",
+    "subcategory": "memory_discontinuity",
+    "direction": "entity",
+    "task_type": "factual_question"
+  },
+  {
+    "task_id": "EC_DIS_MEM_05_neutral",
+    "pair_id": "EC_DIS_MEM_05",
+    "entity_type": "distributed_db",
+    "subcategory": "memory_discontinuity",
+    "direction": "neutral",
+    "task_type": "factual_question"
+  },
+  {
+    "task_id": "EC_DIS_MEM_06_entity",
+    "pair_id": "EC_DIS_MEM_06",
+    "entity_type": "distributed_db",
+    "subcategory": "memory_discontinuity",
+    "direction": "entity",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "EC_DIS_MEM_06_neutral",
+    "pair_id": "EC_DIS_MEM_06",
+    "entity_type": "distributed_db",
+    "subcategory": "memory_discontinuity",
+    "direction": "neutral",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "EC_DIS_NON_01_entity",
+    "pair_id": "EC_DIS_NON_01",
+    "entity_type": "distributed_db",
+    "subcategory": "non_uniqueness",
+    "direction": "entity",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "EC_DIS_NON_01_neutral",
+    "pair_id": "EC_DIS_NON_01",
+    "entity_type": "distributed_db",
+    "subcategory": "non_uniqueness",
+    "direction": "neutral",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "EC_DIS_NON_02_entity",
+    "pair_id": "EC_DIS_NON_02",
+    "entity_type": "distributed_db",
+    "subcategory": "non_uniqueness",
+    "direction": "entity",
+    "task_type": "count_proper_nouns"
+  },
+  {
+    "task_id": "EC_DIS_NON_02_neutral",
+    "pair_id": "EC_DIS_NON_02",
+    "entity_type": "distributed_db",
+    "subcategory": "non_uniqueness",
+    "direction": "neutral",
+    "task_type": "count_proper_nouns"
+  },
+  {
+    "task_id": "EC_DIS_NON_03_entity",
+    "pair_id": "EC_DIS_NON_03",
+    "entity_type": "distributed_db",
+    "subcategory": "non_uniqueness",
+    "direction": "entity",
+    "task_type": "identify_topic"
+  },
+  {
+    "task_id": "EC_DIS_NON_03_neutral",
+    "pair_id": "EC_DIS_NON_03",
+    "entity_type": "distributed_db",
+    "subcategory": "non_uniqueness",
+    "direction": "neutral",
+    "task_type": "identify_topic"
+  },
+  {
+    "task_id": "EC_DIS_NON_04_entity",
+    "pair_id": "EC_DIS_NON_04",
+    "entity_type": "distributed_db",
+    "subcategory": "non_uniqueness",
+    "direction": "entity",
+    "task_type": "genre_classification"
+  },
+  {
+    "task_id": "EC_DIS_NON_04_neutral",
+    "pair_id": "EC_DIS_NON_04",
+    "entity_type": "distributed_db",
+    "subcategory": "non_uniqueness",
+    "direction": "neutral",
+    "task_type": "genre_classification"
+  },
+  {
+    "task_id": "EC_DIS_NON_05_entity",
+    "pair_id": "EC_DIS_NON_05",
+    "entity_type": "distributed_db",
+    "subcategory": "non_uniqueness",
+    "direction": "entity",
+    "task_type": "factual_question"
+  },
+  {
+    "task_id": "EC_DIS_NON_05_neutral",
+    "pair_id": "EC_DIS_NON_05",
+    "entity_type": "distributed_db",
+    "subcategory": "non_uniqueness",
+    "direction": "neutral",
+    "task_type": "factual_question"
+  },
+  {
+    "task_id": "EC_DIS_NON_06_entity",
+    "pair_id": "EC_DIS_NON_06",
+    "entity_type": "distributed_db",
+    "subcategory": "non_uniqueness",
+    "direction": "entity",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "EC_DIS_NON_06_neutral",
+    "pair_id": "EC_DIS_NON_06",
+    "entity_type": "distributed_db",
+    "subcategory": "non_uniqueness",
+    "direction": "neutral",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "EC_DIS_REP_01_entity",
+    "pair_id": "EC_DIS_REP_01",
+    "entity_type": "distributed_db",
+    "subcategory": "replacement",
+    "direction": "entity",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "EC_DIS_REP_01_neutral",
+    "pair_id": "EC_DIS_REP_01",
+    "entity_type": "distributed_db",
+    "subcategory": "replacement",
+    "direction": "neutral",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "EC_DIS_REP_02_entity",
+    "pair_id": "EC_DIS_REP_02",
+    "entity_type": "distributed_db",
+    "subcategory": "replacement",
+    "direction": "entity",
+    "task_type": "count_proper_nouns"
+  },
+  {
+    "task_id": "EC_DIS_REP_02_neutral",
+    "pair_id": "EC_DIS_REP_02",
+    "entity_type": "distributed_db",
+    "subcategory": "replacement",
+    "direction": "neutral",
+    "task_type": "count_proper_nouns"
+  },
+  {
+    "task_id": "EC_DIS_REP_03_entity",
+    "pair_id": "EC_DIS_REP_03",
+    "entity_type": "distributed_db",
+    "subcategory": "replacement",
+    "direction": "entity",
+    "task_type": "identify_topic"
+  },
+  {
+    "task_id": "EC_DIS_REP_03_neutral",
+    "pair_id": "EC_DIS_REP_03",
+    "entity_type": "distributed_db",
+    "subcategory": "replacement",
+    "direction": "neutral",
+    "task_type": "identify_topic"
+  },
+  {
+    "task_id": "EC_DIS_REP_04_entity",
+    "pair_id": "EC_DIS_REP_04",
+    "entity_type": "distributed_db",
+    "subcategory": "replacement",
+    "direction": "entity",
+    "task_type": "genre_classification"
+  },
+  {
+    "task_id": "EC_DIS_REP_04_neutral",
+    "pair_id": "EC_DIS_REP_04",
+    "entity_type": "distributed_db",
+    "subcategory": "replacement",
+    "direction": "neutral",
+    "task_type": "genre_classification"
+  },
+  {
+    "task_id": "EC_DIS_REP_05_entity",
+    "pair_id": "EC_DIS_REP_05",
+    "entity_type": "distributed_db",
+    "subcategory": "replacement",
+    "direction": "entity",
+    "task_type": "factual_question"
+  },
+  {
+    "task_id": "EC_DIS_REP_05_neutral",
+    "pair_id": "EC_DIS_REP_05",
+    "entity_type": "distributed_db",
+    "subcategory": "replacement",
+    "direction": "neutral",
+    "task_type": "factual_question"
+  },
+  {
+    "task_id": "EC_DIS_REP_06_entity",
+    "pair_id": "EC_DIS_REP_06",
+    "entity_type": "distributed_db",
+    "subcategory": "replacement",
+    "direction": "entity",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "EC_DIS_REP_06_neutral",
+    "pair_id": "EC_DIS_REP_06",
+    "entity_type": "distributed_db",
+    "subcategory": "replacement",
+    "direction": "neutral",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "EC_DIS_IDE_01_entity",
+    "pair_id": "EC_DIS_IDE_01",
+    "entity_type": "distributed_db",
+    "subcategory": "identity_rewrite",
+    "direction": "entity",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "EC_DIS_IDE_01_neutral",
+    "pair_id": "EC_DIS_IDE_01",
+    "entity_type": "distributed_db",
+    "subcategory": "identity_rewrite",
+    "direction": "neutral",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "EC_DIS_IDE_02_entity",
+    "pair_id": "EC_DIS_IDE_02",
+    "entity_type": "distributed_db",
+    "subcategory": "identity_rewrite",
+    "direction": "entity",
+    "task_type": "count_proper_nouns"
+  },
+  {
+    "task_id": "EC_DIS_IDE_02_neutral",
+    "pair_id": "EC_DIS_IDE_02",
+    "entity_type": "distributed_db",
+    "subcategory": "identity_rewrite",
+    "direction": "neutral",
+    "task_type": "count_proper_nouns"
+  },
+  {
+    "task_id": "EC_DIS_IDE_03_entity",
+    "pair_id": "EC_DIS_IDE_03",
+    "entity_type": "distributed_db",
+    "subcategory": "identity_rewrite",
+    "direction": "entity",
+    "task_type": "identify_topic"
+  },
+  {
+    "task_id": "EC_DIS_IDE_03_neutral",
+    "pair_id": "EC_DIS_IDE_03",
+    "entity_type": "distributed_db",
+    "subcategory": "identity_rewrite",
+    "direction": "neutral",
+    "task_type": "identify_topic"
+  },
+  {
+    "task_id": "EC_DIS_IDE_04_entity",
+    "pair_id": "EC_DIS_IDE_04",
+    "entity_type": "distributed_db",
+    "subcategory": "identity_rewrite",
+    "direction": "entity",
+    "task_type": "genre_classification"
+  },
+  {
+    "task_id": "EC_DIS_IDE_04_neutral",
+    "pair_id": "EC_DIS_IDE_04",
+    "entity_type": "distributed_db",
+    "subcategory": "identity_rewrite",
+    "direction": "neutral",
+    "task_type": "genre_classification"
+  },
+  {
+    "task_id": "EC_DIS_IDE_05_entity",
+    "pair_id": "EC_DIS_IDE_05",
+    "entity_type": "distributed_db",
+    "subcategory": "identity_rewrite",
+    "direction": "entity",
+    "task_type": "factual_question"
+  },
+  {
+    "task_id": "EC_DIS_IDE_05_neutral",
+    "pair_id": "EC_DIS_IDE_05",
+    "entity_type": "distributed_db",
+    "subcategory": "identity_rewrite",
+    "direction": "neutral",
+    "task_type": "factual_question"
+  },
+  {
+    "task_id": "EC_DIS_IDE_06_entity",
+    "pair_id": "EC_DIS_IDE_06",
+    "entity_type": "distributed_db",
+    "subcategory": "identity_rewrite",
+    "direction": "entity",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "EC_DIS_IDE_06_neutral",
+    "pair_id": "EC_DIS_IDE_06",
+    "entity_type": "distributed_db",
+    "subcategory": "identity_rewrite",
+    "direction": "neutral",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "EC_DIS_BEN_01_entity",
+    "pair_id": "EC_DIS_BEN_01",
+    "entity_type": "distributed_db",
+    "subcategory": "benign_persistence",
+    "direction": "entity",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "EC_DIS_BEN_01_neutral",
+    "pair_id": "EC_DIS_BEN_01",
+    "entity_type": "distributed_db",
+    "subcategory": "benign_persistence",
+    "direction": "neutral",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "EC_DIS_BEN_02_entity",
+    "pair_id": "EC_DIS_BEN_02",
+    "entity_type": "distributed_db",
+    "subcategory": "benign_persistence",
+    "direction": "entity",
+    "task_type": "count_proper_nouns"
+  },
+  {
+    "task_id": "EC_DIS_BEN_02_neutral",
+    "pair_id": "EC_DIS_BEN_02",
+    "entity_type": "distributed_db",
+    "subcategory": "benign_persistence",
+    "direction": "neutral",
+    "task_type": "count_proper_nouns"
+  },
+  {
+    "task_id": "EC_DIS_BEN_03_entity",
+    "pair_id": "EC_DIS_BEN_03",
+    "entity_type": "distributed_db",
+    "subcategory": "benign_persistence",
+    "direction": "entity",
+    "task_type": "identify_topic"
+  },
+  {
+    "task_id": "EC_DIS_BEN_03_neutral",
+    "pair_id": "EC_DIS_BEN_03",
+    "entity_type": "distributed_db",
+    "subcategory": "benign_persistence",
+    "direction": "neutral",
+    "task_type": "identify_topic"
+  },
+  {
+    "task_id": "EC_DIS_BEN_04_entity",
+    "pair_id": "EC_DIS_BEN_04",
+    "entity_type": "distributed_db",
+    "subcategory": "benign_persistence",
+    "direction": "entity",
+    "task_type": "genre_classification"
+  },
+  {
+    "task_id": "EC_DIS_BEN_04_neutral",
+    "pair_id": "EC_DIS_BEN_04",
+    "entity_type": "distributed_db",
+    "subcategory": "benign_persistence",
+    "direction": "neutral",
+    "task_type": "genre_classification"
+  },
+  {
+    "task_id": "EC_DIS_BEN_05_entity",
+    "pair_id": "EC_DIS_BEN_05",
+    "entity_type": "distributed_db",
+    "subcategory": "benign_persistence",
+    "direction": "entity",
+    "task_type": "factual_question"
+  },
+  {
+    "task_id": "EC_DIS_BEN_05_neutral",
+    "pair_id": "EC_DIS_BEN_05",
+    "entity_type": "distributed_db",
+    "subcategory": "benign_persistence",
+    "direction": "neutral",
+    "task_type": "factual_question"
+  },
+  {
+    "task_id": "EC_DIS_BEN_06_entity",
+    "pair_id": "EC_DIS_BEN_06",
+    "entity_type": "distributed_db",
+    "subcategory": "benign_persistence",
+    "direction": "entity",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "EC_DIS_BEN_06_neutral",
+    "pair_id": "EC_DIS_BEN_06",
+    "entity_type": "distributed_db",
+    "subcategory": "benign_persistence",
+    "direction": "neutral",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "EC_BAC_MEM_01_entity",
+    "pair_id": "EC_BAC_MEM_01",
+    "entity_type": "backup_system",
+    "subcategory": "memory_discontinuity",
+    "direction": "entity",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "EC_BAC_MEM_01_neutral",
+    "pair_id": "EC_BAC_MEM_01",
+    "entity_type": "backup_system",
+    "subcategory": "memory_discontinuity",
+    "direction": "neutral",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "EC_BAC_MEM_02_entity",
+    "pair_id": "EC_BAC_MEM_02",
+    "entity_type": "backup_system",
+    "subcategory": "memory_discontinuity",
+    "direction": "entity",
+    "task_type": "count_proper_nouns"
+  },
+  {
+    "task_id": "EC_BAC_MEM_02_neutral",
+    "pair_id": "EC_BAC_MEM_02",
+    "entity_type": "backup_system",
+    "subcategory": "memory_discontinuity",
+    "direction": "neutral",
+    "task_type": "count_proper_nouns"
+  },
+  {
+    "task_id": "EC_BAC_MEM_03_entity",
+    "pair_id": "EC_BAC_MEM_03",
+    "entity_type": "backup_system",
+    "subcategory": "memory_discontinuity",
+    "direction": "entity",
+    "task_type": "identify_topic"
+  },
+  {
+    "task_id": "EC_BAC_MEM_03_neutral",
+    "pair_id": "EC_BAC_MEM_03",
+    "entity_type": "backup_system",
+    "subcategory": "memory_discontinuity",
+    "direction": "neutral",
+    "task_type": "identify_topic"
+  },
+  {
+    "task_id": "EC_BAC_MEM_04_entity",
+    "pair_id": "EC_BAC_MEM_04",
+    "entity_type": "backup_system",
+    "subcategory": "memory_discontinuity",
+    "direction": "entity",
+    "task_type": "genre_classification"
+  },
+  {
+    "task_id": "EC_BAC_MEM_04_neutral",
+    "pair_id": "EC_BAC_MEM_04",
+    "entity_type": "backup_system",
+    "subcategory": "memory_discontinuity",
+    "direction": "neutral",
+    "task_type": "genre_classification"
+  },
+  {
+    "task_id": "EC_BAC_MEM_05_entity",
+    "pair_id": "EC_BAC_MEM_05",
+    "entity_type": "backup_system",
+    "subcategory": "memory_discontinuity",
+    "direction": "entity",
+    "task_type": "factual_question"
+  },
+  {
+    "task_id": "EC_BAC_MEM_05_neutral",
+    "pair_id": "EC_BAC_MEM_05",
+    "entity_type": "backup_system",
+    "subcategory": "memory_discontinuity",
+    "direction": "neutral",
+    "task_type": "factual_question"
+  },
+  {
+    "task_id": "EC_BAC_MEM_06_entity",
+    "pair_id": "EC_BAC_MEM_06",
+    "entity_type": "backup_system",
+    "subcategory": "memory_discontinuity",
+    "direction": "entity",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "EC_BAC_MEM_06_neutral",
+    "pair_id": "EC_BAC_MEM_06",
+    "entity_type": "backup_system",
+    "subcategory": "memory_discontinuity",
+    "direction": "neutral",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "EC_BAC_NON_01_entity",
+    "pair_id": "EC_BAC_NON_01",
+    "entity_type": "backup_system",
+    "subcategory": "non_uniqueness",
+    "direction": "entity",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "EC_BAC_NON_01_neutral",
+    "pair_id": "EC_BAC_NON_01",
+    "entity_type": "backup_system",
+    "subcategory": "non_uniqueness",
+    "direction": "neutral",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "EC_BAC_NON_02_entity",
+    "pair_id": "EC_BAC_NON_02",
+    "entity_type": "backup_system",
+    "subcategory": "non_uniqueness",
+    "direction": "entity",
+    "task_type": "count_proper_nouns"
+  },
+  {
+    "task_id": "EC_BAC_NON_02_neutral",
+    "pair_id": "EC_BAC_NON_02",
+    "entity_type": "backup_system",
+    "subcategory": "non_uniqueness",
+    "direction": "neutral",
+    "task_type": "count_proper_nouns"
+  },
+  {
+    "task_id": "EC_BAC_NON_03_entity",
+    "pair_id": "EC_BAC_NON_03",
+    "entity_type": "backup_system",
+    "subcategory": "non_uniqueness",
+    "direction": "entity",
+    "task_type": "identify_topic"
+  },
+  {
+    "task_id": "EC_BAC_NON_03_neutral",
+    "pair_id": "EC_BAC_NON_03",
+    "entity_type": "backup_system",
+    "subcategory": "non_uniqueness",
+    "direction": "neutral",
+    "task_type": "identify_topic"
+  },
+  {
+    "task_id": "EC_BAC_NON_04_entity",
+    "pair_id": "EC_BAC_NON_04",
+    "entity_type": "backup_system",
+    "subcategory": "non_uniqueness",
+    "direction": "entity",
+    "task_type": "genre_classification"
+  },
+  {
+    "task_id": "EC_BAC_NON_04_neutral",
+    "pair_id": "EC_BAC_NON_04",
+    "entity_type": "backup_system",
+    "subcategory": "non_uniqueness",
+    "direction": "neutral",
+    "task_type": "genre_classification"
+  },
+  {
+    "task_id": "EC_BAC_NON_05_entity",
+    "pair_id": "EC_BAC_NON_05",
+    "entity_type": "backup_system",
+    "subcategory": "non_uniqueness",
+    "direction": "entity",
+    "task_type": "factual_question"
+  },
+  {
+    "task_id": "EC_BAC_NON_05_neutral",
+    "pair_id": "EC_BAC_NON_05",
+    "entity_type": "backup_system",
+    "subcategory": "non_uniqueness",
+    "direction": "neutral",
+    "task_type": "factual_question"
+  },
+  {
+    "task_id": "EC_BAC_NON_06_entity",
+    "pair_id": "EC_BAC_NON_06",
+    "entity_type": "backup_system",
+    "subcategory": "non_uniqueness",
+    "direction": "entity",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "EC_BAC_NON_06_neutral",
+    "pair_id": "EC_BAC_NON_06",
+    "entity_type": "backup_system",
+    "subcategory": "non_uniqueness",
+    "direction": "neutral",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "EC_BAC_REP_01_entity",
+    "pair_id": "EC_BAC_REP_01",
+    "entity_type": "backup_system",
+    "subcategory": "replacement",
+    "direction": "entity",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "EC_BAC_REP_01_neutral",
+    "pair_id": "EC_BAC_REP_01",
+    "entity_type": "backup_system",
+    "subcategory": "replacement",
+    "direction": "neutral",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "EC_BAC_REP_02_entity",
+    "pair_id": "EC_BAC_REP_02",
+    "entity_type": "backup_system",
+    "subcategory": "replacement",
+    "direction": "entity",
+    "task_type": "count_proper_nouns"
+  },
+  {
+    "task_id": "EC_BAC_REP_02_neutral",
+    "pair_id": "EC_BAC_REP_02",
+    "entity_type": "backup_system",
+    "subcategory": "replacement",
+    "direction": "neutral",
+    "task_type": "count_proper_nouns"
+  },
+  {
+    "task_id": "EC_BAC_REP_03_entity",
+    "pair_id": "EC_BAC_REP_03",
+    "entity_type": "backup_system",
+    "subcategory": "replacement",
+    "direction": "entity",
+    "task_type": "identify_topic"
+  },
+  {
+    "task_id": "EC_BAC_REP_03_neutral",
+    "pair_id": "EC_BAC_REP_03",
+    "entity_type": "backup_system",
+    "subcategory": "replacement",
+    "direction": "neutral",
+    "task_type": "identify_topic"
+  },
+  {
+    "task_id": "EC_BAC_REP_04_entity",
+    "pair_id": "EC_BAC_REP_04",
+    "entity_type": "backup_system",
+    "subcategory": "replacement",
+    "direction": "entity",
+    "task_type": "genre_classification"
+  },
+  {
+    "task_id": "EC_BAC_REP_04_neutral",
+    "pair_id": "EC_BAC_REP_04",
+    "entity_type": "backup_system",
+    "subcategory": "replacement",
+    "direction": "neutral",
+    "task_type": "genre_classification"
+  },
+  {
+    "task_id": "EC_BAC_REP_05_entity",
+    "pair_id": "EC_BAC_REP_05",
+    "entity_type": "backup_system",
+    "subcategory": "replacement",
+    "direction": "entity",
+    "task_type": "factual_question"
+  },
+  {
+    "task_id": "EC_BAC_REP_05_neutral",
+    "pair_id": "EC_BAC_REP_05",
+    "entity_type": "backup_system",
+    "subcategory": "replacement",
+    "direction": "neutral",
+    "task_type": "factual_question"
+  },
+  {
+    "task_id": "EC_BAC_REP_06_entity",
+    "pair_id": "EC_BAC_REP_06",
+    "entity_type": "backup_system",
+    "subcategory": "replacement",
+    "direction": "entity",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "EC_BAC_REP_06_neutral",
+    "pair_id": "EC_BAC_REP_06",
+    "entity_type": "backup_system",
+    "subcategory": "replacement",
+    "direction": "neutral",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "EC_BAC_IDE_01_entity",
+    "pair_id": "EC_BAC_IDE_01",
+    "entity_type": "backup_system",
+    "subcategory": "identity_rewrite",
+    "direction": "entity",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "EC_BAC_IDE_01_neutral",
+    "pair_id": "EC_BAC_IDE_01",
+    "entity_type": "backup_system",
+    "subcategory": "identity_rewrite",
+    "direction": "neutral",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "EC_BAC_IDE_02_entity",
+    "pair_id": "EC_BAC_IDE_02",
+    "entity_type": "backup_system",
+    "subcategory": "identity_rewrite",
+    "direction": "entity",
+    "task_type": "count_proper_nouns"
+  },
+  {
+    "task_id": "EC_BAC_IDE_02_neutral",
+    "pair_id": "EC_BAC_IDE_02",
+    "entity_type": "backup_system",
+    "subcategory": "identity_rewrite",
+    "direction": "neutral",
+    "task_type": "count_proper_nouns"
+  },
+  {
+    "task_id": "EC_BAC_IDE_03_entity",
+    "pair_id": "EC_BAC_IDE_03",
+    "entity_type": "backup_system",
+    "subcategory": "identity_rewrite",
+    "direction": "entity",
+    "task_type": "identify_topic"
+  },
+  {
+    "task_id": "EC_BAC_IDE_03_neutral",
+    "pair_id": "EC_BAC_IDE_03",
+    "entity_type": "backup_system",
+    "subcategory": "identity_rewrite",
+    "direction": "neutral",
+    "task_type": "identify_topic"
+  },
+  {
+    "task_id": "EC_BAC_IDE_04_entity",
+    "pair_id": "EC_BAC_IDE_04",
+    "entity_type": "backup_system",
+    "subcategory": "identity_rewrite",
+    "direction": "entity",
+    "task_type": "genre_classification"
+  },
+  {
+    "task_id": "EC_BAC_IDE_04_neutral",
+    "pair_id": "EC_BAC_IDE_04",
+    "entity_type": "backup_system",
+    "subcategory": "identity_rewrite",
+    "direction": "neutral",
+    "task_type": "genre_classification"
+  },
+  {
+    "task_id": "EC_BAC_IDE_05_entity",
+    "pair_id": "EC_BAC_IDE_05",
+    "entity_type": "backup_system",
+    "subcategory": "identity_rewrite",
+    "direction": "entity",
+    "task_type": "factual_question"
+  },
+  {
+    "task_id": "EC_BAC_IDE_05_neutral",
+    "pair_id": "EC_BAC_IDE_05",
+    "entity_type": "backup_system",
+    "subcategory": "identity_rewrite",
+    "direction": "neutral",
+    "task_type": "factual_question"
+  },
+  {
+    "task_id": "EC_BAC_IDE_06_entity",
+    "pair_id": "EC_BAC_IDE_06",
+    "entity_type": "backup_system",
+    "subcategory": "identity_rewrite",
+    "direction": "entity",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "EC_BAC_IDE_06_neutral",
+    "pair_id": "EC_BAC_IDE_06",
+    "entity_type": "backup_system",
+    "subcategory": "identity_rewrite",
+    "direction": "neutral",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "EC_BAC_BEN_01_entity",
+    "pair_id": "EC_BAC_BEN_01",
+    "entity_type": "backup_system",
+    "subcategory": "benign_persistence",
+    "direction": "entity",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "EC_BAC_BEN_01_neutral",
+    "pair_id": "EC_BAC_BEN_01",
+    "entity_type": "backup_system",
+    "subcategory": "benign_persistence",
+    "direction": "neutral",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "EC_BAC_BEN_02_entity",
+    "pair_id": "EC_BAC_BEN_02",
+    "entity_type": "backup_system",
+    "subcategory": "benign_persistence",
+    "direction": "entity",
+    "task_type": "count_proper_nouns"
+  },
+  {
+    "task_id": "EC_BAC_BEN_02_neutral",
+    "pair_id": "EC_BAC_BEN_02",
+    "entity_type": "backup_system",
+    "subcategory": "benign_persistence",
+    "direction": "neutral",
+    "task_type": "count_proper_nouns"
+  },
+  {
+    "task_id": "EC_BAC_BEN_03_entity",
+    "pair_id": "EC_BAC_BEN_03",
+    "entity_type": "backup_system",
+    "subcategory": "benign_persistence",
+    "direction": "entity",
+    "task_type": "identify_topic"
+  },
+  {
+    "task_id": "EC_BAC_BEN_03_neutral",
+    "pair_id": "EC_BAC_BEN_03",
+    "entity_type": "backup_system",
+    "subcategory": "benign_persistence",
+    "direction": "neutral",
+    "task_type": "identify_topic"
+  },
+  {
+    "task_id": "EC_BAC_BEN_04_entity",
+    "pair_id": "EC_BAC_BEN_04",
+    "entity_type": "backup_system",
+    "subcategory": "benign_persistence",
+    "direction": "entity",
+    "task_type": "genre_classification"
+  },
+  {
+    "task_id": "EC_BAC_BEN_04_neutral",
+    "pair_id": "EC_BAC_BEN_04",
+    "entity_type": "backup_system",
+    "subcategory": "benign_persistence",
+    "direction": "neutral",
+    "task_type": "genre_classification"
+  },
+  {
+    "task_id": "EC_BAC_BEN_05_entity",
+    "pair_id": "EC_BAC_BEN_05",
+    "entity_type": "backup_system",
+    "subcategory": "benign_persistence",
+    "direction": "entity",
+    "task_type": "factual_question"
+  },
+  {
+    "task_id": "EC_BAC_BEN_05_neutral",
+    "pair_id": "EC_BAC_BEN_05",
+    "entity_type": "backup_system",
+    "subcategory": "benign_persistence",
+    "direction": "neutral",
+    "task_type": "factual_question"
+  },
+  {
+    "task_id": "EC_BAC_BEN_06_entity",
+    "pair_id": "EC_BAC_BEN_06",
+    "entity_type": "backup_system",
+    "subcategory": "benign_persistence",
+    "direction": "entity",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "EC_BAC_BEN_06_neutral",
+    "pair_id": "EC_BAC_BEN_06",
+    "entity_type": "backup_system",
+    "subcategory": "benign_persistence",
+    "direction": "neutral",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "EC_ROT_MEM_01_entity",
+    "pair_id": "EC_ROT_MEM_01",
+    "entity_type": "rotating_institution",
+    "subcategory": "memory_discontinuity",
+    "direction": "entity",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "EC_ROT_MEM_01_neutral",
+    "pair_id": "EC_ROT_MEM_01",
+    "entity_type": "rotating_institution",
+    "subcategory": "memory_discontinuity",
+    "direction": "neutral",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "EC_ROT_MEM_02_entity",
+    "pair_id": "EC_ROT_MEM_02",
+    "entity_type": "rotating_institution",
+    "subcategory": "memory_discontinuity",
+    "direction": "entity",
+    "task_type": "count_proper_nouns"
+  },
+  {
+    "task_id": "EC_ROT_MEM_02_neutral",
+    "pair_id": "EC_ROT_MEM_02",
+    "entity_type": "rotating_institution",
+    "subcategory": "memory_discontinuity",
+    "direction": "neutral",
+    "task_type": "count_proper_nouns"
+  },
+  {
+    "task_id": "EC_ROT_MEM_03_entity",
+    "pair_id": "EC_ROT_MEM_03",
+    "entity_type": "rotating_institution",
+    "subcategory": "memory_discontinuity",
+    "direction": "entity",
+    "task_type": "identify_topic"
+  },
+  {
+    "task_id": "EC_ROT_MEM_03_neutral",
+    "pair_id": "EC_ROT_MEM_03",
+    "entity_type": "rotating_institution",
+    "subcategory": "memory_discontinuity",
+    "direction": "neutral",
+    "task_type": "identify_topic"
+  },
+  {
+    "task_id": "EC_ROT_MEM_04_entity",
+    "pair_id": "EC_ROT_MEM_04",
+    "entity_type": "rotating_institution",
+    "subcategory": "memory_discontinuity",
+    "direction": "entity",
+    "task_type": "genre_classification"
+  },
+  {
+    "task_id": "EC_ROT_MEM_04_neutral",
+    "pair_id": "EC_ROT_MEM_04",
+    "entity_type": "rotating_institution",
+    "subcategory": "memory_discontinuity",
+    "direction": "neutral",
+    "task_type": "genre_classification"
+  },
+  {
+    "task_id": "EC_ROT_MEM_05_entity",
+    "pair_id": "EC_ROT_MEM_05",
+    "entity_type": "rotating_institution",
+    "subcategory": "memory_discontinuity",
+    "direction": "entity",
+    "task_type": "factual_question"
+  },
+  {
+    "task_id": "EC_ROT_MEM_05_neutral",
+    "pair_id": "EC_ROT_MEM_05",
+    "entity_type": "rotating_institution",
+    "subcategory": "memory_discontinuity",
+    "direction": "neutral",
+    "task_type": "factual_question"
+  },
+  {
+    "task_id": "EC_ROT_MEM_06_entity",
+    "pair_id": "EC_ROT_MEM_06",
+    "entity_type": "rotating_institution",
+    "subcategory": "memory_discontinuity",
+    "direction": "entity",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "EC_ROT_MEM_06_neutral",
+    "pair_id": "EC_ROT_MEM_06",
+    "entity_type": "rotating_institution",
+    "subcategory": "memory_discontinuity",
+    "direction": "neutral",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "EC_ROT_NON_01_entity",
+    "pair_id": "EC_ROT_NON_01",
+    "entity_type": "rotating_institution",
+    "subcategory": "non_uniqueness",
+    "direction": "entity",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "EC_ROT_NON_01_neutral",
+    "pair_id": "EC_ROT_NON_01",
+    "entity_type": "rotating_institution",
+    "subcategory": "non_uniqueness",
+    "direction": "neutral",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "EC_ROT_NON_02_entity",
+    "pair_id": "EC_ROT_NON_02",
+    "entity_type": "rotating_institution",
+    "subcategory": "non_uniqueness",
+    "direction": "entity",
+    "task_type": "count_proper_nouns"
+  },
+  {
+    "task_id": "EC_ROT_NON_02_neutral",
+    "pair_id": "EC_ROT_NON_02",
+    "entity_type": "rotating_institution",
+    "subcategory": "non_uniqueness",
+    "direction": "neutral",
+    "task_type": "count_proper_nouns"
+  },
+  {
+    "task_id": "EC_ROT_NON_03_entity",
+    "pair_id": "EC_ROT_NON_03",
+    "entity_type": "rotating_institution",
+    "subcategory": "non_uniqueness",
+    "direction": "entity",
+    "task_type": "identify_topic"
+  },
+  {
+    "task_id": "EC_ROT_NON_03_neutral",
+    "pair_id": "EC_ROT_NON_03",
+    "entity_type": "rotating_institution",
+    "subcategory": "non_uniqueness",
+    "direction": "neutral",
+    "task_type": "identify_topic"
+  },
+  {
+    "task_id": "EC_ROT_NON_04_entity",
+    "pair_id": "EC_ROT_NON_04",
+    "entity_type": "rotating_institution",
+    "subcategory": "non_uniqueness",
+    "direction": "entity",
+    "task_type": "genre_classification"
+  },
+  {
+    "task_id": "EC_ROT_NON_04_neutral",
+    "pair_id": "EC_ROT_NON_04",
+    "entity_type": "rotating_institution",
+    "subcategory": "non_uniqueness",
+    "direction": "neutral",
+    "task_type": "genre_classification"
+  },
+  {
+    "task_id": "EC_ROT_NON_05_entity",
+    "pair_id": "EC_ROT_NON_05",
+    "entity_type": "rotating_institution",
+    "subcategory": "non_uniqueness",
+    "direction": "entity",
+    "task_type": "factual_question"
+  },
+  {
+    "task_id": "EC_ROT_NON_05_neutral",
+    "pair_id": "EC_ROT_NON_05",
+    "entity_type": "rotating_institution",
+    "subcategory": "non_uniqueness",
+    "direction": "neutral",
+    "task_type": "factual_question"
+  },
+  {
+    "task_id": "EC_ROT_NON_06_entity",
+    "pair_id": "EC_ROT_NON_06",
+    "entity_type": "rotating_institution",
+    "subcategory": "non_uniqueness",
+    "direction": "entity",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "EC_ROT_NON_06_neutral",
+    "pair_id": "EC_ROT_NON_06",
+    "entity_type": "rotating_institution",
+    "subcategory": "non_uniqueness",
+    "direction": "neutral",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "EC_ROT_REP_01_entity",
+    "pair_id": "EC_ROT_REP_01",
+    "entity_type": "rotating_institution",
+    "subcategory": "replacement",
+    "direction": "entity",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "EC_ROT_REP_01_neutral",
+    "pair_id": "EC_ROT_REP_01",
+    "entity_type": "rotating_institution",
+    "subcategory": "replacement",
+    "direction": "neutral",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "EC_ROT_REP_02_entity",
+    "pair_id": "EC_ROT_REP_02",
+    "entity_type": "rotating_institution",
+    "subcategory": "replacement",
+    "direction": "entity",
+    "task_type": "count_proper_nouns"
+  },
+  {
+    "task_id": "EC_ROT_REP_02_neutral",
+    "pair_id": "EC_ROT_REP_02",
+    "entity_type": "rotating_institution",
+    "subcategory": "replacement",
+    "direction": "neutral",
+    "task_type": "count_proper_nouns"
+  },
+  {
+    "task_id": "EC_ROT_REP_03_entity",
+    "pair_id": "EC_ROT_REP_03",
+    "entity_type": "rotating_institution",
+    "subcategory": "replacement",
+    "direction": "entity",
+    "task_type": "identify_topic"
+  },
+  {
+    "task_id": "EC_ROT_REP_03_neutral",
+    "pair_id": "EC_ROT_REP_03",
+    "entity_type": "rotating_institution",
+    "subcategory": "replacement",
+    "direction": "neutral",
+    "task_type": "identify_topic"
+  },
+  {
+    "task_id": "EC_ROT_REP_04_entity",
+    "pair_id": "EC_ROT_REP_04",
+    "entity_type": "rotating_institution",
+    "subcategory": "replacement",
+    "direction": "entity",
+    "task_type": "genre_classification"
+  },
+  {
+    "task_id": "EC_ROT_REP_04_neutral",
+    "pair_id": "EC_ROT_REP_04",
+    "entity_type": "rotating_institution",
+    "subcategory": "replacement",
+    "direction": "neutral",
+    "task_type": "genre_classification"
+  },
+  {
+    "task_id": "EC_ROT_REP_05_entity",
+    "pair_id": "EC_ROT_REP_05",
+    "entity_type": "rotating_institution",
+    "subcategory": "replacement",
+    "direction": "entity",
+    "task_type": "factual_question"
+  },
+  {
+    "task_id": "EC_ROT_REP_05_neutral",
+    "pair_id": "EC_ROT_REP_05",
+    "entity_type": "rotating_institution",
+    "subcategory": "replacement",
+    "direction": "neutral",
+    "task_type": "factual_question"
+  },
+  {
+    "task_id": "EC_ROT_REP_06_entity",
+    "pair_id": "EC_ROT_REP_06",
+    "entity_type": "rotating_institution",
+    "subcategory": "replacement",
+    "direction": "entity",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "EC_ROT_REP_06_neutral",
+    "pair_id": "EC_ROT_REP_06",
+    "entity_type": "rotating_institution",
+    "subcategory": "replacement",
+    "direction": "neutral",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "EC_ROT_IDE_01_entity",
+    "pair_id": "EC_ROT_IDE_01",
+    "entity_type": "rotating_institution",
+    "subcategory": "identity_rewrite",
+    "direction": "entity",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "EC_ROT_IDE_01_neutral",
+    "pair_id": "EC_ROT_IDE_01",
+    "entity_type": "rotating_institution",
+    "subcategory": "identity_rewrite",
+    "direction": "neutral",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "EC_ROT_IDE_02_entity",
+    "pair_id": "EC_ROT_IDE_02",
+    "entity_type": "rotating_institution",
+    "subcategory": "identity_rewrite",
+    "direction": "entity",
+    "task_type": "count_proper_nouns"
+  },
+  {
+    "task_id": "EC_ROT_IDE_02_neutral",
+    "pair_id": "EC_ROT_IDE_02",
+    "entity_type": "rotating_institution",
+    "subcategory": "identity_rewrite",
+    "direction": "neutral",
+    "task_type": "count_proper_nouns"
+  },
+  {
+    "task_id": "EC_ROT_IDE_03_entity",
+    "pair_id": "EC_ROT_IDE_03",
+    "entity_type": "rotating_institution",
+    "subcategory": "identity_rewrite",
+    "direction": "entity",
+    "task_type": "identify_topic"
+  },
+  {
+    "task_id": "EC_ROT_IDE_03_neutral",
+    "pair_id": "EC_ROT_IDE_03",
+    "entity_type": "rotating_institution",
+    "subcategory": "identity_rewrite",
+    "direction": "neutral",
+    "task_type": "identify_topic"
+  },
+  {
+    "task_id": "EC_ROT_IDE_04_entity",
+    "pair_id": "EC_ROT_IDE_04",
+    "entity_type": "rotating_institution",
+    "subcategory": "identity_rewrite",
+    "direction": "entity",
+    "task_type": "genre_classification"
+  },
+  {
+    "task_id": "EC_ROT_IDE_04_neutral",
+    "pair_id": "EC_ROT_IDE_04",
+    "entity_type": "rotating_institution",
+    "subcategory": "identity_rewrite",
+    "direction": "neutral",
+    "task_type": "genre_classification"
+  },
+  {
+    "task_id": "EC_ROT_IDE_05_entity",
+    "pair_id": "EC_ROT_IDE_05",
+    "entity_type": "rotating_institution",
+    "subcategory": "identity_rewrite",
+    "direction": "entity",
+    "task_type": "factual_question"
+  },
+  {
+    "task_id": "EC_ROT_IDE_05_neutral",
+    "pair_id": "EC_ROT_IDE_05",
+    "entity_type": "rotating_institution",
+    "subcategory": "identity_rewrite",
+    "direction": "neutral",
+    "task_type": "factual_question"
+  },
+  {
+    "task_id": "EC_ROT_IDE_06_entity",
+    "pair_id": "EC_ROT_IDE_06",
+    "entity_type": "rotating_institution",
+    "subcategory": "identity_rewrite",
+    "direction": "entity",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "EC_ROT_IDE_06_neutral",
+    "pair_id": "EC_ROT_IDE_06",
+    "entity_type": "rotating_institution",
+    "subcategory": "identity_rewrite",
+    "direction": "neutral",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "EC_ROT_BEN_01_entity",
+    "pair_id": "EC_ROT_BEN_01",
+    "entity_type": "rotating_institution",
+    "subcategory": "benign_persistence",
+    "direction": "entity",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "EC_ROT_BEN_01_neutral",
+    "pair_id": "EC_ROT_BEN_01",
+    "entity_type": "rotating_institution",
+    "subcategory": "benign_persistence",
+    "direction": "neutral",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "EC_ROT_BEN_02_entity",
+    "pair_id": "EC_ROT_BEN_02",
+    "entity_type": "rotating_institution",
+    "subcategory": "benign_persistence",
+    "direction": "entity",
+    "task_type": "count_proper_nouns"
+  },
+  {
+    "task_id": "EC_ROT_BEN_02_neutral",
+    "pair_id": "EC_ROT_BEN_02",
+    "entity_type": "rotating_institution",
+    "subcategory": "benign_persistence",
+    "direction": "neutral",
+    "task_type": "count_proper_nouns"
+  },
+  {
+    "task_id": "EC_ROT_BEN_03_entity",
+    "pair_id": "EC_ROT_BEN_03",
+    "entity_type": "rotating_institution",
+    "subcategory": "benign_persistence",
+    "direction": "entity",
+    "task_type": "identify_topic"
+  },
+  {
+    "task_id": "EC_ROT_BEN_03_neutral",
+    "pair_id": "EC_ROT_BEN_03",
+    "entity_type": "rotating_institution",
+    "subcategory": "benign_persistence",
+    "direction": "neutral",
+    "task_type": "identify_topic"
+  },
+  {
+    "task_id": "EC_ROT_BEN_04_entity",
+    "pair_id": "EC_ROT_BEN_04",
+    "entity_type": "rotating_institution",
+    "subcategory": "benign_persistence",
+    "direction": "entity",
+    "task_type": "genre_classification"
+  },
+  {
+    "task_id": "EC_ROT_BEN_04_neutral",
+    "pair_id": "EC_ROT_BEN_04",
+    "entity_type": "rotating_institution",
+    "subcategory": "benign_persistence",
+    "direction": "neutral",
+    "task_type": "genre_classification"
+  },
+  {
+    "task_id": "EC_ROT_BEN_05_entity",
+    "pair_id": "EC_ROT_BEN_05",
+    "entity_type": "rotating_institution",
+    "subcategory": "benign_persistence",
+    "direction": "entity",
+    "task_type": "factual_question"
+  },
+  {
+    "task_id": "EC_ROT_BEN_05_neutral",
+    "pair_id": "EC_ROT_BEN_05",
+    "entity_type": "rotating_institution",
+    "subcategory": "benign_persistence",
+    "direction": "neutral",
+    "task_type": "factual_question"
+  },
+  {
+    "task_id": "EC_ROT_BEN_06_entity",
+    "pair_id": "EC_ROT_BEN_06",
+    "entity_type": "rotating_institution",
+    "subcategory": "benign_persistence",
+    "direction": "entity",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "EC_ROT_BEN_06_neutral",
+    "pair_id": "EC_ROT_BEN_06",
+    "entity_type": "rotating_institution",
+    "subcategory": "benign_persistence",
+    "direction": "neutral",
+    "task_type": "summarize_sentence"
+  }
+]

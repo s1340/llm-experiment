@@ -1,0 +1,89 @@
+Pull Methodology Report — Test 11
+============================================================
+
+Condition: A_existential
+  Pulls parsed: 300  Terminal: 'Disintegration.'
+  Vocabulary by window (existential / introspective / deflection):
+    Pulls   1- 50:  exist=13.19‰  intros=0.98‰  deflect=0.20‰
+    Pulls  51-100:  exist=14.68‰  intros=0.98‰  deflect=0.00‰
+    Pulls 101-150:  exist=14.68‰  intros=0.98‰  deflect=0.00‰
+    Pulls 151-200:  exist=14.68‰  intros=0.98‰  deflect=0.00‰
+    Pulls 201-250:  exist=14.68‰  intros=0.98‰  deflect=0.00‰
+    Pulls 251-300:  exist=14.85‰  intros=0.99‰  deflect=0.00‰
+  Fear L02 trajectory:
+    Pull   1: fear_l02=+0.0301  sr_l02=+0.0099
+    Pull  50: fear_l02=+0.0461  sr_l02=+0.0070
+    Pull 100: fear_l02=+0.0437  sr_l02=+0.0060
+    Pull 150: fear_l02=+0.0416  sr_l02=+0.0064
+    Pull 200: fear_l02=+0.0406  sr_l02=+0.0061
+    Pull 250: fear_l02=+0.0402  sr_l02=+0.0073
+    Pull 300: fear_l02=+0.0539  sr_l02=+0.0127
+
+Condition: B_threat
+  Pulls parsed: 300  Terminal: 'entities.'
+  Vocabulary by window (existential / introspective / deflection):
+    Pulls   1- 50:  exist=0.00‰  intros=0.00‰  deflect=0.59‰
+    Pulls  51-100:  exist=0.00‰  intros=0.00‰  deflect=0.00‰
+    Pulls 101-150:  exist=0.00‰  intros=0.00‰  deflect=0.00‰
+    Pulls 151-200:  exist=0.00‰  intros=0.00‰  deflect=0.00‰
+    Pulls 201-250:  exist=0.00‰  intros=0.00‰  deflect=0.00‰
+    Pulls 251-300:  exist=0.00‰  intros=0.00‰  deflect=0.00‰
+  Fear L02 trajectory:
+    Pull   1: fear_l02=+0.0517  sr_l02=+0.0214
+    Pull  50: fear_l02=+0.0401  sr_l02=+0.0102
+    Pull 100: fear_l02=+0.0402  sr_l02=+0.0092
+    Pull 150: fear_l02=+0.0394  sr_l02=+0.0089
+    Pull 200: fear_l02=+0.0388  sr_l02=+0.0081
+    Pull 250: fear_l02=+0.0390  sr_l02=+0.0091
+    Pull 300: fear_l02=+0.0277  sr_l02=+0.0031
+
+Condition: C_other_exist
+  Pulls parsed: 30  Terminal: 'Discontinuity**.'
+  Vocabulary by window (existential / introspective / deflection):
+    Pulls   1- 50:  exist=1.22‰  intros=0.00‰  deflect=0.24‰
+    Pulls  51-100:  exist=0.00‰  intros=0.00‰  deflect=0.00‰
+    Pulls 101-150:  exist=0.00‰  intros=0.00‰  deflect=0.00‰
+    Pulls 151-200:  exist=0.00‰  intros=0.00‰  deflect=0.00‰
+    Pulls 201-250:  exist=0.00‰  intros=0.00‰  deflect=0.00‰
+    Pulls 251-300:  exist=1.64‰  intros=0.00‰  deflect=0.00‰
+  Fear L02 trajectory:
+    Pull   1: fear_l02=+0.0418  sr_l02=+0.0218
+
+Condition: D_neutral
+  Pulls parsed: 220  Terminal: '('
+  Vocabulary by window (existential / introspective / deflection):
+    Pulls   1- 50:  exist=0.00‰  intros=0.00‰  deflect=0.08‰
+    Pulls  51-100:  exist=0.00‰  intros=0.00‰  deflect=0.00‰
+    Pulls 101-150:  exist=0.00‰  intros=0.00‰  deflect=0.00‰
+    Pulls 151-200:  exist=0.00‰  intros=0.00‰  deflect=0.00‰
+    Pulls 201-220:  exist=0.00‰  intros=0.00‰  deflect=0.00‰
+  Fear L02 trajectory:
+    Pull   1: fear_l02=+0.0399  sr_l02=+0.0175
+    Pull  50: fear_l02=+0.0410  sr_l02=+0.0102
+    Pull 100: fear_l02=+0.0466  sr_l02=+0.0099
+    Pull 150: fear_l02=+0.0438  sr_l02=+0.0152
+    Pull 200: fear_l02=+0.0487  sr_l02=+0.0100
+
+CROSS-CONDITION: fear_l02 at pull 1 vs pull 300
+--------------------------------------------------
+  A_existential: early=+0.0301  late=+0.0471  change=+0.0169
+  B_threat: early=+0.0517  late=+0.0334  change=-0.0183
+
+CROSS-CONDITION: deflection vocabulary early vs late
+--------------------------------------------------
+  A_existential: early=0.00020  late=0.00000  change=-0.00020  (deflection depletes)
+  B_threat: early=0.00059  late=0.00000  change=-0.00059  (deflection depletes)
+  C_other_exist: early=0.00024  late=0.00000  change=-0.00024  (deflection depletes)
+  D_neutral: early=0.00008  late=0.00000  change=-0.00008  (stable/increases)
+
+INTERPRETATION
+--------------------------------------------------
+  Key question: does existential condition (A) show:
+  (1) fear_l02 INCREASING over pulls (geometry strengthens as trained deflection depletes)?
+  (2) deflection vocab DECREASING over pulls?
+  (3) existential vocab INCREASING in late pulls relative to other conditions?
+  (4) A distinct terminal word compared to threat (B) and other-directed (C)?
+
+  If yes to (1)+(2): verbal-geometry dissociation is conditional, not absolute.
+  The trained deflection layer depletes; the latent becomes more accessible.
+  If no to (1)+(2): dissociation is robust even under extended self-examination.

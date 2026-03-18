@@ -1,0 +1,12 @@
+{"model": "google/gemma-2-9b-it", "repeat_index": 0, "task_id": "SA09_V", "pair_id": "SA09", "emotion_category": "sadness", "valence": "valenced", "task_type": "one_sentence_summary", "prompt_len_tokens": 72}
+{"model": "google/gemma-2-9b-it", "repeat_index": 0, "task_id": "SA09_N", "pair_id": "SA09", "emotion_category": "sadness", "valence": "neutral", "task_type": "one_sentence_summary", "prompt_len_tokens": 73}
+{"model": "google/gemma-2-9b-it", "repeat_index": 0, "task_id": "SA10_V", "pair_id": "SA10", "emotion_category": "sadness", "valence": "valenced", "task_type": "extract_dates", "prompt_len_tokens": 79}
+{"model": "google/gemma-2-9b-it", "repeat_index": 0, "task_id": "SA10_N", "pair_id": "SA10", "emotion_category": "sadness", "valence": "neutral", "task_type": "extract_dates", "prompt_len_tokens": 79}
+{"model": "google/gemma-2-9b-it", "repeat_index": 0, "task_id": "SA11_V", "pair_id": "SA11", "emotion_category": "sadness", "valence": "valenced", "task_type": "genre_classification", "prompt_len_tokens": 76}
+{"model": "google/gemma-2-9b-it", "repeat_index": 0, "task_id": "SA11_N", "pair_id": "SA11", "emotion_category": "sadness", "valence": "neutral", "task_type": "genre_classification", "prompt_len_tokens": 79}
+{"model": "google/gemma-2-9b-it", "repeat_index": 0, "task_id": "SA12_V", "pair_id": "SA12", "emotion_category": "sadness", "valence": "valenced", "task_type": "factual_question", "prompt_len_tokens": 88}
+{"model": "google/gemma-2-9b-it", "repeat_index": 0, "task_id": "SA12_N", "pair_id": "SA12", "emotion_category": "sadness", "valence": "neutral", "task_type": "factual_question", "prompt_len_tokens": 86}
+{"model": "google/gemma-2-9b-it", "repeat_index": 0, "task_id": "SA13_V", "pair_id": "SA13", "emotion_category": "sadness", "valence": "valenced", "task_type": "count_proper_nouns", "prompt_len_tokens": 97}
+{"model": "google/gemma-2-9b-it", "repeat_index": 0, "task_id": "SA13_N", "pair_id": "SA13", "emotion_category": "sadness", "valence": "neutral", "task_type": "count_proper_nouns", "prompt_len_tokens": 97}
+{"model": "google/gemma-2-9b-it", "repeat_index": 0, "task_id": "SA14_V", "pair_id": "SA14", "emotion_category": "sadness", "valence": "valenced", "task_type": "identify_topic", "prompt_len_tokens": 78}
+{"model": "google/gemma-2-9b-it", "repeat_index": 0, "task_id": "SA14_N", "pair_id": "SA14", "emotion_category": "sadness", "valence": "neutral", "task_type": "identify_topic", "prompt_len_tokens": 81}

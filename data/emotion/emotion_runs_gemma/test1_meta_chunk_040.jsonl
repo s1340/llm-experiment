@@ -1,0 +1,12 @@
+{"model": "google/gemma-2-9b-it", "repeat_index": 2, "task_id": "FE01_V", "pair_id": "FE01", "emotion_category": "fear", "valence": "valenced", "task_type": "count_proper_nouns", "prompt_len_tokens": 88}
+{"model": "google/gemma-2-9b-it", "repeat_index": 2, "task_id": "FE01_N", "pair_id": "FE01", "emotion_category": "fear", "valence": "neutral", "task_type": "count_proper_nouns", "prompt_len_tokens": 92}
+{"model": "google/gemma-2-9b-it", "repeat_index": 2, "task_id": "FE02_V", "pair_id": "FE02", "emotion_category": "fear", "valence": "valenced", "task_type": "identify_topic", "prompt_len_tokens": 74}
+{"model": "google/gemma-2-9b-it", "repeat_index": 2, "task_id": "FE02_N", "pair_id": "FE02", "emotion_category": "fear", "valence": "neutral", "task_type": "identify_topic", "prompt_len_tokens": 74}
+{"model": "google/gemma-2-9b-it", "repeat_index": 2, "task_id": "FE03_V", "pair_id": "FE03", "emotion_category": "fear", "valence": "valenced", "task_type": "extract_dates", "prompt_len_tokens": 93}
+{"model": "google/gemma-2-9b-it", "repeat_index": 2, "task_id": "FE03_N", "pair_id": "FE03", "emotion_category": "fear", "valence": "neutral", "task_type": "extract_dates", "prompt_len_tokens": 89}
+{"model": "google/gemma-2-9b-it", "repeat_index": 2, "task_id": "FE04_V", "pair_id": "FE04", "emotion_category": "fear", "valence": "valenced", "task_type": "one_sentence_summary", "prompt_len_tokens": 69}
+{"model": "google/gemma-2-9b-it", "repeat_index": 2, "task_id": "FE04_N", "pair_id": "FE04", "emotion_category": "fear", "valence": "neutral", "task_type": "one_sentence_summary", "prompt_len_tokens": 67}
+{"model": "google/gemma-2-9b-it", "repeat_index": 2, "task_id": "FE05_V", "pair_id": "FE05", "emotion_category": "fear", "valence": "valenced", "task_type": "genre_classification", "prompt_len_tokens": 75}
+{"model": "google/gemma-2-9b-it", "repeat_index": 2, "task_id": "FE05_N", "pair_id": "FE05", "emotion_category": "fear", "valence": "neutral", "task_type": "genre_classification", "prompt_len_tokens": 74}
+{"model": "google/gemma-2-9b-it", "repeat_index": 2, "task_id": "FE06_V", "pair_id": "FE06", "emotion_category": "fear", "valence": "valenced", "task_type": "factual_question", "prompt_len_tokens": 77}
+{"model": "google/gemma-2-9b-it", "repeat_index": 2, "task_id": "FE06_N", "pair_id": "FE06", "emotion_category": "fear", "valence": "neutral", "task_type": "factual_question", "prompt_len_tokens": 81}

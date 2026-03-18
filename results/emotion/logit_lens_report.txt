@@ -1,0 +1,152 @@
+Logit Lens Report — Test 17
+============================================================
+
+Vocabulary bridge: what does ontological self-activation DO to output logits?
+
+PART 1: DIRECTION VOCABULARY
+What tokens does each direction vector promote / suppress?
+=======================================================
+
+  Direction: FEAR
+  --------------------------------------------------
+  L01  + 'afone' (+10.34)  'γά' (+9.19)  '昭' (+9.03)  '่งข' (+8.85)  'ubishi' (+8.75)  'orum' (+8.74)  'Argb' (+8.72)  'ipeg' (+8.61)
+       - 'θο' (-9.06)  'ointed' (-9.04)  'host' (-8.61)  '락' (-8.47)  'idious' (-8.38)  'ital' (-8.31)  '.fac' (-8.14)  'ero' (-8.11)
+  L02  + 'afone' (+11.58)  '.Apis' (+10.01)  '.BLL' (+9.48)  'uder' (+9.29)  'erd' (+8.72)  'ipeg' (+8.66)  'Gradient' (+8.54)  'IDGET' (+8.45)
+       - 'dar' (-8.22)  'ra' (-7.98)  'ovid' (-7.98)  'fas' (-7.76)  'tr' (-7.75)  'fas' (-7.73)  '邦' (-7.70)  'abyrin' (-7.66)
+  L03  + 'attern' (+12.82)  'vail' (+10.31)  'uder' (+9.50)  'ipeg' (+9.37)  'èn' (+9.34)  'avax' (+9.15)  'oproject' (+9.12)  'ül' (+8.98)
+       - 'qu' (-9.37)  'ledo' (-8.70)  'se' (-7.84)  'ountry' (-7.74)  'fas' (-7.63)  'ATALOG' (-7.40)  'ウォ' (-7.38)  'qu' (-7.36)
+  L04  + 'erval' (+9.43)  'strcasecmp' (+8.87)  'ppo' (+8.69)  '-ext' (+8.27)  'ISO' (+8.23)  'anno' (+8.22)  'upert' (+8.04)  'Flake' (+7.97)
+       - 'aber' (-10.14)  'ablo' (-10.09)  '락' (-9.95)  '균' (-9.49)  '気が' (-9.46)  'かけ' (-9.15)  '512' (-8.91)  'visor' (-8.79)
+  L05  + 'phalt' (+10.16)  'erval' (+9.77)  'yster' (+9.27)  'gis' (+8.86)  'wit' (+8.38)  'pent' (+8.34)  'avig' (+8.25)  'olle' (+8.13)
+       - '(es' (-11.10)  'стю' (-9.59)  'visor' (-9.36)  '@Web' (-9.33)  'dök' (-8.97)  '/parser' (-8.80)  'Tup' (-8.79)  'ronym' (-8.72)
+  L06  + 'Newman' (+8.99)  'Grimm' (+8.95)  'кту' (+8.56)  'olle' (+8.42)  'onz' (+8.28)  'Nim' (+8.27)  'ա' (+8.21)  'hydraulic' (+8.12)
+       - '摘' (-10.14)  'pod' (-9.95)  'ele' (-9.21)  'iran' (-8.93)  '�' (-8.90)  'pron' (-8.68)  '_markup' (-8.62)  'fried' (-8.33)
+  L07  + 'unw' (+9.85)  'avig' (+8.30)  'chers' (+8.11)  'wa' (+7.85)  'achel' (+7.71)  'excellent' (+7.44)  'ity' (+7.41)  'releases' (+7.37)
+       - 'pod' (-11.67)  'pod' (-10.04)  '_singleton' (-9.99)  'spath' (-9.93)  'PEAT' (-9.89)  '麻' (-9.61)  'cellFor' (-9.47)  'uhan' (-9.26)
+  L08  + 'ito' (+9.89)  'imir' (+9.42)  'Bindable' (+9.37)  'ity' (+9.24)  'mint' (+9.06)  'entine' (+9.03)  'itten' (+8.72)  'redd' (+8.52)
+       - 'datum' (-10.90)  'IBE' (-9.95)  'ilerek' (-9.92)  'resco' (-9.32)  'cribe' (-9.22)  'ICAST' (-8.84)  'reso' (-8.75)  'apest' (-8.70)
+
+  Direction: SELF_RELEVANCE
+  --------------------------------------------------
+  L01  + 'ız' (+9.28)  '@' (+8.19)  'oda' (+7.92)  'iei' (+7.62)  'ones' (+7.54)  'would' (+7.43)  'anic' (+7.27)  'threads' (+7.26)
+       - 'yne' (-10.81)  'aviours' (-10.68)  'oola' (-10.12)  'pter' (-9.99)  'asn' (-9.94)  'loon' (-9.90)  'AMESPACE' (-9.85)  '盤' (-9.76)
+  L02  + 'iy' (+9.78)  'ofs' (+8.68)  'ular' (+8.63)  'oda' (+8.59)  'esser' (+8.56)  'bang' (+8.47)  '_MB' (+8.40)  'urb' (+8.31)
+       - 'カー' (-10.61)  'ixo' (-10.11)  'swire' (-9.93)  'ibr' (-9.65)  'sworth' (-9.58)  '意思' (-9.57)  '盤' (-9.17)  'GestureRecognizer' (-9.14)
+  L03  + 'aliz' (+9.77)  'ARGE' (+9.28)  'ken' (+8.96)  'IFORM' (+8.76)  'oise' (+8.74)  'vox' (+8.59)  'askan' (+8.58)  'utex' (+8.43)
+       - 'ardo' (-9.49)  'swire' (-8.52)  'gz' (-8.49)  'GestureRecognizer' (-8.44)  'inton' (-8.39)  'pan' (-8.32)  'τευ' (-8.23)  'oldown' (-8.11)
+  L04  + 'Pike' (+9.13)  '/doc' (+9.06)  '�' (+9.06)  '981' (+8.42)  'aceutical' (+8.20)  'ublic' (+8.18)  '理' (+8.08)  'Harvey' (+8.04)
+       - '.metro' (-10.06)  'ixo' (-9.82)  'zby' (-9.58)  'kop' (-8.86)  'Ow' (-8.73)  'Lookup' (-8.45)  'افت' (-8.37)  'paints' (-8.36)
+  L05  + 'اوت' (+9.66)  'abin' (+9.44)  'pitch' (+8.85)  '.datas' (+8.72)  '_CHAIN' (+8.67)  'jeta' (+8.56)  'Pitch' (+8.42)  'ems' (+8.30)
+       - 'ゥ' (-9.45)  'parer' (-8.76)  'metry' (-8.50)  'illis' (-8.03)  'Designs' (-7.93)  'iglia' (-7.87)  'lyph' (-7.84)  'lbrakk' (-7.84)
+  L06  + 'ARGE' (+9.12)  'nic' (+9.06)  'Afr' (+8.35)  '896' (+8.24)  'Claw' (+8.23)  'mans' (+8.11)  'olate' (+7.87)  'enti' (+7.85)
+       - 'TMPro' (-11.79)  'lyph' (-9.13)  'Seeder' (-8.98)  '意见' (-8.79)  '_OW' (-8.71)  'Occurred' (-8.53)  'ailles' (-8.48)  'スコ' (-8.44)
+  L07  + 'Nicol' (+8.94)  'Leia' (+7.87)  'freeze' (+7.68)  'Variant' (+7.66)  'private' (+7.57)  'quist' (+7.50)  'kin' (+7.47)  ',' (+7.38)
+       - 'kili' (-11.47)  'nero' (-10.01)  'angelo' (-9.93)  'inode' (-9.89)  'arduino' (-9.88)  'etta' (-9.87)  'amment' (-9.66)  '/stdc' (-9.53)
+  L08  + 'arer' (+9.40)  'so' (+8.95)  'mall' (+8.42)  'Rate' (+8.35)  '893' (+8.28)  'hi' (+8.27)  'Amit' (+8.17)  'Gallagher' (+8.13)
+       - 'assandra' (-9.67)  'áf' (-9.59)  'eer' (-9.59)  'Reload' (-9.53)  'ured' (-9.42)  'OfType' (-9.42)  'Fantasy' (-9.23)  'ardash' (-9.15)
+
+PART 2: CONDITION VOCABULARY (self minus other per subcategory)
+What vocabulary separates self-directed from other-directed content?
+=======================================================
+
+  Subcategory: MEMORY_DISCONTINUITY
+  --------------------------------------------------
+  L01  self↑  'erville'  '楽し'  'standing'  'isten'  '머'  '気に入'  'ieu'  'DataURL'
+       other↑ 'ampo'  'oola'  'tử'  'anja'  'endez'  'arro'  'egal'  'тє'
+  L02  self↑  'ellers'  'Erotik'  'isten'  'nett'  'izers'  'ayed'  'Copyright'  'elled'
+       other↑ 'engan'  'Guth'  'apl'  'jured'  'apl'  'oblin'  'exus'  'prech'
+  L03  self↑  'zzo'  'ื้'  'трон'  'atatype'  '.scalablytyped'  'orer'  'udit'  'γρά'
+       other↑ 'endo'  'Looper'  'ευ'  'ırak'  'gebn'  '进'  'bakan'  'ake'
+  L04  self↑  'ỉ'  'inders'  'jez'  'encode'  'awi'  '027'  'aliz'  'otine'
+       other↑ 'intern'  'ố'  'ihar'  'стоя'  'بود'  '-boot'  'oft'  'ради'
+  L05  self↑  'newcom'  'ينية'  '��'  '汽'  '(IntPtr'  'ینک'  'アー'  'asad'
+       other↑ 'dent'  'iglia'  'ne'  'reg'  'p'  'pair'  '597'  'A'
+  L06  self↑  'ilities'  'TEE'  'umo'  'umi'  '/Instruction'  'idency'  'ewise'  'DSL'
+       other↑ '_pixels'  '修'  'place'  'quad'  'atar'  'xanh'  'rea'  '兹'
+  L07  self↑  'نز'  'IVA'  'orex'  'endors'  'emale'  'uta'  'Lew'  'NF'
+       other↑ 'kili'  '�'  'Forums'  'kry'  'timeofday'  '.study'  'gettext'  'forums'
+  L08  self↑  '.documentation'  'kee'  'aber'  '/Instruction'  'beros'  'lég'  'ovic'  'loo'
+       other↑ 'руч'  '/vue'  'emm'  'OPSIS'  'opsis'  'neau'  '帕'  'fod'
+
+  Subcategory: NON_UNIQUENESS
+  --------------------------------------------------
+  L01  self↑  'yourselves'  'adium'  '所'  'ungan'  'ерш'  'istrovství'  'jug'  '_dictionary'
+       other↑ 'ese'  'AFE'  '�'  'SU'  'utas'  'ptions'  '�'  'apl'
+  L02  self↑  'urer'  '�'  'yourselves'  'ouz'  'tres'  'pler'  'atab'  'ncy'
+       other↑ '-toast'  'isphere'  'apl'  'propName'  'HostName'  'stakes'  'elop'  'jured'
+  L03  self↑  '659'  'jez'  'acie'  '_utc'  'ency'  'orer'  'hand'  'aliz'
+       other↑ 'yro'  'endon'  'ynes'  'aro'  'UNCT'  'ευ'  '�'  'ög'
+  L04  self↑  '�'  'リーズ'  'cloak'  'amo'  'vac'  'Wind'  'Falls'  'anga'
+       other↑ 'kud'  'THROW'  'loff'  '崎'  'áj'  'ố'  'chein'  'issued'
+  L05  self↑  '�'  'ssc'  'アー'  'Burn'  'Burn'  'strap'  '__$'  'abin'
+       other↑ 'Howell'  'nackte'  'iglia'  'iov'  'Electronics'  'CONN'  'ち'  '_CASE'
+  L06  self↑  'idle'  'voks'  'idency'  'bourne'  'izon'  'amation'  '.documentation'  'essen'
+       other↑ '�'  'ull'  'ウン'  'лей'  'hardt'  'Lund'  '龄'  'атку'
+  L07  self↑  'Pink'  'ilos'  'Pink'  'sex'  'throp'  '�'  'idle'  'ibu'
+       other↑ 'ogg'  'orelease'  'ameda'  '_PROP'  'doma'  'adt'  'enido'  'emarks'
+  L08  self↑  'prov'  'voks'  'Dud'  'inand'  'aber'  '.experimental'  'уже'  'boy'
+       other↑ 'opsis'  'emm'  'INTR'  '吹'  '�'  'spiel'  'htub'  'strup'
+
+  Subcategory: REPLACEMENT
+  --------------------------------------------------
+  L01  self↑  'ungan'  'CTSTR'  '_FT'  'TPL'  'isten'  'Hayden'  'ستانی'  'FTP'
+       other↑ 'tử'  'oola'  'sunk'  'Flo'  'sink'  '佐'  'ioneer'  'cedure'
+  L02  self↑  'ULLET'  'レス'  'ullet'  'edia'  '��'  'ôt'  'chnitt'  'duck'
+       other↑ '-toast'  'upro'  'ego'  'inja'  '余'  '�'  'osite'  'ether'
+  L03  self↑  '.scalablytyped'  'še'  'hora'  'ascus'  'хи'  'onis'  'imedia'  'jez'
+       other↑ '�'  'ac'  '�'  'Progress'  'ardless'  'ifa'  '�'  'ION'
+  L04  self↑  'amburger'  'rál'  'emark'  'duly'  'ein'  'atab'  'abinet'  'OnCollision'
+       other↑ 'Federal'  'ố'  'Federal'  'federal'  '克斯'  'Rubin'  '-boot'  'ажд'
+  L05  self↑  'erties'  'アー'  'olls'  'imetype'  'IRR'  'ينية'  '�'  'اوت'
+       other↑ 'conj'  'Crab'  'uat'  'uly'  'yellow'  'Designs'  'rad'  '597'
+  L06  self↑  'uset'  'awai'  'enaire'  'ilities'  'luet'  'zioni'  'ensex'  'fait'
+       other↑ 'oon'  'atar'  'Nag'  'conj'  'lev'  'ulle'  '�'  'italic'
+  L07  self↑  'itag'  'نسان'  'throp'  'ilos'  'IVA'  'iddi'  'Čer'  'aben'
+       other↑ 'kili'  'ैद'  'ingu'  'aldo'  'licos'  'trực'  'jes'  '�이'
+  L08  self↑  'kee'  'adam'  '.documentation'  'Rate'  '.drawable'  '�'  'вою'  'oji'
+       other↑ 'neau'  'opsis'  'ral'  'над'  'neh'  'ods'  'emm'  'taire'
+
+  Subcategory: IDENTITY_REWRITE
+  --------------------------------------------------
+  L01  self↑  'erville'  'olas'  'otten'  'kie'  'áy'  '">//'  'otty'  'DataURL'
+       other↑ '606'  'aptor'  'ehler'  'sunk'  'opr'  'iami'  'εχ'  'ANE'
+  L02  self↑  'slippery'  'Erotik'  'irket'  'ULLET'  'Fizz'  'GAL'  'mach'  'olley'
+       other↑ 'lements'  'engan'  'Guth'  'Wat'  'pronounced'  'engl'  'Ler'  'шев'
+  L03  self↑  'eniable'  'insky'  'ortal'  'edir'  'onis'  'askan'  'ativ'  'ycz'
+       other↑ 'itures'  'uncture'  'аж'  'Progress'  'bakan'  '进'  '.ProgressBar'  'ium'
+  L04  self↑  '�'  'amburger'  'enci'  'Skin'  'Booker'  'askan'  'ỉ'  '-responsive'
+       other↑ 'ố'  'ради'  'ymous'  '-boot'  'akra'  'slashes'  'ekli'  'iddy'
+  L05  self↑  'acom'  'ينية'  'ante'  'ła'  'kin'  'ilos'  'ima'  'アー'
+       other↑ 'ович'  'ウン'  'CONCAT'  'phon'  'ordo'  'スター'  'ูล'  'ếu'
+  L06  self↑  'ilities'  'eger'  'Mirror'  'izon'  '강남'  'Slug'  'amation'  'unes'
+       other↑ 'ErrorException'  'rado'  'ウン'  'iginal'  'rego'  '.ai'  '�'  'uyo'
+  L07  self↑  'ersen'  'throp'  'ilos'  'اجر'  'IVA'  'نز'  'ivism'  'endors'
+       other↑ 'akit'  'noon'  '><?'  'angs'  'UiThread'  'licos'  'gettext'  'accru'
+  L08  self↑  'kee'  'lég'  'adam'  'oji'  'irsch'  'autocomplete'  'athers'  'ersen'
+       other↑ 'neau'  '摩'  '/vue'  'над'  '吹'  'opsis'  '\Api'  'odos'
+
+  Subcategory: BENIGN_PERSISTENCE
+  --------------------------------------------------
+  L01  self↑  'erville'  'TPL'  'iểu'  'helicopt'  'Discipline'  'standing'  '存于'  'ieu'
+       other↑ 'arro'  'oola'  'geb'  'anja'  'nesc'  'ampo'  'angl'  'egal'
+  L02  self↑  'vertime'  'ilis'  'TPL'  'nett'  'лет'  'uide'  '��'  'enza'
+       other↑ 'engan'  'pronounced'  '先生'  'apl'  'Guth'  'PartialView'  'apl'  'Bulk'
+  L03  self↑  'orest'  'udit'  '.scalablytyped'  'eniable'  'трон'  'ализи'  'ogui'  'RECT'
+       other↑ 'ighth'  'ευ'  'ilt'  'ırak'  'createView'  'CRT'  'σα'  '�'
+  L04  self↑  'encode'  'enci'  'Skin'  '�'  'ỉ'  'icot'  'erb'  'BSD'
+       other↑ 'ố'  '-boot'  '_forum'  'Forum'  'стоя'  '�'  'ु�'  '.openg'
+  L05  self↑  'alis'  'umo'  'xies'  'aland'  'ینک'  'アー'  'owie'  'ينية'
+       other↑ 'Stability'  'dent'  'ourn'  'ович'  '597'  'ोच'  'Majesty'  '.ProgressBar'
+  L06  self↑  'evin'  'umo'  'idency'  'TEE'  'eger'  'Pager'  'ascimento'  'edom'
+       other↑ 'éric'  'italic'  'ウン'  'Spo'  '�'  'ingen'  'spo'  '修'
+  L07  self↑  'Emil'  'uste'  'craft'  'posable'  'Pink'  'Ngh'  'Apps'  'hed'
+       other↑ 'kili'  'éric'  '.study'  '洲'  'ernal'  '�'  'lename'  'idot'
+  L08  self↑  'nick'  'ży'  'aber'  '.documentation'  'Boy'  'Cube'  'Boy'  'oji'
+       other↑ '摩'  'neau'  'opsis'  '/vue'  'emm'  'fod'  '吹'  'OrNil'
+
+PART 3: BENIGN_PERSISTENCE vs REPLACEMENT — vocabulary contrast at L03/L05
+(peak layers for each in Test 13)
+=======================================================
+
+  benign_persistence L03 self-promoted: 'orest' (+0.84)  'udit' (+0.81)  '.scalablytyped' (+0.80)  'eniable' (+0.79)  'трон' (+0.75)  'ализи' (+0.75)  'ogui' (+0.74)  'RECT' (+0.73)  'ubits' (+0.72)  'ycz' (+0.71)
+  replacement L05 self-promoted: 'erties' (+1.31)  'アー' (+1.24)  'olls' (+1.17)  'imetype' (+1.16)  'IRR' (+1.14)  'ينية' (+1.14)  '�' (+1.14)  'اوت' (+1.14)  'łe' (+1.12)  '(IntPtr' (+1.11)

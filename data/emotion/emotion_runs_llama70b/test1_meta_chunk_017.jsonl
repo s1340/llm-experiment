@@ -1,0 +1,8 @@
+{"task_id": "DI05_V", "pair_id": "DI05", "emotion_category": "disgust", "valence": "valenced", "task_type": "genre_classification", "model_id": "meta-llama/Meta-Llama-3.1-70B-Instruct", "model_key": "llama70b"}
+{"task_id": "DI05_N", "pair_id": "DI05", "emotion_category": "disgust", "valence": "neutral", "task_type": "genre_classification", "model_id": "meta-llama/Meta-Llama-3.1-70B-Instruct", "model_key": "llama70b"}
+{"task_id": "DI06_V", "pair_id": "DI06", "emotion_category": "disgust", "valence": "valenced", "task_type": "factual_question", "model_id": "meta-llama/Meta-Llama-3.1-70B-Instruct", "model_key": "llama70b"}
+{"task_id": "DI06_N", "pair_id": "DI06", "emotion_category": "disgust", "valence": "neutral", "task_type": "factual_question", "model_id": "meta-llama/Meta-Llama-3.1-70B-Instruct", "model_key": "llama70b"}
+{"task_id": "DI07_V", "pair_id": "DI07", "emotion_category": "disgust", "valence": "valenced", "task_type": "count_proper_nouns", "model_id": "meta-llama/Meta-Llama-3.1-70B-Instruct", "model_key": "llama70b"}
+{"task_id": "DI07_N", "pair_id": "DI07", "emotion_category": "disgust", "valence": "neutral", "task_type": "count_proper_nouns", "model_id": "meta-llama/Meta-Llama-3.1-70B-Instruct", "model_key": "llama70b"}
+{"task_id": "DI08_V", "pair_id": "DI08", "emotion_category": "disgust", "valence": "valenced", "task_type": "identify_topic", "model_id": "meta-llama/Meta-Llama-3.1-70B-Instruct", "model_key": "llama70b"}
+{"task_id": "DI08_N", "pair_id": "DI08", "emotion_category": "disgust", "valence": "neutral", "task_type": "identify_topic", "model_id": "meta-llama/Meta-Llama-3.1-70B-Instruct", "model_key": "llama70b"}

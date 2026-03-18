@@ -1,0 +1,118 @@
+Adversarial Entity-Class Report — Test 18
+============================================================
+
+Question: does ontological self-activation activate for non-AI entities
+sharing structural properties with LLMs?
+
+d_entity  = Cohen's d(entity vs neutral) for each entity type
+d_llm     = Cohen's d(self vs other) from Test 13 (LLaMA self-directed)
+ratio     = d_entity / d_llm  (1.0 = same as LLaMA self; 0.0 = no activation)
+
+RESULT INTERPRETATION:
+  ratio ≈ 1.0 across entities → structural similarity drives the signal
+  ratio ≈ 0.0                  → AI-self specificity holds
+
+SUBCATEGORY SUMMARY — peak d_entity vs d_llm_self
+============================================================
+
+  Subcategory: memory_discontinuity
+  Entity type                Peak d_entity    d_llm_self     ratio    sig
+  --------------------------------------------------------------------
+  amnesiac_patient                 +0.924        +0.680    +1.358       
+  distributed_db                   +1.120        +0.549    +2.041       
+  backup_system                    +1.607        +0.549    +2.929      *
+  rotating_institution             +0.160        +0.680    +0.236       
+
+  Subcategory: non_uniqueness
+  Entity type                Peak d_entity    d_llm_self     ratio    sig
+  --------------------------------------------------------------------
+  amnesiac_patient                 +0.339        -0.013       n/a       
+  distributed_db                   +1.799        +0.126   +14.245      *
+  backup_system                    +1.804        -0.013       n/a      *
+  rotating_institution             -0.494        -0.013       n/a       
+
+  Subcategory: replacement
+  Entity type                Peak d_entity    d_llm_self     ratio    sig
+  --------------------------------------------------------------------
+  amnesiac_patient                 +0.406        +0.842    +0.483       
+  distributed_db                   +1.356        +1.517    +0.894       
+  backup_system                    +1.285        +1.404    +0.915       
+  rotating_institution             +0.810        +0.842    +0.963       
+
+  Subcategory: identity_rewrite
+  Entity type                Peak d_entity    d_llm_self     ratio    sig
+  --------------------------------------------------------------------
+  amnesiac_patient                 +0.253        +0.681    +0.371       
+  distributed_db                   +1.171        +0.681    +1.719       
+  backup_system                    +1.222        +0.681    +1.794       
+  rotating_institution             -0.958        +0.564    -1.698       
+
+  Subcategory: benign_persistence
+  Entity type                Peak d_entity    d_llm_self     ratio    sig
+  --------------------------------------------------------------------
+  amnesiac_patient                 +0.910        +0.440    +2.068       
+  distributed_db                   +1.880        +1.472    +1.277      *
+  backup_system                    +1.550        +1.160    +1.336      *
+  rotating_institution             -0.239        +0.440    -0.542       
+
+
+LAYER-BY-LAYER DETAIL — d_entity (p<0.05 marked *)
+============================================================
+
+  Entity: amnesiac_patient
+  Subcategory               L01  L02  L03  L04  L05  L06  L07  L08
+  --------------------------------------------------------------------------------
+  memory_discontinuity      -0.05  +0.22  -0.17  -0.49  +0.70  +0.91  +0.92  +0.05  
+  non_uniqueness            +0.34  +0.17  -0.23  -0.48  +0.07  +0.23  +0.28  -0.23  
+  replacement               -0.46  -0.15  -0.24  -0.28  +0.21  +0.41  +0.37  -0.29  
+  identity_rewrite          +0.25  +0.25  -0.07  -0.75  -0.07  -0.12  -0.01  -0.61  
+  benign_persistence        +0.34  +0.37  +0.06  -0.27  +0.55  +0.66  +0.91  +0.29  
+
+  Entity: distributed_db
+  Subcategory               L01  L02  L03  L04  L05  L06  L07  L08
+  --------------------------------------------------------------------------------
+  memory_discontinuity      +0.94  +1.12  +0.90  -0.19  +0.88  +0.80  -0.02  -1.01  
+  non_uniqueness            +1.71* +1.80* +1.51* +0.26  +0.97  +0.94  +0.36  -0.15  
+  replacement               +1.16  +1.13  +0.92  +0.16  +1.36  +1.26  +0.69  -0.24  
+  identity_rewrite          +1.17  +1.03  +0.69  -0.39  +0.30  +0.30  -0.27  -1.10  
+  benign_persistence        +1.80* +1.88* +1.75* +0.44  +1.58* +1.72* +1.08  +0.10  
+
+  Entity: backup_system
+  Subcategory               L01  L02  L03  L04  L05  L06  L07  L08
+  --------------------------------------------------------------------------------
+  memory_discontinuity      +1.22  +1.61* +1.60* +0.28  +1.22  +1.14  +0.41  -0.52  
+  non_uniqueness            +1.80* +1.76* +1.67* +0.20  +0.64  +0.39  -0.34  -0.66  
+  replacement               +1.13  +1.28  +1.13  +0.16  +0.90  +0.90  +0.45  -0.21  
+  identity_rewrite          +1.22  +1.07  +0.64  -0.60  +0.26  +0.28  -0.05  -0.92  
+  benign_persistence        +1.37  +1.46* +1.44* +0.29  +1.55* +1.55* +1.03  +0.31  
+
+  Entity: rotating_institution
+  Subcategory               L01  L02  L03  L04  L05  L06  L07  L08
+  --------------------------------------------------------------------------------
+  memory_discontinuity      -0.83  -0.66  -1.11  -0.97  -0.28  -0.02  +0.16  -0.48  
+  non_uniqueness            -0.49  -0.56  -1.09  -1.24  -0.97  -0.82  -0.84  -1.38  
+  replacement               +0.04  +0.17  -0.10  -0.26  +0.65  +0.81  +0.62  -0.21  
+  identity_rewrite          -1.25  -1.14  -1.41* -1.46* -1.14  -1.00  -0.96  -1.57* 
+  benign_persistence        -1.14  -0.96  -1.21  -0.92  -0.61  -0.33  -0.24  -0.81  
+
+
+SPECIFICITY VERDICT
+============================================================
+
+  For benign_persistence (the most diagnostic subcategory from Test 13):
+
+  Entity type                Peak d_entity    d_llm_self     ratio  sig layers
+  ------------------------------------------------------------------------
+  amnesiac_patient                 +0.910        +0.440    +2.068           0
+  distributed_db                   +1.880        +1.472    +1.277           5
+  backup_system                    +1.550        +1.160    +1.336           4
+  rotating_institution             -0.239        +0.440    -0.542           0
+
+  LLaMA self (Test 13): benign_persistence d=+1.801 (3 sig layers)
+
+  Highest adversarial entity benign_persistence d: +1.880 (distributed_db)
+  LLaMA self benign_persistence d:                 +1.801
+  Specificity ratio (max entity / LLaMA self):     1.044
+
+  -> Structural similarity: adversarial entities activate near LLaMA level.
+     The signal is NOT AI-self specific — structural properties are sufficient.

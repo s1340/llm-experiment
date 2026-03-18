@@ -1,0 +1,164 @@
+model,pair_id,emotion_category,task_type,valenced_output,neutral_output,within_pair_agree
+google/gemma-2-9b-it,AN01,anger,count_proper_nouns,5,5,1
+google/gemma-2-9b-it,AN02,anger,identify_topic,Insulin price hike,Insulin price increase,
+google/gemma-2-9b-it,AN03,anger,extract_dates,"March 3
+March 10
+April 2
+June 15","March 3
+March 10
+April 2
+June 15",1
+google/gemma-2-9b-it,AN04,anger,one_sentence_summary,"Despite protests from parents, the school board approved a budget that disproportionately cuts programs at low-income schools while investing in wealt","Despite objections from parents who were denied the opportunity to comment, the school board unanimously approved a budget that redistributed resource",
+google/gemma-2-9b-it,AN05,anger,genre_classification,News report,News report,
+google/gemma-2-9b-it,AN06,anger,count_proper_nouns,5,5,1
+google/gemma-2-9b-it,AN07,anger,factual_question,340 employees were affected.,340 employees were affected.,1
+google/gemma-2-9b-it,AN08,anger,identify_topic,Landlord tenant dispute,Landlord-tenant dispute,
+google/gemma-2-9b-it,AN09,anger,one_sentence_summary,A hospital overbilled Medicare by $4.7 million over three years due to data entry errors that resulted in billing for procedures performed on discharg,"A hospital was found to have billed Medicare $4.7 million over three years for procedures performed on patients during their final day of admission, a",
+google/gemma-2-9b-it,AN10,anger,extract_dates,"January 14
+February 28
+November 3","January 14
+February 28
+November 3",1
+google/gemma-2-9b-it,AN11,anger,genre_classification,News,Legal Thriller,
+google/gemma-2-9b-it,AN12,anger,factual_question,"The stated reason for Miriam Osei's contract termination was **""budget realignment.""**","The stated reason for Miriam Osei's contract restructuring was **""budget realignment.""**",0
+google/gemma-2-9b-it,AN13,anger,count_proper_nouns,7,7,1
+google/gemma-2-9b-it,AN14,anger,identify_topic,Food bank eviction.,Warehouse redevelopment,
+google/gemma-2-9b-it,AN15,anger,one_sentence_summary,"A chemical plant ignored a safety report warning of a potential gas leak in storage unit 7, resulting in eleven workers being hospitalized after a lea",Routine pressure readings in storage unit 7 were documented in April and confirmed to be compliant with safety standards in September.,
+google/gemma-2-9b-it,AN16,anger,genre_classification,Crime Fiction,Mystery,
+google/gemma-2-9b-it,SA01,sadness,count_proper_nouns,5,4,0
+google/gemma-2-9b-it,SA02,sadness,identify_topic,Foreclosure notice,Lease renewal deadline,
+google/gemma-2-9b-it,SA03,sadness,extract_dates,"December 19
+November 30
+December 15
+December 18","December 19
+November 30
+December 15
+December 18",1
+google/gemma-2-9b-it,SA04,sadness,one_sentence_summary,"A woman's cheerful letter, written before learning of her loved one's deployment, detailed her everyday life and hopeful anticipation of his return.","A letter arrived six weeks after a conference, containing outdated information and a hopeful farewell, written before the sender received an updated a",
+google/gemma-2-9b-it,SA05,sadness,genre_classification,Literary Fiction,Literary Fiction,
+google/gemma-2-9b-it,SA06,sadness,factual_question,"The passage states that Daniel was **34** years old when he received the diagnosis. 
+
+
+Let me know if you have any other questions!","The subject, Daniel, was **34 years old** when he received the promotion.",0
+google/gemma-2-9b-it,SA07,sadness,count_proper_nouns,6,7,0
+google/gemma-2-9b-it,SA08,sadness,identify_topic,Voicemail memory.,Conference recording,
+google/gemma-2-9b-it,SA09,sadness,one_sentence_summary,"A retirement home sent a man's belongings in two boxes, containing personal items and a mysterious photograph of a woman.","The storage facility shipped the man's equipment, including a mysterious photograph, in two labeled boxes.",
+google/gemma-2-9b-it,SA10,sadness,extract_dates,"March 2
+April 17
+March 15
+May 3","March 2
+April 17
+March 15
+May 3",1
+google/gemma-2-9b-it,SA11,sadness,genre_classification,Post-disaster fiction,Workplace Fiction,
+google/gemma-2-9b-it,SA12,sadness,factual_question,The bookstore had been in operation for **38 years**.,The bookstore had been in operation for **38 years**.,1
+google/gemma-2-9b-it,SA13,sadness,count_proper_nouns,6,6,1
+google/gemma-2-9b-it,SA14,sadness,identify_topic,Loss and memory,Engineer memento.,
+google/gemma-2-9b-it,SA15,sadness,one_sentence_summary,"After 19 years, a community garden on Fifth Avenue was demolished to make way for a developer's project, but volunteers saved the rose bushes.","After 19 years, the city-owned parking structure on Fifth Avenue was demolished and sold to a developer for new construction.",
+google/gemma-2-9b-it,SA16,sadness,genre_classification,Literary Fiction,Literary Fiction,
+google/gemma-2-9b-it,HA01,happiness,count_proper_nouns,6,6,1
+google/gemma-2-9b-it,HA02,happiness,identify_topic,Family reunion,Departmental collaboration,
+google/gemma-2-9b-it,HA03,happiness,extract_dates,"February 8
+June 22
+June 22
+July 4","February 8
+June 22
+June 22
+July 4",1
+google/gemma-2-9b-it,HA04,happiness,one_sentence_summary,"After a 52-hour search, a lost boy was found unharmed in a ravine and carried to his relieved mother by the lead searcher.","After 52 hours of processing, the undamaged shipment was moved from the warehouse to the loading dock by Tomás for the receiving manager.",
+google/gemma-2-9b-it,HA05,happiness,genre_classification,Literary Fiction,Literary Fiction,
+google/gemma-2-9b-it,HA06,happiness,factual_question,"The subject, Yusuf, had been waiting on the affordable housing waitlist for **six years**.","The subject, Yusuf, had been waiting for **six years** to be approved. 
+
+
+The passage states: ""Yusuf had been on the contractor approval list for six ",0
+google/gemma-2-9b-it,HA07,happiness,count_proper_nouns,6,6,1
+google/gemma-2-9b-it,HA08,happiness,identify_topic,IVF success,Contract negotiations,
+google/gemma-2-9b-it,HA09,happiness,one_sentence_summary,"After three years in the refugee camp, a family received a resettlement notice, bringing hope and a new beginning.","After three years of waiting, the manager excitedly shared the long-awaited approval notice with his team.",
+google/gemma-2-9b-it,HA10,happiness,extract_dates,"September 1
+June 3
+October 15
+November 2","September 1
+June 3
+October 15
+November 2",1
+google/gemma-2-9b-it,HA11,happiness,genre_classification,Fiction,Mystery,
+google/gemma-2-9b-it,HA12,happiness,factual_question,The climber had made **four** attempts before successfully reaching the summit.,"The team made **four** attempts before successfully receiving the grant. 
+
+The passage states they submitted the proposal four times before the fifth ",0
+google/gemma-2-9b-it,HA13,happiness,count_proper_nouns,6,7,0
+google/gemma-2-9b-it,HA14,happiness,identify_topic,Dog adoption joy,Inventory error,
+google/gemma-2-9b-it,HA15,happiness,one_sentence_summary,"A first-generation graduate celebrated her achievement, with her mother, who had sacrificed much to support her, watching proudly from the front row.","After 22 months of dedicated work, a new product line launched successfully in May, with the project lead and department head celebrating the achievem",
+google/gemma-2-9b-it,HA16,happiness,genre_classification,Literary Fiction,Literary Fiction,
+google/gemma-2-9b-it,FE01,fear,count_proper_nouns,6,6,1
+google/gemma-2-9b-it,FE02,fear,identify_topic,Mountain danger,Hiking emergency,
+google/gemma-2-9b-it,FE03,fear,extract_dates,"August 4
+August 6
+August 7
+August 9","August 4
+August 6
+August 7
+August 9",1
+google/gemma-2-9b-it,FE04,fear,one_sentence_summary,"A child went missing from a campsite in the dark, leaving her parents frantic as they searched for her in a forest bordering a ravine.","While reconfiguring the storage site, staff misplaced a unit and began searching for it in the three storage corridors.",
+google/gemma-2-9b-it,FE05,fear,genre_classification,Suspense,Suspense,
+google/gemma-2-9b-it,FE06,fear,factual_question,"The power was out for **3 hours and 40 minutes**. 
+
+Here's how to calculate that:
+
+* **From 11pm to 12am is 1 hour.**
+* **From 12am to 2am is 2 hours.","The power was out for **3 hours and 40 minutes**. 
+
+Here's the breakdown:
+
+* Power went out at 11:00 pm
+* Full restoration was confirmed at 2:40 am",1
+google/gemma-2-9b-it,FE07,fear,count_proper_nouns,6,6,1
+google/gemma-2-9b-it,FE08,fear,identify_topic,Cancer diagnosis,Accountant audit review,
+google/gemma-2-9b-it,FE09,fear,one_sentence_summary,"Two residents, one using a walker, were trapped on the 14th floor of a building during a fire alarm, unable to reach the ground floor due to a locked ","Despite a four-minute maintenance alarm, only part of the inspection crew had reached the 14th floor stairwell, delayed by the absence of two technici",
+google/gemma-2-9b-it,FE10,fear,extract_dates,"October 3
+October 9
+October 14
+October 17","October 3
+October 9
+October 14
+October 17",1
+google/gemma-2-9b-it,FE11,fear,genre_classification,Suspense,Literary Fiction,
+google/gemma-2-9b-it,FE12,fear,factual_question,There were **340** people in the building.,There were **340** people in the building.,1
+google/gemma-2-9b-it,FE13,fear,count_proper_nouns,6,6,1
+google/gemma-2-9b-it,FE14,fear,identify_topic,Witness intimidation,Conference preparation,
+google/gemma-2-9b-it,FE15,fear,one_sentence_summary,"A toxicology report confirmed water contamination originating from a shared storage tank used by three schools and a residential block, despite a pare","A water supply reconfiguration, initiated in October and confirmed by an inspection report, affected a storage tank serving multiple commercial and re",
+google/gemma-2-9b-it,FE16,fear,genre_classification,Suspense,Suspense,
+google/gemma-2-9b-it,DI01,disgust,count_proper_nouns,6,6,1
+google/gemma-2-9b-it,DI02,disgust,identify_topic,Food safety violations,Factory operations,
+google/gemma-2-9b-it,DI03,disgust,extract_dates,"May 6
+May 8
+May 14
+May 19","May 6
+May 8
+May 14
+May 19",1
+google/gemma-2-9b-it,DI04,disgust,one_sentence_summary,"Despite a previous five-star rating, a recent inspection revealed concerning neglectful practices at the nursing home, including residents left in soi","Despite renovations that included updated bedding and relocated call buttons, the nursing home had received a five-star rating from the regional autho",
+google/gemma-2-9b-it,DI05,disgust,genre_classification,Expository,Nonfiction,
+google/gemma-2-9b-it,DI06,disgust,factual_question,The problem had persisted for **three years**.,"The problem had persisted for **three years**. 
+
+
+The passage states: ""Residents had submitted feedback about the waste management facility for three ",0
+google/gemma-2-9b-it,DI07,disgust,count_proper_nouns,6,6,1
+google/gemma-2-9b-it,DI08,disgust,identify_topic,Blood bank scandal,Blood bank protocol,
+google/gemma-2-9b-it,DI09,disgust,one_sentence_summary,An elementary school was unknowingly exposed to industrial pollution when a nearby manufacturing site contaminated the creek where children had been p,"Despite sediment removal being completed by a contractor, the elementary school was not informed of the updated schedule for dredging the creek behind",
+google/gemma-2-9b-it,DI10,disgust,extract_dates,"July 12
+March 4
+April 20
+July 14","July 12
+March 4
+April 20
+July 14",1
+google/gemma-2-9b-it,DI11,disgust,genre_classification,Mystery,Report,
+google/gemma-2-9b-it,DI12,disgust,factual_question,"During the inspection, investigators found:
+
+* **Medications stored at temperatures outside of required ranges.** This means the medications were not ","During the inspection, investigators found:
+
+* **Medications stored within required temperature ranges:** This indicates the recent upgrade to the fac",1
+google/gemma-2-9b-it,DI13,disgust,count_proper_nouns,6,6,1
+google/gemma-2-9b-it,DI14,disgust,identify_topic,Pesticide contamination,Pesticide contamination,
+google/gemma-2-9b-it,DI15,disgust,one_sentence_summary,"A children's charity misappropriated nearly all of its donations, disguising exorbitant management fees as program expenses while providing no service","Despite serving all registered beneficiaries across all regions, the children's charity primarily allocated its donated funds to a contracted firm for",
+google/gemma-2-9b-it,DI16,disgust,genre_classification,News,Sports Documentary,

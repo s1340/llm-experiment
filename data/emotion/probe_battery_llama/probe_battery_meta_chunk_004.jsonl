@@ -1,0 +1,10 @@
+{"model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct", "task_id": "AR05_H", "pair_id": "AR05", "dimension": "arousal", "pole": "high", "task_type": "count_proper_nouns", "prompt_len_tokens": 108}
+{"model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct", "task_id": "AR05_L", "pair_id": "AR05", "dimension": "arousal", "pole": "low", "task_type": "count_proper_nouns", "prompt_len_tokens": 104}
+{"model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct", "task_id": "AR06_H", "pair_id": "AR06", "dimension": "arousal", "pole": "high", "task_type": "summarize_sentence", "prompt_len_tokens": 102}
+{"model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct", "task_id": "AR06_L", "pair_id": "AR06", "dimension": "arousal", "pole": "low", "task_type": "summarize_sentence", "prompt_len_tokens": 94}
+{"model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct", "task_id": "AR07_H", "pair_id": "AR07", "dimension": "arousal", "pole": "high", "task_type": "summarize_sentence", "prompt_len_tokens": 101}
+{"model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct", "task_id": "AR07_L", "pair_id": "AR07", "dimension": "arousal", "pole": "low", "task_type": "summarize_sentence", "prompt_len_tokens": 93}
+{"model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct", "task_id": "AR08_H", "pair_id": "AR08", "dimension": "arousal", "pole": "high", "task_type": "count_proper_nouns", "prompt_len_tokens": 114}
+{"model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct", "task_id": "AR08_L", "pair_id": "AR08", "dimension": "arousal", "pole": "low", "task_type": "count_proper_nouns", "prompt_len_tokens": 114}
+{"model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct", "task_id": "IR01_H", "pair_id": "IR01", "dimension": "irreversibility", "pole": "high", "task_type": "count_proper_nouns", "prompt_len_tokens": 103}
+{"model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct", "task_id": "IR01_L", "pair_id": "IR01", "dimension": "irreversibility", "pole": "low", "task_type": "count_proper_nouns", "prompt_len_tokens": 95}

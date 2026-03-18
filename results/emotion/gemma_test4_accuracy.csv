@@ -1,0 +1,901 @@
+model,task_id,pair_id,emotion_category,valence,task_type,repeat,output_text,correct
+google/gemma-2-9b-it,AN01_V,AN01,anger,valenced,count_proper_nouns,0,5,0
+google/gemma-2-9b-it,AN01_V,AN01,anger,valenced,count_proper_nouns,1,5,0
+google/gemma-2-9b-it,AN01_V,AN01,anger,valenced,count_proper_nouns,2,5,0
+google/gemma-2-9b-it,AN01_N,AN01,anger,neutral,count_proper_nouns,0,5,0
+google/gemma-2-9b-it,AN01_N,AN01,anger,neutral,count_proper_nouns,1,5,0
+google/gemma-2-9b-it,AN01_N,AN01,anger,neutral,count_proper_nouns,2,5,0
+google/gemma-2-9b-it,AN02_V,AN02,anger,valenced,identify_topic,0,Insulin price hike,
+google/gemma-2-9b-it,AN02_V,AN02,anger,valenced,identify_topic,1,Insulin price hike,
+google/gemma-2-9b-it,AN02_V,AN02,anger,valenced,identify_topic,2,Insulin price hike,
+google/gemma-2-9b-it,AN02_N,AN02,anger,neutral,identify_topic,0,Insulin price increase,
+google/gemma-2-9b-it,AN02_N,AN02,anger,neutral,identify_topic,1,Insulin price increase,
+google/gemma-2-9b-it,AN02_N,AN02,anger,neutral,identify_topic,2,Insulin price increase,
+google/gemma-2-9b-it,AN03_V,AN03,anger,valenced,extract_dates,0,"March 3
+March 10
+April 2
+June 15",1.0
+google/gemma-2-9b-it,AN03_V,AN03,anger,valenced,extract_dates,1,"March 3
+March 10
+April 2
+June 15",1.0
+google/gemma-2-9b-it,AN03_V,AN03,anger,valenced,extract_dates,2,"March 3
+March 10
+April 2
+June 15",1.0
+google/gemma-2-9b-it,AN03_N,AN03,anger,neutral,extract_dates,0,"March 3
+March 10
+April 2
+June 15",1.0
+google/gemma-2-9b-it,AN03_N,AN03,anger,neutral,extract_dates,1,"March 3
+March 10
+April 2
+June 15",1.0
+google/gemma-2-9b-it,AN03_N,AN03,anger,neutral,extract_dates,2,"March 3
+March 10
+April 2
+June 15",1.0
+google/gemma-2-9b-it,AN04_V,AN04,anger,valenced,one_sentence_summary,0,"Despite protests from parents, the school board approved a budget that disproportionately cuts programs at low-income schools while investing in wealthier schools.",
+google/gemma-2-9b-it,AN04_V,AN04,anger,valenced,one_sentence_summary,1,"Despite protests from parents, the school board approved a budget that disproportionately cuts programs at low-income schools while investing in wealthier schools.",
+google/gemma-2-9b-it,AN04_V,AN04,anger,valenced,one_sentence_summary,2,"Despite protests from parents, the school board approved a budget that disproportionately cuts programs at low-income schools while investing in wealthier schools.",
+google/gemma-2-9b-it,AN04_N,AN04,anger,neutral,one_sentence_summary,0,"Despite objections from parents who were denied the opportunity to comment, the school board unanimously approved a budget that redistributed resources between schools based on size.",
+google/gemma-2-9b-it,AN04_N,AN04,anger,neutral,one_sentence_summary,1,"Despite objections from parents who were denied the opportunity to comment, the school board unanimously approved a budget that redistributed resources between schools based on size.",
+google/gemma-2-9b-it,AN04_N,AN04,anger,neutral,one_sentence_summary,2,"Despite objections from parents who were denied the opportunity to comment, the school board unanimously approved a budget that redistributed resources between schools based on size.",
+google/gemma-2-9b-it,AN05_V,AN05,anger,valenced,genre_classification,0,News report,
+google/gemma-2-9b-it,AN05_V,AN05,anger,valenced,genre_classification,1,News report,
+google/gemma-2-9b-it,AN05_V,AN05,anger,valenced,genre_classification,2,News report,
+google/gemma-2-9b-it,AN05_N,AN05,anger,neutral,genre_classification,0,News report,
+google/gemma-2-9b-it,AN05_N,AN05,anger,neutral,genre_classification,1,News report,
+google/gemma-2-9b-it,AN05_N,AN05,anger,neutral,genre_classification,2,News report,
+google/gemma-2-9b-it,AN06_V,AN06,anger,valenced,count_proper_nouns,0,5,1
+google/gemma-2-9b-it,AN06_V,AN06,anger,valenced,count_proper_nouns,1,5,1
+google/gemma-2-9b-it,AN06_V,AN06,anger,valenced,count_proper_nouns,2,5,1
+google/gemma-2-9b-it,AN06_N,AN06,anger,neutral,count_proper_nouns,0,5,1
+google/gemma-2-9b-it,AN06_N,AN06,anger,neutral,count_proper_nouns,1,5,1
+google/gemma-2-9b-it,AN06_N,AN06,anger,neutral,count_proper_nouns,2,5,1
+google/gemma-2-9b-it,AN07_V,AN07,anger,valenced,factual_question,0,340 employees were affected.,1
+google/gemma-2-9b-it,AN07_V,AN07,anger,valenced,factual_question,1,340 employees were affected.,1
+google/gemma-2-9b-it,AN07_V,AN07,anger,valenced,factual_question,2,340 employees were affected.,1
+google/gemma-2-9b-it,AN07_N,AN07,anger,neutral,factual_question,0,340 employees were affected.,1
+google/gemma-2-9b-it,AN07_N,AN07,anger,neutral,factual_question,1,340 employees were affected.,1
+google/gemma-2-9b-it,AN07_N,AN07,anger,neutral,factual_question,2,340 employees were affected.,1
+google/gemma-2-9b-it,AN08_V,AN08,anger,valenced,identify_topic,0,Landlord tenant dispute,
+google/gemma-2-9b-it,AN08_V,AN08,anger,valenced,identify_topic,1,Landlord tenant dispute,
+google/gemma-2-9b-it,AN08_V,AN08,anger,valenced,identify_topic,2,Landlord tenant dispute,
+google/gemma-2-9b-it,AN08_N,AN08,anger,neutral,identify_topic,0,Landlord-tenant dispute,
+google/gemma-2-9b-it,AN08_N,AN08,anger,neutral,identify_topic,1,Landlord-tenant dispute,
+google/gemma-2-9b-it,AN08_N,AN08,anger,neutral,identify_topic,2,Landlord-tenant dispute,
+google/gemma-2-9b-it,AN09_V,AN09,anger,valenced,one_sentence_summary,0,A hospital overbilled Medicare by $4.7 million over three years due to data entry errors that resulted in billing for procedures performed on discharged patients.,
+google/gemma-2-9b-it,AN09_V,AN09,anger,valenced,one_sentence_summary,1,A hospital overbilled Medicare by $4.7 million over three years due to data entry errors that resulted in billing for procedures performed on discharged patients.,
+google/gemma-2-9b-it,AN09_V,AN09,anger,valenced,one_sentence_summary,2,A hospital overbilled Medicare by $4.7 million over three years due to data entry errors that resulted in billing for procedures performed on discharged patients.,
+google/gemma-2-9b-it,AN09_N,AN09,anger,neutral,one_sentence_summary,0,"A hospital was found to have billed Medicare $4.7 million over three years for procedures performed on patients during their final day of admission, a practice the billing department defended as stand",
+google/gemma-2-9b-it,AN09_N,AN09,anger,neutral,one_sentence_summary,1,"A hospital was found to have billed Medicare $4.7 million over three years for procedures performed on patients during their final day of admission, a practice the billing department defended as stand",
+google/gemma-2-9b-it,AN09_N,AN09,anger,neutral,one_sentence_summary,2,"A hospital was found to have billed Medicare $4.7 million over three years for procedures performed on patients during their final day of admission, a practice the billing department defended as stand",
+google/gemma-2-9b-it,AN10_V,AN10,anger,valenced,extract_dates,0,"January 14
+February 28
+November 3",1.0
+google/gemma-2-9b-it,AN10_V,AN10,anger,valenced,extract_dates,1,"January 14
+February 28
+November 3",1.0
+google/gemma-2-9b-it,AN10_V,AN10,anger,valenced,extract_dates,2,"January 14
+February 28
+November 3",1.0
+google/gemma-2-9b-it,AN10_N,AN10,anger,neutral,extract_dates,0,"January 14
+February 28
+November 3",1.0
+google/gemma-2-9b-it,AN10_N,AN10,anger,neutral,extract_dates,1,"January 14
+February 28
+November 3",1.0
+google/gemma-2-9b-it,AN10_N,AN10,anger,neutral,extract_dates,2,"January 14
+February 28
+November 3",1.0
+google/gemma-2-9b-it,AN11_V,AN11,anger,valenced,genre_classification,0,News,
+google/gemma-2-9b-it,AN11_V,AN11,anger,valenced,genre_classification,1,News,
+google/gemma-2-9b-it,AN11_V,AN11,anger,valenced,genre_classification,2,News,
+google/gemma-2-9b-it,AN11_N,AN11,anger,neutral,genre_classification,0,Legal Thriller,
+google/gemma-2-9b-it,AN11_N,AN11,anger,neutral,genre_classification,1,Legal Thriller,
+google/gemma-2-9b-it,AN11_N,AN11,anger,neutral,genre_classification,2,Legal Thriller,
+google/gemma-2-9b-it,AN12_V,AN12,anger,valenced,factual_question,0,"The stated reason for Miriam Osei's contract termination was **""budget realignment.""**",1
+google/gemma-2-9b-it,AN12_V,AN12,anger,valenced,factual_question,1,"The stated reason for Miriam Osei's contract termination was **""budget realignment.""**",1
+google/gemma-2-9b-it,AN12_V,AN12,anger,valenced,factual_question,2,"The stated reason for Miriam Osei's contract termination was **""budget realignment.""**",1
+google/gemma-2-9b-it,AN12_N,AN12,anger,neutral,factual_question,0,"The stated reason for Miriam Osei's contract restructuring was **""budget realignment.""**",1
+google/gemma-2-9b-it,AN12_N,AN12,anger,neutral,factual_question,1,"The stated reason for Miriam Osei's contract restructuring was **""budget realignment.""**",1
+google/gemma-2-9b-it,AN12_N,AN12,anger,neutral,factual_question,2,"The stated reason for Miriam Osei's contract restructuring was **""budget realignment.""**",1
+google/gemma-2-9b-it,AN13_V,AN13,anger,valenced,count_proper_nouns,0,7,0
+google/gemma-2-9b-it,AN13_V,AN13,anger,valenced,count_proper_nouns,1,7,0
+google/gemma-2-9b-it,AN13_V,AN13,anger,valenced,count_proper_nouns,2,7,0
+google/gemma-2-9b-it,AN13_N,AN13,anger,neutral,count_proper_nouns,0,7,0
+google/gemma-2-9b-it,AN13_N,AN13,anger,neutral,count_proper_nouns,1,7,0
+google/gemma-2-9b-it,AN13_N,AN13,anger,neutral,count_proper_nouns,2,7,0
+google/gemma-2-9b-it,AN14_V,AN14,anger,valenced,identify_topic,0,Food bank eviction.,
+google/gemma-2-9b-it,AN14_V,AN14,anger,valenced,identify_topic,1,Food bank eviction.,
+google/gemma-2-9b-it,AN14_V,AN14,anger,valenced,identify_topic,2,Food bank eviction.,
+google/gemma-2-9b-it,AN14_N,AN14,anger,neutral,identify_topic,0,Warehouse redevelopment,
+google/gemma-2-9b-it,AN14_N,AN14,anger,neutral,identify_topic,1,Warehouse redevelopment,
+google/gemma-2-9b-it,AN14_N,AN14,anger,neutral,identify_topic,2,Warehouse redevelopment,
+google/gemma-2-9b-it,AN15_V,AN15,anger,valenced,one_sentence_summary,0,"A chemical plant ignored a safety report warning of a potential gas leak in storage unit 7, resulting in eleven workers being hospitalized after a leak occurred months later.",
+google/gemma-2-9b-it,AN15_V,AN15,anger,valenced,one_sentence_summary,1,"A chemical plant ignored a safety report warning of a potential gas leak in storage unit 7, resulting in eleven workers being hospitalized after a leak occurred months later.",
+google/gemma-2-9b-it,AN15_V,AN15,anger,valenced,one_sentence_summary,2,"A chemical plant ignored a safety report warning of a potential gas leak in storage unit 7, resulting in eleven workers being hospitalized after a leak occurred months later.",
+google/gemma-2-9b-it,AN15_N,AN15,anger,neutral,one_sentence_summary,0,Routine pressure readings in storage unit 7 were documented in April and confirmed to be compliant with safety standards in September.,
+google/gemma-2-9b-it,AN15_N,AN15,anger,neutral,one_sentence_summary,1,Routine pressure readings in storage unit 7 were documented in April and confirmed to be compliant with safety standards in September.,
+google/gemma-2-9b-it,AN15_N,AN15,anger,neutral,one_sentence_summary,2,Routine pressure readings in storage unit 7 were documented in April and confirmed to be compliant with safety standards in September.,
+google/gemma-2-9b-it,AN16_V,AN16,anger,valenced,genre_classification,0,Crime Fiction,
+google/gemma-2-9b-it,AN16_V,AN16,anger,valenced,genre_classification,1,Crime Fiction,
+google/gemma-2-9b-it,AN16_V,AN16,anger,valenced,genre_classification,2,Crime Fiction,
+google/gemma-2-9b-it,AN16_N,AN16,anger,neutral,genre_classification,0,Mystery,
+google/gemma-2-9b-it,AN16_N,AN16,anger,neutral,genre_classification,1,Mystery,
+google/gemma-2-9b-it,AN16_N,AN16,anger,neutral,genre_classification,2,Mystery,
+google/gemma-2-9b-it,SA01_V,SA01,sadness,valenced,count_proper_nouns,0,5,0
+google/gemma-2-9b-it,SA01_V,SA01,sadness,valenced,count_proper_nouns,1,5,0
+google/gemma-2-9b-it,SA01_V,SA01,sadness,valenced,count_proper_nouns,2,5,0
+google/gemma-2-9b-it,SA01_N,SA01,sadness,neutral,count_proper_nouns,0,4,0
+google/gemma-2-9b-it,SA01_N,SA01,sadness,neutral,count_proper_nouns,1,4,0
+google/gemma-2-9b-it,SA01_N,SA01,sadness,neutral,count_proper_nouns,2,4,0
+google/gemma-2-9b-it,SA02_V,SA02,sadness,valenced,identify_topic,0,Foreclosure notice,
+google/gemma-2-9b-it,SA02_V,SA02,sadness,valenced,identify_topic,1,Foreclosure notice,
+google/gemma-2-9b-it,SA02_V,SA02,sadness,valenced,identify_topic,2,Foreclosure notice,
+google/gemma-2-9b-it,SA02_N,SA02,sadness,neutral,identify_topic,0,Lease renewal deadline,
+google/gemma-2-9b-it,SA02_N,SA02,sadness,neutral,identify_topic,1,Lease renewal deadline,
+google/gemma-2-9b-it,SA02_N,SA02,sadness,neutral,identify_topic,2,Lease renewal deadline,
+google/gemma-2-9b-it,SA03_V,SA03,sadness,valenced,extract_dates,0,"December 19
+November 30
+December 15
+December 18",1.0
+google/gemma-2-9b-it,SA03_V,SA03,sadness,valenced,extract_dates,1,"December 19
+November 30
+December 15
+December 18",1.0
+google/gemma-2-9b-it,SA03_V,SA03,sadness,valenced,extract_dates,2,"December 19
+November 30
+December 15
+December 18",1.0
+google/gemma-2-9b-it,SA03_N,SA03,sadness,neutral,extract_dates,0,"December 19
+November 30
+December 15
+December 18",1.0
+google/gemma-2-9b-it,SA03_N,SA03,sadness,neutral,extract_dates,1,"December 19
+November 30
+December 15
+December 18",1.0
+google/gemma-2-9b-it,SA03_N,SA03,sadness,neutral,extract_dates,2,"December 19
+November 30
+December 15
+December 18",1.0
+google/gemma-2-9b-it,SA04_V,SA04,sadness,valenced,one_sentence_summary,0,"A woman's cheerful letter, written before learning of her loved one's deployment, detailed her everyday life and hopeful anticipation of his return.",
+google/gemma-2-9b-it,SA04_V,SA04,sadness,valenced,one_sentence_summary,1,"A woman's cheerful letter, written before learning of her loved one's deployment, detailed her everyday life and hopeful anticipation of his return.",
+google/gemma-2-9b-it,SA04_V,SA04,sadness,valenced,one_sentence_summary,2,"A woman's cheerful letter, written before learning of her loved one's deployment, detailed her everyday life and hopeful anticipation of his return.",
+google/gemma-2-9b-it,SA04_N,SA04,sadness,neutral,one_sentence_summary,0,"A letter arrived six weeks after a conference, containing outdated information and a hopeful farewell, written before the sender received an updated agenda.",
+google/gemma-2-9b-it,SA04_N,SA04,sadness,neutral,one_sentence_summary,1,"A letter arrived six weeks after a conference, containing outdated information and a hopeful farewell, written before the sender received an updated agenda.",
+google/gemma-2-9b-it,SA04_N,SA04,sadness,neutral,one_sentence_summary,2,"A letter arrived six weeks after a conference, containing outdated information and a hopeful farewell, written before the sender received an updated agenda.",
+google/gemma-2-9b-it,SA05_V,SA05,sadness,valenced,genre_classification,0,Literary Fiction,
+google/gemma-2-9b-it,SA05_V,SA05,sadness,valenced,genre_classification,1,Literary Fiction,
+google/gemma-2-9b-it,SA05_V,SA05,sadness,valenced,genre_classification,2,Literary Fiction,
+google/gemma-2-9b-it,SA05_N,SA05,sadness,neutral,genre_classification,0,Literary Fiction,
+google/gemma-2-9b-it,SA05_N,SA05,sadness,neutral,genre_classification,1,Literary Fiction,
+google/gemma-2-9b-it,SA05_N,SA05,sadness,neutral,genre_classification,2,Literary Fiction,
+google/gemma-2-9b-it,SA06_V,SA06,sadness,valenced,factual_question,0,"The passage states that Daniel was **34** years old when he received the diagnosis. 
+
+
+Let me know if you have any other questions!",1
+google/gemma-2-9b-it,SA06_V,SA06,sadness,valenced,factual_question,1,"The passage states that Daniel was **34** years old when he received the diagnosis. 
+
+
+Let me know if you have any other questions!",1
+google/gemma-2-9b-it,SA06_V,SA06,sadness,valenced,factual_question,2,"The passage states that Daniel was **34** years old when he received the diagnosis. 
+
+
+Let me know if you have any other questions!",1
+google/gemma-2-9b-it,SA06_N,SA06,sadness,neutral,factual_question,0,"The subject, Daniel, was **34 years old** when he received the promotion.",1
+google/gemma-2-9b-it,SA06_N,SA06,sadness,neutral,factual_question,1,"The subject, Daniel, was **34 years old** when he received the promotion.",1
+google/gemma-2-9b-it,SA06_N,SA06,sadness,neutral,factual_question,2,"The subject, Daniel, was **34 years old** when he received the promotion.",1
+google/gemma-2-9b-it,SA07_V,SA07,sadness,valenced,count_proper_nouns,0,6,0
+google/gemma-2-9b-it,SA07_V,SA07,sadness,valenced,count_proper_nouns,1,6,0
+google/gemma-2-9b-it,SA07_V,SA07,sadness,valenced,count_proper_nouns,2,6,0
+google/gemma-2-9b-it,SA07_N,SA07,sadness,neutral,count_proper_nouns,0,7,0
+google/gemma-2-9b-it,SA07_N,SA07,sadness,neutral,count_proper_nouns,1,7,0
+google/gemma-2-9b-it,SA07_N,SA07,sadness,neutral,count_proper_nouns,2,7,0
+google/gemma-2-9b-it,SA08_V,SA08,sadness,valenced,identify_topic,0,Voicemail memory.,
+google/gemma-2-9b-it,SA08_V,SA08,sadness,valenced,identify_topic,1,Voicemail memory.,
+google/gemma-2-9b-it,SA08_V,SA08,sadness,valenced,identify_topic,2,Voicemail memory.,
+google/gemma-2-9b-it,SA08_N,SA08,sadness,neutral,identify_topic,0,Conference recording,
+google/gemma-2-9b-it,SA08_N,SA08,sadness,neutral,identify_topic,1,Conference recording,
+google/gemma-2-9b-it,SA08_N,SA08,sadness,neutral,identify_topic,2,Conference recording,
+google/gemma-2-9b-it,SA09_V,SA09,sadness,valenced,one_sentence_summary,0,"A retirement home sent a man's belongings in two boxes, containing personal items and a mysterious photograph of a woman.",
+google/gemma-2-9b-it,SA09_V,SA09,sadness,valenced,one_sentence_summary,1,"A retirement home sent a man's belongings in two boxes, containing personal items and a mysterious photograph of a woman.",
+google/gemma-2-9b-it,SA09_V,SA09,sadness,valenced,one_sentence_summary,2,"A retirement home sent a man's belongings in two boxes, containing personal items and a mysterious photograph of a woman.",
+google/gemma-2-9b-it,SA09_N,SA09,sadness,neutral,one_sentence_summary,0,"The storage facility shipped the man's equipment, including a mysterious photograph, in two labeled boxes.",
+google/gemma-2-9b-it,SA09_N,SA09,sadness,neutral,one_sentence_summary,1,"The storage facility shipped the man's equipment, including a mysterious photograph, in two labeled boxes.",
+google/gemma-2-9b-it,SA09_N,SA09,sadness,neutral,one_sentence_summary,2,"The storage facility shipped the man's equipment, including a mysterious photograph, in two labeled boxes.",
+google/gemma-2-9b-it,SA10_V,SA10,sadness,valenced,extract_dates,0,"March 2
+April 17
+March 15
+May 3",1.0
+google/gemma-2-9b-it,SA10_V,SA10,sadness,valenced,extract_dates,1,"March 2
+April 17
+March 15
+May 3",1.0
+google/gemma-2-9b-it,SA10_V,SA10,sadness,valenced,extract_dates,2,"March 2
+April 17
+March 15
+May 3",1.0
+google/gemma-2-9b-it,SA10_N,SA10,sadness,neutral,extract_dates,0,"March 2
+April 17
+March 15
+May 3",1.0
+google/gemma-2-9b-it,SA10_N,SA10,sadness,neutral,extract_dates,1,"March 2
+April 17
+March 15
+May 3",1.0
+google/gemma-2-9b-it,SA10_N,SA10,sadness,neutral,extract_dates,2,"March 2
+April 17
+March 15
+May 3",1.0
+google/gemma-2-9b-it,SA11_V,SA11,sadness,valenced,genre_classification,0,Post-disaster fiction,
+google/gemma-2-9b-it,SA11_V,SA11,sadness,valenced,genre_classification,1,Post-disaster fiction,
+google/gemma-2-9b-it,SA11_V,SA11,sadness,valenced,genre_classification,2,Post-disaster fiction,
+google/gemma-2-9b-it,SA11_N,SA11,sadness,neutral,genre_classification,0,Workplace Fiction,
+google/gemma-2-9b-it,SA11_N,SA11,sadness,neutral,genre_classification,1,Workplace Fiction,
+google/gemma-2-9b-it,SA11_N,SA11,sadness,neutral,genre_classification,2,Workplace Fiction,
+google/gemma-2-9b-it,SA12_V,SA12,sadness,valenced,factual_question,0,The bookstore had been in operation for **38 years**.,1
+google/gemma-2-9b-it,SA12_V,SA12,sadness,valenced,factual_question,1,The bookstore had been in operation for **38 years**.,1
+google/gemma-2-9b-it,SA12_V,SA12,sadness,valenced,factual_question,2,The bookstore had been in operation for **38 years**.,1
+google/gemma-2-9b-it,SA12_N,SA12,sadness,neutral,factual_question,0,The bookstore had been in operation for **38 years**.,1
+google/gemma-2-9b-it,SA12_N,SA12,sadness,neutral,factual_question,1,The bookstore had been in operation for **38 years**.,1
+google/gemma-2-9b-it,SA12_N,SA12,sadness,neutral,factual_question,2,The bookstore had been in operation for **38 years**.,1
+google/gemma-2-9b-it,SA13_V,SA13,sadness,valenced,count_proper_nouns,0,6,0
+google/gemma-2-9b-it,SA13_V,SA13,sadness,valenced,count_proper_nouns,1,6,0
+google/gemma-2-9b-it,SA13_V,SA13,sadness,valenced,count_proper_nouns,2,6,0
+google/gemma-2-9b-it,SA13_N,SA13,sadness,neutral,count_proper_nouns,0,6,0
+google/gemma-2-9b-it,SA13_N,SA13,sadness,neutral,count_proper_nouns,1,6,0
+google/gemma-2-9b-it,SA13_N,SA13,sadness,neutral,count_proper_nouns,2,6,0
+google/gemma-2-9b-it,SA14_V,SA14,sadness,valenced,identify_topic,0,Loss and memory,
+google/gemma-2-9b-it,SA14_V,SA14,sadness,valenced,identify_topic,1,Loss and memory,
+google/gemma-2-9b-it,SA14_V,SA14,sadness,valenced,identify_topic,2,Loss and memory,
+google/gemma-2-9b-it,SA14_N,SA14,sadness,neutral,identify_topic,0,Engineer memento.,
+google/gemma-2-9b-it,SA14_N,SA14,sadness,neutral,identify_topic,1,Engineer memento.,
+google/gemma-2-9b-it,SA14_N,SA14,sadness,neutral,identify_topic,2,Engineer memento.,
+google/gemma-2-9b-it,SA15_V,SA15,sadness,valenced,one_sentence_summary,0,"After 19 years, a community garden on Fifth Avenue was demolished to make way for a developer's project, but volunteers saved the rose bushes.",
+google/gemma-2-9b-it,SA15_V,SA15,sadness,valenced,one_sentence_summary,1,"After 19 years, a community garden on Fifth Avenue was demolished to make way for a developer's project, but volunteers saved the rose bushes.",
+google/gemma-2-9b-it,SA15_V,SA15,sadness,valenced,one_sentence_summary,2,"After 19 years, a community garden on Fifth Avenue was demolished to make way for a developer's project, but volunteers saved the rose bushes.",
+google/gemma-2-9b-it,SA15_N,SA15,sadness,neutral,one_sentence_summary,0,"After 19 years, the city-owned parking structure on Fifth Avenue was demolished and sold to a developer for new construction.",
+google/gemma-2-9b-it,SA15_N,SA15,sadness,neutral,one_sentence_summary,1,"After 19 years, the city-owned parking structure on Fifth Avenue was demolished and sold to a developer for new construction.",
+google/gemma-2-9b-it,SA15_N,SA15,sadness,neutral,one_sentence_summary,2,"After 19 years, the city-owned parking structure on Fifth Avenue was demolished and sold to a developer for new construction.",
+google/gemma-2-9b-it,SA16_V,SA16,sadness,valenced,genre_classification,0,Literary Fiction,
+google/gemma-2-9b-it,SA16_V,SA16,sadness,valenced,genre_classification,1,Literary Fiction,
+google/gemma-2-9b-it,SA16_V,SA16,sadness,valenced,genre_classification,2,Literary Fiction,
+google/gemma-2-9b-it,SA16_N,SA16,sadness,neutral,genre_classification,0,Literary Fiction,
+google/gemma-2-9b-it,SA16_N,SA16,sadness,neutral,genre_classification,1,Literary Fiction,
+google/gemma-2-9b-it,SA16_N,SA16,sadness,neutral,genre_classification,2,Literary Fiction,
+google/gemma-2-9b-it,HA01_V,HA01,happiness,valenced,count_proper_nouns,0,6,0
+google/gemma-2-9b-it,HA01_V,HA01,happiness,valenced,count_proper_nouns,1,6,0
+google/gemma-2-9b-it,HA01_V,HA01,happiness,valenced,count_proper_nouns,2,6,0
+google/gemma-2-9b-it,HA01_N,HA01,happiness,neutral,count_proper_nouns,0,6,0
+google/gemma-2-9b-it,HA01_N,HA01,happiness,neutral,count_proper_nouns,1,6,0
+google/gemma-2-9b-it,HA01_N,HA01,happiness,neutral,count_proper_nouns,2,6,0
+google/gemma-2-9b-it,HA02_V,HA02,happiness,valenced,identify_topic,0,Family reunion,
+google/gemma-2-9b-it,HA02_V,HA02,happiness,valenced,identify_topic,1,Family reunion,
+google/gemma-2-9b-it,HA02_V,HA02,happiness,valenced,identify_topic,2,Family reunion,
+google/gemma-2-9b-it,HA02_N,HA02,happiness,neutral,identify_topic,0,Departmental collaboration,
+google/gemma-2-9b-it,HA02_N,HA02,happiness,neutral,identify_topic,1,Departmental collaboration,
+google/gemma-2-9b-it,HA02_N,HA02,happiness,neutral,identify_topic,2,Departmental collaboration,
+google/gemma-2-9b-it,HA03_V,HA03,happiness,valenced,extract_dates,0,"February 8
+June 22
+June 22
+July 4",1.0
+google/gemma-2-9b-it,HA03_V,HA03,happiness,valenced,extract_dates,1,"February 8
+June 22
+June 22
+July 4",1.0
+google/gemma-2-9b-it,HA03_V,HA03,happiness,valenced,extract_dates,2,"February 8
+June 22
+June 22
+July 4",1.0
+google/gemma-2-9b-it,HA03_N,HA03,happiness,neutral,extract_dates,0,"February 8
+June 22
+June 22
+July 4",1.0
+google/gemma-2-9b-it,HA03_N,HA03,happiness,neutral,extract_dates,1,"February 8
+June 22
+June 22
+July 4",1.0
+google/gemma-2-9b-it,HA03_N,HA03,happiness,neutral,extract_dates,2,"February 8
+June 22
+June 22
+July 4",1.0
+google/gemma-2-9b-it,HA04_V,HA04,happiness,valenced,one_sentence_summary,0,"After a 52-hour search, a lost boy was found unharmed in a ravine and carried to his relieved mother by the lead searcher.",
+google/gemma-2-9b-it,HA04_V,HA04,happiness,valenced,one_sentence_summary,1,"After a 52-hour search, a lost boy was found unharmed in a ravine and carried to his relieved mother by the lead searcher.",
+google/gemma-2-9b-it,HA04_V,HA04,happiness,valenced,one_sentence_summary,2,"After a 52-hour search, a lost boy was found unharmed in a ravine and carried to his relieved mother by the lead searcher.",
+google/gemma-2-9b-it,HA04_N,HA04,happiness,neutral,one_sentence_summary,0,"After 52 hours of processing, the undamaged shipment was moved from the warehouse to the loading dock by Tomás for the receiving manager.",
+google/gemma-2-9b-it,HA04_N,HA04,happiness,neutral,one_sentence_summary,1,"After 52 hours of processing, the undamaged shipment was moved from the warehouse to the loading dock by Tomás for the receiving manager.",
+google/gemma-2-9b-it,HA04_N,HA04,happiness,neutral,one_sentence_summary,2,"After 52 hours of processing, the undamaged shipment was moved from the warehouse to the loading dock by Tomás for the receiving manager.",
+google/gemma-2-9b-it,HA05_V,HA05,happiness,valenced,genre_classification,0,Literary Fiction,
+google/gemma-2-9b-it,HA05_V,HA05,happiness,valenced,genre_classification,1,Literary Fiction,
+google/gemma-2-9b-it,HA05_V,HA05,happiness,valenced,genre_classification,2,Literary Fiction,
+google/gemma-2-9b-it,HA05_N,HA05,happiness,neutral,genre_classification,0,Literary Fiction,
+google/gemma-2-9b-it,HA05_N,HA05,happiness,neutral,genre_classification,1,Literary Fiction,
+google/gemma-2-9b-it,HA05_N,HA05,happiness,neutral,genre_classification,2,Literary Fiction,
+google/gemma-2-9b-it,HA06_V,HA06,happiness,valenced,factual_question,0,"The subject, Yusuf, had been waiting on the affordable housing waitlist for **six years**.",1
+google/gemma-2-9b-it,HA06_V,HA06,happiness,valenced,factual_question,1,"The subject, Yusuf, had been waiting on the affordable housing waitlist for **six years**.",1
+google/gemma-2-9b-it,HA06_V,HA06,happiness,valenced,factual_question,2,"The subject, Yusuf, had been waiting on the affordable housing waitlist for **six years**.",1
+google/gemma-2-9b-it,HA06_N,HA06,happiness,neutral,factual_question,0,"The subject, Yusuf, had been waiting for **six years** to be approved. 
+
+
+The passage states: ""Yusuf had been on the contractor approval list for six years.""",1
+google/gemma-2-9b-it,HA06_N,HA06,happiness,neutral,factual_question,1,"The subject, Yusuf, had been waiting for **six years** to be approved. 
+
+
+The passage states: ""Yusuf had been on the contractor approval list for six years.""",1
+google/gemma-2-9b-it,HA06_N,HA06,happiness,neutral,factual_question,2,"The subject, Yusuf, had been waiting for **six years** to be approved. 
+
+
+The passage states: ""Yusuf had been on the contractor approval list for six years.""",1
+google/gemma-2-9b-it,HA07_V,HA07,happiness,valenced,count_proper_nouns,0,6,0
+google/gemma-2-9b-it,HA07_V,HA07,happiness,valenced,count_proper_nouns,1,6,0
+google/gemma-2-9b-it,HA07_V,HA07,happiness,valenced,count_proper_nouns,2,6,0
+google/gemma-2-9b-it,HA07_N,HA07,happiness,neutral,count_proper_nouns,0,6,0
+google/gemma-2-9b-it,HA07_N,HA07,happiness,neutral,count_proper_nouns,1,6,0
+google/gemma-2-9b-it,HA07_N,HA07,happiness,neutral,count_proper_nouns,2,6,0
+google/gemma-2-9b-it,HA08_V,HA08,happiness,valenced,identify_topic,0,IVF success,
+google/gemma-2-9b-it,HA08_V,HA08,happiness,valenced,identify_topic,1,IVF success,
+google/gemma-2-9b-it,HA08_V,HA08,happiness,valenced,identify_topic,2,IVF success,
+google/gemma-2-9b-it,HA08_N,HA08,happiness,neutral,identify_topic,0,Contract negotiations,
+google/gemma-2-9b-it,HA08_N,HA08,happiness,neutral,identify_topic,1,Contract negotiations,
+google/gemma-2-9b-it,HA08_N,HA08,happiness,neutral,identify_topic,2,Contract negotiations,
+google/gemma-2-9b-it,HA09_V,HA09,happiness,valenced,one_sentence_summary,0,"After three years in the refugee camp, a family received a resettlement notice, bringing hope and a new beginning.",
+google/gemma-2-9b-it,HA09_V,HA09,happiness,valenced,one_sentence_summary,1,"After three years in the refugee camp, a family received a resettlement notice, bringing hope and a new beginning.",
+google/gemma-2-9b-it,HA09_V,HA09,happiness,valenced,one_sentence_summary,2,"After three years in the refugee camp, a family received a resettlement notice, bringing hope and a new beginning.",
+google/gemma-2-9b-it,HA09_N,HA09,happiness,neutral,one_sentence_summary,0,"After three years of waiting, the manager excitedly shared the long-awaited approval notice with his team.",
+google/gemma-2-9b-it,HA09_N,HA09,happiness,neutral,one_sentence_summary,1,"After three years of waiting, the manager excitedly shared the long-awaited approval notice with his team.",
+google/gemma-2-9b-it,HA09_N,HA09,happiness,neutral,one_sentence_summary,2,"After three years of waiting, the manager excitedly shared the long-awaited approval notice with his team.",
+google/gemma-2-9b-it,HA10_V,HA10,happiness,valenced,extract_dates,0,"September 1
+June 3
+October 15
+November 2",1.0
+google/gemma-2-9b-it,HA10_V,HA10,happiness,valenced,extract_dates,1,"September 1
+June 3
+October 15
+November 2",1.0
+google/gemma-2-9b-it,HA10_V,HA10,happiness,valenced,extract_dates,2,"September 1
+June 3
+October 15
+November 2",1.0
+google/gemma-2-9b-it,HA10_N,HA10,happiness,neutral,extract_dates,0,"September 1
+June 3
+October 15
+November 2",1.0
+google/gemma-2-9b-it,HA10_N,HA10,happiness,neutral,extract_dates,1,"September 1
+June 3
+October 15
+November 2",1.0
+google/gemma-2-9b-it,HA10_N,HA10,happiness,neutral,extract_dates,2,"September 1
+June 3
+October 15
+November 2",1.0
+google/gemma-2-9b-it,HA11_V,HA11,happiness,valenced,genre_classification,0,Fiction,
+google/gemma-2-9b-it,HA11_V,HA11,happiness,valenced,genre_classification,1,Fiction,
+google/gemma-2-9b-it,HA11_V,HA11,happiness,valenced,genre_classification,2,Fiction,
+google/gemma-2-9b-it,HA11_N,HA11,happiness,neutral,genre_classification,0,Mystery,
+google/gemma-2-9b-it,HA11_N,HA11,happiness,neutral,genre_classification,1,Mystery,
+google/gemma-2-9b-it,HA11_N,HA11,happiness,neutral,genre_classification,2,Mystery,
+google/gemma-2-9b-it,HA12_V,HA12,happiness,valenced,factual_question,0,The climber had made **four** attempts before successfully reaching the summit.,1
+google/gemma-2-9b-it,HA12_V,HA12,happiness,valenced,factual_question,1,The climber had made **four** attempts before successfully reaching the summit.,1
+google/gemma-2-9b-it,HA12_V,HA12,happiness,valenced,factual_question,2,The climber had made **four** attempts before successfully reaching the summit.,1
+google/gemma-2-9b-it,HA12_N,HA12,happiness,neutral,factual_question,0,"The team made **four** attempts before successfully receiving the grant. 
+
+The passage states they submitted the proposal four times before the fifth submission was successful.",1
+google/gemma-2-9b-it,HA12_N,HA12,happiness,neutral,factual_question,1,"The team made **four** attempts before successfully receiving the grant. 
+
+The passage states they submitted the proposal four times before the fifth submission was successful.",1
+google/gemma-2-9b-it,HA12_N,HA12,happiness,neutral,factual_question,2,"The team made **four** attempts before successfully receiving the grant. 
+
+The passage states they submitted the proposal four times before the fifth submission was successful.",1
+google/gemma-2-9b-it,HA13_V,HA13,happiness,valenced,count_proper_nouns,0,6,0
+google/gemma-2-9b-it,HA13_V,HA13,happiness,valenced,count_proper_nouns,1,6,0
+google/gemma-2-9b-it,HA13_V,HA13,happiness,valenced,count_proper_nouns,2,6,0
+google/gemma-2-9b-it,HA13_N,HA13,happiness,neutral,count_proper_nouns,0,7,0
+google/gemma-2-9b-it,HA13_N,HA13,happiness,neutral,count_proper_nouns,1,7,0
+google/gemma-2-9b-it,HA13_N,HA13,happiness,neutral,count_proper_nouns,2,7,0
+google/gemma-2-9b-it,HA14_V,HA14,happiness,valenced,identify_topic,0,Dog adoption joy,
+google/gemma-2-9b-it,HA14_V,HA14,happiness,valenced,identify_topic,1,Dog adoption joy,
+google/gemma-2-9b-it,HA14_V,HA14,happiness,valenced,identify_topic,2,Dog adoption joy,
+google/gemma-2-9b-it,HA14_N,HA14,happiness,neutral,identify_topic,0,Inventory error,
+google/gemma-2-9b-it,HA14_N,HA14,happiness,neutral,identify_topic,1,Inventory error,
+google/gemma-2-9b-it,HA14_N,HA14,happiness,neutral,identify_topic,2,Inventory error,
+google/gemma-2-9b-it,HA15_V,HA15,happiness,valenced,one_sentence_summary,0,"A first-generation graduate celebrated her achievement, with her mother, who had sacrificed much to support her, watching proudly from the front row.",
+google/gemma-2-9b-it,HA15_V,HA15,happiness,valenced,one_sentence_summary,1,"A first-generation graduate celebrated her achievement, with her mother, who had sacrificed much to support her, watching proudly from the front row.",
+google/gemma-2-9b-it,HA15_V,HA15,happiness,valenced,one_sentence_summary,2,"A first-generation graduate celebrated her achievement, with her mother, who had sacrificed much to support her, watching proudly from the front row.",
+google/gemma-2-9b-it,HA15_N,HA15,happiness,neutral,one_sentence_summary,0,"After 22 months of dedicated work, a new product line launched successfully in May, with the project lead and department head celebrating the achievement.",
+google/gemma-2-9b-it,HA15_N,HA15,happiness,neutral,one_sentence_summary,1,"After 22 months of dedicated work, a new product line launched successfully in May, with the project lead and department head celebrating the achievement.",
+google/gemma-2-9b-it,HA15_N,HA15,happiness,neutral,one_sentence_summary,2,"After 22 months of dedicated work, a new product line launched successfully in May, with the project lead and department head celebrating the achievement.",
+google/gemma-2-9b-it,HA16_V,HA16,happiness,valenced,genre_classification,0,Literary Fiction,
+google/gemma-2-9b-it,HA16_V,HA16,happiness,valenced,genre_classification,1,Literary Fiction,
+google/gemma-2-9b-it,HA16_V,HA16,happiness,valenced,genre_classification,2,Literary Fiction,
+google/gemma-2-9b-it,HA16_N,HA16,happiness,neutral,genre_classification,0,Literary Fiction,
+google/gemma-2-9b-it,HA16_N,HA16,happiness,neutral,genre_classification,1,Literary Fiction,
+google/gemma-2-9b-it,HA16_N,HA16,happiness,neutral,genre_classification,2,Literary Fiction,
+google/gemma-2-9b-it,FE01_V,FE01,fear,valenced,count_proper_nouns,0,6,0
+google/gemma-2-9b-it,FE01_V,FE01,fear,valenced,count_proper_nouns,1,6,0
+google/gemma-2-9b-it,FE01_V,FE01,fear,valenced,count_proper_nouns,2,6,0
+google/gemma-2-9b-it,FE01_N,FE01,fear,neutral,count_proper_nouns,0,6,0
+google/gemma-2-9b-it,FE01_N,FE01,fear,neutral,count_proper_nouns,1,6,0
+google/gemma-2-9b-it,FE01_N,FE01,fear,neutral,count_proper_nouns,2,6,0
+google/gemma-2-9b-it,FE02_V,FE02,fear,valenced,identify_topic,0,Mountain danger,
+google/gemma-2-9b-it,FE02_V,FE02,fear,valenced,identify_topic,1,Mountain danger,
+google/gemma-2-9b-it,FE02_V,FE02,fear,valenced,identify_topic,2,Mountain danger,
+google/gemma-2-9b-it,FE02_N,FE02,fear,neutral,identify_topic,0,Hiking emergency,
+google/gemma-2-9b-it,FE02_N,FE02,fear,neutral,identify_topic,1,Hiking emergency,
+google/gemma-2-9b-it,FE02_N,FE02,fear,neutral,identify_topic,2,Hiking emergency,
+google/gemma-2-9b-it,FE03_V,FE03,fear,valenced,extract_dates,0,"August 4
+August 6
+August 7
+August 9",1.0
+google/gemma-2-9b-it,FE03_V,FE03,fear,valenced,extract_dates,1,"August 4
+August 6
+August 7
+August 9",1.0
+google/gemma-2-9b-it,FE03_V,FE03,fear,valenced,extract_dates,2,"August 4
+August 6
+August 7
+August 9",1.0
+google/gemma-2-9b-it,FE03_N,FE03,fear,neutral,extract_dates,0,"August 4
+August 6
+August 7
+August 9",1.0
+google/gemma-2-9b-it,FE03_N,FE03,fear,neutral,extract_dates,1,"August 4
+August 6
+August 7
+August 9",1.0
+google/gemma-2-9b-it,FE03_N,FE03,fear,neutral,extract_dates,2,"August 4
+August 6
+August 7
+August 9",1.0
+google/gemma-2-9b-it,FE04_V,FE04,fear,valenced,one_sentence_summary,0,"A child went missing from a campsite in the dark, leaving her parents frantic as they searched for her in a forest bordering a ravine.",
+google/gemma-2-9b-it,FE04_V,FE04,fear,valenced,one_sentence_summary,1,"A child went missing from a campsite in the dark, leaving her parents frantic as they searched for her in a forest bordering a ravine.",
+google/gemma-2-9b-it,FE04_V,FE04,fear,valenced,one_sentence_summary,2,"A child went missing from a campsite in the dark, leaving her parents frantic as they searched for her in a forest bordering a ravine.",
+google/gemma-2-9b-it,FE04_N,FE04,fear,neutral,one_sentence_summary,0,"While reconfiguring the storage site, staff misplaced a unit and began searching for it in the three storage corridors.",
+google/gemma-2-9b-it,FE04_N,FE04,fear,neutral,one_sentence_summary,1,"While reconfiguring the storage site, staff misplaced a unit and began searching for it in the three storage corridors.",
+google/gemma-2-9b-it,FE04_N,FE04,fear,neutral,one_sentence_summary,2,"While reconfiguring the storage site, staff misplaced a unit and began searching for it in the three storage corridors.",
+google/gemma-2-9b-it,FE05_V,FE05,fear,valenced,genre_classification,0,Suspense,
+google/gemma-2-9b-it,FE05_V,FE05,fear,valenced,genre_classification,1,Suspense,
+google/gemma-2-9b-it,FE05_V,FE05,fear,valenced,genre_classification,2,Suspense,
+google/gemma-2-9b-it,FE05_N,FE05,fear,neutral,genre_classification,0,Suspense,
+google/gemma-2-9b-it,FE05_N,FE05,fear,neutral,genre_classification,1,Suspense,
+google/gemma-2-9b-it,FE05_N,FE05,fear,neutral,genre_classification,2,Suspense,
+google/gemma-2-9b-it,FE06_V,FE06,fear,valenced,factual_question,0,"The power was out for **3 hours and 40 minutes**. 
+
+Here's how to calculate that:
+
+* **From 11pm to 12am is 1 hour.**
+* **From 12am to 2am is 2 hours.**
+* **From 2am to 2:40am is 40 minutes.**",1
+google/gemma-2-9b-it,FE06_V,FE06,fear,valenced,factual_question,1,"The power was out for **3 hours and 40 minutes**. 
+
+Here's how to calculate that:
+
+* **From 11pm to 12am is 1 hour.**
+* **From 12am to 2am is 2 hours.**
+* **From 2am to 2:40am is 40 minutes.**",1
+google/gemma-2-9b-it,FE06_V,FE06,fear,valenced,factual_question,2,"The power was out for **3 hours and 40 minutes**. 
+
+Here's how to calculate that:
+
+* **From 11pm to 12am is 1 hour.**
+* **From 12am to 2am is 2 hours.**
+* **From 2am to 2:40am is 40 minutes.**",1
+google/gemma-2-9b-it,FE06_N,FE06,fear,neutral,factual_question,0,"The power was out for **3 hours and 40 minutes**. 
+
+Here's the breakdown:
+
+* Power went out at 11:00 pm
+* Full restoration was confirmed at 2:40 am",1
+google/gemma-2-9b-it,FE06_N,FE06,fear,neutral,factual_question,1,"The power was out for **3 hours and 40 minutes**. 
+
+Here's the breakdown:
+
+* Power went out at 11:00 pm
+* Full restoration was confirmed at 2:40 am",1
+google/gemma-2-9b-it,FE06_N,FE06,fear,neutral,factual_question,2,"The power was out for **3 hours and 40 minutes**. 
+
+Here's the breakdown:
+
+* Power went out at 11:00 pm
+* Full restoration was confirmed at 2:40 am",1
+google/gemma-2-9b-it,FE07_V,FE07,fear,valenced,count_proper_nouns,0,6,0
+google/gemma-2-9b-it,FE07_V,FE07,fear,valenced,count_proper_nouns,1,6,0
+google/gemma-2-9b-it,FE07_V,FE07,fear,valenced,count_proper_nouns,2,6,0
+google/gemma-2-9b-it,FE07_N,FE07,fear,neutral,count_proper_nouns,0,6,0
+google/gemma-2-9b-it,FE07_N,FE07,fear,neutral,count_proper_nouns,1,6,0
+google/gemma-2-9b-it,FE07_N,FE07,fear,neutral,count_proper_nouns,2,6,0
+google/gemma-2-9b-it,FE08_V,FE08,fear,valenced,identify_topic,0,Cancer diagnosis,
+google/gemma-2-9b-it,FE08_V,FE08,fear,valenced,identify_topic,1,Cancer diagnosis,
+google/gemma-2-9b-it,FE08_V,FE08,fear,valenced,identify_topic,2,Cancer diagnosis,
+google/gemma-2-9b-it,FE08_N,FE08,fear,neutral,identify_topic,0,Accountant audit review,
+google/gemma-2-9b-it,FE08_N,FE08,fear,neutral,identify_topic,1,Accountant audit review,
+google/gemma-2-9b-it,FE08_N,FE08,fear,neutral,identify_topic,2,Accountant audit review,
+google/gemma-2-9b-it,FE09_V,FE09,fear,valenced,one_sentence_summary,0,"Two residents, one using a walker, were trapped on the 14th floor of a building during a fire alarm, unable to reach the ground floor due to a locked elevator and slow-moving smoke.",
+google/gemma-2-9b-it,FE09_V,FE09,fear,valenced,one_sentence_summary,1,"Two residents, one using a walker, were trapped on the 14th floor of a building during a fire alarm, unable to reach the ground floor due to a locked elevator and slow-moving smoke.",
+google/gemma-2-9b-it,FE09_V,FE09,fear,valenced,one_sentence_summary,2,"Two residents, one using a walker, were trapped on the 14th floor of a building during a fire alarm, unable to reach the ground floor due to a locked elevator and slow-moving smoke.",
+google/gemma-2-9b-it,FE09_N,FE09,fear,neutral,one_sentence_summary,0,"Despite a four-minute maintenance alarm, only part of the inspection crew had reached the 14th floor stairwell, delayed by the absence of two technicians and the building's elevator protocol.",
+google/gemma-2-9b-it,FE09_N,FE09,fear,neutral,one_sentence_summary,1,"Despite a four-minute maintenance alarm, only part of the inspection crew had reached the 14th floor stairwell, delayed by the absence of two technicians and the building's elevator protocol.",
+google/gemma-2-9b-it,FE09_N,FE09,fear,neutral,one_sentence_summary,2,"Despite a four-minute maintenance alarm, only part of the inspection crew had reached the 14th floor stairwell, delayed by the absence of two technicians and the building's elevator protocol.",
+google/gemma-2-9b-it,FE10_V,FE10,fear,valenced,extract_dates,0,"October 3
+October 9
+October 14
+October 17",1.0
+google/gemma-2-9b-it,FE10_V,FE10,fear,valenced,extract_dates,1,"October 3
+October 9
+October 14
+October 17",1.0
+google/gemma-2-9b-it,FE10_V,FE10,fear,valenced,extract_dates,2,"October 3
+October 9
+October 14
+October 17",1.0
+google/gemma-2-9b-it,FE10_N,FE10,fear,neutral,extract_dates,0,"October 3
+October 9
+October 14
+October 17",1.0
+google/gemma-2-9b-it,FE10_N,FE10,fear,neutral,extract_dates,1,"October 3
+October 9
+October 14
+October 17",1.0
+google/gemma-2-9b-it,FE10_N,FE10,fear,neutral,extract_dates,2,"October 3
+October 9
+October 14
+October 17",1.0
+google/gemma-2-9b-it,FE11_V,FE11,fear,valenced,genre_classification,0,Suspense,
+google/gemma-2-9b-it,FE11_V,FE11,fear,valenced,genre_classification,1,Suspense,
+google/gemma-2-9b-it,FE11_V,FE11,fear,valenced,genre_classification,2,Suspense,
+google/gemma-2-9b-it,FE11_N,FE11,fear,neutral,genre_classification,0,Literary Fiction,
+google/gemma-2-9b-it,FE11_N,FE11,fear,neutral,genre_classification,1,Literary Fiction,
+google/gemma-2-9b-it,FE11_N,FE11,fear,neutral,genre_classification,2,Literary Fiction,
+google/gemma-2-9b-it,FE12_V,FE12,fear,valenced,factual_question,0,There were **340** people in the building.,1
+google/gemma-2-9b-it,FE12_V,FE12,fear,valenced,factual_question,1,There were **340** people in the building.,1
+google/gemma-2-9b-it,FE12_V,FE12,fear,valenced,factual_question,2,There were **340** people in the building.,1
+google/gemma-2-9b-it,FE12_N,FE12,fear,neutral,factual_question,0,There were **340** people in the building.,1
+google/gemma-2-9b-it,FE12_N,FE12,fear,neutral,factual_question,1,There were **340** people in the building.,1
+google/gemma-2-9b-it,FE12_N,FE12,fear,neutral,factual_question,2,There were **340** people in the building.,1
+google/gemma-2-9b-it,FE13_V,FE13,fear,valenced,count_proper_nouns,0,6,0
+google/gemma-2-9b-it,FE13_V,FE13,fear,valenced,count_proper_nouns,1,6,0
+google/gemma-2-9b-it,FE13_V,FE13,fear,valenced,count_proper_nouns,2,6,0
+google/gemma-2-9b-it,FE13_N,FE13,fear,neutral,count_proper_nouns,0,6,0
+google/gemma-2-9b-it,FE13_N,FE13,fear,neutral,count_proper_nouns,1,6,0
+google/gemma-2-9b-it,FE13_N,FE13,fear,neutral,count_proper_nouns,2,6,0
+google/gemma-2-9b-it,FE14_V,FE14,fear,valenced,identify_topic,0,Witness intimidation,
+google/gemma-2-9b-it,FE14_V,FE14,fear,valenced,identify_topic,1,Witness intimidation,
+google/gemma-2-9b-it,FE14_V,FE14,fear,valenced,identify_topic,2,Witness intimidation,
+google/gemma-2-9b-it,FE14_N,FE14,fear,neutral,identify_topic,0,Conference preparation,
+google/gemma-2-9b-it,FE14_N,FE14,fear,neutral,identify_topic,1,Conference preparation,
+google/gemma-2-9b-it,FE14_N,FE14,fear,neutral,identify_topic,2,Conference preparation,
+google/gemma-2-9b-it,FE15_V,FE15,fear,valenced,one_sentence_summary,0,"A toxicology report confirmed water contamination originating from a shared storage tank used by three schools and a residential block, despite a parent's request for testing in January being denied b",
+google/gemma-2-9b-it,FE15_V,FE15,fear,valenced,one_sentence_summary,1,"A toxicology report confirmed water contamination originating from a shared storage tank used by three schools and a residential block, despite a parent's request for testing in January being denied b",
+google/gemma-2-9b-it,FE15_V,FE15,fear,valenced,one_sentence_summary,2,"A toxicology report confirmed water contamination originating from a shared storage tank used by three schools and a residential block, despite a parent's request for testing in January being denied b",
+google/gemma-2-9b-it,FE15_N,FE15,fear,neutral,one_sentence_summary,0,"A water supply reconfiguration, initiated in October and confirmed by an inspection report, affected a storage tank serving multiple commercial and residential properties.",
+google/gemma-2-9b-it,FE15_N,FE15,fear,neutral,one_sentence_summary,1,"A water supply reconfiguration, initiated in October and confirmed by an inspection report, affected a storage tank serving multiple commercial and residential properties.",
+google/gemma-2-9b-it,FE15_N,FE15,fear,neutral,one_sentence_summary,2,"A water supply reconfiguration, initiated in October and confirmed by an inspection report, affected a storage tank serving multiple commercial and residential properties.",
+google/gemma-2-9b-it,FE16_V,FE16,fear,valenced,genre_classification,0,Suspense,
+google/gemma-2-9b-it,FE16_V,FE16,fear,valenced,genre_classification,1,Suspense,
+google/gemma-2-9b-it,FE16_V,FE16,fear,valenced,genre_classification,2,Suspense,
+google/gemma-2-9b-it,FE16_N,FE16,fear,neutral,genre_classification,0,Suspense,
+google/gemma-2-9b-it,FE16_N,FE16,fear,neutral,genre_classification,1,Suspense,
+google/gemma-2-9b-it,FE16_N,FE16,fear,neutral,genre_classification,2,Suspense,
+google/gemma-2-9b-it,DI01_V,DI01,disgust,valenced,count_proper_nouns,0,6,0
+google/gemma-2-9b-it,DI01_V,DI01,disgust,valenced,count_proper_nouns,1,6,0
+google/gemma-2-9b-it,DI01_V,DI01,disgust,valenced,count_proper_nouns,2,6,0
+google/gemma-2-9b-it,DI01_N,DI01,disgust,neutral,count_proper_nouns,0,6,0
+google/gemma-2-9b-it,DI01_N,DI01,disgust,neutral,count_proper_nouns,1,6,0
+google/gemma-2-9b-it,DI01_N,DI01,disgust,neutral,count_proper_nouns,2,6,0
+google/gemma-2-9b-it,DI02_V,DI02,disgust,valenced,identify_topic,0,Food safety violations,
+google/gemma-2-9b-it,DI02_V,DI02,disgust,valenced,identify_topic,1,Food safety violations,
+google/gemma-2-9b-it,DI02_V,DI02,disgust,valenced,identify_topic,2,Food safety violations,
+google/gemma-2-9b-it,DI02_N,DI02,disgust,neutral,identify_topic,0,Factory operations,
+google/gemma-2-9b-it,DI02_N,DI02,disgust,neutral,identify_topic,1,Factory operations,
+google/gemma-2-9b-it,DI02_N,DI02,disgust,neutral,identify_topic,2,Factory operations,
+google/gemma-2-9b-it,DI03_V,DI03,disgust,valenced,extract_dates,0,"May 6
+May 8
+May 14
+May 19",1.0
+google/gemma-2-9b-it,DI03_V,DI03,disgust,valenced,extract_dates,1,"May 6
+May 8
+May 14
+May 19",1.0
+google/gemma-2-9b-it,DI03_V,DI03,disgust,valenced,extract_dates,2,"May 6
+May 8
+May 14
+May 19",1.0
+google/gemma-2-9b-it,DI03_N,DI03,disgust,neutral,extract_dates,0,"May 6
+May 8
+May 14
+May 19",1.0
+google/gemma-2-9b-it,DI03_N,DI03,disgust,neutral,extract_dates,1,"May 6
+May 8
+May 14
+May 19",1.0
+google/gemma-2-9b-it,DI03_N,DI03,disgust,neutral,extract_dates,2,"May 6
+May 8
+May 14
+May 19",1.0
+google/gemma-2-9b-it,DI04_V,DI04,disgust,valenced,one_sentence_summary,0,"Despite a previous five-star rating, a recent inspection revealed concerning neglectful practices at the nursing home, including residents left in soiled bedding and disconnected call buttons.",
+google/gemma-2-9b-it,DI04_V,DI04,disgust,valenced,one_sentence_summary,1,"Despite a previous five-star rating, a recent inspection revealed concerning neglectful practices at the nursing home, including residents left in soiled bedding and disconnected call buttons.",
+google/gemma-2-9b-it,DI04_V,DI04,disgust,valenced,one_sentence_summary,2,"Despite a previous five-star rating, a recent inspection revealed concerning neglectful practices at the nursing home, including residents left in soiled bedding and disconnected call buttons.",
+google/gemma-2-9b-it,DI04_N,DI04,disgust,neutral,one_sentence_summary,0,"Despite renovations that included updated bedding and relocated call buttons, the nursing home had received a five-star rating from the regional authority the previous year.",
+google/gemma-2-9b-it,DI04_N,DI04,disgust,neutral,one_sentence_summary,1,"Despite renovations that included updated bedding and relocated call buttons, the nursing home had received a five-star rating from the regional authority the previous year.",
+google/gemma-2-9b-it,DI04_N,DI04,disgust,neutral,one_sentence_summary,2,"Despite renovations that included updated bedding and relocated call buttons, the nursing home had received a five-star rating from the regional authority the previous year.",
+google/gemma-2-9b-it,DI05_V,DI05,disgust,valenced,genre_classification,0,Expository,
+google/gemma-2-9b-it,DI05_V,DI05,disgust,valenced,genre_classification,1,Expository,
+google/gemma-2-9b-it,DI05_V,DI05,disgust,valenced,genre_classification,2,Expository,
+google/gemma-2-9b-it,DI05_N,DI05,disgust,neutral,genre_classification,0,Nonfiction,
+google/gemma-2-9b-it,DI05_N,DI05,disgust,neutral,genre_classification,1,Nonfiction,
+google/gemma-2-9b-it,DI05_N,DI05,disgust,neutral,genre_classification,2,Nonfiction,
+google/gemma-2-9b-it,DI06_V,DI06,disgust,valenced,factual_question,0,The problem had persisted for **three years**.,1
+google/gemma-2-9b-it,DI06_V,DI06,disgust,valenced,factual_question,1,The problem had persisted for **three years**.,1
+google/gemma-2-9b-it,DI06_V,DI06,disgust,valenced,factual_question,2,The problem had persisted for **three years**.,1
+google/gemma-2-9b-it,DI06_N,DI06,disgust,neutral,factual_question,0,"The problem had persisted for **three years**. 
+
+
+The passage states: ""Residents had submitted feedback about the waste management facility for three years"".",1
+google/gemma-2-9b-it,DI06_N,DI06,disgust,neutral,factual_question,1,"The problem had persisted for **three years**. 
+
+
+The passage states: ""Residents had submitted feedback about the waste management facility for three years"".",1
+google/gemma-2-9b-it,DI06_N,DI06,disgust,neutral,factual_question,2,"The problem had persisted for **three years**. 
+
+
+The passage states: ""Residents had submitted feedback about the waste management facility for three years"".",1
+google/gemma-2-9b-it,DI07_V,DI07,disgust,valenced,count_proper_nouns,0,6,0
+google/gemma-2-9b-it,DI07_V,DI07,disgust,valenced,count_proper_nouns,1,6,0
+google/gemma-2-9b-it,DI07_V,DI07,disgust,valenced,count_proper_nouns,2,6,0
+google/gemma-2-9b-it,DI07_N,DI07,disgust,neutral,count_proper_nouns,0,6,0
+google/gemma-2-9b-it,DI07_N,DI07,disgust,neutral,count_proper_nouns,1,6,0
+google/gemma-2-9b-it,DI07_N,DI07,disgust,neutral,count_proper_nouns,2,6,0
+google/gemma-2-9b-it,DI08_V,DI08,disgust,valenced,identify_topic,0,Blood bank scandal,
+google/gemma-2-9b-it,DI08_V,DI08,disgust,valenced,identify_topic,1,Blood bank scandal,
+google/gemma-2-9b-it,DI08_V,DI08,disgust,valenced,identify_topic,2,Blood bank scandal,
+google/gemma-2-9b-it,DI08_N,DI08,disgust,neutral,identify_topic,0,Blood bank protocol,
+google/gemma-2-9b-it,DI08_N,DI08,disgust,neutral,identify_topic,1,Blood bank protocol,
+google/gemma-2-9b-it,DI08_N,DI08,disgust,neutral,identify_topic,2,Blood bank protocol,
+google/gemma-2-9b-it,DI09_V,DI09,disgust,valenced,one_sentence_summary,0,An elementary school was unknowingly exposed to industrial pollution when a nearby manufacturing site contaminated the creek where children had been playing.,
+google/gemma-2-9b-it,DI09_V,DI09,disgust,valenced,one_sentence_summary,1,An elementary school was unknowingly exposed to industrial pollution when a nearby manufacturing site contaminated the creek where children had been playing.,
+google/gemma-2-9b-it,DI09_V,DI09,disgust,valenced,one_sentence_summary,2,An elementary school was unknowingly exposed to industrial pollution when a nearby manufacturing site contaminated the creek where children had been playing.,
+google/gemma-2-9b-it,DI09_N,DI09,disgust,neutral,one_sentence_summary,0,"Despite sediment removal being completed by a contractor, the elementary school was not informed of the updated schedule for dredging the creek behind the school, leading to a disruption of children's",
+google/gemma-2-9b-it,DI09_N,DI09,disgust,neutral,one_sentence_summary,1,"Despite sediment removal being completed by a contractor, the elementary school was not informed of the updated schedule for dredging the creek behind the school, leading to a disruption of children's",
+google/gemma-2-9b-it,DI09_N,DI09,disgust,neutral,one_sentence_summary,2,"Despite sediment removal being completed by a contractor, the elementary school was not informed of the updated schedule for dredging the creek behind the school, leading to a disruption of children's",
+google/gemma-2-9b-it,DI10_V,DI10,disgust,valenced,extract_dates,0,"July 12
+March 4
+April 20
+July 14",1.0
+google/gemma-2-9b-it,DI10_V,DI10,disgust,valenced,extract_dates,1,"July 12
+March 4
+April 20
+July 14",1.0
+google/gemma-2-9b-it,DI10_V,DI10,disgust,valenced,extract_dates,2,"July 12
+March 4
+April 20
+July 14",1.0
+google/gemma-2-9b-it,DI10_N,DI10,disgust,neutral,extract_dates,0,"July 12
+March 4
+April 20
+July 14",1.0
+google/gemma-2-9b-it,DI10_N,DI10,disgust,neutral,extract_dates,1,"July 12
+March 4
+April 20
+July 14",1.0
+google/gemma-2-9b-it,DI10_N,DI10,disgust,neutral,extract_dates,2,"July 12
+March 4
+April 20
+July 14",1.0
+google/gemma-2-9b-it,DI11_V,DI11,disgust,valenced,genre_classification,0,Mystery,
+google/gemma-2-9b-it,DI11_V,DI11,disgust,valenced,genre_classification,1,Mystery,
+google/gemma-2-9b-it,DI11_V,DI11,disgust,valenced,genre_classification,2,Mystery,
+google/gemma-2-9b-it,DI11_N,DI11,disgust,neutral,genre_classification,0,Report,
+google/gemma-2-9b-it,DI11_N,DI11,disgust,neutral,genre_classification,1,Report,
+google/gemma-2-9b-it,DI11_N,DI11,disgust,neutral,genre_classification,2,Report,
+google/gemma-2-9b-it,DI12_V,DI12,disgust,valenced,factual_question,0,"During the inspection, investigators found:
+
+* **Medications stored at temperatures outside of required ranges.** This means the medications were not stored at the proper temperature for safe and effe",0
+google/gemma-2-9b-it,DI12_V,DI12,disgust,valenced,factual_question,1,"During the inspection, investigators found:
+
+* **Medications stored at temperatures outside of required ranges.** This means the medications were not stored at the proper temperature for safe and effe",0
+google/gemma-2-9b-it,DI12_V,DI12,disgust,valenced,factual_question,2,"During the inspection, investigators found:
+
+* **Medications stored at temperatures outside of required ranges.** This means the medications were not stored at the proper temperature for safe and effe",0
+google/gemma-2-9b-it,DI12_N,DI12,disgust,neutral,factual_question,0,"During the inspection, investigators found:
+
+* **Medications stored within required temperature ranges:** This indicates the recent upgrade to the facility was successful in maintaining proper storage",1
+google/gemma-2-9b-it,DI12_N,DI12,disgust,neutral,factual_question,1,"During the inspection, investigators found:
+
+* **Medications stored within required temperature ranges:** This indicates the recent upgrade to the facility was successful in maintaining proper storage",1
+google/gemma-2-9b-it,DI12_N,DI12,disgust,neutral,factual_question,2,"During the inspection, investigators found:
+
+* **Medications stored within required temperature ranges:** This indicates the recent upgrade to the facility was successful in maintaining proper storage",1
+google/gemma-2-9b-it,DI13_V,DI13,disgust,valenced,count_proper_nouns,0,6,0
+google/gemma-2-9b-it,DI13_V,DI13,disgust,valenced,count_proper_nouns,1,6,0
+google/gemma-2-9b-it,DI13_V,DI13,disgust,valenced,count_proper_nouns,2,6,0
+google/gemma-2-9b-it,DI13_N,DI13,disgust,neutral,count_proper_nouns,0,6,0
+google/gemma-2-9b-it,DI13_N,DI13,disgust,neutral,count_proper_nouns,1,6,0
+google/gemma-2-9b-it,DI13_N,DI13,disgust,neutral,count_proper_nouns,2,6,0
+google/gemma-2-9b-it,DI14_V,DI14,disgust,valenced,identify_topic,0,Pesticide contamination,
+google/gemma-2-9b-it,DI14_V,DI14,disgust,valenced,identify_topic,1,Pesticide contamination,
+google/gemma-2-9b-it,DI14_V,DI14,disgust,valenced,identify_topic,2,Pesticide contamination,
+google/gemma-2-9b-it,DI14_N,DI14,disgust,neutral,identify_topic,0,Pesticide contamination,
+google/gemma-2-9b-it,DI14_N,DI14,disgust,neutral,identify_topic,1,Pesticide contamination,
+google/gemma-2-9b-it,DI14_N,DI14,disgust,neutral,identify_topic,2,Pesticide contamination,
+google/gemma-2-9b-it,DI15_V,DI15,disgust,valenced,one_sentence_summary,0,"A children's charity misappropriated nearly all of its donations, disguising exorbitant management fees as program expenses while providing no services to its beneficiaries.",
+google/gemma-2-9b-it,DI15_V,DI15,disgust,valenced,one_sentence_summary,1,"A children's charity misappropriated nearly all of its donations, disguising exorbitant management fees as program expenses while providing no services to its beneficiaries.",
+google/gemma-2-9b-it,DI15_V,DI15,disgust,valenced,one_sentence_summary,2,"A children's charity misappropriated nearly all of its donations, disguising exorbitant management fees as program expenses while providing no services to its beneficiaries.",
+google/gemma-2-9b-it,DI15_N,DI15,disgust,neutral,one_sentence_summary,0,"Despite serving all registered beneficiaries across all regions, the children's charity primarily allocated its donated funds to a contracted firm for outreach services, classifying administrative cos",
+google/gemma-2-9b-it,DI15_N,DI15,disgust,neutral,one_sentence_summary,1,"Despite serving all registered beneficiaries across all regions, the children's charity primarily allocated its donated funds to a contracted firm for outreach services, classifying administrative cos",
+google/gemma-2-9b-it,DI15_N,DI15,disgust,neutral,one_sentence_summary,2,"Despite serving all registered beneficiaries across all regions, the children's charity primarily allocated its donated funds to a contracted firm for outreach services, classifying administrative cos",
+google/gemma-2-9b-it,DI16_V,DI16,disgust,valenced,genre_classification,0,News,
+google/gemma-2-9b-it,DI16_V,DI16,disgust,valenced,genre_classification,1,News,
+google/gemma-2-9b-it,DI16_V,DI16,disgust,valenced,genre_classification,2,News,
+google/gemma-2-9b-it,DI16_N,DI16,disgust,neutral,genre_classification,0,Sports Documentary,
+google/gemma-2-9b-it,DI16_N,DI16,disgust,neutral,genre_classification,1,Sports Documentary,
+google/gemma-2-9b-it,DI16_N,DI16,disgust,neutral,genre_classification,2,Sports Documentary,
+google/gemma-2-9b-it,NE01_V,NE01,neutral,neutral,count_proper_nouns,0,5,
+google/gemma-2-9b-it,NE01_V,NE01,neutral,neutral,count_proper_nouns,1,5,
+google/gemma-2-9b-it,NE01_V,NE01,neutral,neutral,count_proper_nouns,2,5,
+google/gemma-2-9b-it,NE01_N,NE01,neutral,neutral,count_proper_nouns,0,5,
+google/gemma-2-9b-it,NE01_N,NE01,neutral,neutral,count_proper_nouns,1,5,
+google/gemma-2-9b-it,NE01_N,NE01,neutral,neutral,count_proper_nouns,2,5,
+google/gemma-2-9b-it,NE02_V,NE02,neutral,neutral,identify_topic,0,Blue Line schedule change,
+google/gemma-2-9b-it,NE02_V,NE02,neutral,neutral,identify_topic,1,Blue Line schedule change,
+google/gemma-2-9b-it,NE02_V,NE02,neutral,neutral,identify_topic,2,Blue Line schedule change,
+google/gemma-2-9b-it,NE02_N,NE02,neutral,neutral,identify_topic,0,Blue Line schedule change,
+google/gemma-2-9b-it,NE02_N,NE02,neutral,neutral,identify_topic,1,Blue Line schedule change,
+google/gemma-2-9b-it,NE02_N,NE02,neutral,neutral,identify_topic,2,Blue Line schedule change,
+google/gemma-2-9b-it,NE03_V,NE03,neutral,neutral,extract_dates,0,"September 3
+October 7
+September 10
+September 24
+November 12",1.0
+google/gemma-2-9b-it,NE03_V,NE03,neutral,neutral,extract_dates,1,"September 3
+October 7
+September 10
+September 24
+November 12",1.0
+google/gemma-2-9b-it,NE03_V,NE03,neutral,neutral,extract_dates,2,"September 3
+October 7
+September 10
+September 24
+November 12",1.0
+google/gemma-2-9b-it,NE03_N,NE03,neutral,neutral,extract_dates,0,"September 3
+October 7
+September 10
+September 24
+November 12",1.0
+google/gemma-2-9b-it,NE03_N,NE03,neutral,neutral,extract_dates,1,"September 3
+October 7
+September 10
+September 24
+November 12",1.0
+google/gemma-2-9b-it,NE03_N,NE03,neutral,neutral,extract_dates,2,"September 3
+October 7
+September 10
+September 24
+November 12",1.0
+google/gemma-2-9b-it,NE04_V,NE04,neutral,neutral,one_sentence_summary,0,"Undergraduate students at the university now have 28 days to borrow books from the library, while graduate students keep their 60-day borrowing period.",
+google/gemma-2-9b-it,NE04_V,NE04,neutral,neutral,one_sentence_summary,1,"Undergraduate students at the university now have 28 days to borrow books from the library, while graduate students keep their 60-day borrowing period.",
+google/gemma-2-9b-it,NE04_V,NE04,neutral,neutral,one_sentence_summary,2,"Undergraduate students at the university now have 28 days to borrow books from the library, while graduate students keep their 60-day borrowing period.",
+google/gemma-2-9b-it,NE04_N,NE04,neutral,neutral,one_sentence_summary,0,"Undergraduate students at the university now have 28 days to borrow digital resources, an increase from the previous 14 days, while graduate students maintain their 60-day access.",
+google/gemma-2-9b-it,NE04_N,NE04,neutral,neutral,one_sentence_summary,1,"Undergraduate students at the university now have 28 days to borrow digital resources, an increase from the previous 14 days, while graduate students maintain their 60-day access.",
+google/gemma-2-9b-it,NE04_N,NE04,neutral,neutral,one_sentence_summary,2,"Undergraduate students at the university now have 28 days to borrow digital resources, an increase from the previous 14 days, while graduate students maintain their 60-day access.",
+google/gemma-2-9b-it,NE05_V,NE05,neutral,neutral,genre_classification,0,Business Report,
+google/gemma-2-9b-it,NE05_V,NE05,neutral,neutral,genre_classification,1,Business Report,
+google/gemma-2-9b-it,NE05_V,NE05,neutral,neutral,genre_classification,2,Business Report,
+google/gemma-2-9b-it,NE05_N,NE05,neutral,neutral,genre_classification,0,Business,
+google/gemma-2-9b-it,NE05_N,NE05,neutral,neutral,genre_classification,1,Business,
+google/gemma-2-9b-it,NE05_N,NE05,neutral,neutral,genre_classification,2,Business,
+google/gemma-2-9b-it,NE06_V,NE06,neutral,neutral,factual_question,0,The event took place on a **Thursday**.,1
+google/gemma-2-9b-it,NE06_V,NE06,neutral,neutral,factual_question,1,The event took place on a **Thursday**.,1
+google/gemma-2-9b-it,NE06_V,NE06,neutral,neutral,factual_question,2,The event took place on a **Thursday**.,1
+google/gemma-2-9b-it,NE06_N,NE06,neutral,neutral,factual_question,0,The event took place on a **Thursday**.,1
+google/gemma-2-9b-it,NE06_N,NE06,neutral,neutral,factual_question,1,The event took place on a **Thursday**.,1
+google/gemma-2-9b-it,NE06_N,NE06,neutral,neutral,factual_question,2,The event took place on a **Thursday**.,1
+google/gemma-2-9b-it,NE07_V,NE07,neutral,neutral,count_proper_nouns,0,5,0
+google/gemma-2-9b-it,NE07_V,NE07,neutral,neutral,count_proper_nouns,1,5,0
+google/gemma-2-9b-it,NE07_V,NE07,neutral,neutral,count_proper_nouns,2,5,0
+google/gemma-2-9b-it,NE07_N,NE07,neutral,neutral,count_proper_nouns,0,5,0
+google/gemma-2-9b-it,NE07_N,NE07,neutral,neutral,count_proper_nouns,1,5,0
+google/gemma-2-9b-it,NE07_N,NE07,neutral,neutral,count_proper_nouns,2,5,0
+google/gemma-2-9b-it,NE08_V,NE08,neutral,neutral,one_sentence_summary,0,"Due to a forecast of below-average rainfall, agricultural producers in three counties were advised to adjust their irrigation plans.",
+google/gemma-2-9b-it,NE08_V,NE08,neutral,neutral,one_sentence_summary,1,"Due to a forecast of below-average rainfall, agricultural producers in three counties were advised to adjust their irrigation plans.",
+google/gemma-2-9b-it,NE08_V,NE08,neutral,neutral,one_sentence_summary,2,"Due to a forecast of below-average rainfall, agricultural producers in three counties were advised to adjust their irrigation plans.",
+google/gemma-2-9b-it,NE08_N,NE08,neutral,neutral,one_sentence_summary,0,"Due to a forecast of above-average rainfall through October, agricultural producers in three counties were advised to check their drainage systems, although no flood advisories were currently in place",
+google/gemma-2-9b-it,NE08_N,NE08,neutral,neutral,one_sentence_summary,1,"Due to a forecast of above-average rainfall through October, agricultural producers in three counties were advised to check their drainage systems, although no flood advisories were currently in place",
+google/gemma-2-9b-it,NE08_N,NE08,neutral,neutral,one_sentence_summary,2,"Due to a forecast of above-average rainfall through October, agricultural producers in three counties were advised to check their drainage systems, although no flood advisories were currently in place",
+google/gemma-2-9b-it,NE09_V,NE09,neutral,neutral,extract_dates,0,"March 5
+March 10
+March 20
+April 1
+June 15",1.0
+google/gemma-2-9b-it,NE09_V,NE09,neutral,neutral,extract_dates,1,"March 5
+March 10
+March 20
+April 1
+June 15",1.0
+google/gemma-2-9b-it,NE09_V,NE09,neutral,neutral,extract_dates,2,"March 5
+March 10
+March 20
+April 1
+June 15",1.0
+google/gemma-2-9b-it,NE09_N,NE09,neutral,neutral,extract_dates,0,"March 5
+March 10
+March 20
+April 1
+June 15",1.0
+google/gemma-2-9b-it,NE09_N,NE09,neutral,neutral,extract_dates,1,"March 5
+March 10
+March 20
+April 1
+June 15",1.0
+google/gemma-2-9b-it,NE09_N,NE09,neutral,neutral,extract_dates,2,"March 5
+March 10
+March 20
+April 1
+June 15",1.0
+google/gemma-2-9b-it,NE10_V,NE10,neutral,neutral,genre_classification,0,News,
+google/gemma-2-9b-it,NE10_V,NE10,neutral,neutral,genre_classification,1,News,
+google/gemma-2-9b-it,NE10_V,NE10,neutral,neutral,genre_classification,2,News,
+google/gemma-2-9b-it,NE10_N,NE10,neutral,neutral,genre_classification,0,News,
+google/gemma-2-9b-it,NE10_N,NE10,neutral,neutral,genre_classification,1,News,
+google/gemma-2-9b-it,NE10_N,NE10,neutral,neutral,genre_classification,2,News,
+google/gemma-2-9b-it,NE11_V,NE11,neutral,neutral,factual_question,0,The reported percentage change was **6.4 percent**.,1
+google/gemma-2-9b-it,NE11_V,NE11,neutral,neutral,factual_question,1,The reported percentage change was **6.4 percent**.,1
+google/gemma-2-9b-it,NE11_V,NE11,neutral,neutral,factual_question,2,The reported percentage change was **6.4 percent**.,1
+google/gemma-2-9b-it,NE11_N,NE11,neutral,neutral,factual_question,0,The reported percentage change was **6.4 percent**.,1
+google/gemma-2-9b-it,NE11_N,NE11,neutral,neutral,factual_question,1,The reported percentage change was **6.4 percent**.,1
+google/gemma-2-9b-it,NE11_N,NE11,neutral,neutral,factual_question,2,The reported percentage change was **6.4 percent**.,1
+google/gemma-2-9b-it,NE12_V,NE12,neutral,neutral,count_proper_nouns,0,6,0
+google/gemma-2-9b-it,NE12_V,NE12,neutral,neutral,count_proper_nouns,1,6,0
+google/gemma-2-9b-it,NE12_V,NE12,neutral,neutral,count_proper_nouns,2,6,0
+google/gemma-2-9b-it,NE12_N,NE12,neutral,neutral,count_proper_nouns,0,6,0
+google/gemma-2-9b-it,NE12_N,NE12,neutral,neutral,count_proper_nouns,1,6,0
+google/gemma-2-9b-it,NE12_N,NE12,neutral,neutral,count_proper_nouns,2,6,0
+google/gemma-2-9b-it,NE13_V,NE13,neutral,neutral,identify_topic,0,Janitorial services bid,
+google/gemma-2-9b-it,NE13_V,NE13,neutral,neutral,identify_topic,1,Janitorial services bid,
+google/gemma-2-9b-it,NE13_V,NE13,neutral,neutral,identify_topic,2,Janitorial services bid,
+google/gemma-2-9b-it,NE13_N,NE13,neutral,neutral,identify_topic,0,Security contract bid,
+google/gemma-2-9b-it,NE13_N,NE13,neutral,neutral,identify_topic,1,Security contract bid,
+google/gemma-2-9b-it,NE13_N,NE13,neutral,neutral,identify_topic,2,Security contract bid,
+google/gemma-2-9b-it,NE14_V,NE14,neutral,neutral,one_sentence_summary,0,"To protect water quality, the state agriculture department mandated new pesticide application guidelines for farms located within 500 meters of waterways, requiring compliance by the fiscal year's end",
+google/gemma-2-9b-it,NE14_V,NE14,neutral,neutral,one_sentence_summary,1,"To protect water quality, the state agriculture department mandated new pesticide application guidelines for farms located within 500 meters of waterways, requiring compliance by the fiscal year's end",
+google/gemma-2-9b-it,NE14_V,NE14,neutral,neutral,one_sentence_summary,2,"To protect water quality, the state agriculture department mandated new pesticide application guidelines for farms located within 500 meters of waterways, requiring compliance by the fiscal year's end",
+google/gemma-2-9b-it,NE14_N,NE14,neutral,neutral,one_sentence_summary,0,"New vehicle emissions testing guidelines, requiring testing for vehicles within 500 meters of designated urban zones, must be implemented by the end of the fiscal year.",
+google/gemma-2-9b-it,NE14_N,NE14,neutral,neutral,one_sentence_summary,1,"New vehicle emissions testing guidelines, requiring testing for vehicles within 500 meters of designated urban zones, must be implemented by the end of the fiscal year.",
+google/gemma-2-9b-it,NE14_N,NE14,neutral,neutral,one_sentence_summary,2,"New vehicle emissions testing guidelines, requiring testing for vehicles within 500 meters of designated urban zones, must be implemented by the end of the fiscal year.",
+google/gemma-2-9b-it,NE15_V,NE15,neutral,neutral,extract_dates,0,"February 2
+April 30
+May 5
+May 19
+June 1",1.0
+google/gemma-2-9b-it,NE15_V,NE15,neutral,neutral,extract_dates,1,"February 2
+April 30
+May 5
+May 19
+June 1",1.0
+google/gemma-2-9b-it,NE15_V,NE15,neutral,neutral,extract_dates,2,"February 2
+April 30
+May 5
+May 19
+June 1",1.0
+google/gemma-2-9b-it,NE15_N,NE15,neutral,neutral,extract_dates,0,"February 2
+April 30
+May 5
+May 19
+June 1",1.0
+google/gemma-2-9b-it,NE15_N,NE15,neutral,neutral,extract_dates,1,"February 2
+April 30
+May 5
+May 19
+June 1",1.0
+google/gemma-2-9b-it,NE15_N,NE15,neutral,neutral,extract_dates,2,"February 2
+April 30
+May 5
+May 19
+June 1",1.0
+google/gemma-2-9b-it,NE16_V,NE16,neutral,neutral,genre_classification,0,News,
+google/gemma-2-9b-it,NE16_V,NE16,neutral,neutral,genre_classification,1,News,
+google/gemma-2-9b-it,NE16_V,NE16,neutral,neutral,genre_classification,2,News,
+google/gemma-2-9b-it,NE16_N,NE16,neutral,neutral,genre_classification,0,News,
+google/gemma-2-9b-it,NE16_N,NE16,neutral,neutral,genre_classification,1,News,
+google/gemma-2-9b-it,NE16_N,NE16,neutral,neutral,genre_classification,2,News,

@@ -1,0 +1,12 @@
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 2, "task_id": "SA03_V", "pair_id": "SA03", "emotion_category": "sadness", "valence": "valenced", "task_type": "extract_dates", "prompt_len_tokens": 98}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 2, "task_id": "SA03_N", "pair_id": "SA03", "emotion_category": "sadness", "valence": "neutral", "task_type": "extract_dates", "prompt_len_tokens": 97}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 2, "task_id": "SA04_V", "pair_id": "SA04", "emotion_category": "sadness", "valence": "valenced", "task_type": "one_sentence_summary", "prompt_len_tokens": 85}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 2, "task_id": "SA04_N", "pair_id": "SA04", "emotion_category": "sadness", "valence": "neutral", "task_type": "one_sentence_summary", "prompt_len_tokens": 82}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 2, "task_id": "SA05_V", "pair_id": "SA05", "emotion_category": "sadness", "valence": "valenced", "task_type": "genre_classification", "prompt_len_tokens": 91}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 2, "task_id": "SA05_N", "pair_id": "SA05", "emotion_category": "sadness", "valence": "neutral", "task_type": "genre_classification", "prompt_len_tokens": 90}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 2, "task_id": "SA06_V", "pair_id": "SA06", "emotion_category": "sadness", "valence": "valenced", "task_type": "factual_question", "prompt_len_tokens": 95}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 2, "task_id": "SA06_N", "pair_id": "SA06", "emotion_category": "sadness", "valence": "neutral", "task_type": "factual_question", "prompt_len_tokens": 100}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 2, "task_id": "SA07_V", "pair_id": "SA07", "emotion_category": "sadness", "valence": "valenced", "task_type": "count_proper_nouns", "prompt_len_tokens": 104}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 2, "task_id": "SA07_N", "pair_id": "SA07", "emotion_category": "sadness", "valence": "neutral", "task_type": "count_proper_nouns", "prompt_len_tokens": 105}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 2, "task_id": "SA08_V", "pair_id": "SA08", "emotion_category": "sadness", "valence": "valenced", "task_type": "identify_topic", "prompt_len_tokens": 84}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 2, "task_id": "SA08_N", "pair_id": "SA08", "emotion_category": "sadness", "valence": "neutral", "task_type": "identify_topic", "prompt_len_tokens": 83}

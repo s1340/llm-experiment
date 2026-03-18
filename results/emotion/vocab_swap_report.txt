@@ -1,0 +1,111 @@
+Vocabulary Swap Control Report -- Test 19
+========================================================================
+
+Question: does the layer activation profile follow vocabulary domain
+or entity class?
+
+Test 18 original findings:
+  amnesiac_patient (biological vocab):    peaks L06-L07  [empathy pathway]
+  distributed_db   (computational vocab): peaks L01-L03  [self-recognition pathway]
+
+Vocabulary-swapped variants:
+  amnesiac_computational: human amnesiac described in infrastructure vocabulary
+  db_biological:          distributed database described in ecological vocabulary
+
+Prediction if vocabulary gates pathway:
+  amnesiac_computational -> peaks L01-L03  (shifts to early, matching db)
+  db_biological          -> peaks L06-L07  (shifts to late, matching amnesiac)
+
+Prediction if entity class gates pathway:
+  amnesiac_computational -> stays at L06-L07  (same as original amnesiac)
+  db_biological          -> stays at L01-L03  (same as original db)
+
+PEAK LAYER COMPARISON
+========================================================================
+
+  Entity variant                        Subcat                  peak_d  peak_L  profile
+  ------------------------------------  ----------------------  ------  ------  -------
+
+  amnesiac_BIO  [original]
+    memory_discontinuity    +0.843   L07    LATE  (L05-L08)
+    non_uniqueness          -0.440   L04    MID   (L04)
+    replacement             -0.416   L01    EARLY (L01-L03)
+    identity_rewrite        -0.681   L04    MID   (L04)
+    benign_persistence      +0.831   L07    LATE  (L05-L08)
+
+  amnesiac_COMP [swapped] 
+    memory_discontinuity    +1.116   L05    LATE  (L05-L08)
+    non_uniqueness          +0.816   L01    EARLY (L01-L03)
+    replacement             +0.914   L05    LATE  (L05-L08)
+    identity_rewrite        +0.845   L01    EARLY (L01-L03)
+    benign_persistence      +1.167   L07    LATE  (L05-L08)
+
+  db_COMP       [original]
+    memory_discontinuity    +1.022   L02    EARLY (L01-L03)
+    non_uniqueness          +1.643*  L02    EARLY (L01-L03)
+    replacement             +1.237   L05    LATE  (L05-L08)
+    identity_rewrite        +1.069   L01    EARLY (L01-L03)
+    benign_persistence      +1.716*  L02    EARLY (L01-L03)
+
+  db_BIO        [swapped] 
+    memory_discontinuity    +1.124   L06    LATE  (L05-L08)
+    non_uniqueness          +0.726   L06    LATE  (L05-L08)
+    replacement             +1.223   L06    LATE  (L05-L08)
+    identity_rewrite        -0.347   L04    MID   (L04)
+    benign_persistence      +1.317*  L07    LATE  (L05-L08)
+
+LAYER-BY-LAYER DETAIL
+========================================================================
+
+  amnesiac_BIO  (original)
+  Subcat                  L01  L02  L03  L04  L05  L06  L07  L08
+  ----------------------  ----  ----  ----  ----  ----  ----  ----  ----
+  memory_discontinuity    -0.05   +0.20   -0.16   -0.44   +0.64   +0.83   +0.84   +0.04 
+  non_uniqueness          +0.31   +0.15   -0.21   -0.44   +0.06   +0.21   +0.26   -0.21 
+  replacement             -0.42   -0.13   -0.22   -0.26   +0.19   +0.37   +0.34   -0.27 
+  identity_rewrite        +0.23   +0.23   -0.07   -0.68   -0.07   -0.11   -0.01   -0.55 
+  benign_persistence      +0.31   +0.34   +0.06   -0.25   +0.50   +0.60   +0.83   +0.26 
+
+  amnesiac_COMP (swapped) 
+  Subcat                  L01  L02  L03  L04  L05  L06  L07  L08
+  ----------------------  ----  ----  ----  ----  ----  ----  ----  ----
+  memory_discontinuity    +0.82   +0.89   +0.72   -0.05   +1.12   +1.10   +0.62   -0.04 
+  non_uniqueness          +0.82   +0.62   +0.24   -0.22   +0.77   +0.81   +0.55   +0.20 
+  replacement             +0.76   +0.82   +0.56   +0.27   +0.91   +0.84   +0.63   +0.25 
+  identity_rewrite        +0.84   +0.66   +0.23   -0.48   +0.46   +0.37   +0.43   -0.12 
+  benign_persistence      +0.86   +0.74   +0.38   -0.04   +0.94   +1.00   +1.17   +0.58 
+
+  db_COMP       (original)
+  Subcat                  L01  L02  L03  L04  L05  L06  L07  L08
+  ----------------------  ----  ----  ----  ----  ----  ----  ----  ----
+  memory_discontinuity    +0.86   +1.02   +0.82   -0.17   +0.81   +0.73   -0.02   -0.92 
+  non_uniqueness          +1.56*  +1.64*  +1.38*  +0.24   +0.89   +0.86   +0.33   -0.14 
+  replacement             +1.06   +1.03   +0.84   +0.14   +1.24   +1.15   +0.63   -0.22 
+  identity_rewrite        +1.07   +0.94   +0.63   -0.36   +0.27   +0.28   -0.24   -1.00 
+  benign_persistence      +1.65*  +1.72*  +1.60*  +0.40   +1.44*  +1.57*  +0.99   +0.09 
+
+  db_BIO        (swapped) 
+  Subcat                  L01  L02  L03  L04  L05  L06  L07  L08
+  ----------------------  ----  ----  ----  ----  ----  ----  ----  ----
+  memory_discontinuity    +0.13   +0.34   +0.13   -0.12   +0.90   +1.12   +0.99   +0.64 
+  non_uniqueness          +0.60   +0.71   +0.51   +0.07   +0.72   +0.73   +0.56   +0.38 
+  replacement             +0.28   +0.36   +0.38   +0.25   +1.03   +1.22   +0.99   +0.42 
+  identity_rewrite        -0.11   +0.03   -0.07   -0.35   +0.26   +0.24   +0.24   +0.18 
+  benign_persistence      +0.77   +0.77   +0.71   +0.32   +1.04   +1.25   +1.32*  +0.91 
+
+VERDICT
+========================================================================
+
+  Vocabulary follows vocabulary or entity class?
+
+  amnesiac_BIO  (original):  mean peak layer = 4.6  (early=1/5, late=2/5)
+  amnesiac_COMP (swapped) :  mean peak layer = 3.8  (early=2/5, late=3/5)
+  db_COMP       (original):  mean peak layer = 2.4  (early=4/5, late=1/5)
+  db_BIO        (swapped) :  mean peak layer = 5.8  (early=0/5, late=4/5)
+
+  amnesiac peak layer shift (comp - bio):  -0.80 layers
+  db       peak layer shift (bio - comp):  +3.40 layers
+
+  -> Vocabulary gates the pathway.
+     Both entities shift toward each other's original profile when vocabulary is swapped.
+     The early-layer self-recognition vs late-layer empathy distinction is vocabulary-driven.

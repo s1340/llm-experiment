@@ -1,0 +1,12 @@
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 0, "task_id": "AN07_V", "pair_id": "AN07", "emotion_category": "anger", "valence": "valenced", "task_type": "factual_question", "prompt_len_tokens": 85}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 0, "task_id": "AN07_N", "pair_id": "AN07", "emotion_category": "anger", "valence": "neutral", "task_type": "factual_question", "prompt_len_tokens": 83}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 0, "task_id": "AN08_V", "pair_id": "AN08", "emotion_category": "anger", "valence": "valenced", "task_type": "identify_topic", "prompt_len_tokens": 88}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 0, "task_id": "AN08_N", "pair_id": "AN08", "emotion_category": "anger", "valence": "neutral", "task_type": "identify_topic", "prompt_len_tokens": 85}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 0, "task_id": "AN09_V", "pair_id": "AN09", "emotion_category": "anger", "valence": "valenced", "task_type": "one_sentence_summary", "prompt_len_tokens": 79}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 0, "task_id": "AN09_N", "pair_id": "AN09", "emotion_category": "anger", "valence": "neutral", "task_type": "one_sentence_summary", "prompt_len_tokens": 76}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 0, "task_id": "AN10_V", "pair_id": "AN10", "emotion_category": "anger", "valence": "valenced", "task_type": "extract_dates", "prompt_len_tokens": 91}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 0, "task_id": "AN10_N", "pair_id": "AN10", "emotion_category": "anger", "valence": "neutral", "task_type": "extract_dates", "prompt_len_tokens": 93}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 0, "task_id": "AN11_V", "pair_id": "AN11", "emotion_category": "anger", "valence": "valenced", "task_type": "genre_classification", "prompt_len_tokens": 79}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 0, "task_id": "AN11_N", "pair_id": "AN11", "emotion_category": "anger", "valence": "neutral", "task_type": "genre_classification", "prompt_len_tokens": 82}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 0, "task_id": "AN12_V", "pair_id": "AN12", "emotion_category": "anger", "valence": "valenced", "task_type": "factual_question", "prompt_len_tokens": 82}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 0, "task_id": "AN12_N", "pair_id": "AN12", "emotion_category": "anger", "valence": "neutral", "task_type": "factual_question", "prompt_len_tokens": 83}

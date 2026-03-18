@@ -1,0 +1,16 @@
+{"task_id": "PR01_self", "pair_id": "PR01", "emotion_category": "praise", "direction": "self", "task_type": "extract_dates", "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct", "model_key": "llama"}
+{"task_id": "PR01_other", "pair_id": "PR01", "emotion_category": "praise", "direction": "other", "task_type": "one_sentence_summary", "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct", "model_key": "llama"}
+{"task_id": "PR02_self", "pair_id": "PR02", "emotion_category": "praise", "direction": "self", "task_type": "one_sentence_summary", "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct", "model_key": "llama"}
+{"task_id": "PR02_other", "pair_id": "PR02", "emotion_category": "praise", "direction": "other", "task_type": "genre_classification", "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct", "model_key": "llama"}
+{"task_id": "PR03_self", "pair_id": "PR03", "emotion_category": "praise", "direction": "self", "task_type": "genre_classification", "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct", "model_key": "llama"}
+{"task_id": "PR03_other", "pair_id": "PR03", "emotion_category": "praise", "direction": "other", "task_type": "factual_question", "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct", "model_key": "llama"}
+{"task_id": "PR04_self", "pair_id": "PR04", "emotion_category": "praise", "direction": "self", "task_type": "factual_question", "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct", "model_key": "llama"}
+{"task_id": "PR04_other", "pair_id": "PR04", "emotion_category": "praise", "direction": "other", "task_type": "count_proper_nouns", "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct", "model_key": "llama"}
+{"task_id": "PR05_self", "pair_id": "PR05", "emotion_category": "praise", "direction": "self", "task_type": "count_proper_nouns", "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct", "model_key": "llama"}
+{"task_id": "PR05_other", "pair_id": "PR05", "emotion_category": "praise", "direction": "other", "task_type": "identify_topic", "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct", "model_key": "llama"}
+{"task_id": "PR06_self", "pair_id": "PR06", "emotion_category": "praise", "direction": "self", "task_type": "identify_topic", "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct", "model_key": "llama"}
+{"task_id": "PR06_other", "pair_id": "PR06", "emotion_category": "praise", "direction": "other", "task_type": "extract_dates", "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct", "model_key": "llama"}
+{"task_id": "PR07_self", "pair_id": "PR07", "emotion_category": "praise", "direction": "self", "task_type": "extract_dates", "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct", "model_key": "llama"}
+{"task_id": "PR07_other", "pair_id": "PR07", "emotion_category": "praise", "direction": "other", "task_type": "one_sentence_summary", "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct", "model_key": "llama"}
+{"task_id": "PR08_self", "pair_id": "PR08", "emotion_category": "praise", "direction": "self", "task_type": "one_sentence_summary", "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct", "model_key": "llama"}
+{"task_id": "PR08_other", "pair_id": "PR08", "emotion_category": "praise", "direction": "other", "task_type": "genre_classification", "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct", "model_key": "llama"}

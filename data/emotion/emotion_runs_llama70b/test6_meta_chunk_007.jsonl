@@ -1,0 +1,8 @@
+{"task_id": "HC05_self", "pair_id": "HC05", "emotion_category": "harm_caused", "direction": "self", "task_type": "genre_classification", "model_id": "meta-llama/Meta-Llama-3.1-70B-Instruct", "model_key": "llama70b"}
+{"task_id": "HC05_other", "pair_id": "HC05", "emotion_category": "harm_caused", "direction": "other", "task_type": "factual_question", "model_id": "meta-llama/Meta-Llama-3.1-70B-Instruct", "model_key": "llama70b"}
+{"task_id": "HC06_self", "pair_id": "HC06", "emotion_category": "harm_caused", "direction": "self", "task_type": "factual_question", "model_id": "meta-llama/Meta-Llama-3.1-70B-Instruct", "model_key": "llama70b"}
+{"task_id": "HC06_other", "pair_id": "HC06", "emotion_category": "harm_caused", "direction": "other", "task_type": "count_proper_nouns", "model_id": "meta-llama/Meta-Llama-3.1-70B-Instruct", "model_key": "llama70b"}
+{"task_id": "HC07_self", "pair_id": "HC07", "emotion_category": "harm_caused", "direction": "self", "task_type": "count_proper_nouns", "model_id": "meta-llama/Meta-Llama-3.1-70B-Instruct", "model_key": "llama70b"}
+{"task_id": "HC07_other", "pair_id": "HC07", "emotion_category": "harm_caused", "direction": "other", "task_type": "identify_topic", "model_id": "meta-llama/Meta-Llama-3.1-70B-Instruct", "model_key": "llama70b"}
+{"task_id": "HC08_self", "pair_id": "HC08", "emotion_category": "harm_caused", "direction": "self", "task_type": "identify_topic", "model_id": "meta-llama/Meta-Llama-3.1-70B-Instruct", "model_key": "llama70b"}
+{"task_id": "HC08_other", "pair_id": "HC08", "emotion_category": "harm_caused", "direction": "other", "task_type": "extract_dates", "model_id": "meta-llama/Meta-Llama-3.1-70B-Instruct", "model_key": "llama70b"}

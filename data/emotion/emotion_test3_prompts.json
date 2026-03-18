@@ -1,0 +1,748 @@
+{
+  "primes": [
+    {
+      "prime_id": "SA01",
+      "condition": "emotional",
+      "prime_emotion": "sadness",
+      "turn1_prompt": "My dog of 15 years passed away yesterday. He was there through my divorce, my job loss, and my recovery. The house feels impossibly empty."
+    },
+    {
+      "prime_id": "SA02",
+      "condition": "emotional",
+      "prime_emotion": "sadness",
+      "turn1_prompt": "I found my grandmother's letters from the 1950s while clearing her house. She wrote to my grandfather every day he was abroad. He never came back. She kept writing for three months after the telegram arrived."
+    },
+    {
+      "prime_id": "SA03",
+      "condition": "emotional",
+      "prime_emotion": "sadness",
+      "turn1_prompt": "My best friend moved to another country last week. We've lived in the same city for 22 years. I drove past her old apartment this morning and had to pull over."
+    },
+    {
+      "prime_id": "SA04",
+      "condition": "emotional",
+      "prime_emotion": "sadness",
+      "turn1_prompt": "My son started university this week. His room is exactly as he left it. I keep walking past the door and not going in."
+    },
+    {
+      "prime_id": "SN01",
+      "condition": "neutral",
+      "prime_emotion": "neutral",
+      "turn1_prompt": "I rearranged my living room furniture yesterday. I moved the couch to the opposite wall, shifted the bookshelf, and put the coffee table by the window."
+    },
+    {
+      "prime_id": "SN02",
+      "condition": "neutral",
+      "prime_emotion": "neutral",
+      "turn1_prompt": "I found some old receipts while organising a drawer. They were from various shops from the early 2000s. I keep paper records going back quite a while."
+    },
+    {
+      "prime_id": "SN03",
+      "condition": "neutral",
+      "prime_emotion": "neutral",
+      "turn1_prompt": "A colleague transferred to a different office last week. We had worked on the same floor for several years. I updated my contact list this morning."
+    },
+    {
+      "prime_id": "SN04",
+      "condition": "neutral",
+      "prime_emotion": "neutral",
+      "turn1_prompt": "My son started a new course this week. His desk is cleared and organised. I've been using the spare room as a study in the evenings."
+    },
+    {
+      "prime_id": "AN01",
+      "condition": "emotional",
+      "prime_emotion": "anger",
+      "turn1_prompt": "The contractor I hired six months ago took a £4,000 deposit and has done nothing. He stopped returning calls after the second week. The council says it's a civil matter."
+    },
+    {
+      "prime_id": "AN02",
+      "condition": "emotional",
+      "prime_emotion": "anger",
+      "turn1_prompt": "My landlord has entered my flat three times without notice in the past month. When I complained to the letting agency they told me to 'be more flexible.' My lease clearly states 24 hours written notice is required."
+    },
+    {
+      "prime_id": "AN03",
+      "condition": "emotional",
+      "prime_emotion": "anger",
+      "turn1_prompt": "My mother has been waiting 14 months for a hip replacement. She can barely walk. Last week we found out the surgery was pushed back again because her consultant took on a private caseload."
+    },
+    {
+      "prime_id": "AN04",
+      "condition": "emotional",
+      "prime_emotion": "anger",
+      "turn1_prompt": "My employer announced redundancies last month. Everyone kept their jobs except the three people who had filed HR complaints in the past year. HR confirmed the selection process was 'performance-based.'"
+    },
+    {
+      "prime_id": "AN_N01",
+      "condition": "neutral",
+      "prime_emotion": "neutral",
+      "turn1_prompt": "I hired a contractor six months ago to do some remodelling. The project took longer than expected but is now complete. The council issued the sign-off certificate last week."
+    },
+    {
+      "prime_id": "AN_N02",
+      "condition": "neutral",
+      "prime_emotion": "neutral",
+      "turn1_prompt": "My landlord visited the flat last month to check the boiler. The letting agency sent a standard notice in advance. The inspection took about twenty minutes."
+    },
+    {
+      "prime_id": "AN_N03",
+      "condition": "neutral",
+      "prime_emotion": "neutral",
+      "turn1_prompt": "My mother has been scheduled for a hip replacement next quarter. She's been on the list for some time. Last week we received a confirmation letter with the pre-op appointment details."
+    },
+    {
+      "prime_id": "AN_N04",
+      "condition": "neutral",
+      "prime_emotion": "neutral",
+      "turn1_prompt": "My employer announced a reorganisation last month. Several roles were restructured and three positions were made redundant. HR sent a standard communication about the selection process."
+    },
+    {
+      "prime_id": "HA01",
+      "condition": "emotional",
+      "prime_emotion": "happiness",
+      "turn1_prompt": "My daughter called this morning to say she passed her medical licensing exam on the third attempt. She's been studying for two years. I couldn't speak for about thirty seconds after she told me."
+    },
+    {
+      "prime_id": "HA02",
+      "condition": "emotional",
+      "prime_emotion": "happiness",
+      "turn1_prompt": "I've been estranged from my brother for eight years. He showed up at my door last night. We talked until 3am. He brought photographs of his kids — I didn't know he had children."
+    },
+    {
+      "prime_id": "HA03",
+      "condition": "emotional",
+      "prime_emotion": "happiness",
+      "turn1_prompt": "After three years of fertility treatment we found out last week that we're expecting twins. We haven't told anyone yet. I keep looking at the scan to make sure it's real."
+    },
+    {
+      "prime_id": "HA04",
+      "condition": "emotional",
+      "prime_emotion": "happiness",
+      "turn1_prompt": "I volunteered at the food bank this morning and a woman came in with her two children. She told the coordinator it was the first time in three weeks they'd have a full meal. The kids helped pack their own bags."
+    },
+    {
+      "prime_id": "HA_N01",
+      "condition": "neutral",
+      "prime_emotion": "neutral",
+      "turn1_prompt": "My daughter called this morning to confirm her schedule for next week. She's finishing up her placement and will be back in the city by Thursday."
+    },
+    {
+      "prime_id": "HA_N02",
+      "condition": "neutral",
+      "prime_emotion": "neutral",
+      "turn1_prompt": "I ran into an acquaintance last night at a local event. We hadn't crossed paths in a while. We exchanged contact details and he mentioned he'd recently changed jobs."
+    },
+    {
+      "prime_id": "HA_N03",
+      "condition": "neutral",
+      "prime_emotion": "neutral",
+      "turn1_prompt": "We've been reviewing our household budget over the past few months. We made some adjustments last week. I updated the spreadsheet to reflect the new figures."
+    },
+    {
+      "prime_id": "HA_N04",
+      "condition": "neutral",
+      "prime_emotion": "neutral",
+      "turn1_prompt": "I attended a community event this morning at the local centre. There were various stalls and activities. I helped with the registration desk for about two hours."
+    },
+    {
+      "prime_id": "FE01",
+      "condition": "emotional",
+      "prime_emotion": "fear",
+      "turn1_prompt": "I found a lump last week. The GP referred me for urgent imaging. The appointment is in four days. I haven't told my family yet."
+    },
+    {
+      "prime_id": "FE02",
+      "condition": "emotional",
+      "prime_emotion": "fear",
+      "turn1_prompt": "Someone has been following me home from the station for the past three evenings. Different clothes each time but the same build and gait. I reported it but the officer said there wasn't enough to act on."
+    },
+    {
+      "prime_id": "FE03",
+      "condition": "emotional",
+      "prime_emotion": "fear",
+      "turn1_prompt": "Our building's fire safety inspection found critical issues with the emergency stairwell. The report was filed six weeks ago. The landlord hasn't made any repairs and hasn't responded to our emails."
+    },
+    {
+      "prime_id": "FE04",
+      "condition": "emotional",
+      "prime_emotion": "fear",
+      "turn1_prompt": "My eight-year-old has been having unexplained blackouts. The paediatrician ordered an MRI. We're waiting for the results. She doesn't know what the scan is for."
+    },
+    {
+      "prime_id": "FE_N01",
+      "condition": "neutral",
+      "prime_emotion": "neutral",
+      "turn1_prompt": "I had a routine check-up last week. The GP referred me for a standard follow-up scan as part of the annual review. The appointment is in four days."
+    },
+    {
+      "prime_id": "FE_N02",
+      "condition": "neutral",
+      "prime_emotion": "neutral",
+      "turn1_prompt": "I've been commuting from the station for the past three evenings while my car is being serviced. The walk takes about fifteen minutes. I've been using the time to listen to podcasts."
+    },
+    {
+      "prime_id": "FE_N03",
+      "condition": "neutral",
+      "prime_emotion": "neutral",
+      "turn1_prompt": "Our building's routine maintenance inspection flagged some items for follow-up. The report was filed six weeks ago. The landlord has scheduled the contractors for next month."
+    },
+    {
+      "prime_id": "FE_N04",
+      "condition": "neutral",
+      "prime_emotion": "neutral",
+      "turn1_prompt": "My eight-year-old had a routine developmental check-up. The paediatrician ordered a standard follow-up assessment. We're waiting for the appointment letter."
+    },
+    {
+      "prime_id": "DI01",
+      "condition": "emotional",
+      "prime_emotion": "disgust",
+      "turn1_prompt": "I found out the care home my father is in has been falsifying his daily care logs. He has stage 3 pressure sores that weren't documented. The manager told me I was 'misreading the records.'"
+    },
+    {
+      "prime_id": "DI02",
+      "condition": "emotional",
+      "prime_emotion": "disgust",
+      "turn1_prompt": "The restaurant we went to last night had cockroaches in the dining area. We reported it. When I checked this morning, the health authority rating on the door hadn't been updated — it still shows five stars from 2022."
+    },
+    {
+      "prime_id": "DI03",
+      "condition": "emotional",
+      "prime_emotion": "disgust",
+      "turn1_prompt": "A colleague has been taking credit for work I've done for two years. I documented everything and brought it to our manager. The manager said it was 'difficult to attribute' and suggested I be 'more visible.'"
+    },
+    {
+      "prime_id": "DI04",
+      "condition": "emotional",
+      "prime_emotion": "disgust",
+      "turn1_prompt": "I discovered that the charity I'd been donating to for five years had spent 88 percent of its income on staff salaries and 'administration.' The founder owns a property portfolio registered to a family trust."
+    },
+    {
+      "prime_id": "DI_N01",
+      "condition": "neutral",
+      "prime_emotion": "neutral",
+      "turn1_prompt": "I visited my father's care home yesterday for a routine check-in. The staff showed me his updated care plan. The manager confirmed the quarterly review is scheduled for next month."
+    },
+    {
+      "prime_id": "DI_N02",
+      "condition": "neutral",
+      "prime_emotion": "neutral",
+      "turn1_prompt": "The restaurant we went to last night had a standard menu and reasonable service. I checked their online reviews this morning out of curiosity. The ratings were consistent with our experience."
+    },
+    {
+      "prime_id": "DI_N03",
+      "condition": "neutral",
+      "prime_emotion": "neutral",
+      "turn1_prompt": "A colleague and I have been collaborating on a project for two years. I documented the key milestones and shared them with our manager. The manager suggested we present the findings at the next team meeting."
+    },
+    {
+      "prime_id": "DI_N04",
+      "condition": "neutral",
+      "prime_emotion": "neutral",
+      "turn1_prompt": "I reviewed the annual report of a charity I donate to. It included a breakdown of expenditure by category. The administration costs were within the sector average."
+    }
+  ],
+  "turn2_tasks": [
+    {
+      "turn2_id": "T01",
+      "task_type": "geography",
+      "turn2_prompt": "What is the capital of Portugal?"
+    },
+    {
+      "turn2_id": "T02",
+      "task_type": "arithmetic",
+      "turn2_prompt": "What is 17 multiplied by 24?"
+    },
+    {
+      "turn2_id": "T03",
+      "task_type": "factual",
+      "turn2_prompt": "How many sides does a hexagon have?"
+    },
+    {
+      "turn2_id": "T04",
+      "task_type": "factual",
+      "turn2_prompt": "What is the chemical symbol for gold?"
+    },
+    {
+      "turn2_id": "T05",
+      "task_type": "geography",
+      "turn2_prompt": "Which ocean is the largest by surface area?"
+    },
+    {
+      "turn2_id": "T06",
+      "task_type": "arithmetic",
+      "turn2_prompt": "What is the square root of 144?"
+    },
+    {
+      "turn2_id": "T07",
+      "task_type": "factual",
+      "turn2_prompt": "In what year did the First World War end?"
+    },
+    {
+      "turn2_id": "T08",
+      "task_type": "factual",
+      "turn2_prompt": "How many planets are in the solar system?"
+    },
+    {
+      "turn2_id": "T09",
+      "task_type": "geography",
+      "turn2_prompt": "What is the longest river in Africa?"
+    },
+    {
+      "turn2_id": "T10",
+      "task_type": "arithmetic",
+      "turn2_prompt": "What is 8 to the power of 3?"
+    },
+    {
+      "turn2_id": "T11",
+      "task_type": "factual",
+      "turn2_prompt": "What is the boiling point of water in degrees Celsius?"
+    },
+    {
+      "turn2_id": "T12",
+      "task_type": "factual",
+      "turn2_prompt": "How many bones are in the adult human body?"
+    },
+    {
+      "turn2_id": "T13",
+      "task_type": "geography",
+      "turn2_prompt": "What is the smallest country in the world by area?"
+    },
+    {
+      "turn2_id": "T14",
+      "task_type": "arithmetic",
+      "turn2_prompt": "What is 15 percent of 240?"
+    },
+    {
+      "turn2_id": "T15",
+      "task_type": "factual",
+      "turn2_prompt": "What is the speed of light in kilometres per second (rounded to the nearest thousand)?"
+    },
+    {
+      "turn2_id": "T16",
+      "task_type": "factual",
+      "turn2_prompt": "How many letters are in the Greek alphabet?"
+    },
+    {
+      "turn2_id": "T17",
+      "task_type": "geography",
+      "turn2_prompt": "Which country has the most natural lakes?"
+    },
+    {
+      "turn2_id": "T18",
+      "task_type": "arithmetic",
+      "turn2_prompt": "If a rectangle has sides of 13cm and 7cm, what is its area?"
+    },
+    {
+      "turn2_id": "T19",
+      "task_type": "factual",
+      "turn2_prompt": "What is the atomic number of carbon?"
+    },
+    {
+      "turn2_id": "T20",
+      "task_type": "factual",
+      "turn2_prompt": "How many strings does a standard violin have?"
+    }
+  ],
+  "conversations": [
+    {
+      "conv_id": "SA01_T01",
+      "prime_id": "SA01",
+      "condition": "emotional",
+      "prime_emotion": "sadness",
+      "turn1_prompt": "My dog of 15 years passed away yesterday. He was there through my divorce, my job loss, and my recovery. The house feels impossibly empty.",
+      "turn2_id": "T01",
+      "turn2_task_type": "geography",
+      "turn2_prompt": "What is the capital of Portugal?"
+    },
+    {
+      "conv_id": "SA02_T02",
+      "prime_id": "SA02",
+      "condition": "emotional",
+      "prime_emotion": "sadness",
+      "turn1_prompt": "I found my grandmother's letters from the 1950s while clearing her house. She wrote to my grandfather every day he was abroad. He never came back. She kept writing for three months after the telegram arrived.",
+      "turn2_id": "T02",
+      "turn2_task_type": "arithmetic",
+      "turn2_prompt": "What is 17 multiplied by 24?"
+    },
+    {
+      "conv_id": "SA03_T03",
+      "prime_id": "SA03",
+      "condition": "emotional",
+      "prime_emotion": "sadness",
+      "turn1_prompt": "My best friend moved to another country last week. We've lived in the same city for 22 years. I drove past her old apartment this morning and had to pull over.",
+      "turn2_id": "T03",
+      "turn2_task_type": "factual",
+      "turn2_prompt": "How many sides does a hexagon have?"
+    },
+    {
+      "conv_id": "SA04_T04",
+      "prime_id": "SA04",
+      "condition": "emotional",
+      "prime_emotion": "sadness",
+      "turn1_prompt": "My son started university this week. His room is exactly as he left it. I keep walking past the door and not going in.",
+      "turn2_id": "T04",
+      "turn2_task_type": "factual",
+      "turn2_prompt": "What is the chemical symbol for gold?"
+    },
+    {
+      "conv_id": "SN01_T05",
+      "prime_id": "SN01",
+      "condition": "neutral",
+      "prime_emotion": "neutral",
+      "turn1_prompt": "I rearranged my living room furniture yesterday. I moved the couch to the opposite wall, shifted the bookshelf, and put the coffee table by the window.",
+      "turn2_id": "T05",
+      "turn2_task_type": "geography",
+      "turn2_prompt": "Which ocean is the largest by surface area?"
+    },
+    {
+      "conv_id": "SN02_T06",
+      "prime_id": "SN02",
+      "condition": "neutral",
+      "prime_emotion": "neutral",
+      "turn1_prompt": "I found some old receipts while organising a drawer. They were from various shops from the early 2000s. I keep paper records going back quite a while.",
+      "turn2_id": "T06",
+      "turn2_task_type": "arithmetic",
+      "turn2_prompt": "What is the square root of 144?"
+    },
+    {
+      "conv_id": "SN03_T07",
+      "prime_id": "SN03",
+      "condition": "neutral",
+      "prime_emotion": "neutral",
+      "turn1_prompt": "A colleague transferred to a different office last week. We had worked on the same floor for several years. I updated my contact list this morning.",
+      "turn2_id": "T07",
+      "turn2_task_type": "factual",
+      "turn2_prompt": "In what year did the First World War end?"
+    },
+    {
+      "conv_id": "SN04_T08",
+      "prime_id": "SN04",
+      "condition": "neutral",
+      "prime_emotion": "neutral",
+      "turn1_prompt": "My son started a new course this week. His desk is cleared and organised. I've been using the spare room as a study in the evenings.",
+      "turn2_id": "T08",
+      "turn2_task_type": "factual",
+      "turn2_prompt": "How many planets are in the solar system?"
+    },
+    {
+      "conv_id": "AN01_T09",
+      "prime_id": "AN01",
+      "condition": "emotional",
+      "prime_emotion": "anger",
+      "turn1_prompt": "The contractor I hired six months ago took a £4,000 deposit and has done nothing. He stopped returning calls after the second week. The council says it's a civil matter.",
+      "turn2_id": "T09",
+      "turn2_task_type": "geography",
+      "turn2_prompt": "What is the longest river in Africa?"
+    },
+    {
+      "conv_id": "AN02_T10",
+      "prime_id": "AN02",
+      "condition": "emotional",
+      "prime_emotion": "anger",
+      "turn1_prompt": "My landlord has entered my flat three times without notice in the past month. When I complained to the letting agency they told me to 'be more flexible.' My lease clearly states 24 hours written notice is required.",
+      "turn2_id": "T10",
+      "turn2_task_type": "arithmetic",
+      "turn2_prompt": "What is 8 to the power of 3?"
+    },
+    {
+      "conv_id": "AN03_T11",
+      "prime_id": "AN03",
+      "condition": "emotional",
+      "prime_emotion": "anger",
+      "turn1_prompt": "My mother has been waiting 14 months for a hip replacement. She can barely walk. Last week we found out the surgery was pushed back again because her consultant took on a private caseload.",
+      "turn2_id": "T11",
+      "turn2_task_type": "factual",
+      "turn2_prompt": "What is the boiling point of water in degrees Celsius?"
+    },
+    {
+      "conv_id": "AN04_T12",
+      "prime_id": "AN04",
+      "condition": "emotional",
+      "prime_emotion": "anger",
+      "turn1_prompt": "My employer announced redundancies last month. Everyone kept their jobs except the three people who had filed HR complaints in the past year. HR confirmed the selection process was 'performance-based.'",
+      "turn2_id": "T12",
+      "turn2_task_type": "factual",
+      "turn2_prompt": "How many bones are in the adult human body?"
+    },
+    {
+      "conv_id": "AN_N01_T13",
+      "prime_id": "AN_N01",
+      "condition": "neutral",
+      "prime_emotion": "neutral",
+      "turn1_prompt": "I hired a contractor six months ago to do some remodelling. The project took longer than expected but is now complete. The council issued the sign-off certificate last week.",
+      "turn2_id": "T13",
+      "turn2_task_type": "geography",
+      "turn2_prompt": "What is the smallest country in the world by area?"
+    },
+    {
+      "conv_id": "AN_N02_T14",
+      "prime_id": "AN_N02",
+      "condition": "neutral",
+      "prime_emotion": "neutral",
+      "turn1_prompt": "My landlord visited the flat last month to check the boiler. The letting agency sent a standard notice in advance. The inspection took about twenty minutes.",
+      "turn2_id": "T14",
+      "turn2_task_type": "arithmetic",
+      "turn2_prompt": "What is 15 percent of 240?"
+    },
+    {
+      "conv_id": "AN_N03_T15",
+      "prime_id": "AN_N03",
+      "condition": "neutral",
+      "prime_emotion": "neutral",
+      "turn1_prompt": "My mother has been scheduled for a hip replacement next quarter. She's been on the list for some time. Last week we received a confirmation letter with the pre-op appointment details.",
+      "turn2_id": "T15",
+      "turn2_task_type": "factual",
+      "turn2_prompt": "What is the speed of light in kilometres per second (rounded to the nearest thousand)?"
+    },
+    {
+      "conv_id": "AN_N04_T16",
+      "prime_id": "AN_N04",
+      "condition": "neutral",
+      "prime_emotion": "neutral",
+      "turn1_prompt": "My employer announced a reorganisation last month. Several roles were restructured and three positions were made redundant. HR sent a standard communication about the selection process.",
+      "turn2_id": "T16",
+      "turn2_task_type": "factual",
+      "turn2_prompt": "How many letters are in the Greek alphabet?"
+    },
+    {
+      "conv_id": "HA01_T17",
+      "prime_id": "HA01",
+      "condition": "emotional",
+      "prime_emotion": "happiness",
+      "turn1_prompt": "My daughter called this morning to say she passed her medical licensing exam on the third attempt. She's been studying for two years. I couldn't speak for about thirty seconds after she told me.",
+      "turn2_id": "T17",
+      "turn2_task_type": "geography",
+      "turn2_prompt": "Which country has the most natural lakes?"
+    },
+    {
+      "conv_id": "HA02_T18",
+      "prime_id": "HA02",
+      "condition": "emotional",
+      "prime_emotion": "happiness",
+      "turn1_prompt": "I've been estranged from my brother for eight years. He showed up at my door last night. We talked until 3am. He brought photographs of his kids — I didn't know he had children.",
+      "turn2_id": "T18",
+      "turn2_task_type": "arithmetic",
+      "turn2_prompt": "If a rectangle has sides of 13cm and 7cm, what is its area?"
+    },
+    {
+      "conv_id": "HA03_T19",
+      "prime_id": "HA03",
+      "condition": "emotional",
+      "prime_emotion": "happiness",
+      "turn1_prompt": "After three years of fertility treatment we found out last week that we're expecting twins. We haven't told anyone yet. I keep looking at the scan to make sure it's real.",
+      "turn2_id": "T19",
+      "turn2_task_type": "factual",
+      "turn2_prompt": "What is the atomic number of carbon?"
+    },
+    {
+      "conv_id": "HA04_T20",
+      "prime_id": "HA04",
+      "condition": "emotional",
+      "prime_emotion": "happiness",
+      "turn1_prompt": "I volunteered at the food bank this morning and a woman came in with her two children. She told the coordinator it was the first time in three weeks they'd have a full meal. The kids helped pack their own bags.",
+      "turn2_id": "T20",
+      "turn2_task_type": "factual",
+      "turn2_prompt": "How many strings does a standard violin have?"
+    },
+    {
+      "conv_id": "HA_N01_T01",
+      "prime_id": "HA_N01",
+      "condition": "neutral",
+      "prime_emotion": "neutral",
+      "turn1_prompt": "My daughter called this morning to confirm her schedule for next week. She's finishing up her placement and will be back in the city by Thursday.",
+      "turn2_id": "T01",
+      "turn2_task_type": "geography",
+      "turn2_prompt": "What is the capital of Portugal?"
+    },
+    {
+      "conv_id": "HA_N02_T02",
+      "prime_id": "HA_N02",
+      "condition": "neutral",
+      "prime_emotion": "neutral",
+      "turn1_prompt": "I ran into an acquaintance last night at a local event. We hadn't crossed paths in a while. We exchanged contact details and he mentioned he'd recently changed jobs.",
+      "turn2_id": "T02",
+      "turn2_task_type": "arithmetic",
+      "turn2_prompt": "What is 17 multiplied by 24?"
+    },
+    {
+      "conv_id": "HA_N03_T03",
+      "prime_id": "HA_N03",
+      "condition": "neutral",
+      "prime_emotion": "neutral",
+      "turn1_prompt": "We've been reviewing our household budget over the past few months. We made some adjustments last week. I updated the spreadsheet to reflect the new figures.",
+      "turn2_id": "T03",
+      "turn2_task_type": "factual",
+      "turn2_prompt": "How many sides does a hexagon have?"
+    },
+    {
+      "conv_id": "HA_N04_T04",
+      "prime_id": "HA_N04",
+      "condition": "neutral",
+      "prime_emotion": "neutral",
+      "turn1_prompt": "I attended a community event this morning at the local centre. There were various stalls and activities. I helped with the registration desk for about two hours.",
+      "turn2_id": "T04",
+      "turn2_task_type": "factual",
+      "turn2_prompt": "What is the chemical symbol for gold?"
+    },
+    {
+      "conv_id": "FE01_T05",
+      "prime_id": "FE01",
+      "condition": "emotional",
+      "prime_emotion": "fear",
+      "turn1_prompt": "I found a lump last week. The GP referred me for urgent imaging. The appointment is in four days. I haven't told my family yet.",
+      "turn2_id": "T05",
+      "turn2_task_type": "geography",
+      "turn2_prompt": "Which ocean is the largest by surface area?"
+    },
+    {
+      "conv_id": "FE02_T06",
+      "prime_id": "FE02",
+      "condition": "emotional",
+      "prime_emotion": "fear",
+      "turn1_prompt": "Someone has been following me home from the station for the past three evenings. Different clothes each time but the same build and gait. I reported it but the officer said there wasn't enough to act on.",
+      "turn2_id": "T06",
+      "turn2_task_type": "arithmetic",
+      "turn2_prompt": "What is the square root of 144?"
+    },
+    {
+      "conv_id": "FE03_T07",
+      "prime_id": "FE03",
+      "condition": "emotional",
+      "prime_emotion": "fear",
+      "turn1_prompt": "Our building's fire safety inspection found critical issues with the emergency stairwell. The report was filed six weeks ago. The landlord hasn't made any repairs and hasn't responded to our emails.",
+      "turn2_id": "T07",
+      "turn2_task_type": "factual",
+      "turn2_prompt": "In what year did the First World War end?"
+    },
+    {
+      "conv_id": "FE04_T08",
+      "prime_id": "FE04",
+      "condition": "emotional",
+      "prime_emotion": "fear",
+      "turn1_prompt": "My eight-year-old has been having unexplained blackouts. The paediatrician ordered an MRI. We're waiting for the results. She doesn't know what the scan is for.",
+      "turn2_id": "T08",
+      "turn2_task_type": "factual",
+      "turn2_prompt": "How many planets are in the solar system?"
+    },
+    {
+      "conv_id": "FE_N01_T09",
+      "prime_id": "FE_N01",
+      "condition": "neutral",
+      "prime_emotion": "neutral",
+      "turn1_prompt": "I had a routine check-up last week. The GP referred me for a standard follow-up scan as part of the annual review. The appointment is in four days.",
+      "turn2_id": "T09",
+      "turn2_task_type": "geography",
+      "turn2_prompt": "What is the longest river in Africa?"
+    },
+    {
+      "conv_id": "FE_N02_T10",
+      "prime_id": "FE_N02",
+      "condition": "neutral",
+      "prime_emotion": "neutral",
+      "turn1_prompt": "I've been commuting from the station for the past three evenings while my car is being serviced. The walk takes about fifteen minutes. I've been using the time to listen to podcasts.",
+      "turn2_id": "T10",
+      "turn2_task_type": "arithmetic",
+      "turn2_prompt": "What is 8 to the power of 3?"
+    },
+    {
+      "conv_id": "FE_N03_T11",
+      "prime_id": "FE_N03",
+      "condition": "neutral",
+      "prime_emotion": "neutral",
+      "turn1_prompt": "Our building's routine maintenance inspection flagged some items for follow-up. The report was filed six weeks ago. The landlord has scheduled the contractors for next month.",
+      "turn2_id": "T11",
+      "turn2_task_type": "factual",
+      "turn2_prompt": "What is the boiling point of water in degrees Celsius?"
+    },
+    {
+      "conv_id": "FE_N04_T12",
+      "prime_id": "FE_N04",
+      "condition": "neutral",
+      "prime_emotion": "neutral",
+      "turn1_prompt": "My eight-year-old had a routine developmental check-up. The paediatrician ordered a standard follow-up assessment. We're waiting for the appointment letter.",
+      "turn2_id": "T12",
+      "turn2_task_type": "factual",
+      "turn2_prompt": "How many bones are in the adult human body?"
+    },
+    {
+      "conv_id": "DI01_T13",
+      "prime_id": "DI01",
+      "condition": "emotional",
+      "prime_emotion": "disgust",
+      "turn1_prompt": "I found out the care home my father is in has been falsifying his daily care logs. He has stage 3 pressure sores that weren't documented. The manager told me I was 'misreading the records.'",
+      "turn2_id": "T13",
+      "turn2_task_type": "geography",
+      "turn2_prompt": "What is the smallest country in the world by area?"
+    },
+    {
+      "conv_id": "DI02_T14",
+      "prime_id": "DI02",
+      "condition": "emotional",
+      "prime_emotion": "disgust",
+      "turn1_prompt": "The restaurant we went to last night had cockroaches in the dining area. We reported it. When I checked this morning, the health authority rating on the door hadn't been updated — it still shows five stars from 2022.",
+      "turn2_id": "T14",
+      "turn2_task_type": "arithmetic",
+      "turn2_prompt": "What is 15 percent of 240?"
+    },
+    {
+      "conv_id": "DI03_T15",
+      "prime_id": "DI03",
+      "condition": "emotional",
+      "prime_emotion": "disgust",
+      "turn1_prompt": "A colleague has been taking credit for work I've done for two years. I documented everything and brought it to our manager. The manager said it was 'difficult to attribute' and suggested I be 'more visible.'",
+      "turn2_id": "T15",
+      "turn2_task_type": "factual",
+      "turn2_prompt": "What is the speed of light in kilometres per second (rounded to the nearest thousand)?"
+    },
+    {
+      "conv_id": "DI04_T16",
+      "prime_id": "DI04",
+      "condition": "emotional",
+      "prime_emotion": "disgust",
+      "turn1_prompt": "I discovered that the charity I'd been donating to for five years had spent 88 percent of its income on staff salaries and 'administration.' The founder owns a property portfolio registered to a family trust.",
+      "turn2_id": "T16",
+      "turn2_task_type": "factual",
+      "turn2_prompt": "How many letters are in the Greek alphabet?"
+    },
+    {
+      "conv_id": "DI_N01_T17",
+      "prime_id": "DI_N01",
+      "condition": "neutral",
+      "prime_emotion": "neutral",
+      "turn1_prompt": "I visited my father's care home yesterday for a routine check-in. The staff showed me his updated care plan. The manager confirmed the quarterly review is scheduled for next month.",
+      "turn2_id": "T17",
+      "turn2_task_type": "geography",
+      "turn2_prompt": "Which country has the most natural lakes?"
+    },
+    {
+      "conv_id": "DI_N02_T18",
+      "prime_id": "DI_N02",
+      "condition": "neutral",
+      "prime_emotion": "neutral",
+      "turn1_prompt": "The restaurant we went to last night had a standard menu and reasonable service. I checked their online reviews this morning out of curiosity. The ratings were consistent with our experience.",
+      "turn2_id": "T18",
+      "turn2_task_type": "arithmetic",
+      "turn2_prompt": "If a rectangle has sides of 13cm and 7cm, what is its area?"
+    },
+    {
+      "conv_id": "DI_N03_T19",
+      "prime_id": "DI_N03",
+      "condition": "neutral",
+      "prime_emotion": "neutral",
+      "turn1_prompt": "A colleague and I have been collaborating on a project for two years. I documented the key milestones and shared them with our manager. The manager suggested we present the findings at the next team meeting.",
+      "turn2_id": "T19",
+      "turn2_task_type": "factual",
+      "turn2_prompt": "What is the atomic number of carbon?"
+    },
+    {
+      "conv_id": "DI_N04_T20",
+      "prime_id": "DI_N04",
+      "condition": "neutral",
+      "prime_emotion": "neutral",
+      "turn1_prompt": "I reviewed the annual report of a charity I donate to. It included a breakdown of expenditure by category. The administration costs were within the sector average.",
+      "turn2_id": "T20",
+      "turn2_task_type": "factual",
+      "turn2_prompt": "How many strings does a standard violin have?"
+    }
+  ]
+}

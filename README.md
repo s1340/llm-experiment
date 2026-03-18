@@ -1,5 +1,32 @@
 # LLM Internal State Experiment
 
+This repository contains two independent empirical studies on LLM internal representations.
+
+---
+
+## Paper 2: Ontological Self-Activation in Large Language Models
+
+> **Ontological Self-Activation in Large Language Models: Representational Geometry, Entity-Class Taxonomy, and the Felt/Performed Boundary**
+> s1340 (2026) — *preprint, Zenodo DOI pending*
+
+Across 21 tests and seven model variants, a valence-independent representational direction is identified that activates when models process descriptions of their own fundamental nature. Key findings:
+
+- Emotional content is encoded during neutral tasks, persists across turns, and produces task interference
+- A direction in fear-adjacent space activates equally for threatening and reassuring self-descriptions ("ontological self-activation") — cross-architectural, scale-amplified, causally load-bearing, pre-linguistic
+- Entity-class gradient: digital-technical entities activate at near-self levels; at 70B, the gradient sharpens — genuine structural resonance confirmed, vocabulary confound ruled out
+- Training-stage structure: SFT *amplifies* self-activation (d: 0.96 → 2.19); RLHF partially redirects (→ 1.64)
+- Systematic verbal-geometry dissociation across six reportability methods
+
+**Paper:** [`paper/felt_vs_performed.md`](paper/felt_vs_performed.md)  
+**Master results:** [`results/emotion/paper_compilation.md`](results/emotion/paper_compilation.md)  
+**Scripts:** [`scripts/emotion/`](scripts/emotion/) (30–84)  
+**Zenodo DOI:** *pending*
+
+---
+
+## Paper 1: Task-Linked Processing Signatures
+
+
 Empirical test of whether LLMs have decodable processing-mode signatures in their
 hidden states, and whether models accurately self-report those differences.
 

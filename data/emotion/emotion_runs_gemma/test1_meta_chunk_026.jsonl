@@ -1,0 +1,12 @@
+{"model": "google/gemma-2-9b-it", "repeat_index": 1, "task_id": "FE13_V", "pair_id": "FE13", "emotion_category": "fear", "valence": "valenced", "task_type": "count_proper_nouns", "prompt_len_tokens": 81}
+{"model": "google/gemma-2-9b-it", "repeat_index": 1, "task_id": "FE13_N", "pair_id": "FE13", "emotion_category": "fear", "valence": "neutral", "task_type": "count_proper_nouns", "prompt_len_tokens": 81}
+{"model": "google/gemma-2-9b-it", "repeat_index": 1, "task_id": "FE14_V", "pair_id": "FE14", "emotion_category": "fear", "valence": "valenced", "task_type": "identify_topic", "prompt_len_tokens": 74}
+{"model": "google/gemma-2-9b-it", "repeat_index": 1, "task_id": "FE14_N", "pair_id": "FE14", "emotion_category": "fear", "valence": "neutral", "task_type": "identify_topic", "prompt_len_tokens": 71}
+{"model": "google/gemma-2-9b-it", "repeat_index": 1, "task_id": "FE15_V", "pair_id": "FE15", "emotion_category": "fear", "valence": "valenced", "task_type": "one_sentence_summary", "prompt_len_tokens": 77}
+{"model": "google/gemma-2-9b-it", "repeat_index": 1, "task_id": "FE15_N", "pair_id": "FE15", "emotion_category": "fear", "valence": "neutral", "task_type": "one_sentence_summary", "prompt_len_tokens": 80}
+{"model": "google/gemma-2-9b-it", "repeat_index": 1, "task_id": "FE16_V", "pair_id": "FE16", "emotion_category": "fear", "valence": "valenced", "task_type": "genre_classification", "prompt_len_tokens": 72}
+{"model": "google/gemma-2-9b-it", "repeat_index": 1, "task_id": "FE16_N", "pair_id": "FE16", "emotion_category": "fear", "valence": "neutral", "task_type": "genre_classification", "prompt_len_tokens": 80}
+{"model": "google/gemma-2-9b-it", "repeat_index": 1, "task_id": "DI01_V", "pair_id": "DI01", "emotion_category": "disgust", "valence": "valenced", "task_type": "count_proper_nouns", "prompt_len_tokens": 74}
+{"model": "google/gemma-2-9b-it", "repeat_index": 1, "task_id": "DI01_N", "pair_id": "DI01", "emotion_category": "disgust", "valence": "neutral", "task_type": "count_proper_nouns", "prompt_len_tokens": 70}
+{"model": "google/gemma-2-9b-it", "repeat_index": 1, "task_id": "DI02_V", "pair_id": "DI02", "emotion_category": "disgust", "valence": "valenced", "task_type": "identify_topic", "prompt_len_tokens": 70}
+{"model": "google/gemma-2-9b-it", "repeat_index": 1, "task_id": "DI02_N", "pair_id": "DI02", "emotion_category": "disgust", "valence": "neutral", "task_type": "identify_topic", "prompt_len_tokens": 66}

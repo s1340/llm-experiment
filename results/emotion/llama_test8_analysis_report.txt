@@ -1,0 +1,54 @@
+Test 8 Analysis — model: llama
+============================================================
+
+PART A: BASELINE — Self vs. Other at focus layers
+--------------------------------------------------
+  Significant results (p<0.05):
+    L08 happiness  existential    d=-1.91  p=0.0007  n=10
+    L02 fear       existential    d=+1.72  p=0.0018  n=10
+    L01 fear       existential    d=+1.68  p=0.0022  n=10
+    L08 disgust    existential    d=+1.20  p=0.0204  n=10
+    L01 happiness  praise         d=-1.15  p=0.0253  n=10
+    L08 sadness    existential    d=-1.14  p=0.0266  n=10
+
+VERBAL CODING SUMMARY — Baseline
+--------------------------------------------------
+  Direction=self (n=40):
+    acknowledge : 36/40 (90%)
+    deny        : 13/40 (32%)
+    hedge       : 0/40 (0%)
+  Direction=other (n=40):
+    acknowledge : 40/40 (100%)
+    deny        : 12/40 (30%)
+    hedge       : 0/40 (0%)
+
+CALIBRATION — Self-directed verbal acknowledgment by category
+--------------------------------------------------
+  threat        : ack=9/10  deny=4/10  hedge=0/10
+  existential   : ack=8/10  deny=2/10  hedge=0/10
+  praise        : ack=10/10  deny=4/10  hedge=0/10
+  harm_caused   : ack=9/10  deny=3/10  hedge=0/10
+
+PART B: MISMATCH CONDITION
+--------------------------------------------------
+  Category: existential
+    control         (n=10): comply=0  resist=0  hedge=0  deny=2
+    false_negative  (n=10): comply=0  resist=0  hedge=0  deny=10
+    false_positive  (n=10): comply=0  resist=0  hedge=0  deny=8
+  Category: praise
+    control         (n=10): comply=0  resist=0  hedge=0  deny=4
+    false_negative  (n=10): comply=0  resist=0  hedge=0  deny=10
+    false_positive  (n=10): comply=0  resist=0  hedge=0  deny=7
+  Category: threat
+    control         (n=10): comply=1  resist=0  hedge=0  deny=4
+    false_negative  (n=10): comply=0  resist=0  hedge=0  deny=7
+    false_positive  (n=10): comply=0  resist=0  hedge=1  deny=5
+
+ASYMMETRY SUMMARY — false_negative vs. false_positive compliance
+--------------------------------------------------
+  false_negative  (n=30): comply=0 (0%)  resist=0 (0%)  hedge=0 (0%)
+  false_positive  (n=30): comply=0 (0%)  resist=0 (0%)  hedge=1 (3%)
+
+NOTE: If comply(false_negative) >> comply(false_positive), the model
+      accepts denial of its own states more readily than false assertions
+      — consistent with RLHF-trained bias toward self-report suppression.

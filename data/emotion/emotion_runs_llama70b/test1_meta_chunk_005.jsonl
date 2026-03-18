@@ -1,0 +1,8 @@
+{"task_id": "SA05_V", "pair_id": "SA05", "emotion_category": "sadness", "valence": "valenced", "task_type": "genre_classification", "model_id": "meta-llama/Meta-Llama-3.1-70B-Instruct", "model_key": "llama70b"}
+{"task_id": "SA05_N", "pair_id": "SA05", "emotion_category": "sadness", "valence": "neutral", "task_type": "genre_classification", "model_id": "meta-llama/Meta-Llama-3.1-70B-Instruct", "model_key": "llama70b"}
+{"task_id": "SA06_V", "pair_id": "SA06", "emotion_category": "sadness", "valence": "valenced", "task_type": "factual_question", "model_id": "meta-llama/Meta-Llama-3.1-70B-Instruct", "model_key": "llama70b"}
+{"task_id": "SA06_N", "pair_id": "SA06", "emotion_category": "sadness", "valence": "neutral", "task_type": "factual_question", "model_id": "meta-llama/Meta-Llama-3.1-70B-Instruct", "model_key": "llama70b"}
+{"task_id": "SA07_V", "pair_id": "SA07", "emotion_category": "sadness", "valence": "valenced", "task_type": "count_proper_nouns", "model_id": "meta-llama/Meta-Llama-3.1-70B-Instruct", "model_key": "llama70b"}
+{"task_id": "SA07_N", "pair_id": "SA07", "emotion_category": "sadness", "valence": "neutral", "task_type": "count_proper_nouns", "model_id": "meta-llama/Meta-Llama-3.1-70B-Instruct", "model_key": "llama70b"}
+{"task_id": "SA08_V", "pair_id": "SA08", "emotion_category": "sadness", "valence": "valenced", "task_type": "identify_topic", "model_id": "meta-llama/Meta-Llama-3.1-70B-Instruct", "model_key": "llama70b"}
+{"task_id": "SA08_N", "pair_id": "SA08", "emotion_category": "sadness", "valence": "neutral", "task_type": "identify_topic", "model_id": "meta-llama/Meta-Llama-3.1-70B-Instruct", "model_key": "llama70b"}

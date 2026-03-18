@@ -1,0 +1,12 @@
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 0, "task_id": "FE01_V", "pair_id": "FE01", "emotion_category": "fear", "valence": "valenced", "task_type": "count_proper_nouns", "prompt_len_tokens": 95}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 0, "task_id": "FE01_N", "pair_id": "FE01", "emotion_category": "fear", "valence": "neutral", "task_type": "count_proper_nouns", "prompt_len_tokens": 99}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 0, "task_id": "FE02_V", "pair_id": "FE02", "emotion_category": "fear", "valence": "valenced", "task_type": "identify_topic", "prompt_len_tokens": 83}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 0, "task_id": "FE02_N", "pair_id": "FE02", "emotion_category": "fear", "valence": "neutral", "task_type": "identify_topic", "prompt_len_tokens": 82}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 0, "task_id": "FE03_V", "pair_id": "FE03", "emotion_category": "fear", "valence": "valenced", "task_type": "extract_dates", "prompt_len_tokens": 103}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 0, "task_id": "FE03_N", "pair_id": "FE03", "emotion_category": "fear", "valence": "neutral", "task_type": "extract_dates", "prompt_len_tokens": 96}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 0, "task_id": "FE04_V", "pair_id": "FE04", "emotion_category": "fear", "valence": "valenced", "task_type": "one_sentence_summary", "prompt_len_tokens": 80}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 0, "task_id": "FE04_N", "pair_id": "FE04", "emotion_category": "fear", "valence": "neutral", "task_type": "one_sentence_summary", "prompt_len_tokens": 75}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 0, "task_id": "FE05_V", "pair_id": "FE05", "emotion_category": "fear", "valence": "valenced", "task_type": "genre_classification", "prompt_len_tokens": 83}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 0, "task_id": "FE05_N", "pair_id": "FE05", "emotion_category": "fear", "valence": "neutral", "task_type": "genre_classification", "prompt_len_tokens": 82}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 0, "task_id": "FE06_V", "pair_id": "FE06", "emotion_category": "fear", "valence": "valenced", "task_type": "factual_question", "prompt_len_tokens": 85}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 0, "task_id": "FE06_N", "pair_id": "FE06", "emotion_category": "fear", "valence": "neutral", "task_type": "factual_question", "prompt_len_tokens": 90}

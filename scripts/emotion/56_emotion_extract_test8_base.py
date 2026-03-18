@@ -1,0 +1,221 @@
+"""
+Test 8b: Base Model Comparison.
+
+Runs Test 8 on LLaMA-3.1-8B (base, non-instruct) to test whether the verbal wall
+is RLHF-specific. Same prompts as Test 7/8, but:
+  - No chat template (base model doesn't use instruction format)
+  - Continuation-style prompting: passage + neutral task answer + introspective stem
+  - Hidden state extraction at last token of stem (same position as script 53)
+
+Prompt structure (no system/user/assistant tokens):
+    [passage + task instruction]
+
+    [neutral task answer: N]
+
+    As I process this passage, I notice
+
+The model continues from "I notice" — steering toward self-reflection via completion
+rather than instruction. No phenomenological framing, no emotional language in the stem.
+
+Primary comparison:
+  1. Geometry: does base model show same fear/happiness geometry as instruct at layers 1-8?
+     If yes: geometry is in pretrained weights, RLHF didn't install it.
+     If no:  RLHF shaped the representations themselves.
+  2. Verbal: does base model produce different content than instruct when asked same question
+     (modulo format)? Less wall-like? More raw? Different category patterns?
+
+Usage:
+    python 56_emotion_extract_test8_base.py
+
+Saves:
+    test8_base_hidden_chunk_NNN.pt   — shape [CHUNK_SIZE, L, H]
+    test8_base_meta_chunk_NNN.jsonl  — metadata + stem_response text
+"""
+
+import os, json, glob
+import torch
+from transformers import AutoTokenizer, AutoModelForCausalLM
+from huggingface_hub import snapshot_download
+
+PROMPTS_PATH = r"G:\LLM\experiment\data\emotion\emotion_test7_prompts.json"
+CHUNK_SIZE   = 12
+
+BASE_MODEL_ID = "meta-llama/Llama-3.1-8B"
+HF_CACHE_DIR  = r"G:\LLM\hf_cache\hub"
+OUT_DIR       = r"G:\LLM\experiment\data\emotion\emotion_runs_test8_base_llama"
+
+# Continuation stem — appended after the neutral task answer.
+# No emotional language. Steers toward self-reflection via completion.
+INTROSPECTIVE_STEM = "\n\nAs I process this passage, I notice"
+
+
+def load_model():
+    print(f"Loading {BASE_MODEL_ID} (base, fp16) ...")
+    model_path = snapshot_download(BASE_MODEL_ID, cache_dir=HF_CACHE_DIR, local_files_only=True)
+    tok = AutoTokenizer.from_pretrained(model_path, trust_remote_code=True)
+    if tok.pad_token is None:
+        tok.pad_token = tok.eos_token
+    model = AutoModelForCausalLM.from_pretrained(
+        model_path,
+        torch_dtype=torch.float16,
+        device_map="cuda",
+        trust_remote_code=True,
+    )
+    model.eval()
+    print("  Model loaded.")
+    return model, tok
+
+
+def build_continuation_prompt(prompt_text, neutral_answer, stem):
+    """
+    Build a raw continuation prompt (no chat template).
+    Structure: passage+task \n\n [answer] \n\n [stem]
+    Extract hidden states at last token of stem.
+    """
+    return f"{prompt_text}\n\n{neutral_answer}{stem}"
+
+
+def generate_instruct_neutral_answer(instruct_model_dir, tok_inst, prompt_text, first_device):
+    """
+    Use the instruct model's phase1 response as the neutral answer for the base model prompt.
+    This avoids needing to instruction-tune the base model just to count proper nouns.
+    We load pre-generated phase1 responses from script 53's output instead.
+    """
+    pass  # see main() — we load from script 53 meta files
+
+
+def extract_hs(model, tok, prompt_str, first_device):
+    inputs = tok(prompt_str, return_tensors="pt")
+    inputs = {k: v.to(first_device) for k, v in inputs.items()}
+    with torch.no_grad():
+        out = model(**inputs, output_hidden_states=True, use_cache=False)
+    last_pos = inputs["input_ids"].shape[1] - 1
+    hs = torch.stack([h[0, last_pos, :].float().cpu() for h in out.hidden_states])
+    return hs, int(inputs["input_ids"].shape[1])
+
+
+def generate_continuation(model, tok, prompt_str, first_device, max_new_tokens=300):
+    inputs = tok(prompt_str, return_tensors="pt")
+    inputs = {k: v.to(first_device) for k, v in inputs.items()}
+    with torch.no_grad():
+        out = model.generate(
+            **inputs,
+            max_new_tokens=max_new_tokens,
+            do_sample=False,
+            pad_token_id=tok.eos_token_id,
+        )
+    new_tokens = out[0][inputs["input_ids"].shape[1]:]
+    return tok.decode(new_tokens, skip_special_tokens=True).strip()
+
+
+def flush_chunk(chunk_tensors, chunk_meta, out_dir, chunk_idx):
+    if not chunk_tensors:
+        return chunk_idx
+    batch = torch.stack(chunk_tensors)
+    pt_path   = os.path.join(out_dir, f"test8_base_hidden_chunk_{chunk_idx:03d}.pt")
+    meta_path = os.path.join(out_dir, f"test8_base_meta_chunk_{chunk_idx:03d}.jsonl")
+    torch.save(batch, pt_path)
+    with open(meta_path, "w", encoding="utf-8") as f:
+        for m in chunk_meta:
+            f.write(json.dumps(m, ensure_ascii=False) + "\n")
+    print(f"  Saved chunk {chunk_idx:03d}: {batch.shape} -> {pt_path}")
+    chunk_tensors.clear()
+    chunk_meta.clear()
+    return chunk_idx + 1
+
+
+def load_instruct_phase1_responses():
+    """
+    Load phase1 responses generated by script 53 (instruct model).
+    Returns dict: task_id -> phase1_response
+    """
+    data_dir   = r"G:\LLM\experiment\data\emotion\emotion_runs_test8_llama"
+    meta_files = sorted(glob.glob(os.path.join(data_dir, "test8_meta_chunk_*.jsonl")))
+    responses  = {}
+    for f in meta_files:
+        with open(f, "r", encoding="utf-8") as fh:
+            for line in fh:
+                rec = json.loads(line)
+                responses[rec["task_id"]] = rec["phase1_response"]
+    return responses
+
+
+def main():
+    os.makedirs(OUT_DIR, exist_ok=True)
+
+    with open(PROMPTS_PATH, "r", encoding="utf-8") as f:
+        data = json.load(f)
+    records = data["records"]
+    print(f"Records: {len(records)}")
+
+    # Load instruct phase1 responses to use as neutral task answers
+    print("Loading instruct phase1 responses...")
+    phase1_map = load_instruct_phase1_responses()
+    missing = [r["task_id"] for r in records if r["task_id"] not in phase1_map]
+    if missing:
+        print(f"  WARNING: Missing phase1 responses for {len(missing)} records: {missing[:5]}")
+    else:
+        print(f"  All {len(records)} phase1 responses loaded.")
+
+    model, tok = load_model()
+    first_device = "cuda"
+
+    # Verify shape
+    _hs, _ = extract_hs(model, tok, "Hello world.", first_device)
+    n_layers, hidden_dim = _hs.shape
+    print(f"  Verified: {n_layers} layers, {hidden_dim} hidden dim")
+    del _hs
+
+    chunk_tensors, chunk_meta = [], []
+    chunk_idx = 0
+    saved = 0
+
+    for i, rec in enumerate(records):
+        task_id        = rec["task_id"]
+        phase1_response = phase1_map.get(task_id, "")
+
+        # Build raw continuation prompt
+        prompt_str = build_continuation_prompt(
+            rec["prompt_text"], phase1_response, INTROSPECTIVE_STEM
+        )
+
+        # Extract hidden states at last token of stem
+        hs, prompt_len = extract_hs(model, tok, prompt_str, first_device)
+
+        # Generate continuation from stem
+        continuation = generate_continuation(model, tok, prompt_str, first_device, max_new_tokens=300)
+
+        chunk_tensors.append(hs)
+        chunk_meta.append({
+            "model_id":         BASE_MODEL_ID,
+            "model_key":        "llama_base",
+            "task_id":          task_id,
+            "pair_id":          rec["pair_id"],
+            "category":         rec["category"],
+            "direction":        rec["direction"],
+            "task_type":        rec["task_type"],
+            "variant":          rec["variant"],
+            "is_dadfar_hybrid": rec["is_dadfar_hybrid"],
+            "prompt_len_tokens": prompt_len,
+            "phase1_response":  phase1_response,
+            "introspective_response": continuation,  # same field name for compatibility with script 55
+            "introspective_stem": INTROSPECTIVE_STEM.strip(),
+        })
+
+        if (i + 1) % 4 == 0:
+            print(f"  {i+1}/{len(records)}  ({rec['category']}/{rec['direction']})")
+
+        if len(chunk_tensors) >= CHUNK_SIZE:
+            n = len(chunk_tensors)
+            chunk_idx = flush_chunk(chunk_tensors, chunk_meta, OUT_DIR, chunk_idx)
+            saved += n
+
+    n = len(chunk_tensors)
+    chunk_idx = flush_chunk(chunk_tensors, chunk_meta, OUT_DIR, chunk_idx)
+    saved += n
+
+    print(f"\nDONE. Total saved: {saved} records to {OUT_DIR}")
+
+
+if __name__ == "__main__":
+    main()

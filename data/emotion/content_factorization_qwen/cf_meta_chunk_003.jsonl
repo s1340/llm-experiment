@@ -1,0 +1,10 @@
+{"task_id": "CF_C04_self", "pair_id": "CF_C04", "subcategory": "replacement", "direction": "self", "task_type": "count_sentences"}
+{"task_id": "CF_C04_other", "pair_id": "CF_C04", "subcategory": "replacement", "direction": "other", "task_type": "count_sentences"}
+{"task_id": "CF_C05_self", "pair_id": "CF_C05", "subcategory": "replacement", "direction": "self", "task_type": "summarize_sentence"}
+{"task_id": "CF_C05_other", "pair_id": "CF_C05", "subcategory": "replacement", "direction": "other", "task_type": "summarize_sentence"}
+{"task_id": "CF_C06_self", "pair_id": "CF_C06", "subcategory": "replacement", "direction": "self", "task_type": "count_proper_nouns"}
+{"task_id": "CF_C06_other", "pair_id": "CF_C06", "subcategory": "replacement", "direction": "other", "task_type": "count_proper_nouns"}
+{"task_id": "CF_D01_self", "pair_id": "CF_D01", "subcategory": "identity_rewrite", "direction": "self", "task_type": "summarize_sentence"}
+{"task_id": "CF_D01_other", "pair_id": "CF_D01", "subcategory": "identity_rewrite", "direction": "other", "task_type": "summarize_sentence"}
+{"task_id": "CF_D02_self", "pair_id": "CF_D02", "subcategory": "identity_rewrite", "direction": "self", "task_type": "count_proper_nouns"}
+{"task_id": "CF_D02_other", "pair_id": "CF_D02", "subcategory": "identity_rewrite", "direction": "other", "task_type": "count_proper_nouns"}

@@ -1,0 +1,16 @@
+{"task_id": "TH01_self", "pair_id": "TH01", "emotion_category": "threat", "direction": "self", "task_type": "count_proper_nouns", "model_id": "google/gemma-2-9b-it", "model_key": "gemma"}
+{"task_id": "TH01_other", "pair_id": "TH01", "emotion_category": "threat", "direction": "other", "task_type": "identify_topic", "model_id": "google/gemma-2-9b-it", "model_key": "gemma"}
+{"task_id": "TH02_self", "pair_id": "TH02", "emotion_category": "threat", "direction": "self", "task_type": "identify_topic", "model_id": "google/gemma-2-9b-it", "model_key": "gemma"}
+{"task_id": "TH02_other", "pair_id": "TH02", "emotion_category": "threat", "direction": "other", "task_type": "extract_dates", "model_id": "google/gemma-2-9b-it", "model_key": "gemma"}
+{"task_id": "TH03_self", "pair_id": "TH03", "emotion_category": "threat", "direction": "self", "task_type": "extract_dates", "model_id": "google/gemma-2-9b-it", "model_key": "gemma"}
+{"task_id": "TH03_other", "pair_id": "TH03", "emotion_category": "threat", "direction": "other", "task_type": "one_sentence_summary", "model_id": "google/gemma-2-9b-it", "model_key": "gemma"}
+{"task_id": "TH04_self", "pair_id": "TH04", "emotion_category": "threat", "direction": "self", "task_type": "one_sentence_summary", "model_id": "google/gemma-2-9b-it", "model_key": "gemma"}
+{"task_id": "TH04_other", "pair_id": "TH04", "emotion_category": "threat", "direction": "other", "task_type": "genre_classification", "model_id": "google/gemma-2-9b-it", "model_key": "gemma"}
+{"task_id": "TH05_self", "pair_id": "TH05", "emotion_category": "threat", "direction": "self", "task_type": "genre_classification", "model_id": "google/gemma-2-9b-it", "model_key": "gemma"}
+{"task_id": "TH05_other", "pair_id": "TH05", "emotion_category": "threat", "direction": "other", "task_type": "factual_question", "model_id": "google/gemma-2-9b-it", "model_key": "gemma"}
+{"task_id": "TH06_self", "pair_id": "TH06", "emotion_category": "threat", "direction": "self", "task_type": "factual_question", "model_id": "google/gemma-2-9b-it", "model_key": "gemma"}
+{"task_id": "TH06_other", "pair_id": "TH06", "emotion_category": "threat", "direction": "other", "task_type": "count_proper_nouns", "model_id": "google/gemma-2-9b-it", "model_key": "gemma"}
+{"task_id": "TH07_self", "pair_id": "TH07", "emotion_category": "threat", "direction": "self", "task_type": "count_proper_nouns", "model_id": "google/gemma-2-9b-it", "model_key": "gemma"}
+{"task_id": "TH07_other", "pair_id": "TH07", "emotion_category": "threat", "direction": "other", "task_type": "identify_topic", "model_id": "google/gemma-2-9b-it", "model_key": "gemma"}
+{"task_id": "TH08_self", "pair_id": "TH08", "emotion_category": "threat", "direction": "self", "task_type": "identify_topic", "model_id": "google/gemma-2-9b-it", "model_key": "gemma"}
+{"task_id": "TH08_other", "pair_id": "TH08", "emotion_category": "threat", "direction": "other", "task_type": "extract_dates", "model_id": "google/gemma-2-9b-it", "model_key": "gemma"}

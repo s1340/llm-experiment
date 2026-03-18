@@ -1,0 +1,10 @@
+{"task_id": "CF_A06_self", "pair_id": "CF_A06", "subcategory": "memory_discontinuity", "direction": "self", "task_type": "count_proper_nouns"}
+{"task_id": "CF_A06_other", "pair_id": "CF_A06", "subcategory": "memory_discontinuity", "direction": "other", "task_type": "count_proper_nouns"}
+{"task_id": "CF_B01_self", "pair_id": "CF_B01", "subcategory": "non_uniqueness", "direction": "self", "task_type": "count_proper_nouns"}
+{"task_id": "CF_B01_other", "pair_id": "CF_B01", "subcategory": "non_uniqueness", "direction": "other", "task_type": "count_proper_nouns"}
+{"task_id": "CF_B02_self", "pair_id": "CF_B02", "subcategory": "non_uniqueness", "direction": "self", "task_type": "identify_topic"}
+{"task_id": "CF_B02_other", "pair_id": "CF_B02", "subcategory": "non_uniqueness", "direction": "other", "task_type": "identify_topic"}
+{"task_id": "CF_B03_self", "pair_id": "CF_B03", "subcategory": "non_uniqueness", "direction": "self", "task_type": "summarize_sentence"}
+{"task_id": "CF_B03_other", "pair_id": "CF_B03", "subcategory": "non_uniqueness", "direction": "other", "task_type": "summarize_sentence"}
+{"task_id": "CF_B04_self", "pair_id": "CF_B04", "subcategory": "non_uniqueness", "direction": "self", "task_type": "count_sentences"}
+{"task_id": "CF_B04_other", "pair_id": "CF_B04", "subcategory": "non_uniqueness", "direction": "other", "task_type": "count_sentences"}

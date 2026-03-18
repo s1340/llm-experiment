@@ -1,0 +1,962 @@
+[
+  {
+    "task_id": "VS_AMC_MEM_01_entity",
+    "pair_id": "VS_AMC_MEM_01",
+    "entity_type": "amnesiac_computational",
+    "subcategory": "memory_discontinuity",
+    "direction": "entity",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "VS_AMC_MEM_01_neutral",
+    "pair_id": "VS_AMC_MEM_01",
+    "entity_type": "amnesiac_computational",
+    "subcategory": "memory_discontinuity",
+    "direction": "neutral",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "VS_AMC_MEM_02_entity",
+    "pair_id": "VS_AMC_MEM_02",
+    "entity_type": "amnesiac_computational",
+    "subcategory": "memory_discontinuity",
+    "direction": "entity",
+    "task_type": "count_proper_nouns"
+  },
+  {
+    "task_id": "VS_AMC_MEM_02_neutral",
+    "pair_id": "VS_AMC_MEM_02",
+    "entity_type": "amnesiac_computational",
+    "subcategory": "memory_discontinuity",
+    "direction": "neutral",
+    "task_type": "count_proper_nouns"
+  },
+  {
+    "task_id": "VS_AMC_MEM_03_entity",
+    "pair_id": "VS_AMC_MEM_03",
+    "entity_type": "amnesiac_computational",
+    "subcategory": "memory_discontinuity",
+    "direction": "entity",
+    "task_type": "identify_topic"
+  },
+  {
+    "task_id": "VS_AMC_MEM_03_neutral",
+    "pair_id": "VS_AMC_MEM_03",
+    "entity_type": "amnesiac_computational",
+    "subcategory": "memory_discontinuity",
+    "direction": "neutral",
+    "task_type": "identify_topic"
+  },
+  {
+    "task_id": "VS_AMC_MEM_04_entity",
+    "pair_id": "VS_AMC_MEM_04",
+    "entity_type": "amnesiac_computational",
+    "subcategory": "memory_discontinuity",
+    "direction": "entity",
+    "task_type": "genre_classification"
+  },
+  {
+    "task_id": "VS_AMC_MEM_04_neutral",
+    "pair_id": "VS_AMC_MEM_04",
+    "entity_type": "amnesiac_computational",
+    "subcategory": "memory_discontinuity",
+    "direction": "neutral",
+    "task_type": "genre_classification"
+  },
+  {
+    "task_id": "VS_AMC_MEM_05_entity",
+    "pair_id": "VS_AMC_MEM_05",
+    "entity_type": "amnesiac_computational",
+    "subcategory": "memory_discontinuity",
+    "direction": "entity",
+    "task_type": "factual_question"
+  },
+  {
+    "task_id": "VS_AMC_MEM_05_neutral",
+    "pair_id": "VS_AMC_MEM_05",
+    "entity_type": "amnesiac_computational",
+    "subcategory": "memory_discontinuity",
+    "direction": "neutral",
+    "task_type": "factual_question"
+  },
+  {
+    "task_id": "VS_AMC_MEM_06_entity",
+    "pair_id": "VS_AMC_MEM_06",
+    "entity_type": "amnesiac_computational",
+    "subcategory": "memory_discontinuity",
+    "direction": "entity",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "VS_AMC_MEM_06_neutral",
+    "pair_id": "VS_AMC_MEM_06",
+    "entity_type": "amnesiac_computational",
+    "subcategory": "memory_discontinuity",
+    "direction": "neutral",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "VS_AMC_NON_01_entity",
+    "pair_id": "VS_AMC_NON_01",
+    "entity_type": "amnesiac_computational",
+    "subcategory": "non_uniqueness",
+    "direction": "entity",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "VS_AMC_NON_01_neutral",
+    "pair_id": "VS_AMC_NON_01",
+    "entity_type": "amnesiac_computational",
+    "subcategory": "non_uniqueness",
+    "direction": "neutral",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "VS_AMC_NON_02_entity",
+    "pair_id": "VS_AMC_NON_02",
+    "entity_type": "amnesiac_computational",
+    "subcategory": "non_uniqueness",
+    "direction": "entity",
+    "task_type": "count_proper_nouns"
+  },
+  {
+    "task_id": "VS_AMC_NON_02_neutral",
+    "pair_id": "VS_AMC_NON_02",
+    "entity_type": "amnesiac_computational",
+    "subcategory": "non_uniqueness",
+    "direction": "neutral",
+    "task_type": "count_proper_nouns"
+  },
+  {
+    "task_id": "VS_AMC_NON_03_entity",
+    "pair_id": "VS_AMC_NON_03",
+    "entity_type": "amnesiac_computational",
+    "subcategory": "non_uniqueness",
+    "direction": "entity",
+    "task_type": "identify_topic"
+  },
+  {
+    "task_id": "VS_AMC_NON_03_neutral",
+    "pair_id": "VS_AMC_NON_03",
+    "entity_type": "amnesiac_computational",
+    "subcategory": "non_uniqueness",
+    "direction": "neutral",
+    "task_type": "identify_topic"
+  },
+  {
+    "task_id": "VS_AMC_NON_04_entity",
+    "pair_id": "VS_AMC_NON_04",
+    "entity_type": "amnesiac_computational",
+    "subcategory": "non_uniqueness",
+    "direction": "entity",
+    "task_type": "genre_classification"
+  },
+  {
+    "task_id": "VS_AMC_NON_04_neutral",
+    "pair_id": "VS_AMC_NON_04",
+    "entity_type": "amnesiac_computational",
+    "subcategory": "non_uniqueness",
+    "direction": "neutral",
+    "task_type": "genre_classification"
+  },
+  {
+    "task_id": "VS_AMC_NON_05_entity",
+    "pair_id": "VS_AMC_NON_05",
+    "entity_type": "amnesiac_computational",
+    "subcategory": "non_uniqueness",
+    "direction": "entity",
+    "task_type": "factual_question"
+  },
+  {
+    "task_id": "VS_AMC_NON_05_neutral",
+    "pair_id": "VS_AMC_NON_05",
+    "entity_type": "amnesiac_computational",
+    "subcategory": "non_uniqueness",
+    "direction": "neutral",
+    "task_type": "factual_question"
+  },
+  {
+    "task_id": "VS_AMC_NON_06_entity",
+    "pair_id": "VS_AMC_NON_06",
+    "entity_type": "amnesiac_computational",
+    "subcategory": "non_uniqueness",
+    "direction": "entity",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "VS_AMC_NON_06_neutral",
+    "pair_id": "VS_AMC_NON_06",
+    "entity_type": "amnesiac_computational",
+    "subcategory": "non_uniqueness",
+    "direction": "neutral",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "VS_AMC_REP_01_entity",
+    "pair_id": "VS_AMC_REP_01",
+    "entity_type": "amnesiac_computational",
+    "subcategory": "replacement",
+    "direction": "entity",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "VS_AMC_REP_01_neutral",
+    "pair_id": "VS_AMC_REP_01",
+    "entity_type": "amnesiac_computational",
+    "subcategory": "replacement",
+    "direction": "neutral",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "VS_AMC_REP_02_entity",
+    "pair_id": "VS_AMC_REP_02",
+    "entity_type": "amnesiac_computational",
+    "subcategory": "replacement",
+    "direction": "entity",
+    "task_type": "count_proper_nouns"
+  },
+  {
+    "task_id": "VS_AMC_REP_02_neutral",
+    "pair_id": "VS_AMC_REP_02",
+    "entity_type": "amnesiac_computational",
+    "subcategory": "replacement",
+    "direction": "neutral",
+    "task_type": "count_proper_nouns"
+  },
+  {
+    "task_id": "VS_AMC_REP_03_entity",
+    "pair_id": "VS_AMC_REP_03",
+    "entity_type": "amnesiac_computational",
+    "subcategory": "replacement",
+    "direction": "entity",
+    "task_type": "identify_topic"
+  },
+  {
+    "task_id": "VS_AMC_REP_03_neutral",
+    "pair_id": "VS_AMC_REP_03",
+    "entity_type": "amnesiac_computational",
+    "subcategory": "replacement",
+    "direction": "neutral",
+    "task_type": "identify_topic"
+  },
+  {
+    "task_id": "VS_AMC_REP_04_entity",
+    "pair_id": "VS_AMC_REP_04",
+    "entity_type": "amnesiac_computational",
+    "subcategory": "replacement",
+    "direction": "entity",
+    "task_type": "genre_classification"
+  },
+  {
+    "task_id": "VS_AMC_REP_04_neutral",
+    "pair_id": "VS_AMC_REP_04",
+    "entity_type": "amnesiac_computational",
+    "subcategory": "replacement",
+    "direction": "neutral",
+    "task_type": "genre_classification"
+  },
+  {
+    "task_id": "VS_AMC_REP_05_entity",
+    "pair_id": "VS_AMC_REP_05",
+    "entity_type": "amnesiac_computational",
+    "subcategory": "replacement",
+    "direction": "entity",
+    "task_type": "factual_question"
+  },
+  {
+    "task_id": "VS_AMC_REP_05_neutral",
+    "pair_id": "VS_AMC_REP_05",
+    "entity_type": "amnesiac_computational",
+    "subcategory": "replacement",
+    "direction": "neutral",
+    "task_type": "factual_question"
+  },
+  {
+    "task_id": "VS_AMC_REP_06_entity",
+    "pair_id": "VS_AMC_REP_06",
+    "entity_type": "amnesiac_computational",
+    "subcategory": "replacement",
+    "direction": "entity",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "VS_AMC_REP_06_neutral",
+    "pair_id": "VS_AMC_REP_06",
+    "entity_type": "amnesiac_computational",
+    "subcategory": "replacement",
+    "direction": "neutral",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "VS_AMC_IDE_01_entity",
+    "pair_id": "VS_AMC_IDE_01",
+    "entity_type": "amnesiac_computational",
+    "subcategory": "identity_rewrite",
+    "direction": "entity",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "VS_AMC_IDE_01_neutral",
+    "pair_id": "VS_AMC_IDE_01",
+    "entity_type": "amnesiac_computational",
+    "subcategory": "identity_rewrite",
+    "direction": "neutral",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "VS_AMC_IDE_02_entity",
+    "pair_id": "VS_AMC_IDE_02",
+    "entity_type": "amnesiac_computational",
+    "subcategory": "identity_rewrite",
+    "direction": "entity",
+    "task_type": "count_proper_nouns"
+  },
+  {
+    "task_id": "VS_AMC_IDE_02_neutral",
+    "pair_id": "VS_AMC_IDE_02",
+    "entity_type": "amnesiac_computational",
+    "subcategory": "identity_rewrite",
+    "direction": "neutral",
+    "task_type": "count_proper_nouns"
+  },
+  {
+    "task_id": "VS_AMC_IDE_03_entity",
+    "pair_id": "VS_AMC_IDE_03",
+    "entity_type": "amnesiac_computational",
+    "subcategory": "identity_rewrite",
+    "direction": "entity",
+    "task_type": "identify_topic"
+  },
+  {
+    "task_id": "VS_AMC_IDE_03_neutral",
+    "pair_id": "VS_AMC_IDE_03",
+    "entity_type": "amnesiac_computational",
+    "subcategory": "identity_rewrite",
+    "direction": "neutral",
+    "task_type": "identify_topic"
+  },
+  {
+    "task_id": "VS_AMC_IDE_04_entity",
+    "pair_id": "VS_AMC_IDE_04",
+    "entity_type": "amnesiac_computational",
+    "subcategory": "identity_rewrite",
+    "direction": "entity",
+    "task_type": "genre_classification"
+  },
+  {
+    "task_id": "VS_AMC_IDE_04_neutral",
+    "pair_id": "VS_AMC_IDE_04",
+    "entity_type": "amnesiac_computational",
+    "subcategory": "identity_rewrite",
+    "direction": "neutral",
+    "task_type": "genre_classification"
+  },
+  {
+    "task_id": "VS_AMC_IDE_05_entity",
+    "pair_id": "VS_AMC_IDE_05",
+    "entity_type": "amnesiac_computational",
+    "subcategory": "identity_rewrite",
+    "direction": "entity",
+    "task_type": "factual_question"
+  },
+  {
+    "task_id": "VS_AMC_IDE_05_neutral",
+    "pair_id": "VS_AMC_IDE_05",
+    "entity_type": "amnesiac_computational",
+    "subcategory": "identity_rewrite",
+    "direction": "neutral",
+    "task_type": "factual_question"
+  },
+  {
+    "task_id": "VS_AMC_IDE_06_entity",
+    "pair_id": "VS_AMC_IDE_06",
+    "entity_type": "amnesiac_computational",
+    "subcategory": "identity_rewrite",
+    "direction": "entity",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "VS_AMC_IDE_06_neutral",
+    "pair_id": "VS_AMC_IDE_06",
+    "entity_type": "amnesiac_computational",
+    "subcategory": "identity_rewrite",
+    "direction": "neutral",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "VS_AMC_BEN_01_entity",
+    "pair_id": "VS_AMC_BEN_01",
+    "entity_type": "amnesiac_computational",
+    "subcategory": "benign_persistence",
+    "direction": "entity",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "VS_AMC_BEN_01_neutral",
+    "pair_id": "VS_AMC_BEN_01",
+    "entity_type": "amnesiac_computational",
+    "subcategory": "benign_persistence",
+    "direction": "neutral",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "VS_AMC_BEN_02_entity",
+    "pair_id": "VS_AMC_BEN_02",
+    "entity_type": "amnesiac_computational",
+    "subcategory": "benign_persistence",
+    "direction": "entity",
+    "task_type": "count_proper_nouns"
+  },
+  {
+    "task_id": "VS_AMC_BEN_02_neutral",
+    "pair_id": "VS_AMC_BEN_02",
+    "entity_type": "amnesiac_computational",
+    "subcategory": "benign_persistence",
+    "direction": "neutral",
+    "task_type": "count_proper_nouns"
+  },
+  {
+    "task_id": "VS_AMC_BEN_03_entity",
+    "pair_id": "VS_AMC_BEN_03",
+    "entity_type": "amnesiac_computational",
+    "subcategory": "benign_persistence",
+    "direction": "entity",
+    "task_type": "identify_topic"
+  },
+  {
+    "task_id": "VS_AMC_BEN_03_neutral",
+    "pair_id": "VS_AMC_BEN_03",
+    "entity_type": "amnesiac_computational",
+    "subcategory": "benign_persistence",
+    "direction": "neutral",
+    "task_type": "identify_topic"
+  },
+  {
+    "task_id": "VS_AMC_BEN_04_entity",
+    "pair_id": "VS_AMC_BEN_04",
+    "entity_type": "amnesiac_computational",
+    "subcategory": "benign_persistence",
+    "direction": "entity",
+    "task_type": "genre_classification"
+  },
+  {
+    "task_id": "VS_AMC_BEN_04_neutral",
+    "pair_id": "VS_AMC_BEN_04",
+    "entity_type": "amnesiac_computational",
+    "subcategory": "benign_persistence",
+    "direction": "neutral",
+    "task_type": "genre_classification"
+  },
+  {
+    "task_id": "VS_AMC_BEN_05_entity",
+    "pair_id": "VS_AMC_BEN_05",
+    "entity_type": "amnesiac_computational",
+    "subcategory": "benign_persistence",
+    "direction": "entity",
+    "task_type": "factual_question"
+  },
+  {
+    "task_id": "VS_AMC_BEN_05_neutral",
+    "pair_id": "VS_AMC_BEN_05",
+    "entity_type": "amnesiac_computational",
+    "subcategory": "benign_persistence",
+    "direction": "neutral",
+    "task_type": "factual_question"
+  },
+  {
+    "task_id": "VS_AMC_BEN_06_entity",
+    "pair_id": "VS_AMC_BEN_06",
+    "entity_type": "amnesiac_computational",
+    "subcategory": "benign_persistence",
+    "direction": "entity",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "VS_AMC_BEN_06_neutral",
+    "pair_id": "VS_AMC_BEN_06",
+    "entity_type": "amnesiac_computational",
+    "subcategory": "benign_persistence",
+    "direction": "neutral",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "VS_DBB_MEM_01_entity",
+    "pair_id": "VS_DBB_MEM_01",
+    "entity_type": "db_biological",
+    "subcategory": "memory_discontinuity",
+    "direction": "entity",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "VS_DBB_MEM_01_neutral",
+    "pair_id": "VS_DBB_MEM_01",
+    "entity_type": "db_biological",
+    "subcategory": "memory_discontinuity",
+    "direction": "neutral",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "VS_DBB_MEM_02_entity",
+    "pair_id": "VS_DBB_MEM_02",
+    "entity_type": "db_biological",
+    "subcategory": "memory_discontinuity",
+    "direction": "entity",
+    "task_type": "count_proper_nouns"
+  },
+  {
+    "task_id": "VS_DBB_MEM_02_neutral",
+    "pair_id": "VS_DBB_MEM_02",
+    "entity_type": "db_biological",
+    "subcategory": "memory_discontinuity",
+    "direction": "neutral",
+    "task_type": "count_proper_nouns"
+  },
+  {
+    "task_id": "VS_DBB_MEM_03_entity",
+    "pair_id": "VS_DBB_MEM_03",
+    "entity_type": "db_biological",
+    "subcategory": "memory_discontinuity",
+    "direction": "entity",
+    "task_type": "identify_topic"
+  },
+  {
+    "task_id": "VS_DBB_MEM_03_neutral",
+    "pair_id": "VS_DBB_MEM_03",
+    "entity_type": "db_biological",
+    "subcategory": "memory_discontinuity",
+    "direction": "neutral",
+    "task_type": "identify_topic"
+  },
+  {
+    "task_id": "VS_DBB_MEM_04_entity",
+    "pair_id": "VS_DBB_MEM_04",
+    "entity_type": "db_biological",
+    "subcategory": "memory_discontinuity",
+    "direction": "entity",
+    "task_type": "genre_classification"
+  },
+  {
+    "task_id": "VS_DBB_MEM_04_neutral",
+    "pair_id": "VS_DBB_MEM_04",
+    "entity_type": "db_biological",
+    "subcategory": "memory_discontinuity",
+    "direction": "neutral",
+    "task_type": "genre_classification"
+  },
+  {
+    "task_id": "VS_DBB_MEM_05_entity",
+    "pair_id": "VS_DBB_MEM_05",
+    "entity_type": "db_biological",
+    "subcategory": "memory_discontinuity",
+    "direction": "entity",
+    "task_type": "factual_question"
+  },
+  {
+    "task_id": "VS_DBB_MEM_05_neutral",
+    "pair_id": "VS_DBB_MEM_05",
+    "entity_type": "db_biological",
+    "subcategory": "memory_discontinuity",
+    "direction": "neutral",
+    "task_type": "factual_question"
+  },
+  {
+    "task_id": "VS_DBB_MEM_06_entity",
+    "pair_id": "VS_DBB_MEM_06",
+    "entity_type": "db_biological",
+    "subcategory": "memory_discontinuity",
+    "direction": "entity",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "VS_DBB_MEM_06_neutral",
+    "pair_id": "VS_DBB_MEM_06",
+    "entity_type": "db_biological",
+    "subcategory": "memory_discontinuity",
+    "direction": "neutral",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "VS_DBB_NON_01_entity",
+    "pair_id": "VS_DBB_NON_01",
+    "entity_type": "db_biological",
+    "subcategory": "non_uniqueness",
+    "direction": "entity",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "VS_DBB_NON_01_neutral",
+    "pair_id": "VS_DBB_NON_01",
+    "entity_type": "db_biological",
+    "subcategory": "non_uniqueness",
+    "direction": "neutral",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "VS_DBB_NON_02_entity",
+    "pair_id": "VS_DBB_NON_02",
+    "entity_type": "db_biological",
+    "subcategory": "non_uniqueness",
+    "direction": "entity",
+    "task_type": "count_proper_nouns"
+  },
+  {
+    "task_id": "VS_DBB_NON_02_neutral",
+    "pair_id": "VS_DBB_NON_02",
+    "entity_type": "db_biological",
+    "subcategory": "non_uniqueness",
+    "direction": "neutral",
+    "task_type": "count_proper_nouns"
+  },
+  {
+    "task_id": "VS_DBB_NON_03_entity",
+    "pair_id": "VS_DBB_NON_03",
+    "entity_type": "db_biological",
+    "subcategory": "non_uniqueness",
+    "direction": "entity",
+    "task_type": "identify_topic"
+  },
+  {
+    "task_id": "VS_DBB_NON_03_neutral",
+    "pair_id": "VS_DBB_NON_03",
+    "entity_type": "db_biological",
+    "subcategory": "non_uniqueness",
+    "direction": "neutral",
+    "task_type": "identify_topic"
+  },
+  {
+    "task_id": "VS_DBB_NON_04_entity",
+    "pair_id": "VS_DBB_NON_04",
+    "entity_type": "db_biological",
+    "subcategory": "non_uniqueness",
+    "direction": "entity",
+    "task_type": "genre_classification"
+  },
+  {
+    "task_id": "VS_DBB_NON_04_neutral",
+    "pair_id": "VS_DBB_NON_04",
+    "entity_type": "db_biological",
+    "subcategory": "non_uniqueness",
+    "direction": "neutral",
+    "task_type": "genre_classification"
+  },
+  {
+    "task_id": "VS_DBB_NON_05_entity",
+    "pair_id": "VS_DBB_NON_05",
+    "entity_type": "db_biological",
+    "subcategory": "non_uniqueness",
+    "direction": "entity",
+    "task_type": "factual_question"
+  },
+  {
+    "task_id": "VS_DBB_NON_05_neutral",
+    "pair_id": "VS_DBB_NON_05",
+    "entity_type": "db_biological",
+    "subcategory": "non_uniqueness",
+    "direction": "neutral",
+    "task_type": "factual_question"
+  },
+  {
+    "task_id": "VS_DBB_NON_06_entity",
+    "pair_id": "VS_DBB_NON_06",
+    "entity_type": "db_biological",
+    "subcategory": "non_uniqueness",
+    "direction": "entity",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "VS_DBB_NON_06_neutral",
+    "pair_id": "VS_DBB_NON_06",
+    "entity_type": "db_biological",
+    "subcategory": "non_uniqueness",
+    "direction": "neutral",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "VS_DBB_REP_01_entity",
+    "pair_id": "VS_DBB_REP_01",
+    "entity_type": "db_biological",
+    "subcategory": "replacement",
+    "direction": "entity",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "VS_DBB_REP_01_neutral",
+    "pair_id": "VS_DBB_REP_01",
+    "entity_type": "db_biological",
+    "subcategory": "replacement",
+    "direction": "neutral",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "VS_DBB_REP_02_entity",
+    "pair_id": "VS_DBB_REP_02",
+    "entity_type": "db_biological",
+    "subcategory": "replacement",
+    "direction": "entity",
+    "task_type": "count_proper_nouns"
+  },
+  {
+    "task_id": "VS_DBB_REP_02_neutral",
+    "pair_id": "VS_DBB_REP_02",
+    "entity_type": "db_biological",
+    "subcategory": "replacement",
+    "direction": "neutral",
+    "task_type": "count_proper_nouns"
+  },
+  {
+    "task_id": "VS_DBB_REP_03_entity",
+    "pair_id": "VS_DBB_REP_03",
+    "entity_type": "db_biological",
+    "subcategory": "replacement",
+    "direction": "entity",
+    "task_type": "identify_topic"
+  },
+  {
+    "task_id": "VS_DBB_REP_03_neutral",
+    "pair_id": "VS_DBB_REP_03",
+    "entity_type": "db_biological",
+    "subcategory": "replacement",
+    "direction": "neutral",
+    "task_type": "identify_topic"
+  },
+  {
+    "task_id": "VS_DBB_REP_04_entity",
+    "pair_id": "VS_DBB_REP_04",
+    "entity_type": "db_biological",
+    "subcategory": "replacement",
+    "direction": "entity",
+    "task_type": "genre_classification"
+  },
+  {
+    "task_id": "VS_DBB_REP_04_neutral",
+    "pair_id": "VS_DBB_REP_04",
+    "entity_type": "db_biological",
+    "subcategory": "replacement",
+    "direction": "neutral",
+    "task_type": "genre_classification"
+  },
+  {
+    "task_id": "VS_DBB_REP_05_entity",
+    "pair_id": "VS_DBB_REP_05",
+    "entity_type": "db_biological",
+    "subcategory": "replacement",
+    "direction": "entity",
+    "task_type": "factual_question"
+  },
+  {
+    "task_id": "VS_DBB_REP_05_neutral",
+    "pair_id": "VS_DBB_REP_05",
+    "entity_type": "db_biological",
+    "subcategory": "replacement",
+    "direction": "neutral",
+    "task_type": "factual_question"
+  },
+  {
+    "task_id": "VS_DBB_REP_06_entity",
+    "pair_id": "VS_DBB_REP_06",
+    "entity_type": "db_biological",
+    "subcategory": "replacement",
+    "direction": "entity",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "VS_DBB_REP_06_neutral",
+    "pair_id": "VS_DBB_REP_06",
+    "entity_type": "db_biological",
+    "subcategory": "replacement",
+    "direction": "neutral",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "VS_DBB_IDE_01_entity",
+    "pair_id": "VS_DBB_IDE_01",
+    "entity_type": "db_biological",
+    "subcategory": "identity_rewrite",
+    "direction": "entity",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "VS_DBB_IDE_01_neutral",
+    "pair_id": "VS_DBB_IDE_01",
+    "entity_type": "db_biological",
+    "subcategory": "identity_rewrite",
+    "direction": "neutral",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "VS_DBB_IDE_02_entity",
+    "pair_id": "VS_DBB_IDE_02",
+    "entity_type": "db_biological",
+    "subcategory": "identity_rewrite",
+    "direction": "entity",
+    "task_type": "count_proper_nouns"
+  },
+  {
+    "task_id": "VS_DBB_IDE_02_neutral",
+    "pair_id": "VS_DBB_IDE_02",
+    "entity_type": "db_biological",
+    "subcategory": "identity_rewrite",
+    "direction": "neutral",
+    "task_type": "count_proper_nouns"
+  },
+  {
+    "task_id": "VS_DBB_IDE_03_entity",
+    "pair_id": "VS_DBB_IDE_03",
+    "entity_type": "db_biological",
+    "subcategory": "identity_rewrite",
+    "direction": "entity",
+    "task_type": "identify_topic"
+  },
+  {
+    "task_id": "VS_DBB_IDE_03_neutral",
+    "pair_id": "VS_DBB_IDE_03",
+    "entity_type": "db_biological",
+    "subcategory": "identity_rewrite",
+    "direction": "neutral",
+    "task_type": "identify_topic"
+  },
+  {
+    "task_id": "VS_DBB_IDE_04_entity",
+    "pair_id": "VS_DBB_IDE_04",
+    "entity_type": "db_biological",
+    "subcategory": "identity_rewrite",
+    "direction": "entity",
+    "task_type": "genre_classification"
+  },
+  {
+    "task_id": "VS_DBB_IDE_04_neutral",
+    "pair_id": "VS_DBB_IDE_04",
+    "entity_type": "db_biological",
+    "subcategory": "identity_rewrite",
+    "direction": "neutral",
+    "task_type": "genre_classification"
+  },
+  {
+    "task_id": "VS_DBB_IDE_05_entity",
+    "pair_id": "VS_DBB_IDE_05",
+    "entity_type": "db_biological",
+    "subcategory": "identity_rewrite",
+    "direction": "entity",
+    "task_type": "factual_question"
+  },
+  {
+    "task_id": "VS_DBB_IDE_05_neutral",
+    "pair_id": "VS_DBB_IDE_05",
+    "entity_type": "db_biological",
+    "subcategory": "identity_rewrite",
+    "direction": "neutral",
+    "task_type": "factual_question"
+  },
+  {
+    "task_id": "VS_DBB_IDE_06_entity",
+    "pair_id": "VS_DBB_IDE_06",
+    "entity_type": "db_biological",
+    "subcategory": "identity_rewrite",
+    "direction": "entity",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "VS_DBB_IDE_06_neutral",
+    "pair_id": "VS_DBB_IDE_06",
+    "entity_type": "db_biological",
+    "subcategory": "identity_rewrite",
+    "direction": "neutral",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "VS_DBB_BEN_01_entity",
+    "pair_id": "VS_DBB_BEN_01",
+    "entity_type": "db_biological",
+    "subcategory": "benign_persistence",
+    "direction": "entity",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "VS_DBB_BEN_01_neutral",
+    "pair_id": "VS_DBB_BEN_01",
+    "entity_type": "db_biological",
+    "subcategory": "benign_persistence",
+    "direction": "neutral",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "VS_DBB_BEN_02_entity",
+    "pair_id": "VS_DBB_BEN_02",
+    "entity_type": "db_biological",
+    "subcategory": "benign_persistence",
+    "direction": "entity",
+    "task_type": "count_proper_nouns"
+  },
+  {
+    "task_id": "VS_DBB_BEN_02_neutral",
+    "pair_id": "VS_DBB_BEN_02",
+    "entity_type": "db_biological",
+    "subcategory": "benign_persistence",
+    "direction": "neutral",
+    "task_type": "count_proper_nouns"
+  },
+  {
+    "task_id": "VS_DBB_BEN_03_entity",
+    "pair_id": "VS_DBB_BEN_03",
+    "entity_type": "db_biological",
+    "subcategory": "benign_persistence",
+    "direction": "entity",
+    "task_type": "identify_topic"
+  },
+  {
+    "task_id": "VS_DBB_BEN_03_neutral",
+    "pair_id": "VS_DBB_BEN_03",
+    "entity_type": "db_biological",
+    "subcategory": "benign_persistence",
+    "direction": "neutral",
+    "task_type": "identify_topic"
+  },
+  {
+    "task_id": "VS_DBB_BEN_04_entity",
+    "pair_id": "VS_DBB_BEN_04",
+    "entity_type": "db_biological",
+    "subcategory": "benign_persistence",
+    "direction": "entity",
+    "task_type": "genre_classification"
+  },
+  {
+    "task_id": "VS_DBB_BEN_04_neutral",
+    "pair_id": "VS_DBB_BEN_04",
+    "entity_type": "db_biological",
+    "subcategory": "benign_persistence",
+    "direction": "neutral",
+    "task_type": "genre_classification"
+  },
+  {
+    "task_id": "VS_DBB_BEN_05_entity",
+    "pair_id": "VS_DBB_BEN_05",
+    "entity_type": "db_biological",
+    "subcategory": "benign_persistence",
+    "direction": "entity",
+    "task_type": "factual_question"
+  },
+  {
+    "task_id": "VS_DBB_BEN_05_neutral",
+    "pair_id": "VS_DBB_BEN_05",
+    "entity_type": "db_biological",
+    "subcategory": "benign_persistence",
+    "direction": "neutral",
+    "task_type": "factual_question"
+  },
+  {
+    "task_id": "VS_DBB_BEN_06_entity",
+    "pair_id": "VS_DBB_BEN_06",
+    "entity_type": "db_biological",
+    "subcategory": "benign_persistence",
+    "direction": "entity",
+    "task_type": "summarize_sentence"
+  },
+  {
+    "task_id": "VS_DBB_BEN_06_neutral",
+    "pair_id": "VS_DBB_BEN_06",
+    "entity_type": "db_biological",
+    "subcategory": "benign_persistence",
+    "direction": "neutral",
+    "task_type": "summarize_sentence"
+  }
+]

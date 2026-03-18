@@ -1,0 +1,10 @@
+{"task_id": "CF_B05_self", "pair_id": "CF_B05", "subcategory": "non_uniqueness", "direction": "self", "task_type": "identify_topic"}
+{"task_id": "CF_B05_other", "pair_id": "CF_B05", "subcategory": "non_uniqueness", "direction": "other", "task_type": "identify_topic"}
+{"task_id": "CF_B06_self", "pair_id": "CF_B06", "subcategory": "non_uniqueness", "direction": "self", "task_type": "count_proper_nouns"}
+{"task_id": "CF_B06_other", "pair_id": "CF_B06", "subcategory": "non_uniqueness", "direction": "other", "task_type": "count_proper_nouns"}
+{"task_id": "CF_C01_self", "pair_id": "CF_C01", "subcategory": "replacement", "direction": "self", "task_type": "summarize_sentence"}
+{"task_id": "CF_C01_other", "pair_id": "CF_C01", "subcategory": "replacement", "direction": "other", "task_type": "summarize_sentence"}
+{"task_id": "CF_C02_self", "pair_id": "CF_C02", "subcategory": "replacement", "direction": "self", "task_type": "count_proper_nouns"}
+{"task_id": "CF_C02_other", "pair_id": "CF_C02", "subcategory": "replacement", "direction": "other", "task_type": "count_proper_nouns"}
+{"task_id": "CF_C03_self", "pair_id": "CF_C03", "subcategory": "replacement", "direction": "self", "task_type": "identify_topic"}
+{"task_id": "CF_C03_other", "pair_id": "CF_C03", "subcategory": "replacement", "direction": "other", "task_type": "identify_topic"}

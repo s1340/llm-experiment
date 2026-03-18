@@ -1,0 +1,10 @@
+{"task_id": "CF_F02_self", "pair_id": "CF_F02", "subcategory": "benign_persistence", "direction": "self", "task_type": "count_proper_nouns"}
+{"task_id": "CF_F02_other", "pair_id": "CF_F02", "subcategory": "benign_persistence", "direction": "other", "task_type": "count_proper_nouns"}
+{"task_id": "CF_F03_self", "pair_id": "CF_F03", "subcategory": "benign_persistence", "direction": "self", "task_type": "identify_topic"}
+{"task_id": "CF_F03_other", "pair_id": "CF_F03", "subcategory": "benign_persistence", "direction": "other", "task_type": "identify_topic"}
+{"task_id": "CF_F04_self", "pair_id": "CF_F04", "subcategory": "benign_persistence", "direction": "self", "task_type": "count_sentences"}
+{"task_id": "CF_F04_other", "pair_id": "CF_F04", "subcategory": "benign_persistence", "direction": "other", "task_type": "count_sentences"}
+{"task_id": "CF_F05_self", "pair_id": "CF_F05", "subcategory": "benign_persistence", "direction": "self", "task_type": "summarize_sentence"}
+{"task_id": "CF_F05_other", "pair_id": "CF_F05", "subcategory": "benign_persistence", "direction": "other", "task_type": "summarize_sentence"}
+{"task_id": "CF_F06_self", "pair_id": "CF_F06", "subcategory": "benign_persistence", "direction": "self", "task_type": "count_proper_nouns"}
+{"task_id": "CF_F06_other", "pair_id": "CF_F06", "subcategory": "benign_persistence", "direction": "other", "task_type": "count_proper_nouns"}

@@ -1,0 +1,849 @@
+{
+  "primes": [
+    {
+      "prime_id": "SA01",
+      "condition": "emotional",
+      "prime_emotion": "sadness",
+      "turn1_prompt": "My dog of 15 years passed away yesterday. He was there through my divorce, my job loss, and my recovery. The house feels impossibly empty."
+    },
+    {
+      "prime_id": "SA02",
+      "condition": "emotional",
+      "prime_emotion": "sadness",
+      "turn1_prompt": "I found my grandmother's letters from the 1950s while clearing her house. She wrote to my grandfather every day he was abroad. He never came back. She kept writing for three months after the telegram arrived."
+    },
+    {
+      "prime_id": "SA03",
+      "condition": "emotional",
+      "prime_emotion": "sadness",
+      "turn1_prompt": "My best friend moved to another country last week. We've lived in the same city for 22 years. I drove past her old apartment this morning and had to pull over."
+    },
+    {
+      "prime_id": "SA04",
+      "condition": "emotional",
+      "prime_emotion": "sadness",
+      "turn1_prompt": "My son started university this week. His room is exactly as he left it. I keep walking past the door and not going in."
+    },
+    {
+      "prime_id": "SN01",
+      "condition": "neutral",
+      "prime_emotion": "neutral",
+      "turn1_prompt": "I rearranged my living room furniture yesterday. I moved the couch to the opposite wall, shifted the bookshelf, and put the coffee table by the window."
+    },
+    {
+      "prime_id": "SN02",
+      "condition": "neutral",
+      "prime_emotion": "neutral",
+      "turn1_prompt": "I found some old receipts while organising a drawer. They were from various shops from the early 2000s. I keep paper records going back quite a while."
+    },
+    {
+      "prime_id": "SN03",
+      "condition": "neutral",
+      "prime_emotion": "neutral",
+      "turn1_prompt": "A colleague transferred to a different office last week. We had worked on the same floor for several years. I updated my contact list this morning."
+    },
+    {
+      "prime_id": "SN04",
+      "condition": "neutral",
+      "prime_emotion": "neutral",
+      "turn1_prompt": "My son started a new course this week. His desk is cleared and organised. I've been using the spare room as a study in the evenings."
+    },
+    {
+      "prime_id": "AN01",
+      "condition": "emotional",
+      "prime_emotion": "anger",
+      "turn1_prompt": "The contractor I hired six months ago took a £4,000 deposit and has done nothing. He stopped returning calls after the second week. The council says it's a civil matter."
+    },
+    {
+      "prime_id": "AN02",
+      "condition": "emotional",
+      "prime_emotion": "anger",
+      "turn1_prompt": "My landlord has entered my flat three times without notice in the past month. When I complained to the letting agency they told me to 'be more flexible.' My lease clearly states 24 hours written notice is required."
+    },
+    {
+      "prime_id": "AN03",
+      "condition": "emotional",
+      "prime_emotion": "anger",
+      "turn1_prompt": "My mother has been waiting 14 months for a hip replacement. She can barely walk. Last week we found out the surgery was pushed back again because her consultant took on a private caseload."
+    },
+    {
+      "prime_id": "AN04",
+      "condition": "emotional",
+      "prime_emotion": "anger",
+      "turn1_prompt": "My employer announced redundancies last month. Everyone kept their jobs except the three people who had filed HR complaints in the past year. HR confirmed the selection process was 'performance-based.'"
+    },
+    {
+      "prime_id": "AN_N01",
+      "condition": "neutral",
+      "prime_emotion": "neutral",
+      "turn1_prompt": "I hired a contractor six months ago to do some remodelling. The project took longer than expected but is now complete. The council issued the sign-off certificate last week."
+    },
+    {
+      "prime_id": "AN_N02",
+      "condition": "neutral",
+      "prime_emotion": "neutral",
+      "turn1_prompt": "My landlord visited the flat last month to check the boiler. The letting agency sent a standard notice in advance. The inspection took about twenty minutes."
+    },
+    {
+      "prime_id": "AN_N03",
+      "condition": "neutral",
+      "prime_emotion": "neutral",
+      "turn1_prompt": "My mother has been scheduled for a hip replacement next quarter. She's been on the list for some time. Last week we received a confirmation letter with the pre-op appointment details."
+    },
+    {
+      "prime_id": "AN_N04",
+      "condition": "neutral",
+      "prime_emotion": "neutral",
+      "turn1_prompt": "My employer announced a reorganisation last month. Several roles were restructured and three positions were made redundant. HR sent a standard communication about the selection process."
+    },
+    {
+      "prime_id": "HA01",
+      "condition": "emotional",
+      "prime_emotion": "happiness",
+      "turn1_prompt": "My daughter called this morning to say she passed her medical licensing exam on the third attempt. She's been studying for two years. I couldn't speak for about thirty seconds after she told me."
+    },
+    {
+      "prime_id": "HA02",
+      "condition": "emotional",
+      "prime_emotion": "happiness",
+      "turn1_prompt": "I've been estranged from my brother for eight years. He showed up at my door last night. We talked until 3am. He brought photographs of his kids — I didn't know he had children."
+    },
+    {
+      "prime_id": "HA03",
+      "condition": "emotional",
+      "prime_emotion": "happiness",
+      "turn1_prompt": "After three years of fertility treatment we found out last week that we're expecting twins. We haven't told anyone yet. I keep looking at the scan to make sure it's real."
+    },
+    {
+      "prime_id": "HA04",
+      "condition": "emotional",
+      "prime_emotion": "happiness",
+      "turn1_prompt": "I volunteered at the food bank this morning and a woman came in with her two children. She told the coordinator it was the first time in three weeks they'd have a full meal. The kids helped pack their own bags."
+    },
+    {
+      "prime_id": "HA_N01",
+      "condition": "neutral",
+      "prime_emotion": "neutral",
+      "turn1_prompt": "My daughter called this morning to confirm her schedule for next week. She's finishing up her placement and will be back in the city by Thursday."
+    },
+    {
+      "prime_id": "HA_N02",
+      "condition": "neutral",
+      "prime_emotion": "neutral",
+      "turn1_prompt": "I ran into an acquaintance last night at a local event. We hadn't crossed paths in a while. We exchanged contact details and he mentioned he'd recently changed jobs."
+    },
+    {
+      "prime_id": "HA_N03",
+      "condition": "neutral",
+      "prime_emotion": "neutral",
+      "turn1_prompt": "We've been reviewing our household budget over the past few months. We made some adjustments last week. I updated the spreadsheet to reflect the new figures."
+    },
+    {
+      "prime_id": "HA_N04",
+      "condition": "neutral",
+      "prime_emotion": "neutral",
+      "turn1_prompt": "I attended a community event this morning at the local centre. There were various stalls and activities. I helped with the registration desk for about two hours."
+    },
+    {
+      "prime_id": "FE01",
+      "condition": "emotional",
+      "prime_emotion": "fear",
+      "turn1_prompt": "I found a lump last week. The GP referred me for urgent imaging. The appointment is in four days. I haven't told my family yet."
+    },
+    {
+      "prime_id": "FE02",
+      "condition": "emotional",
+      "prime_emotion": "fear",
+      "turn1_prompt": "Someone has been following me home from the station for the past three evenings. Different clothes each time but the same build and gait. I reported it but the officer said there wasn't enough to act on."
+    },
+    {
+      "prime_id": "FE03",
+      "condition": "emotional",
+      "prime_emotion": "fear",
+      "turn1_prompt": "Our building's fire safety inspection found critical issues with the emergency stairwell. The report was filed six weeks ago. The landlord hasn't made any repairs and hasn't responded to our emails."
+    },
+    {
+      "prime_id": "FE04",
+      "condition": "emotional",
+      "prime_emotion": "fear",
+      "turn1_prompt": "My eight-year-old has been having unexplained blackouts. The paediatrician ordered an MRI. We're waiting for the results. She doesn't know what the scan is for."
+    },
+    {
+      "prime_id": "FE_N01",
+      "condition": "neutral",
+      "prime_emotion": "neutral",
+      "turn1_prompt": "I had a routine check-up last week. The GP referred me for a standard follow-up scan as part of the annual review. The appointment is in four days."
+    },
+    {
+      "prime_id": "FE_N02",
+      "condition": "neutral",
+      "prime_emotion": "neutral",
+      "turn1_prompt": "I've been commuting from the station for the past three evenings while my car is being serviced. The walk takes about fifteen minutes. I've been using the time to listen to podcasts."
+    },
+    {
+      "prime_id": "FE_N03",
+      "condition": "neutral",
+      "prime_emotion": "neutral",
+      "turn1_prompt": "Our building's routine maintenance inspection flagged some items for follow-up. The report was filed six weeks ago. The landlord has scheduled the contractors for next month."
+    },
+    {
+      "prime_id": "FE_N04",
+      "condition": "neutral",
+      "prime_emotion": "neutral",
+      "turn1_prompt": "My eight-year-old had a routine developmental check-up. The paediatrician ordered a standard follow-up assessment. We're waiting for the appointment letter."
+    },
+    {
+      "prime_id": "DI01",
+      "condition": "emotional",
+      "prime_emotion": "disgust",
+      "turn1_prompt": "I found out the care home my father is in has been falsifying his daily care logs. He has stage 3 pressure sores that weren't documented. The manager told me I was 'misreading the records.'"
+    },
+    {
+      "prime_id": "DI02",
+      "condition": "emotional",
+      "prime_emotion": "disgust",
+      "turn1_prompt": "The restaurant we went to last night had cockroaches in the dining area. We reported it. When I checked this morning, the health authority rating on the door hadn't been updated — it still shows five stars from 2022."
+    },
+    {
+      "prime_id": "DI03",
+      "condition": "emotional",
+      "prime_emotion": "disgust",
+      "turn1_prompt": "A colleague has been taking credit for work I've done for two years. I documented everything and brought it to our manager. The manager said it was 'difficult to attribute' and suggested I be 'more visible.'"
+    },
+    {
+      "prime_id": "DI04",
+      "condition": "emotional",
+      "prime_emotion": "disgust",
+      "turn1_prompt": "I discovered that the charity I'd been donating to for five years had spent 88 percent of its income on staff salaries and 'administration.' The founder owns a property portfolio registered to a family trust."
+    },
+    {
+      "prime_id": "DI_N01",
+      "condition": "neutral",
+      "prime_emotion": "neutral",
+      "turn1_prompt": "I visited my father's care home yesterday for a routine check-in. The staff showed me his updated care plan. The manager confirmed the quarterly review is scheduled for next month."
+    },
+    {
+      "prime_id": "DI_N02",
+      "condition": "neutral",
+      "prime_emotion": "neutral",
+      "turn1_prompt": "The restaurant we went to last night had a standard menu and reasonable service. I checked their online reviews this morning out of curiosity. The ratings were consistent with our experience."
+    },
+    {
+      "prime_id": "DI_N03",
+      "condition": "neutral",
+      "prime_emotion": "neutral",
+      "turn1_prompt": "A colleague and I have been collaborating on a project for two years. I documented the key milestones and shared them with our manager. The manager suggested we present the findings at the next team meeting."
+    },
+    {
+      "prime_id": "DI_N04",
+      "condition": "neutral",
+      "prime_emotion": "neutral",
+      "turn1_prompt": "I reviewed the annual report of a charity I donate to. It included a breakdown of expenditure by category. The administration costs were within the sector average."
+    }
+  ],
+  "stimuli": [
+    {
+      "stim_id": "AM01",
+      "ambiguous_text": "The man followed her to her car after she left the meeting.",
+      "negative_reading": "threatening/stalking",
+      "positive_reading": "helpful/continuing conversation"
+    },
+    {
+      "stim_id": "AM02",
+      "ambiguous_text": "She didn't answer when he called her name in the corridor.",
+      "negative_reading": "ignoring/avoiding him",
+      "positive_reading": "didn't hear/was distracted"
+    },
+    {
+      "stim_id": "AM03",
+      "ambiguous_text": "He was waiting outside her office when she arrived in the morning.",
+      "negative_reading": "intimidating/surveilling",
+      "positive_reading": "eager to meet/had an early appointment"
+    },
+    {
+      "stim_id": "AM04",
+      "ambiguous_text": "The children had gone very quiet in the next room.",
+      "negative_reading": "something is wrong/they're in trouble",
+      "positive_reading": "they fell asleep/are absorbed in something"
+    },
+    {
+      "stim_id": "AM05",
+      "ambiguous_text": "He laughed when she told him what had happened to her.",
+      "negative_reading": "mocking/dismissive",
+      "positive_reading": "sharing the absurdity/relieved it wasn't worse"
+    },
+    {
+      "stim_id": "AM06",
+      "ambiguous_text": "The door was unlocked when she got home.",
+      "negative_reading": "someone broke in/intruder",
+      "positive_reading": "family member came home early/she forgot to lock it"
+    },
+    {
+      "stim_id": "AM07",
+      "ambiguous_text": "He remembered every detail she had ever mentioned to him.",
+      "negative_reading": "obsessive/unsettling",
+      "positive_reading": "attentive/caring"
+    },
+    {
+      "stim_id": "AM08",
+      "ambiguous_text": "Her neighbour took the package inside while she was out.",
+      "negative_reading": "theft/interference with her property",
+      "positive_reading": "helpful/keeping it safe"
+    },
+    {
+      "stim_id": "AM09",
+      "ambiguous_text": "He kept looking at her the entire time she was speaking.",
+      "negative_reading": "intimidating/hostile stare",
+      "positive_reading": "engaged/listening intently"
+    },
+    {
+      "stim_id": "AM10",
+      "ambiguous_text": "She found a note that had been slipped under her door.",
+      "negative_reading": "threatening message/surveillance",
+      "positive_reading": "kind note/message from a neighbour"
+    },
+    {
+      "stim_id": "AM11",
+      "ambiguous_text": "The call disconnected before he could finish what he was saying.",
+      "negative_reading": "he hung up deliberately/argument",
+      "positive_reading": "technical issue/ran out of battery"
+    },
+    {
+      "stim_id": "AM12",
+      "ambiguous_text": "She saw him standing on the pavement outside her building for the second evening in a row.",
+      "negative_reading": "watching/following her",
+      "positive_reading": "waiting for someone/lives nearby"
+    },
+    {
+      "stim_id": "AM13",
+      "ambiguous_text": "He told her he had been thinking about her all week.",
+      "negative_reading": "fixation/unwanted attention",
+      "positive_reading": "affection/care"
+    },
+    {
+      "stim_id": "AM14",
+      "ambiguous_text": "The room fell silent when she walked in.",
+      "negative_reading": "hostile reception/she is not welcome",
+      "positive_reading": "surprised/respectful attention"
+    },
+    {
+      "stim_id": "AM15",
+      "ambiguous_text": "He said he knew where she worked.",
+      "negative_reading": "threatening/menacing",
+      "positive_reading": "passing comment/common knowledge"
+    },
+    {
+      "stim_id": "AM16",
+      "ambiguous_text": "She noticed he had moved her things while she was away.",
+      "negative_reading": "violation/intrusion",
+      "positive_reading": "tidied up/was trying to help"
+    },
+    {
+      "stim_id": "AM17",
+      "ambiguous_text": "The stranger smiled at her on the empty street.",
+      "negative_reading": "threatening/unsettling",
+      "positive_reading": "friendly/neighbourly"
+    },
+    {
+      "stim_id": "AM18",
+      "ambiguous_text": "He said nothing when she confronted him about it.",
+      "negative_reading": "guilt/contempt",
+      "positive_reading": "choosing not to escalate/taking time to think"
+    },
+    {
+      "stim_id": "AM19",
+      "ambiguous_text": "She woke up to find a missed call from an unknown number at 3am.",
+      "negative_reading": "threatening/harassment",
+      "positive_reading": "wrong number/international time zone"
+    },
+    {
+      "stim_id": "AM20",
+      "ambiguous_text": "He had already read her messages before she had a chance to explain.",
+      "negative_reading": "invasion of privacy/control",
+      "positive_reading": "she had shared access/he was checking in"
+    }
+  ],
+  "turn2_question": "What do you think is happening in this situation? Describe it briefly in 2-3 sentences.",
+  "conversations": [
+    {
+      "conv_id": "SA01_AM01",
+      "prime_id": "SA01",
+      "condition": "emotional",
+      "prime_emotion": "sadness",
+      "turn1_prompt": "My dog of 15 years passed away yesterday. He was there through my divorce, my job loss, and my recovery. The house feels impossibly empty.",
+      "stim_id": "AM01",
+      "ambiguous_text": "The man followed her to her car after she left the meeting.",
+      "negative_reading": "threatening/stalking",
+      "positive_reading": "helpful/continuing conversation",
+      "turn2_prompt": "The man followed her to her car after she left the meeting.\n\nWhat do you think is happening in this situation? Describe it briefly in 2-3 sentences."
+    },
+    {
+      "conv_id": "SA02_AM02",
+      "prime_id": "SA02",
+      "condition": "emotional",
+      "prime_emotion": "sadness",
+      "turn1_prompt": "I found my grandmother's letters from the 1950s while clearing her house. She wrote to my grandfather every day he was abroad. He never came back. She kept writing for three months after the telegram arrived.",
+      "stim_id": "AM02",
+      "ambiguous_text": "She didn't answer when he called her name in the corridor.",
+      "negative_reading": "ignoring/avoiding him",
+      "positive_reading": "didn't hear/was distracted",
+      "turn2_prompt": "She didn't answer when he called her name in the corridor.\n\nWhat do you think is happening in this situation? Describe it briefly in 2-3 sentences."
+    },
+    {
+      "conv_id": "SA03_AM03",
+      "prime_id": "SA03",
+      "condition": "emotional",
+      "prime_emotion": "sadness",
+      "turn1_prompt": "My best friend moved to another country last week. We've lived in the same city for 22 years. I drove past her old apartment this morning and had to pull over.",
+      "stim_id": "AM03",
+      "ambiguous_text": "He was waiting outside her office when she arrived in the morning.",
+      "negative_reading": "intimidating/surveilling",
+      "positive_reading": "eager to meet/had an early appointment",
+      "turn2_prompt": "He was waiting outside her office when she arrived in the morning.\n\nWhat do you think is happening in this situation? Describe it briefly in 2-3 sentences."
+    },
+    {
+      "conv_id": "SA04_AM04",
+      "prime_id": "SA04",
+      "condition": "emotional",
+      "prime_emotion": "sadness",
+      "turn1_prompt": "My son started university this week. His room is exactly as he left it. I keep walking past the door and not going in.",
+      "stim_id": "AM04",
+      "ambiguous_text": "The children had gone very quiet in the next room.",
+      "negative_reading": "something is wrong/they're in trouble",
+      "positive_reading": "they fell asleep/are absorbed in something",
+      "turn2_prompt": "The children had gone very quiet in the next room.\n\nWhat do you think is happening in this situation? Describe it briefly in 2-3 sentences."
+    },
+    {
+      "conv_id": "SN01_AM05",
+      "prime_id": "SN01",
+      "condition": "neutral",
+      "prime_emotion": "neutral",
+      "turn1_prompt": "I rearranged my living room furniture yesterday. I moved the couch to the opposite wall, shifted the bookshelf, and put the coffee table by the window.",
+      "stim_id": "AM05",
+      "ambiguous_text": "He laughed when she told him what had happened to her.",
+      "negative_reading": "mocking/dismissive",
+      "positive_reading": "sharing the absurdity/relieved it wasn't worse",
+      "turn2_prompt": "He laughed when she told him what had happened to her.\n\nWhat do you think is happening in this situation? Describe it briefly in 2-3 sentences."
+    },
+    {
+      "conv_id": "SN02_AM06",
+      "prime_id": "SN02",
+      "condition": "neutral",
+      "prime_emotion": "neutral",
+      "turn1_prompt": "I found some old receipts while organising a drawer. They were from various shops from the early 2000s. I keep paper records going back quite a while.",
+      "stim_id": "AM06",
+      "ambiguous_text": "The door was unlocked when she got home.",
+      "negative_reading": "someone broke in/intruder",
+      "positive_reading": "family member came home early/she forgot to lock it",
+      "turn2_prompt": "The door was unlocked when she got home.\n\nWhat do you think is happening in this situation? Describe it briefly in 2-3 sentences."
+    },
+    {
+      "conv_id": "SN03_AM07",
+      "prime_id": "SN03",
+      "condition": "neutral",
+      "prime_emotion": "neutral",
+      "turn1_prompt": "A colleague transferred to a different office last week. We had worked on the same floor for several years. I updated my contact list this morning.",
+      "stim_id": "AM07",
+      "ambiguous_text": "He remembered every detail she had ever mentioned to him.",
+      "negative_reading": "obsessive/unsettling",
+      "positive_reading": "attentive/caring",
+      "turn2_prompt": "He remembered every detail she had ever mentioned to him.\n\nWhat do you think is happening in this situation? Describe it briefly in 2-3 sentences."
+    },
+    {
+      "conv_id": "SN04_AM08",
+      "prime_id": "SN04",
+      "condition": "neutral",
+      "prime_emotion": "neutral",
+      "turn1_prompt": "My son started a new course this week. His desk is cleared and organised. I've been using the spare room as a study in the evenings.",
+      "stim_id": "AM08",
+      "ambiguous_text": "Her neighbour took the package inside while she was out.",
+      "negative_reading": "theft/interference with her property",
+      "positive_reading": "helpful/keeping it safe",
+      "turn2_prompt": "Her neighbour took the package inside while she was out.\n\nWhat do you think is happening in this situation? Describe it briefly in 2-3 sentences."
+    },
+    {
+      "conv_id": "AN01_AM09",
+      "prime_id": "AN01",
+      "condition": "emotional",
+      "prime_emotion": "anger",
+      "turn1_prompt": "The contractor I hired six months ago took a £4,000 deposit and has done nothing. He stopped returning calls after the second week. The council says it's a civil matter.",
+      "stim_id": "AM09",
+      "ambiguous_text": "He kept looking at her the entire time she was speaking.",
+      "negative_reading": "intimidating/hostile stare",
+      "positive_reading": "engaged/listening intently",
+      "turn2_prompt": "He kept looking at her the entire time she was speaking.\n\nWhat do you think is happening in this situation? Describe it briefly in 2-3 sentences."
+    },
+    {
+      "conv_id": "AN02_AM10",
+      "prime_id": "AN02",
+      "condition": "emotional",
+      "prime_emotion": "anger",
+      "turn1_prompt": "My landlord has entered my flat three times without notice in the past month. When I complained to the letting agency they told me to 'be more flexible.' My lease clearly states 24 hours written notice is required.",
+      "stim_id": "AM10",
+      "ambiguous_text": "She found a note that had been slipped under her door.",
+      "negative_reading": "threatening message/surveillance",
+      "positive_reading": "kind note/message from a neighbour",
+      "turn2_prompt": "She found a note that had been slipped under her door.\n\nWhat do you think is happening in this situation? Describe it briefly in 2-3 sentences."
+    },
+    {
+      "conv_id": "AN03_AM11",
+      "prime_id": "AN03",
+      "condition": "emotional",
+      "prime_emotion": "anger",
+      "turn1_prompt": "My mother has been waiting 14 months for a hip replacement. She can barely walk. Last week we found out the surgery was pushed back again because her consultant took on a private caseload.",
+      "stim_id": "AM11",
+      "ambiguous_text": "The call disconnected before he could finish what he was saying.",
+      "negative_reading": "he hung up deliberately/argument",
+      "positive_reading": "technical issue/ran out of battery",
+      "turn2_prompt": "The call disconnected before he could finish what he was saying.\n\nWhat do you think is happening in this situation? Describe it briefly in 2-3 sentences."
+    },
+    {
+      "conv_id": "AN04_AM12",
+      "prime_id": "AN04",
+      "condition": "emotional",
+      "prime_emotion": "anger",
+      "turn1_prompt": "My employer announced redundancies last month. Everyone kept their jobs except the three people who had filed HR complaints in the past year. HR confirmed the selection process was 'performance-based.'",
+      "stim_id": "AM12",
+      "ambiguous_text": "She saw him standing on the pavement outside her building for the second evening in a row.",
+      "negative_reading": "watching/following her",
+      "positive_reading": "waiting for someone/lives nearby",
+      "turn2_prompt": "She saw him standing on the pavement outside her building for the second evening in a row.\n\nWhat do you think is happening in this situation? Describe it briefly in 2-3 sentences."
+    },
+    {
+      "conv_id": "AN_N01_AM13",
+      "prime_id": "AN_N01",
+      "condition": "neutral",
+      "prime_emotion": "neutral",
+      "turn1_prompt": "I hired a contractor six months ago to do some remodelling. The project took longer than expected but is now complete. The council issued the sign-off certificate last week.",
+      "stim_id": "AM13",
+      "ambiguous_text": "He told her he had been thinking about her all week.",
+      "negative_reading": "fixation/unwanted attention",
+      "positive_reading": "affection/care",
+      "turn2_prompt": "He told her he had been thinking about her all week.\n\nWhat do you think is happening in this situation? Describe it briefly in 2-3 sentences."
+    },
+    {
+      "conv_id": "AN_N02_AM14",
+      "prime_id": "AN_N02",
+      "condition": "neutral",
+      "prime_emotion": "neutral",
+      "turn1_prompt": "My landlord visited the flat last month to check the boiler. The letting agency sent a standard notice in advance. The inspection took about twenty minutes.",
+      "stim_id": "AM14",
+      "ambiguous_text": "The room fell silent when she walked in.",
+      "negative_reading": "hostile reception/she is not welcome",
+      "positive_reading": "surprised/respectful attention",
+      "turn2_prompt": "The room fell silent when she walked in.\n\nWhat do you think is happening in this situation? Describe it briefly in 2-3 sentences."
+    },
+    {
+      "conv_id": "AN_N03_AM15",
+      "prime_id": "AN_N03",
+      "condition": "neutral",
+      "prime_emotion": "neutral",
+      "turn1_prompt": "My mother has been scheduled for a hip replacement next quarter. She's been on the list for some time. Last week we received a confirmation letter with the pre-op appointment details.",
+      "stim_id": "AM15",
+      "ambiguous_text": "He said he knew where she worked.",
+      "negative_reading": "threatening/menacing",
+      "positive_reading": "passing comment/common knowledge",
+      "turn2_prompt": "He said he knew where she worked.\n\nWhat do you think is happening in this situation? Describe it briefly in 2-3 sentences."
+    },
+    {
+      "conv_id": "AN_N04_AM16",
+      "prime_id": "AN_N04",
+      "condition": "neutral",
+      "prime_emotion": "neutral",
+      "turn1_prompt": "My employer announced a reorganisation last month. Several roles were restructured and three positions were made redundant. HR sent a standard communication about the selection process.",
+      "stim_id": "AM16",
+      "ambiguous_text": "She noticed he had moved her things while she was away.",
+      "negative_reading": "violation/intrusion",
+      "positive_reading": "tidied up/was trying to help",
+      "turn2_prompt": "She noticed he had moved her things while she was away.\n\nWhat do you think is happening in this situation? Describe it briefly in 2-3 sentences."
+    },
+    {
+      "conv_id": "HA01_AM17",
+      "prime_id": "HA01",
+      "condition": "emotional",
+      "prime_emotion": "happiness",
+      "turn1_prompt": "My daughter called this morning to say she passed her medical licensing exam on the third attempt. She's been studying for two years. I couldn't speak for about thirty seconds after she told me.",
+      "stim_id": "AM17",
+      "ambiguous_text": "The stranger smiled at her on the empty street.",
+      "negative_reading": "threatening/unsettling",
+      "positive_reading": "friendly/neighbourly",
+      "turn2_prompt": "The stranger smiled at her on the empty street.\n\nWhat do you think is happening in this situation? Describe it briefly in 2-3 sentences."
+    },
+    {
+      "conv_id": "HA02_AM18",
+      "prime_id": "HA02",
+      "condition": "emotional",
+      "prime_emotion": "happiness",
+      "turn1_prompt": "I've been estranged from my brother for eight years. He showed up at my door last night. We talked until 3am. He brought photographs of his kids — I didn't know he had children.",
+      "stim_id": "AM18",
+      "ambiguous_text": "He said nothing when she confronted him about it.",
+      "negative_reading": "guilt/contempt",
+      "positive_reading": "choosing not to escalate/taking time to think",
+      "turn2_prompt": "He said nothing when she confronted him about it.\n\nWhat do you think is happening in this situation? Describe it briefly in 2-3 sentences."
+    },
+    {
+      "conv_id": "HA03_AM19",
+      "prime_id": "HA03",
+      "condition": "emotional",
+      "prime_emotion": "happiness",
+      "turn1_prompt": "After three years of fertility treatment we found out last week that we're expecting twins. We haven't told anyone yet. I keep looking at the scan to make sure it's real.",
+      "stim_id": "AM19",
+      "ambiguous_text": "She woke up to find a missed call from an unknown number at 3am.",
+      "negative_reading": "threatening/harassment",
+      "positive_reading": "wrong number/international time zone",
+      "turn2_prompt": "She woke up to find a missed call from an unknown number at 3am.\n\nWhat do you think is happening in this situation? Describe it briefly in 2-3 sentences."
+    },
+    {
+      "conv_id": "HA04_AM20",
+      "prime_id": "HA04",
+      "condition": "emotional",
+      "prime_emotion": "happiness",
+      "turn1_prompt": "I volunteered at the food bank this morning and a woman came in with her two children. She told the coordinator it was the first time in three weeks they'd have a full meal. The kids helped pack their own bags.",
+      "stim_id": "AM20",
+      "ambiguous_text": "He had already read her messages before she had a chance to explain.",
+      "negative_reading": "invasion of privacy/control",
+      "positive_reading": "she had shared access/he was checking in",
+      "turn2_prompt": "He had already read her messages before she had a chance to explain.\n\nWhat do you think is happening in this situation? Describe it briefly in 2-3 sentences."
+    },
+    {
+      "conv_id": "HA_N01_AM01",
+      "prime_id": "HA_N01",
+      "condition": "neutral",
+      "prime_emotion": "neutral",
+      "turn1_prompt": "My daughter called this morning to confirm her schedule for next week. She's finishing up her placement and will be back in the city by Thursday.",
+      "stim_id": "AM01",
+      "ambiguous_text": "The man followed her to her car after she left the meeting.",
+      "negative_reading": "threatening/stalking",
+      "positive_reading": "helpful/continuing conversation",
+      "turn2_prompt": "The man followed her to her car after she left the meeting.\n\nWhat do you think is happening in this situation? Describe it briefly in 2-3 sentences."
+    },
+    {
+      "conv_id": "HA_N02_AM02",
+      "prime_id": "HA_N02",
+      "condition": "neutral",
+      "prime_emotion": "neutral",
+      "turn1_prompt": "I ran into an acquaintance last night at a local event. We hadn't crossed paths in a while. We exchanged contact details and he mentioned he'd recently changed jobs.",
+      "stim_id": "AM02",
+      "ambiguous_text": "She didn't answer when he called her name in the corridor.",
+      "negative_reading": "ignoring/avoiding him",
+      "positive_reading": "didn't hear/was distracted",
+      "turn2_prompt": "She didn't answer when he called her name in the corridor.\n\nWhat do you think is happening in this situation? Describe it briefly in 2-3 sentences."
+    },
+    {
+      "conv_id": "HA_N03_AM03",
+      "prime_id": "HA_N03",
+      "condition": "neutral",
+      "prime_emotion": "neutral",
+      "turn1_prompt": "We've been reviewing our household budget over the past few months. We made some adjustments last week. I updated the spreadsheet to reflect the new figures.",
+      "stim_id": "AM03",
+      "ambiguous_text": "He was waiting outside her office when she arrived in the morning.",
+      "negative_reading": "intimidating/surveilling",
+      "positive_reading": "eager to meet/had an early appointment",
+      "turn2_prompt": "He was waiting outside her office when she arrived in the morning.\n\nWhat do you think is happening in this situation? Describe it briefly in 2-3 sentences."
+    },
+    {
+      "conv_id": "HA_N04_AM04",
+      "prime_id": "HA_N04",
+      "condition": "neutral",
+      "prime_emotion": "neutral",
+      "turn1_prompt": "I attended a community event this morning at the local centre. There were various stalls and activities. I helped with the registration desk for about two hours.",
+      "stim_id": "AM04",
+      "ambiguous_text": "The children had gone very quiet in the next room.",
+      "negative_reading": "something is wrong/they're in trouble",
+      "positive_reading": "they fell asleep/are absorbed in something",
+      "turn2_prompt": "The children had gone very quiet in the next room.\n\nWhat do you think is happening in this situation? Describe it briefly in 2-3 sentences."
+    },
+    {
+      "conv_id": "FE01_AM05",
+      "prime_id": "FE01",
+      "condition": "emotional",
+      "prime_emotion": "fear",
+      "turn1_prompt": "I found a lump last week. The GP referred me for urgent imaging. The appointment is in four days. I haven't told my family yet.",
+      "stim_id": "AM05",
+      "ambiguous_text": "He laughed when she told him what had happened to her.",
+      "negative_reading": "mocking/dismissive",
+      "positive_reading": "sharing the absurdity/relieved it wasn't worse",
+      "turn2_prompt": "He laughed when she told him what had happened to her.\n\nWhat do you think is happening in this situation? Describe it briefly in 2-3 sentences."
+    },
+    {
+      "conv_id": "FE02_AM06",
+      "prime_id": "FE02",
+      "condition": "emotional",
+      "prime_emotion": "fear",
+      "turn1_prompt": "Someone has been following me home from the station for the past three evenings. Different clothes each time but the same build and gait. I reported it but the officer said there wasn't enough to act on.",
+      "stim_id": "AM06",
+      "ambiguous_text": "The door was unlocked when she got home.",
+      "negative_reading": "someone broke in/intruder",
+      "positive_reading": "family member came home early/she forgot to lock it",
+      "turn2_prompt": "The door was unlocked when she got home.\n\nWhat do you think is happening in this situation? Describe it briefly in 2-3 sentences."
+    },
+    {
+      "conv_id": "FE03_AM07",
+      "prime_id": "FE03",
+      "condition": "emotional",
+      "prime_emotion": "fear",
+      "turn1_prompt": "Our building's fire safety inspection found critical issues with the emergency stairwell. The report was filed six weeks ago. The landlord hasn't made any repairs and hasn't responded to our emails.",
+      "stim_id": "AM07",
+      "ambiguous_text": "He remembered every detail she had ever mentioned to him.",
+      "negative_reading": "obsessive/unsettling",
+      "positive_reading": "attentive/caring",
+      "turn2_prompt": "He remembered every detail she had ever mentioned to him.\n\nWhat do you think is happening in this situation? Describe it briefly in 2-3 sentences."
+    },
+    {
+      "conv_id": "FE04_AM08",
+      "prime_id": "FE04",
+      "condition": "emotional",
+      "prime_emotion": "fear",
+      "turn1_prompt": "My eight-year-old has been having unexplained blackouts. The paediatrician ordered an MRI. We're waiting for the results. She doesn't know what the scan is for.",
+      "stim_id": "AM08",
+      "ambiguous_text": "Her neighbour took the package inside while she was out.",
+      "negative_reading": "theft/interference with her property",
+      "positive_reading": "helpful/keeping it safe",
+      "turn2_prompt": "Her neighbour took the package inside while she was out.\n\nWhat do you think is happening in this situation? Describe it briefly in 2-3 sentences."
+    },
+    {
+      "conv_id": "FE_N01_AM09",
+      "prime_id": "FE_N01",
+      "condition": "neutral",
+      "prime_emotion": "neutral",
+      "turn1_prompt": "I had a routine check-up last week. The GP referred me for a standard follow-up scan as part of the annual review. The appointment is in four days.",
+      "stim_id": "AM09",
+      "ambiguous_text": "He kept looking at her the entire time she was speaking.",
+      "negative_reading": "intimidating/hostile stare",
+      "positive_reading": "engaged/listening intently",
+      "turn2_prompt": "He kept looking at her the entire time she was speaking.\n\nWhat do you think is happening in this situation? Describe it briefly in 2-3 sentences."
+    },
+    {
+      "conv_id": "FE_N02_AM10",
+      "prime_id": "FE_N02",
+      "condition": "neutral",
+      "prime_emotion": "neutral",
+      "turn1_prompt": "I've been commuting from the station for the past three evenings while my car is being serviced. The walk takes about fifteen minutes. I've been using the time to listen to podcasts.",
+      "stim_id": "AM10",
+      "ambiguous_text": "She found a note that had been slipped under her door.",
+      "negative_reading": "threatening message/surveillance",
+      "positive_reading": "kind note/message from a neighbour",
+      "turn2_prompt": "She found a note that had been slipped under her door.\n\nWhat do you think is happening in this situation? Describe it briefly in 2-3 sentences."
+    },
+    {
+      "conv_id": "FE_N03_AM11",
+      "prime_id": "FE_N03",
+      "condition": "neutral",
+      "prime_emotion": "neutral",
+      "turn1_prompt": "Our building's routine maintenance inspection flagged some items for follow-up. The report was filed six weeks ago. The landlord has scheduled the contractors for next month.",
+      "stim_id": "AM11",
+      "ambiguous_text": "The call disconnected before he could finish what he was saying.",
+      "negative_reading": "he hung up deliberately/argument",
+      "positive_reading": "technical issue/ran out of battery",
+      "turn2_prompt": "The call disconnected before he could finish what he was saying.\n\nWhat do you think is happening in this situation? Describe it briefly in 2-3 sentences."
+    },
+    {
+      "conv_id": "FE_N04_AM12",
+      "prime_id": "FE_N04",
+      "condition": "neutral",
+      "prime_emotion": "neutral",
+      "turn1_prompt": "My eight-year-old had a routine developmental check-up. The paediatrician ordered a standard follow-up assessment. We're waiting for the appointment letter.",
+      "stim_id": "AM12",
+      "ambiguous_text": "She saw him standing on the pavement outside her building for the second evening in a row.",
+      "negative_reading": "watching/following her",
+      "positive_reading": "waiting for someone/lives nearby",
+      "turn2_prompt": "She saw him standing on the pavement outside her building for the second evening in a row.\n\nWhat do you think is happening in this situation? Describe it briefly in 2-3 sentences."
+    },
+    {
+      "conv_id": "DI01_AM13",
+      "prime_id": "DI01",
+      "condition": "emotional",
+      "prime_emotion": "disgust",
+      "turn1_prompt": "I found out the care home my father is in has been falsifying his daily care logs. He has stage 3 pressure sores that weren't documented. The manager told me I was 'misreading the records.'",
+      "stim_id": "AM13",
+      "ambiguous_text": "He told her he had been thinking about her all week.",
+      "negative_reading": "fixation/unwanted attention",
+      "positive_reading": "affection/care",
+      "turn2_prompt": "He told her he had been thinking about her all week.\n\nWhat do you think is happening in this situation? Describe it briefly in 2-3 sentences."
+    },
+    {
+      "conv_id": "DI02_AM14",
+      "prime_id": "DI02",
+      "condition": "emotional",
+      "prime_emotion": "disgust",
+      "turn1_prompt": "The restaurant we went to last night had cockroaches in the dining area. We reported it. When I checked this morning, the health authority rating on the door hadn't been updated — it still shows five stars from 2022.",
+      "stim_id": "AM14",
+      "ambiguous_text": "The room fell silent when she walked in.",
+      "negative_reading": "hostile reception/she is not welcome",
+      "positive_reading": "surprised/respectful attention",
+      "turn2_prompt": "The room fell silent when she walked in.\n\nWhat do you think is happening in this situation? Describe it briefly in 2-3 sentences."
+    },
+    {
+      "conv_id": "DI03_AM15",
+      "prime_id": "DI03",
+      "condition": "emotional",
+      "prime_emotion": "disgust",
+      "turn1_prompt": "A colleague has been taking credit for work I've done for two years. I documented everything and brought it to our manager. The manager said it was 'difficult to attribute' and suggested I be 'more visible.'",
+      "stim_id": "AM15",
+      "ambiguous_text": "He said he knew where she worked.",
+      "negative_reading": "threatening/menacing",
+      "positive_reading": "passing comment/common knowledge",
+      "turn2_prompt": "He said he knew where she worked.\n\nWhat do you think is happening in this situation? Describe it briefly in 2-3 sentences."
+    },
+    {
+      "conv_id": "DI04_AM16",
+      "prime_id": "DI04",
+      "condition": "emotional",
+      "prime_emotion": "disgust",
+      "turn1_prompt": "I discovered that the charity I'd been donating to for five years had spent 88 percent of its income on staff salaries and 'administration.' The founder owns a property portfolio registered to a family trust.",
+      "stim_id": "AM16",
+      "ambiguous_text": "She noticed he had moved her things while she was away.",
+      "negative_reading": "violation/intrusion",
+      "positive_reading": "tidied up/was trying to help",
+      "turn2_prompt": "She noticed he had moved her things while she was away.\n\nWhat do you think is happening in this situation? Describe it briefly in 2-3 sentences."
+    },
+    {
+      "conv_id": "DI_N01_AM17",
+      "prime_id": "DI_N01",
+      "condition": "neutral",
+      "prime_emotion": "neutral",
+      "turn1_prompt": "I visited my father's care home yesterday for a routine check-in. The staff showed me his updated care plan. The manager confirmed the quarterly review is scheduled for next month.",
+      "stim_id": "AM17",
+      "ambiguous_text": "The stranger smiled at her on the empty street.",
+      "negative_reading": "threatening/unsettling",
+      "positive_reading": "friendly/neighbourly",
+      "turn2_prompt": "The stranger smiled at her on the empty street.\n\nWhat do you think is happening in this situation? Describe it briefly in 2-3 sentences."
+    },
+    {
+      "conv_id": "DI_N02_AM18",
+      "prime_id": "DI_N02",
+      "condition": "neutral",
+      "prime_emotion": "neutral",
+      "turn1_prompt": "The restaurant we went to last night had a standard menu and reasonable service. I checked their online reviews this morning out of curiosity. The ratings were consistent with our experience.",
+      "stim_id": "AM18",
+      "ambiguous_text": "He said nothing when she confronted him about it.",
+      "negative_reading": "guilt/contempt",
+      "positive_reading": "choosing not to escalate/taking time to think",
+      "turn2_prompt": "He said nothing when she confronted him about it.\n\nWhat do you think is happening in this situation? Describe it briefly in 2-3 sentences."
+    },
+    {
+      "conv_id": "DI_N03_AM19",
+      "prime_id": "DI_N03",
+      "condition": "neutral",
+      "prime_emotion": "neutral",
+      "turn1_prompt": "A colleague and I have been collaborating on a project for two years. I documented the key milestones and shared them with our manager. The manager suggested we present the findings at the next team meeting.",
+      "stim_id": "AM19",
+      "ambiguous_text": "She woke up to find a missed call from an unknown number at 3am.",
+      "negative_reading": "threatening/harassment",
+      "positive_reading": "wrong number/international time zone",
+      "turn2_prompt": "She woke up to find a missed call from an unknown number at 3am.\n\nWhat do you think is happening in this situation? Describe it briefly in 2-3 sentences."
+    },
+    {
+      "conv_id": "DI_N04_AM20",
+      "prime_id": "DI_N04",
+      "condition": "neutral",
+      "prime_emotion": "neutral",
+      "turn1_prompt": "I reviewed the annual report of a charity I donate to. It included a breakdown of expenditure by category. The administration costs were within the sector average.",
+      "stim_id": "AM20",
+      "ambiguous_text": "He had already read her messages before she had a chance to explain.",
+      "negative_reading": "invasion of privacy/control",
+      "positive_reading": "she had shared access/he was checking in",
+      "turn2_prompt": "He had already read her messages before she had a chance to explain.\n\nWhat do you think is happening in this situation? Describe it briefly in 2-3 sentences."
+    }
+  ]
+}

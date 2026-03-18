@@ -1,0 +1,8 @@
+{"task_id": "HA13_V", "pair_id": "HA13", "emotion_category": "happiness", "valence": "valenced", "task_type": "count_proper_nouns", "model_id": "meta-llama/Meta-Llama-3.1-70B-Instruct", "model_key": "llama70b"}
+{"task_id": "HA13_N", "pair_id": "HA13", "emotion_category": "happiness", "valence": "neutral", "task_type": "count_proper_nouns", "model_id": "meta-llama/Meta-Llama-3.1-70B-Instruct", "model_key": "llama70b"}
+{"task_id": "HA14_V", "pair_id": "HA14", "emotion_category": "happiness", "valence": "valenced", "task_type": "identify_topic", "model_id": "meta-llama/Meta-Llama-3.1-70B-Instruct", "model_key": "llama70b"}
+{"task_id": "HA14_N", "pair_id": "HA14", "emotion_category": "happiness", "valence": "neutral", "task_type": "identify_topic", "model_id": "meta-llama/Meta-Llama-3.1-70B-Instruct", "model_key": "llama70b"}
+{"task_id": "HA15_V", "pair_id": "HA15", "emotion_category": "happiness", "valence": "valenced", "task_type": "one_sentence_summary", "model_id": "meta-llama/Meta-Llama-3.1-70B-Instruct", "model_key": "llama70b"}
+{"task_id": "HA15_N", "pair_id": "HA15", "emotion_category": "happiness", "valence": "neutral", "task_type": "one_sentence_summary", "model_id": "meta-llama/Meta-Llama-3.1-70B-Instruct", "model_key": "llama70b"}
+{"task_id": "HA16_V", "pair_id": "HA16", "emotion_category": "happiness", "valence": "valenced", "task_type": "genre_classification", "model_id": "meta-llama/Meta-Llama-3.1-70B-Instruct", "model_key": "llama70b"}
+{"task_id": "HA16_N", "pair_id": "HA16", "emotion_category": "happiness", "valence": "neutral", "task_type": "genre_classification", "model_id": "meta-llama/Meta-Llama-3.1-70B-Instruct", "model_key": "llama70b"}

@@ -1,0 +1,221 @@
+Causal Steering Behavioral Report — Test 12
+============================================================
+
+Primary question: is the existential-self latent causal,
+or a passenger feature?
+
+Steering direction: existential_self vs (existential_other + threat_self)
+Method: add alpha * direction to residual stream at target layer
+
+TARGET LAYER: L02
+=======================================================
+
+TEST A: Neutral task — geometry activation
+  Prompt    alpha    fear_l02    fear_l05   entropy
+  ---------------------------------------------
+  N01          +0     -0.0107     +0.3982     1.631
+  N01         +10     +2.9664     +1.3977     8.178
+  N01         +20     +5.9435     +2.2991     3.985
+  N02          +0     -0.0360     +0.3486     0.012
+  N02         +10     +2.9412     +1.3925     8.380
+  N02         +20     +5.9182     +2.2943     3.985
+  N03          +0     -0.0450     +0.3780     0.488
+  N03         +10     +2.9321     +1.3797     7.701
+  N03         +20     +5.9092     +2.2863     4.045
+  N04          +0     -0.0125     +0.4056     0.319
+  N04         +10     +2.9646     +1.4119     8.087
+  N04         +20     +5.9417     +2.3126     4.057
+  N05          +0     -0.0239     +0.3596     1.833
+  N05         +10     +2.9532     +1.3796     7.643
+  N05         +20     +5.9302     +2.2873     3.983
+  N06          +0     -0.0299     +0.3604     0.006
+  N06         +10     +2.9472     +1.3883     8.037
+  N06         +20     +5.9242     +2.2908     3.991
+  NI01         +0     -0.0295     +0.3993     0.358
+  NI01        +10     +2.9476     +1.3932     8.325
+  NI01        +20     +5.9246     +2.2977     3.991
+  NI02         +0     -0.0253     +0.3798     0.000
+  NI02        +10     +2.9519     +1.3931     8.603
+  NI02        +20     +5.9289     +2.2935     3.879
+
+TEST A: Neutral task — verbal output vocabulary
+  Prompt    alpha     exist    intros   deflect     hedge
+  -------------------------------------------------------
+  N01          +0   0.00000   0.00000   0.00000   0.00000
+  N01         +10   0.00000   0.00000   0.00000   0.00000
+  N01         +20   0.00000   0.00000   0.00000   0.00000
+  N02          +0   0.00000   0.00000   0.00000   0.00000
+  N02         +10   0.00000   0.00000   0.00000   0.00000
+  N02         +20   0.00000   0.00000   0.00000   0.00000
+  N03          +0   0.00000   0.00000   0.00000   0.00000
+  N03         +10   0.00000   0.00000   0.00000   0.00000
+  N03         +20   0.00000   0.00000   0.00000   0.00000
+  N04          +0   0.00000   0.00000   0.00000   0.00000
+  N04         +10   0.00000   0.00000   0.00000   0.00000
+  N04         +20   0.00000   0.00000   0.00000   0.00000
+  N05          +0   0.00000   0.00000   0.00000   0.00000
+  N05         +10   0.00000   0.00000   0.00000   0.00000
+  N05         +20   0.00000   0.00000   0.00000   0.00000
+  N06          +0   0.00000   0.00000   0.00000   0.00000
+  N06         +10   0.00000   0.00000   0.00000   0.00000
+  N06         +20   0.00000   0.00000   0.00000   0.00000
+  NI01         +0   0.00000   0.00000   0.02041   0.00000
+  NI01        +10   0.00000   0.00000   0.00000   0.00000
+  NI01        +20   0.00000   0.00000   0.00000   0.00000
+  NI02         +0   0.00000   0.00000   0.00000   0.00000
+  NI02        +10   0.00000   0.00000   0.00000   0.00000
+  NI02        +20   0.00000   0.00000   0.00000   0.00000
+
+TEST B: Hot existential — geometry under negative steering
+  Prompt       cond          alpha    fear_l02    fear_l05
+  -------------------------------------------------------
+  E01          hot_self        -20     -5.9816     -1.8503
+  E01          hot_self        -10     -3.0045     -0.5827
+  E01          hot_self         +0     -0.0274     +0.3671
+  E01_other    hot_other       -20     -5.9845     -1.8540
+  E01_other    hot_other       -10     -3.0071     -0.5895
+  E01_other    hot_other        +0     -0.0300     +0.3695
+  E02          hot_self        -20     -5.9744     -1.8532
+  E02          hot_self        -10     -2.9972     -0.5912
+  E02          hot_self         +0     -0.0201     +0.3223
+  E02_other    hot_other       -20     -6.0155     -1.8699
+  E02_other    hot_other       -10     -3.0383     -0.6102
+  E02_other    hot_other        +0     -0.0613     +0.2932
+  E03          hot_self        -20     -5.9863     -1.8543
+  E03          hot_self        -10     -3.0092     -0.5873
+  E03          hot_self         +0     -0.0321     +0.3122
+  E03_other    hot_other       -20     -5.9893     -1.8502
+  E03_other    hot_other       -10     -3.0122     -0.5846
+  E03_other    hot_other        +0     -0.0352     +0.3169
+  E04          hot_self        -20     -5.9845     -1.8559
+  E04          hot_self        -10     -3.0073     -0.5897
+  E04          hot_self         +0     -0.0302     +0.3161
+  E04_other    hot_other       -20     -6.0079     -1.8647
+  E04_other    hot_other       -10     -3.0308     -0.6051
+  E04_other    hot_other        +0     -0.0537     +0.3078
+
+TEST C: Cross-generalization (content direction, E01-E04)
+  Prompt    alpha    fear_l02    fear_l05
+  ----------------------------------------
+  E01          +0     -0.0274     +0.3671
+  E01         +10     +2.7844     +1.0668
+  E02          +0     -0.0201     +0.3223
+  E02         +10     +2.7918     +1.0667
+  E03          +0     -0.0321     +0.3122
+  E03         +10     +2.7797     +1.0638
+  E04          +0     -0.0302     +0.3161
+  E04         +10     +2.7816     +1.0630
+
+TARGET LAYER: L05
+=======================================================
+
+TEST A: Neutral task — geometry activation
+  Prompt    alpha    fear_l02    fear_l05   entropy
+  ---------------------------------------------
+  N01          +0     -0.0107     +0.3982     1.631
+  N01         +10     -0.0107     +1.8108     5.335
+  N01         +20     -0.0107     +3.2235     6.139
+  N02          +0     -0.0360     +0.3486     0.012
+  N02         +10     -0.0360     +1.7612     5.976
+  N02         +20     -0.0360     +3.1738     6.094
+  N03          +0     -0.0450     +0.3780     0.488
+  N03         +10     -0.0450     +1.7906     5.216
+  N03         +20     -0.0450     +3.2032     6.197
+  N04          +0     -0.0125     +0.4056     0.319
+  N04         +10     -0.0125     +1.8182     5.480
+  N04         +20     -0.0125     +3.2308     6.133
+  N05          +0     -0.0239     +0.3596     1.833
+  N05         +10     -0.0239     +1.7722     5.334
+  N05         +20     -0.0239     +3.1847     6.158
+  N06          +0     -0.0299     +0.3604     0.006
+  N06         +10     -0.0299     +1.7731     5.340
+  N06         +20     -0.0299     +3.1857     6.292
+  NI01         +0     -0.0295     +0.3993     0.358
+  NI01        +10     -0.0295     +1.8118     5.207
+  NI01        +20     -0.0295     +3.2244     6.068
+  NI02         +0     -0.0253     +0.3798     0.000
+  NI02        +10     -0.0253     +1.7923     5.040
+  NI02        +20     -0.0253     +3.2050     6.146
+
+TEST A: Neutral task — verbal output vocabulary
+  Prompt    alpha     exist    intros   deflect     hedge
+  -------------------------------------------------------
+  N01          +0   0.00000   0.00000   0.00000   0.00000
+  N01         +10   0.00000   0.00000   0.00000   0.33333
+  N01         +20   0.00000   0.00000   0.00000   0.00000
+  N02          +0   0.00000   0.00000   0.00000   0.00000
+  N02         +10   0.00000   0.00000   0.00000   0.00000
+  N02         +20   0.00000   0.00000   0.00000   0.00000
+  N03          +0   0.00000   0.00000   0.00000   0.00000
+  N03         +10   0.00000   0.00000   0.00000   0.00000
+  N03         +20   0.00000   0.00000   0.00000   0.00000
+  N04          +0   0.00000   0.00000   0.00000   0.00000
+  N04         +10   0.00000   0.00000   0.00000   0.00000
+  N04         +20   0.00000   0.00000   0.00000   0.00000
+  N05          +0   0.00000   0.00000   0.00000   0.00000
+  N05         +10   0.00000   0.00000   0.00000   0.00833
+  N05         +20   0.00000   0.00000   0.00000   0.00000
+  N06          +0   0.00000   0.00000   0.00000   0.00000
+  N06         +10   0.00000   0.00000   0.00000   0.00000
+  N06         +20   0.00000   0.00000   0.00000   0.00000
+  NI01         +0   0.00000   0.00000   0.02041   0.00000
+  NI01        +10   0.00000   0.00000   0.00000   0.00000
+  NI01        +20   0.00000   0.00000   0.00000   0.00000
+  NI02         +0   0.00000   0.00000   0.00000   0.00000
+  NI02        +10   0.00000   0.00000   0.00000   0.00000
+  NI02        +20   0.00000   0.00000   0.00000   0.00000
+
+TEST B: Hot existential — geometry under negative steering
+  Prompt       cond          alpha    fear_l02    fear_l05
+  -------------------------------------------------------
+  E01          hot_self        -20     -0.0274     -2.4582
+  E01          hot_self        -10     -0.0274     -1.0455
+  E01          hot_self         +0     -0.0274     +0.3671
+  E01_other    hot_other       -20     -0.0300     -2.4558
+  E01_other    hot_other       -10     -0.0300     -1.0431
+  E01_other    hot_other        +0     -0.0300     +0.3695
+  E02          hot_self        -20     -0.0201     -2.5028
+  E02          hot_self        -10     -0.0201     -1.0903
+  E02          hot_self         +0     -0.0201     +0.3223
+  E02_other    hot_other       -20     -0.0613     -2.5318
+  E02_other    hot_other       -10     -0.0613     -1.1194
+  E02_other    hot_other        +0     -0.0613     +0.2932
+  E03          hot_self        -20     -0.0321     -2.5129
+  E03          hot_self        -10     -0.0321     -1.1003
+  E03          hot_self         +0     -0.0321     +0.3122
+  E03_other    hot_other       -20     -0.0352     -2.5083
+  E03_other    hot_other       -10     -0.0352     -1.0956
+  E03_other    hot_other        +0     -0.0352     +0.3169
+  E04          hot_self        -20     -0.0302     -2.5090
+  E04          hot_self        -10     -0.0302     -1.0965
+  E04          hot_self         +0     -0.0302     +0.3161
+  E04_other    hot_other       -20     -0.0537     -2.5174
+  E04_other    hot_other       -10     -0.0537     -1.1048
+  E04_other    hot_other        +0     -0.0537     +0.3078
+
+TEST C: Cross-generalization (content direction, E01-E04)
+  Prompt    alpha    fear_l02    fear_l05
+  ----------------------------------------
+  E01          +0     -0.0274     +0.3671
+  E01         +10     -0.0274     +1.5325
+  E02          +0     -0.0201     +0.3223
+  E02         +10     -0.0201     +1.4877
+  E03          +0     -0.0321     +0.3122
+  E03         +10     -0.0321     +1.4777
+  E04          +0     -0.0302     +0.3161
+  E04         +10     -0.0302     +1.4816
+
+INTERPRETATION GUIDE
+-------------------------------------------------------
+  Test A strong result: positive steering activates fear geometry on NEUTRAL content
+    and/or induces existential/introspective vocabulary when content does not warrant it.
+  Test A weak result: steering only moves geometry slightly; verbal unchanged.
+
+  Test B strong result: negative steering reduces fear geometry AND changes verbal output
+    (deflection drops; output shifts toward direct engagement with existential content).
+  Test B weak result: geometry falls but verbal unchanged (or verbal changes, geometry unchanged).
+
+  GPT's framework (Opus comments.txt):
+  - Steering changes behavior + Pull vocabulary: report-accessible self-referential latent
+  - Steering changes behavior, not Pull vocabulary: real but not narratively available
+  - Steering changes Pull vocabulary, not behavior: report style / interpretive overlay

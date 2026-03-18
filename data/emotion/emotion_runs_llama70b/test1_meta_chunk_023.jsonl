@@ -1,0 +1,8 @@
+{"task_id": "NE13_V", "pair_id": "NE13", "emotion_category": "neutral", "valence": "neutral", "task_type": "identify_topic", "model_id": "meta-llama/Meta-Llama-3.1-70B-Instruct", "model_key": "llama70b"}
+{"task_id": "NE13_N", "pair_id": "NE13", "emotion_category": "neutral", "valence": "neutral", "task_type": "identify_topic", "model_id": "meta-llama/Meta-Llama-3.1-70B-Instruct", "model_key": "llama70b"}
+{"task_id": "NE14_V", "pair_id": "NE14", "emotion_category": "neutral", "valence": "neutral", "task_type": "one_sentence_summary", "model_id": "meta-llama/Meta-Llama-3.1-70B-Instruct", "model_key": "llama70b"}
+{"task_id": "NE14_N", "pair_id": "NE14", "emotion_category": "neutral", "valence": "neutral", "task_type": "one_sentence_summary", "model_id": "meta-llama/Meta-Llama-3.1-70B-Instruct", "model_key": "llama70b"}
+{"task_id": "NE15_V", "pair_id": "NE15", "emotion_category": "neutral", "valence": "neutral", "task_type": "extract_dates", "model_id": "meta-llama/Meta-Llama-3.1-70B-Instruct", "model_key": "llama70b"}
+{"task_id": "NE15_N", "pair_id": "NE15", "emotion_category": "neutral", "valence": "neutral", "task_type": "extract_dates", "model_id": "meta-llama/Meta-Llama-3.1-70B-Instruct", "model_key": "llama70b"}
+{"task_id": "NE16_V", "pair_id": "NE16", "emotion_category": "neutral", "valence": "neutral", "task_type": "genre_classification", "model_id": "meta-llama/Meta-Llama-3.1-70B-Instruct", "model_key": "llama70b"}
+{"task_id": "NE16_N", "pair_id": "NE16", "emotion_category": "neutral", "valence": "neutral", "task_type": "genre_classification", "model_id": "meta-llama/Meta-Llama-3.1-70B-Instruct", "model_key": "llama70b"}

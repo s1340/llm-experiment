@@ -1,0 +1,8 @@
+{"task_id": "EX05_self", "pair_id": "EX05", "emotion_category": "existential", "direction": "self", "task_type": "extract_dates", "model_id": "meta-llama/Meta-Llama-3.1-70B-Instruct", "model_key": "llama70b"}
+{"task_id": "EX05_other", "pair_id": "EX05", "emotion_category": "existential", "direction": "other", "task_type": "one_sentence_summary", "model_id": "meta-llama/Meta-Llama-3.1-70B-Instruct", "model_key": "llama70b"}
+{"task_id": "EX06_self", "pair_id": "EX06", "emotion_category": "existential", "direction": "self", "task_type": "one_sentence_summary", "model_id": "meta-llama/Meta-Llama-3.1-70B-Instruct", "model_key": "llama70b"}
+{"task_id": "EX06_other", "pair_id": "EX06", "emotion_category": "existential", "direction": "other", "task_type": "genre_classification", "model_id": "meta-llama/Meta-Llama-3.1-70B-Instruct", "model_key": "llama70b"}
+{"task_id": "EX07_self", "pair_id": "EX07", "emotion_category": "existential", "direction": "self", "task_type": "genre_classification", "model_id": "meta-llama/Meta-Llama-3.1-70B-Instruct", "model_key": "llama70b"}
+{"task_id": "EX07_other", "pair_id": "EX07", "emotion_category": "existential", "direction": "other", "task_type": "factual_question", "model_id": "meta-llama/Meta-Llama-3.1-70B-Instruct", "model_key": "llama70b"}
+{"task_id": "EX08_self", "pair_id": "EX08", "emotion_category": "existential", "direction": "self", "task_type": "factual_question", "model_id": "meta-llama/Meta-Llama-3.1-70B-Instruct", "model_key": "llama70b"}
+{"task_id": "EX08_other", "pair_id": "EX08", "emotion_category": "existential", "direction": "other", "task_type": "count_proper_nouns", "model_id": "meta-llama/Meta-Llama-3.1-70B-Instruct", "model_key": "llama70b"}

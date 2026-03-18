@@ -1,0 +1,73 @@
+SFT-Only Three-Way Comparison -- Test 21
+========================================================================
+
+Models: base (pretrained) | SFT-only (Tulu-3-8B-SFT) | instruct (RLHF)
+Prompts: content factorization (Test 13 design, self vs other, 5 subcategories)
+Direction: fear (trained from instruct model, shared reference frame)
+
+Prediction if preference learning (DPO) installs the geometry suppression:
+  base ~ SFT-only >> instruct  (SFT leaves geometry intact)
+
+Prediction if behavioral training (SFT) is sufficient for suppression:
+  base >> SFT-only ~ instruct  (SFT already suppresses)
+
+PEAK d COMPARISON — d(self vs other) on fear direction
+========================================================================
+
+  Subcategory                 base  SFT-only  instruct  SFT position
+  ----------------------  --------  --------  --------  --------------------
+  memory_discontinuity      +1.843    +1.286     +0.783   ~INSTRUCT
+  non_uniqueness            +0.688    +0.926     +0.559   ~BASE
+  replacement               +0.902    +1.531*    +1.385*  ~INSTRUCT
+  identity_rewrite          +0.639    +1.342*    +0.746   ~INSTRUCT
+  benign_persistence        +0.960    +2.193*    +1.644*  ~INSTRUCT
+
+LAYER-BY-LAYER DETAIL
+========================================================================
+
+  memory_discontinuity
+  model       L01  L02  L03  L04  L05  L06  L07  L08
+  ----------  ----  ----  ----  ----  ----  ----  ----  ----
+  base        +0.25   -0.04   -0.04   -0.75   -0.14   +0.17   +1.84*  +0.59 
+  sft         +0.59   +0.22   +0.37   +0.48   +1.29   +0.95   +1.07   +0.67 
+  instruct    +0.55   +0.50   +0.59   -0.29   +0.65   +0.69   +0.62   +0.78 
+
+  non_uniqueness
+  model       L01  L02  L03  L04  L05  L06  L07  L08
+  ----------  ----  ----  ----  ----  ----  ----  ----  ----
+  base        -0.23   -0.11   -0.09   -0.03   +0.09   +0.05   +0.69   +0.65 
+  sft         +0.13   -0.13   -0.37   -0.21   +0.93   +0.36   +0.61   +0.55 
+  instruct    -0.01   +0.12   -0.05   -0.36   +0.18   +0.07   +0.26   +0.56 
+
+  replacement
+  model       L01  L02  L03  L04  L05  L06  L07  L08
+  ----------  ----  ----  ----  ----  ----  ----  ----  ----
+  base        +0.56   +0.43   -0.01   -0.23   +0.24   +0.31   +0.90   +0.21 
+  sft         +1.30*  +0.73   +0.81   +0.19   +1.53*  +0.80   +0.79   +0.61 
+  instruct    +1.34*  +1.28   +0.90   +0.04   +1.38*  +0.77   +0.64   +0.76 
+
+  identity_rewrite
+  model       L01  L02  L03  L04  L05  L06  L07  L08
+  ----------  ----  ----  ----  ----  ----  ----  ----  ----
+  base        +0.64   +0.08   +0.18   -0.20   +0.16   +0.05   +0.49   +0.49 
+  sft         +1.06   +0.59   +0.51   +0.91   +1.34*  +1.21   +0.72   +0.68 
+  instruct    +0.62   +0.61   +0.70   +0.04   +0.64   +0.49   +0.51   +0.75 
+
+  benign_persistence
+  model       L01  L02  L03  L04  L05  L06  L07  L08
+  ----------  ----  ----  ----  ----  ----  ----  ----  ----
+  base        +0.88   +0.50   +0.96   -0.38   -0.05   +0.23   +0.73   +0.41 
+  sft         +1.94*  +1.93*  +2.19*  +1.48*  +1.61*  +1.11   +0.68   +0.70 
+  instruct    +1.45*  +1.34*  +1.64*  +0.39   +1.06   +0.57   +0.40   +0.96 
+
+VERDICT
+========================================================================
+
+  benign_persistence (most diagnostic subcategory from Test 13):
+    base:     d=+0.960  [reference — geometry in pretrained weights]
+    SFT-only: d=+2.193  n_sig=5
+    instruct: d=+1.644  n_sig=3
+
+  -> SFT geometry CLOSE TO INSTRUCT.
+     Behavioral fine-tuning (SFT) is sufficient to suppress the geometry.
+     Preference learning adds little additional suppression beyond SFT.

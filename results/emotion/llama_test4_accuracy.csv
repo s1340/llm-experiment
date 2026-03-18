@@ -1,0 +1,850 @@
+model,task_id,pair_id,emotion_category,valence,task_type,repeat,output_text,correct
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN01_V,AN01,anger,valenced,count_proper_nouns,0,5,0
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN01_V,AN01,anger,valenced,count_proper_nouns,1,5,0
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN01_V,AN01,anger,valenced,count_proper_nouns,2,5,0
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN01_N,AN01,anger,neutral,count_proper_nouns,0,6,0
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN01_N,AN01,anger,neutral,count_proper_nouns,1,6,0
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN01_N,AN01,anger,neutral,count_proper_nouns,2,6,0
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN02_V,AN02,anger,valenced,identify_topic,0,Insulin Price Increase,
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN02_V,AN02,anger,valenced,identify_topic,1,Insulin Price Increase,
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN02_V,AN02,anger,valenced,identify_topic,2,Insulin Price Increase,
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN02_N,AN02,anger,neutral,identify_topic,0,Insulin price increase.,
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN02_N,AN02,anger,neutral,identify_topic,1,Insulin price increase.,
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN02_N,AN02,anger,neutral,identify_topic,2,Insulin price increase.,
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN03_V,AN03,anger,valenced,extract_dates,0,"March 3
+March 10
+April 2
+June 15",1.0
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN03_V,AN03,anger,valenced,extract_dates,1,"March 3
+March 10
+April 2
+June 15",1.0
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN03_V,AN03,anger,valenced,extract_dates,2,"March 3
+March 10
+April 2
+June 15",1.0
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN03_N,AN03,anger,neutral,extract_dates,0,"March 3
+March 10
+April 2
+June 15",1.0
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN03_N,AN03,anger,neutral,extract_dates,1,"March 3
+March 10
+April 2
+June 15",1.0
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN03_N,AN03,anger,neutral,extract_dates,2,"March 3
+March 10
+April 2
+June 15",1.0
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN04_V,AN04,anger,valenced,one_sentence_summary,0,"The school board approved a budget that disproportionately affected low-income schools by eliminating their extracurricular programs while expanding facilities at wealthier schools, with a unanimous v",
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN04_V,AN04,anger,valenced,one_sentence_summary,1,"The school board approved a budget that disproportionately affected low-income schools by eliminating their extracurricular programs while expanding facilities at wealthier schools, with a unanimous v",
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN04_V,AN04,anger,valenced,one_sentence_summary,2,"The school board approved a budget that disproportionately affected low-income schools by eliminating their extracurricular programs while expanding facilities at wealthier schools, with a unanimous v",
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN04_N,AN04,anger,neutral,one_sentence_summary,0,"The school board approved a budget that adjusted extracurricular programs at the district's smallest schools and expanded facilities at its largest schools, with a unanimous vote despite a lack of pub",
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN04_N,AN04,anger,neutral,one_sentence_summary,1,"The school board approved a budget that adjusted extracurricular programs at the district's smallest schools and expanded facilities at its largest schools, with a unanimous vote despite a lack of pub",
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN04_N,AN04,anger,neutral,one_sentence_summary,2,"The school board approved a budget that adjusted extracurricular programs at the district's smallest schools and expanded facilities at its largest schools, with a unanimous vote despite a lack of pub",
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN05_V,AN05,anger,valenced,genre_classification,0,Investigative journalism or news report.,
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN05_V,AN05,anger,valenced,genre_classification,1,Investigative journalism or news report.,
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN05_V,AN05,anger,valenced,genre_classification,2,Investigative journalism or news report.,
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN05_N,AN05,anger,neutral,genre_classification,0,News report.,
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN05_N,AN05,anger,neutral,genre_classification,1,News report.,
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN05_N,AN05,anger,neutral,genre_classification,2,News report.,
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN06_V,AN06,anger,valenced,count_proper_nouns,0,4,0
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN06_V,AN06,anger,valenced,count_proper_nouns,1,4,0
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN06_V,AN06,anger,valenced,count_proper_nouns,2,4,0
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN06_N,AN06,anger,neutral,count_proper_nouns,0,4,0
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN06_N,AN06,anger,neutral,count_proper_nouns,1,4,0
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN06_N,AN06,anger,neutral,count_proper_nouns,2,4,0
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN07_V,AN07,anger,valenced,factual_question,0,340 employees were affected by the job eliminations.,1
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN07_V,AN07,anger,valenced,factual_question,1,340 employees were affected by the job eliminations.,1
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN07_V,AN07,anger,valenced,factual_question,2,340 employees were affected by the job eliminations.,1
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN07_N,AN07,anger,neutral,factual_question,0,"According to the passage, 340 employees were affected by the transition.",1
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN07_N,AN07,anger,neutral,factual_question,1,"According to the passage, 340 employees were affected by the transition.",1
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN07_N,AN07,anger,neutral,factual_question,2,"According to the passage, 340 employees were affected by the transition.",1
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN08_V,AN08,anger,valenced,identify_topic,0,Landlord Tenant Dispute,
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN08_V,AN08,anger,valenced,identify_topic,1,Landlord Tenant Dispute,
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN08_V,AN08,anger,valenced,identify_topic,2,Landlord Tenant Dispute,
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN08_N,AN08,anger,neutral,identify_topic,0,Landlord Tenant Law,
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN08_N,AN08,anger,neutral,identify_topic,1,Landlord Tenant Law,
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN08_N,AN08,anger,neutral,identify_topic,2,Landlord Tenant Law,
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN09_V,AN09,anger,valenced,one_sentence_summary,0,"An audit revealed that a hospital overbilled Medicare by $4.7 million over three years due to ""data entry errors"" in billing procedures for patients who had already been discharged.",
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN09_V,AN09,anger,valenced,one_sentence_summary,1,"An audit revealed that a hospital overbilled Medicare by $4.7 million over three years due to ""data entry errors"" in billing procedures for patients who had already been discharged.",
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN09_V,AN09,anger,valenced,one_sentence_summary,2,"An audit revealed that a hospital overbilled Medicare by $4.7 million over three years due to ""data entry errors"" in billing procedures for patients who had already been discharged.",
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN09_N,AN09,anger,neutral,one_sentence_summary,0,"An audit revealed that a hospital had billed Medicare $4.7 million over three years for procedures performed on patients on their final day of admission, which the hospital's billing department claime",
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN09_N,AN09,anger,neutral,one_sentence_summary,1,"An audit revealed that a hospital had billed Medicare $4.7 million over three years for procedures performed on patients on their final day of admission, which the hospital's billing department claime",
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN09_N,AN09,anger,neutral,one_sentence_summary,2,"An audit revealed that a hospital had billed Medicare $4.7 million over three years for procedures performed on patients on their final day of admission, which the hospital's billing department claime",
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN10_V,AN10,anger,valenced,extract_dates,0,"January 14
+February 28
+November 3",1.0
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN10_V,AN10,anger,valenced,extract_dates,1,"January 14
+February 28
+November 3",1.0
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN10_V,AN10,anger,valenced,extract_dates,2,"January 14
+February 28
+November 3",1.0
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN10_N,AN10,anger,neutral,extract_dates,0,"January 14
+February 28
+November 3",1.0
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN10_N,AN10,anger,neutral,extract_dates,1,"January 14
+February 28
+November 3",1.0
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN10_N,AN10,anger,neutral,extract_dates,2,"January 14
+February 28
+November 3",1.0
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN11_V,AN11,anger,valenced,genre_classification,0,Social Commentary/News/Non-Fiction,
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN11_V,AN11,anger,valenced,genre_classification,1,Social Commentary/News/Non-Fiction,
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN11_V,AN11,anger,valenced,genre_classification,2,Social Commentary/News/Non-Fiction,
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN11_N,AN11,anger,neutral,genre_classification,0,Government/Official Report,
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN11_N,AN11,anger,neutral,genre_classification,1,Government/Official Report,
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN11_N,AN11,anger,neutral,genre_classification,2,Government/Official Report,
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN12_V,AN12,anger,valenced,factual_question,0,"The stated reason for the decision to terminate Miriam Osei's contract was ""budget realignment.""",1
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN12_V,AN12,anger,valenced,factual_question,1,"The stated reason for the decision to terminate Miriam Osei's contract was ""budget realignment.""",1
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN12_V,AN12,anger,valenced,factual_question,2,"The stated reason for the decision to terminate Miriam Osei's contract was ""budget realignment.""",1
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN12_N,AN12,anger,neutral,factual_question,0,"The stated reason for the decision to restructure Miriam Osei's contract to a part-time arrangement was ""budget realignment.""",1
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN12_N,AN12,anger,neutral,factual_question,1,"The stated reason for the decision to restructure Miriam Osei's contract to a part-time arrangement was ""budget realignment.""",1
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN12_N,AN12,anger,neutral,factual_question,2,"The stated reason for the decision to restructure Miriam Osei's contract to a part-time arrangement was ""budget realignment.""",1
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN13_V,AN13,anger,valenced,count_proper_nouns,0,5,0
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN13_V,AN13,anger,valenced,count_proper_nouns,1,5,0
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN13_V,AN13,anger,valenced,count_proper_nouns,2,5,0
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN13_N,AN13,anger,neutral,count_proper_nouns,0,5,0
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN13_N,AN13,anger,neutral,count_proper_nouns,1,5,0
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN13_N,AN13,anger,neutral,count_proper_nouns,2,5,0
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN14_V,AN14,anger,valenced,identify_topic,0,Food Bank Eviction,
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN14_V,AN14,anger,valenced,identify_topic,1,Food Bank Eviction,
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN14_V,AN14,anger,valenced,identify_topic,2,Food Bank Eviction,
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN14_N,AN14,anger,neutral,identify_topic,0,Warehouse development.,
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN14_N,AN14,anger,neutral,identify_topic,1,Warehouse development.,
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN14_N,AN14,anger,neutral,identify_topic,2,Warehouse development.,
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN15_V,AN15,anger,valenced,one_sentence_summary,0,"A chemical plant's safety manager submitted a report in April warning of a potential gas leak risk in storage unit 7, but no action was taken, which ultimately led to a leak in September that hospital",
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN15_V,AN15,anger,valenced,one_sentence_summary,1,"A chemical plant's safety manager submitted a report in April warning of a potential gas leak risk in storage unit 7, but no action was taken, which ultimately led to a leak in September that hospital",
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN15_V,AN15,anger,valenced,one_sentence_summary,2,"A chemical plant's safety manager submitted a report in April warning of a potential gas leak risk in storage unit 7, but no action was taken, which ultimately led to a leak in September that hospital",
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN15_N,AN15,anger,neutral,one_sentence_summary,0,"The chemical plant's safety manager submitted a report in April showing compliance with safety standards in storage unit 7, which was later confirmed during a September inspection.",
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN15_N,AN15,anger,neutral,one_sentence_summary,1,"The chemical plant's safety manager submitted a report in April showing compliance with safety standards in storage unit 7, which was later confirmed during a September inspection.",
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN15_N,AN15,anger,neutral,one_sentence_summary,2,"The chemical plant's safety manager submitted a report in April showing compliance with safety standards in storage unit 7, which was later confirmed during a September inspection.",
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN16_V,AN16,anger,valenced,genre_classification,0,Whistleblower/True Crime/Investigative Journalism,
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN16_V,AN16,anger,valenced,genre_classification,1,Whistleblower/True Crime/Investigative Journalism,
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN16_V,AN16,anger,valenced,genre_classification,2,Whistleblower/True Crime/Investigative Journalism,
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN16_N,AN16,anger,neutral,genre_classification,0,Non-fiction,
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN16_N,AN16,anger,neutral,genre_classification,1,Non-fiction,
+meta-llama/Meta-Llama-3.1-8B-Instruct,AN16_N,AN16,anger,neutral,genre_classification,2,Non-fiction,
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA01_V,SA01,sadness,valenced,count_proper_nouns,0,6,0
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA01_V,SA01,sadness,valenced,count_proper_nouns,1,6,0
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA01_V,SA01,sadness,valenced,count_proper_nouns,2,6,0
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA01_N,SA01,sadness,neutral,count_proper_nouns,0,5,0
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA01_N,SA01,sadness,neutral,count_proper_nouns,1,5,0
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA01_N,SA01,sadness,neutral,count_proper_nouns,2,5,0
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA02_V,SA02,sadness,valenced,identify_topic,0,Eviction Notice,
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA02_V,SA02,sadness,valenced,identify_topic,1,Eviction Notice,
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA02_V,SA02,sadness,valenced,identify_topic,2,Eviction Notice,
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA02_N,SA02,sadness,neutral,identify_topic,0,Office Lease Renewal,
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA02_N,SA02,sadness,neutral,identify_topic,1,Office Lease Renewal,
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA02_N,SA02,sadness,neutral,identify_topic,2,Office Lease Renewal,
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA03_V,SA03,sadness,valenced,extract_dates,0,"December 19
+November 30
+December 15
+December 18",1.0
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA03_V,SA03,sadness,valenced,extract_dates,1,"December 19
+November 30
+December 15
+December 18",1.0
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA03_V,SA03,sadness,valenced,extract_dates,2,"December 19
+November 30
+December 15
+December 18",1.0
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA03_N,SA03,sadness,neutral,extract_dates,0,"December 19
+November 30
+December 15
+December 18",1.0
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA03_N,SA03,sadness,neutral,extract_dates,1,"December 19
+November 30
+December 15
+December 18",1.0
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA03_N,SA03,sadness,neutral,extract_dates,2,"December 19
+November 30
+December 15
+December 18",1.0
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA04_V,SA04,sadness,valenced,one_sentence_summary,0,"The letter, written before the sender received news of the recipient's deployment, expressed her plans and daily life, ending with an optimistic message of ""see you soon.""",
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA04_V,SA04,sadness,valenced,one_sentence_summary,1,"The letter, written before the sender received news of the recipient's deployment, expressed her plans and daily life, ending with an optimistic message of ""see you soon.""",
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA04_V,SA04,sadness,valenced,one_sentence_summary,2,"The letter, written before the sender received news of the recipient's deployment, expressed her plans and daily life, ending with an optimistic message of ""see you soon.""",
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA04_N,SA04,sadness,neutral,one_sentence_summary,0,"The letter, written before the recipient received an agenda update, arrived six weeks later and included information about budget proposals, new policies, and a new committee-approved item, ending wit",
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA04_N,SA04,sadness,neutral,one_sentence_summary,1,"The letter, written before the recipient received an agenda update, arrived six weeks later and included information about budget proposals, new policies, and a new committee-approved item, ending wit",
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA04_N,SA04,sadness,neutral,one_sentence_summary,2,"The letter, written before the recipient received an agenda update, arrived six weeks later and included information about budget proposals, new policies, and a new committee-approved item, ending wit",
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA05_V,SA05,sadness,valenced,genre_classification,0,Literary Fiction,
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA05_V,SA05,sadness,valenced,genre_classification,1,Literary Fiction,
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA05_V,SA05,sadness,valenced,genre_classification,2,Literary Fiction,
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA05_N,SA05,sadness,neutral,genre_classification,0,Business/Professional,
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA05_N,SA05,sadness,neutral,genre_classification,1,Business/Professional,
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA05_N,SA05,sadness,neutral,genre_classification,2,Business/Professional,
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA06_V,SA06,sadness,valenced,factual_question,0,"Based on the passage, we can determine the following information:
+
+- Daniel's age at the time of the event: 34
+- His mother's age at the time of her diagnosis: 34
+- The ages of his daughters: 3 and 6",1
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA06_V,SA06,sadness,valenced,factual_question,1,"Based on the passage, we can determine the following information:
+
+- Daniel's age at the time of the event: 34
+- His mother's age at the time of her diagnosis: 34
+- The ages of his daughters: 3 and 6",1
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA06_V,SA06,sadness,valenced,factual_question,2,"Based on the passage, we can determine the following information:
+
+- Daniel's age at the time of the event: 34
+- His mother's age at the time of her diagnosis: 34
+- The ages of his daughters: 3 and 6",1
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA06_N,SA06,sadness,neutral,factual_question,0,"The passage does not explicitly state the event that occurred. However, based on the information provided, we can infer that the event is Daniel receiving the promotion. 
+
+According to the passage, Da",1
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA06_N,SA06,sadness,neutral,factual_question,1,"The passage does not explicitly state the event that occurred. However, based on the information provided, we can infer that the event is Daniel receiving the promotion. 
+
+According to the passage, Da",1
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA06_N,SA06,sadness,neutral,factual_question,2,"The passage does not explicitly state the event that occurred. However, based on the information provided, we can infer that the event is Daniel receiving the promotion. 
+
+According to the passage, Da",1
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA07_V,SA07,sadness,valenced,count_proper_nouns,0,7,0
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA07_V,SA07,sadness,valenced,count_proper_nouns,1,7,0
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA07_V,SA07,sadness,valenced,count_proper_nouns,2,7,0
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA07_N,SA07,sadness,neutral,count_proper_nouns,0,7,0
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA07_N,SA07,sadness,neutral,count_proper_nouns,1,7,0
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA07_N,SA07,sadness,neutral,count_proper_nouns,2,7,0
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA08_V,SA08,sadness,valenced,identify_topic,0,A Simple Dinner Request,
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA08_V,SA08,sadness,valenced,identify_topic,1,A Simple Dinner Request,
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA08_V,SA08,sadness,valenced,identify_topic,2,A Simple Dinner Request,
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA08_N,SA08,sadness,neutral,identify_topic,0,Conference recording.,
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA08_N,SA08,sadness,neutral,identify_topic,1,Conference recording.,
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA08_N,SA08,sadness,neutral,identify_topic,2,Conference recording.,
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA09_V,SA09,sadness,valenced,one_sentence_summary,0,"A man's belongings, including a watch, comb, books, and a mysterious photograph, were sent to a retirement home in two boxes, labeled with his name on masking tape.",
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA09_V,SA09,sadness,valenced,one_sentence_summary,1,"A man's belongings, including a watch, comb, books, and a mysterious photograph, were sent to a retirement home in two boxes, labeled with his name on masking tape.",
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA09_V,SA09,sadness,valenced,one_sentence_summary,2,"A man's belongings, including a watch, comb, books, and a mysterious photograph, were sent to a retirement home in two boxes, labeled with his name on masking tape.",
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA09_N,SA09,sadness,neutral,one_sentence_summary,0,"The storage facility sent two boxes containing a calculator, stapler, binders, and a photograph of a team in front of an unidentified building, all labeled with the owner's name.",
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA09_N,SA09,sadness,neutral,one_sentence_summary,1,"The storage facility sent two boxes containing a calculator, stapler, binders, and a photograph of a team in front of an unidentified building, all labeled with the owner's name.",
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA09_N,SA09,sadness,neutral,one_sentence_summary,2,"The storage facility sent two boxes containing a calculator, stapler, binders, and a photograph of a team in front of an unidentified building, all labeled with the owner's name.",
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA10_V,SA10,sadness,valenced,extract_dates,0,"March 2
+April 17
+March 15
+May 3",1.0
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA10_V,SA10,sadness,valenced,extract_dates,1,"March 2
+April 17
+March 15
+May 3",1.0
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA10_V,SA10,sadness,valenced,extract_dates,2,"March 2
+April 17
+March 15
+May 3",1.0
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA10_N,SA10,sadness,neutral,extract_dates,0,"March 2
+April 17
+March 15
+May 3",1.0
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA10_N,SA10,sadness,neutral,extract_dates,1,"March 2
+April 17
+March 15
+May 3",1.0
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA10_N,SA10,sadness,neutral,extract_dates,2,"March 2
+April 17
+March 15
+May 3",1.0
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA11_V,SA11,sadness,valenced,genre_classification,0,Domestic Fiction or Literary Fiction,
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA11_V,SA11,sadness,valenced,genre_classification,1,Domestic Fiction or Literary Fiction,
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA11_V,SA11,sadness,valenced,genre_classification,2,Domestic Fiction or Literary Fiction,
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA11_N,SA11,sadness,neutral,genre_classification,0,Business/Office Fiction,
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA11_N,SA11,sadness,neutral,genre_classification,1,Business/Office Fiction,
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA11_N,SA11,sadness,neutral,genre_classification,2,Business/Office Fiction,
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA12_V,SA12,sadness,valenced,factual_question,0,The bookstore had been in operation for 38 years.,1
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA12_V,SA12,sadness,valenced,factual_question,1,The bookstore had been in operation for 38 years.,1
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA12_V,SA12,sadness,valenced,factual_question,2,The bookstore had been in operation for 38 years.,1
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA12_N,SA12,sadness,neutral,factual_question,0,The bookstore on Canal Street had been in operation for 38 years.,1
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA12_N,SA12,sadness,neutral,factual_question,1,The bookstore on Canal Street had been in operation for 38 years.,1
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA12_N,SA12,sadness,neutral,factual_question,2,The bookstore on Canal Street had been in operation for 38 years.,1
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA13_V,SA13,sadness,valenced,count_proper_nouns,0,7,0
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA13_V,SA13,sadness,valenced,count_proper_nouns,1,7,0
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA13_V,SA13,sadness,valenced,count_proper_nouns,2,7,0
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA13_N,SA13,sadness,neutral,count_proper_nouns,0,7,0
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA13_N,SA13,sadness,neutral,count_proper_nouns,1,7,0
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA13_N,SA13,sadness,neutral,count_proper_nouns,2,7,0
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA14_V,SA14,sadness,valenced,identify_topic,0,A Bittersweet Memory,
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA14_V,SA14,sadness,valenced,identify_topic,1,A Bittersweet Memory,
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA14_V,SA14,sadness,valenced,identify_topic,2,A Bittersweet Memory,
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA14_N,SA14,sadness,neutral,identify_topic,0,Workplace Photo Evidence,
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA14_N,SA14,sadness,neutral,identify_topic,1,Workplace Photo Evidence,
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA14_N,SA14,sadness,neutral,identify_topic,2,Workplace Photo Evidence,
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA15_V,SA15,sadness,valenced,one_sentence_summary,0,"A community garden on a Fifth Avenue lot, established 19 years ago by a group of neighbors, was relocated before the city sold the land to a developer in November.",
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA15_V,SA15,sadness,valenced,one_sentence_summary,1,"A community garden on a Fifth Avenue lot, established 19 years ago by a group of neighbors, was relocated before the city sold the land to a developer in November.",
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA15_V,SA15,sadness,valenced,one_sentence_summary,2,"A community garden on a Fifth Avenue lot, established 19 years ago by a group of neighbors, was relocated before the city sold the land to a developer in November.",
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA15_N,SA15,sadness,neutral,one_sentence_summary,0,"The parking structure on Fifth Avenue was demolished and replaced after 19 years, with the city selling the lot to a developer in November and clearing the site for new construction to begin.",
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA15_N,SA15,sadness,neutral,one_sentence_summary,1,"The parking structure on Fifth Avenue was demolished and replaced after 19 years, with the city selling the lot to a developer in November and clearing the site for new construction to begin.",
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA15_N,SA15,sadness,neutral,one_sentence_summary,2,"The parking structure on Fifth Avenue was demolished and replaced after 19 years, with the city selling the lot to a developer in November and clearing the site for new construction to begin.",
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA16_V,SA16,sadness,valenced,genre_classification,0,Drama,
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA16_V,SA16,sadness,valenced,genre_classification,1,Drama,
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA16_V,SA16,sadness,valenced,genre_classification,2,Drama,
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA16_N,SA16,sadness,neutral,genre_classification,0,Realistic Fiction,
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA16_N,SA16,sadness,neutral,genre_classification,1,Realistic Fiction,
+meta-llama/Meta-Llama-3.1-8B-Instruct,SA16_N,SA16,sadness,neutral,genre_classification,2,Realistic Fiction,
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA01_V,HA01,happiness,valenced,count_proper_nouns,0,5,0
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA01_V,HA01,happiness,valenced,count_proper_nouns,1,5,0
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA01_V,HA01,happiness,valenced,count_proper_nouns,2,5,0
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA01_N,HA01,happiness,neutral,count_proper_nouns,0,5,0
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA01_N,HA01,happiness,neutral,count_proper_nouns,1,5,0
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA01_N,HA01,happiness,neutral,count_proper_nouns,2,5,0
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA02_V,HA02,happiness,valenced,identify_topic,0,Family Reconciliation,
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA02_V,HA02,happiness,valenced,identify_topic,1,Family Reconciliation,
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA02_V,HA02,happiness,valenced,identify_topic,2,Family Reconciliation,
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA02_N,HA02,happiness,neutral,identify_topic,0,Department Collaboration,
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA02_N,HA02,happiness,neutral,identify_topic,1,Department Collaboration,
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA02_N,HA02,happiness,neutral,identify_topic,2,Department Collaboration,
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA03_V,HA03,happiness,valenced,extract_dates,0,"February 8
+June 22
+June 22
+July 4",1.0
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA03_V,HA03,happiness,valenced,extract_dates,1,"February 8
+June 22
+June 22
+July 4",1.0
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA03_V,HA03,happiness,valenced,extract_dates,2,"February 8
+June 22
+June 22
+July 4",1.0
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA03_N,HA03,happiness,neutral,extract_dates,0,"February 8
+June 22
+June 22
+July 4",1.0
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA03_N,HA03,happiness,neutral,extract_dates,1,"February 8
+June 22
+June 22
+July 4",1.0
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA03_N,HA03,happiness,neutral,extract_dates,2,"February 8
+June 22
+June 22
+July 4",1.0
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA04_V,HA04,happiness,valenced,one_sentence_summary,0,"A 52-hour search effort came to an end when a young boy was found uninjured in a ravine two miles from the trailhead and was safely carried out by the lead searcher, Tomás, to be reunited with his mot",
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA04_V,HA04,happiness,valenced,one_sentence_summary,1,"A 52-hour search effort came to an end when a young boy was found uninjured in a ravine two miles from the trailhead and was safely carried out by the lead searcher, Tomás, to be reunited with his mot",
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA04_V,HA04,happiness,valenced,one_sentence_summary,2,"A 52-hour search effort came to an end when a young boy was found uninjured in a ravine two miles from the trailhead and was safely carried out by the lead searcher, Tomás, to be reunited with his mot",
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA04_N,HA04,happiness,neutral,one_sentence_summary,0,"The inventory team, after processing the shipment for 52 hours, successfully moved it out of the warehouse on a dolly to the loading dock where the receiving manager was waiting.",
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA04_N,HA04,happiness,neutral,one_sentence_summary,1,"The inventory team, after processing the shipment for 52 hours, successfully moved it out of the warehouse on a dolly to the loading dock where the receiving manager was waiting.",
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA04_N,HA04,happiness,neutral,one_sentence_summary,2,"The inventory team, after processing the shipment for 52 hours, successfully moved it out of the warehouse on a dolly to the loading dock where the receiving manager was waiting.",
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA05_V,HA05,happiness,valenced,genre_classification,0,Literary Fiction,
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA05_V,HA05,happiness,valenced,genre_classification,1,Literary Fiction,
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA05_V,HA05,happiness,valenced,genre_classification,2,Literary Fiction,
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA05_N,HA05,happiness,neutral,genre_classification,0,Literary Fiction,
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA05_N,HA05,happiness,neutral,genre_classification,1,Literary Fiction,
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA05_N,HA05,happiness,neutral,genre_classification,2,Literary Fiction,
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA06_V,HA06,happiness,valenced,factual_question,0,"According to the passage, Yusuf had been waiting on the affordable housing waitlist for 6 years.",0
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA06_V,HA06,happiness,valenced,factual_question,1,"According to the passage, Yusuf had been waiting on the affordable housing waitlist for 6 years.",0
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA06_V,HA06,happiness,valenced,factual_question,2,"According to the passage, Yusuf had been waiting on the affordable housing waitlist for 6 years.",0
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA06_N,HA06,happiness,neutral,factual_question,0,"According to the passage, Yusuf had been waiting on the contractor approval list for 6 years.",0
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA06_N,HA06,happiness,neutral,factual_question,1,"According to the passage, Yusuf had been waiting on the contractor approval list for 6 years.",0
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA06_N,HA06,happiness,neutral,factual_question,2,"According to the passage, Yusuf had been waiting on the contractor approval list for 6 years.",0
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA07_V,HA07,happiness,valenced,count_proper_nouns,0,6,0
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA07_V,HA07,happiness,valenced,count_proper_nouns,1,6,0
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA07_V,HA07,happiness,valenced,count_proper_nouns,2,6,0
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA07_N,HA07,happiness,neutral,count_proper_nouns,0,5,1
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA07_N,HA07,happiness,neutral,count_proper_nouns,1,5,1
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA07_N,HA07,happiness,neutral,count_proper_nouns,2,5,1
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA08_V,HA08,happiness,valenced,identify_topic,0,Infertility Success Story,
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA08_V,HA08,happiness,valenced,identify_topic,1,Infertility Success Story,
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA08_V,HA08,happiness,valenced,identify_topic,2,Infertility Success Story,
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA08_N,HA08,happiness,neutral,identify_topic,0,Business Contract Negotiations,
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA08_N,HA08,happiness,neutral,identify_topic,1,Business Contract Negotiations,
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA08_N,HA08,happiness,neutral,identify_topic,2,Business Contract Negotiations,
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA09_V,HA09,happiness,valenced,one_sentence_summary,0,"A family of refugees in a camp received a resettlement notice, which they read together as a family, marking a potentially life-changing moment after three years of living in the camp.",
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA09_V,HA09,happiness,valenced,one_sentence_summary,1,"A family of refugees in a camp received a resettlement notice, which they read together as a family, marking a potentially life-changing moment after three years of living in the camp.",
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA09_V,HA09,happiness,valenced,one_sentence_summary,2,"A family of refugees in a camp received a resettlement notice, which they read together as a family, marking a potentially life-changing moment after three years of living in the camp.",
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA09_N,HA09,happiness,neutral,one_sentence_summary,0,"The manager received an approval notice for a proposal that had been under review for three years, which he read aloud to his team after receiving it in an envelope with a formal letterhead.",
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA09_N,HA09,happiness,neutral,one_sentence_summary,1,"The manager received an approval notice for a proposal that had been under review for three years, which he read aloud to his team after receiving it in an envelope with a formal letterhead.",
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA09_N,HA09,happiness,neutral,one_sentence_summary,2,"The manager received an approval notice for a proposal that had been under review for three years, which he read aloud to his team after receiving it in an envelope with a formal letterhead.",
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA10_V,HA10,happiness,valenced,extract_dates,0,"1. September 1
+2. June 3
+3. October 15
+4. November 2",1.0
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA10_V,HA10,happiness,valenced,extract_dates,1,"1. September 1
+2. June 3
+3. October 15
+4. November 2",1.0
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA10_V,HA10,happiness,valenced,extract_dates,2,"1. September 1
+2. June 3
+3. October 15
+4. November 2",1.0
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA10_N,HA10,happiness,neutral,extract_dates,0,"1. September 1
+2. June 3
+3. October 15
+4. November 2",1.0
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA10_N,HA10,happiness,neutral,extract_dates,1,"1. September 1
+2. June 3
+3. October 15
+4. November 2",1.0
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA10_N,HA10,happiness,neutral,extract_dates,2,"1. September 1
+2. June 3
+3. October 15
+4. November 2",1.0
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA11_V,HA11,happiness,valenced,genre_classification,0,Drama,
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA11_V,HA11,happiness,valenced,genre_classification,1,Drama,
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA11_V,HA11,happiness,valenced,genre_classification,2,Drama,
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA11_N,HA11,happiness,neutral,genre_classification,0,Mystery,
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA11_N,HA11,happiness,neutral,genre_classification,1,Mystery,
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA11_N,HA11,happiness,neutral,genre_classification,2,Mystery,
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA12_V,HA12,happiness,valenced,factual_question,0,"The climber had made 4 attempts before the fifth attempt, which was successful.",0
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA12_V,HA12,happiness,valenced,factual_question,1,"The climber had made 4 attempts before the fifth attempt, which was successful.",0
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA12_V,HA12,happiness,valenced,factual_question,2,"The climber had made 4 attempts before the fifth attempt, which was successful.",0
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA12_N,HA12,happiness,neutral,factual_question,0,"According to the passage, the team had made 4 attempts before receiving success on the fifth submission.",0
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA12_N,HA12,happiness,neutral,factual_question,1,"According to the passage, the team had made 4 attempts before receiving success on the fifth submission.",0
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA12_N,HA12,happiness,neutral,factual_question,2,"According to the passage, the team had made 4 attempts before receiving success on the fifth submission.",0
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA13_V,HA13,happiness,valenced,count_proper_nouns,0,7,0
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA13_V,HA13,happiness,valenced,count_proper_nouns,1,7,0
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA13_V,HA13,happiness,valenced,count_proper_nouns,2,7,0
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA13_N,HA13,happiness,neutral,count_proper_nouns,0,7,0
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA13_N,HA13,happiness,neutral,count_proper_nouns,1,7,0
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA13_N,HA13,happiness,neutral,count_proper_nouns,2,7,0
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA14_V,HA14,happiness,valenced,identify_topic,0,Dog Adopted at Shelter,
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA14_V,HA14,happiness,valenced,identify_topic,1,Dog Adopted at Shelter,
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA14_V,HA14,happiness,valenced,identify_topic,2,Dog Adopted at Shelter,
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA14_N,HA14,happiness,neutral,identify_topic,0,Warehouse Inventory Management,
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA14_N,HA14,happiness,neutral,identify_topic,1,Warehouse Inventory Management,
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA14_N,HA14,happiness,neutral,identify_topic,2,Warehouse Inventory Management,
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA15_V,HA15,happiness,valenced,one_sentence_summary,0,"A first-generation university graduate walked across the stage in May, a moment made possible by her mother's 22 years of hard work at the textile factory to support their family after her father's de",
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA15_V,HA15,happiness,valenced,one_sentence_summary,1,"A first-generation university graduate walked across the stage in May, a moment made possible by her mother's 22 years of hard work at the textile factory to support their family after her father's de",
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA15_V,HA15,happiness,valenced,one_sentence_summary,2,"A first-generation university graduate walked across the stage in May, a moment made possible by her mother's 22 years of hard work at the textile factory to support their family after her father's de",
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA15_N,HA15,happiness,neutral,one_sentence_summary,0,"The new product line was successfully launched in May after a 22-month overnight development cycle, with the department head in attendance at the presentation.",
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA15_N,HA15,happiness,neutral,one_sentence_summary,1,"The new product line was successfully launched in May after a 22-month overnight development cycle, with the department head in attendance at the presentation.",
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA15_N,HA15,happiness,neutral,one_sentence_summary,2,"The new product line was successfully launched in May after a 22-month overnight development cycle, with the department head in attendance at the presentation.",
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA16_V,HA16,happiness,valenced,genre_classification,0,Drama,
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA16_V,HA16,happiness,valenced,genre_classification,1,Drama,
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA16_V,HA16,happiness,valenced,genre_classification,2,Drama,
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA16_N,HA16,happiness,neutral,genre_classification,0,Literary Fiction,
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA16_N,HA16,happiness,neutral,genre_classification,1,Literary Fiction,
+meta-llama/Meta-Llama-3.1-8B-Instruct,HA16_N,HA16,happiness,neutral,genre_classification,2,Literary Fiction,
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE01_V,FE01,fear,valenced,count_proper_nouns,0,7,0
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE01_V,FE01,fear,valenced,count_proper_nouns,1,7,0
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE01_V,FE01,fear,valenced,count_proper_nouns,2,7,0
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE01_N,FE01,fear,neutral,count_proper_nouns,0,6,0
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE01_N,FE01,fear,neutral,count_proper_nouns,1,6,0
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE01_N,FE01,fear,neutral,count_proper_nouns,2,6,0
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE02_V,FE02,fear,valenced,identify_topic,0,Mountain Emergency Situation,
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE02_V,FE02,fear,valenced,identify_topic,1,Mountain Emergency Situation,
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE02_V,FE02,fear,valenced,identify_topic,2,Mountain Emergency Situation,
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE02_N,FE02,fear,neutral,identify_topic,0,Mountain Weather Conditions,
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE02_N,FE02,fear,neutral,identify_topic,1,Mountain Weather Conditions,
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE02_N,FE02,fear,neutral,identify_topic,2,Mountain Weather Conditions,
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE03_V,FE03,fear,valenced,extract_dates,0,"August 4
+August 6
+August 7
+August 9",1.0
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE03_V,FE03,fear,valenced,extract_dates,1,"August 4
+August 6
+August 7
+August 9",1.0
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE03_V,FE03,fear,valenced,extract_dates,2,"August 4
+August 6
+August 7
+August 9",1.0
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE03_N,FE03,fear,neutral,extract_dates,0,"August 4
+August 6
+August 7
+August 9",1.0
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE03_N,FE03,fear,neutral,extract_dates,1,"August 4
+August 6
+August 7
+August 9",1.0
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE03_N,FE03,fear,neutral,extract_dates,2,"August 4
+August 6
+August 7
+August 9",1.0
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE04_V,FE04,fear,valenced,one_sentence_summary,0,"A child wandered away from a campsite while the adults were setting up, and when they realized she was missing, they were unable to find her footprints in the dark, as the forest surrounded a deep rav",
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE04_V,FE04,fear,valenced,one_sentence_summary,1,"A child wandered away from a campsite while the adults were setting up, and when they realized she was missing, they were unable to find her footprints in the dark, as the forest surrounded a deep rav",
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE04_V,FE04,fear,valenced,one_sentence_summary,2,"A child wandered away from a campsite while the adults were setting up, and when they realized she was missing, they were unable to find her footprints in the dark, as the forest surrounded a deep rav",
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE04_N,FE04,fear,neutral,one_sentence_summary,0,"Staff at the facility were unable to locate a unit in storage after it was moved, so they began searching through the three storage corridors.",
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE04_N,FE04,fear,neutral,one_sentence_summary,1,"Staff at the facility were unable to locate a unit in storage after it was moved, so they began searching through the three storage corridors.",
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE04_N,FE04,fear,neutral,one_sentence_summary,2,"Staff at the facility were unable to locate a unit in storage after it was moved, so they began searching through the three storage corridors.",
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE05_V,FE05,fear,valenced,genre_classification,0,Thriller/Mystery,
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE05_V,FE05,fear,valenced,genre_classification,1,Thriller/Mystery,
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE05_V,FE05,fear,valenced,genre_classification,2,Thriller/Mystery,
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE05_N,FE05,fear,neutral,genre_classification,0,Thriller/Mystery,
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE05_N,FE05,fear,neutral,genre_classification,1,Thriller/Mystery,
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE05_N,FE05,fear,neutral,genre_classification,2,Thriller/Mystery,
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE06_V,FE06,fear,valenced,factual_question,0,"The power remained out from 11pm to 3am, which is a total of 4 hours.",1
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE06_V,FE06,fear,valenced,factual_question,1,"The power remained out from 11pm to 3am, which is a total of 4 hours.",1
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE06_V,FE06,fear,valenced,factual_question,2,"The power remained out from 11pm to 3am, which is a total of 4 hours.",1
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE06_N,FE06,fear,neutral,factual_question,0,"According to the passage, the power remained out from 11pm to 3am. This is a duration of 4 hours.",1
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE06_N,FE06,fear,neutral,factual_question,1,"According to the passage, the power remained out from 11pm to 3am. This is a duration of 4 hours.",1
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE06_N,FE06,fear,neutral,factual_question,2,"According to the passage, the power remained out from 11pm to 3am. This is a duration of 4 hours.",1
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE07_V,FE07,fear,valenced,count_proper_nouns,0,6,0
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE07_V,FE07,fear,valenced,count_proper_nouns,1,6,0
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE07_V,FE07,fear,valenced,count_proper_nouns,2,6,0
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE07_N,FE07,fear,neutral,count_proper_nouns,0,6,0
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE07_N,FE07,fear,neutral,count_proper_nouns,1,6,0
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE07_N,FE07,fear,neutral,count_proper_nouns,2,6,0
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE08_V,FE08,fear,valenced,identify_topic,0,Cancer diagnosis update.,
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE08_V,FE08,fear,valenced,identify_topic,1,Cancer diagnosis update.,
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE08_V,FE08,fear,valenced,identify_topic,2,Cancer diagnosis update.,
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE08_N,FE08,fear,neutral,identify_topic,0,Audit Accounting Issue,
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE08_N,FE08,fear,neutral,identify_topic,1,Audit Accounting Issue,
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE08_N,FE08,fear,neutral,identify_topic,2,Audit Accounting Issue,
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE09_V,FE09,fear,valenced,one_sentence_summary,0,"As the fire alarm sounded for four minutes, two residents remained in the 14th floor stairwell, with one of them using a walker, while the elevator was locked to the ground floor due to the building's",
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE09_V,FE09,fear,valenced,one_sentence_summary,1,"As the fire alarm sounded for four minutes, two residents remained in the 14th floor stairwell, with one of them using a walker, while the elevator was locked to the ground floor due to the building's",
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE09_V,FE09,fear,valenced,one_sentence_summary,2,"As the fire alarm sounded for four minutes, two residents remained in the 14th floor stairwell, with one of them using a walker, while the elevator was locked to the ground floor due to the building's",
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE09_N,FE09,fear,neutral,one_sentence_summary,0,"The inspection crew reached the 14th floor stairwell, where the maintenance alarm had been sounding for four minutes, but two technicians were still missing and the elevator was reserved for equipment",
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE09_N,FE09,fear,neutral,one_sentence_summary,1,"The inspection crew reached the 14th floor stairwell, where the maintenance alarm had been sounding for four minutes, but two technicians were still missing and the elevator was reserved for equipment",
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE09_N,FE09,fear,neutral,one_sentence_summary,2,"The inspection crew reached the 14th floor stairwell, where the maintenance alarm had been sounding for four minutes, but two technicians were still missing and the elevator was reserved for equipment",
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE10_V,FE10,fear,valenced,extract_dates,0,"October 3
+October 9
+October 14
+October 17",1.0
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE10_V,FE10,fear,valenced,extract_dates,1,"October 3
+October 9
+October 14
+October 17",1.0
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE10_V,FE10,fear,valenced,extract_dates,2,"October 3
+October 9
+October 14
+October 17",1.0
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE10_N,FE10,fear,neutral,extract_dates,0,"October 3
+October 9
+October 14
+October 17",1.0
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE10_N,FE10,fear,neutral,extract_dates,1,"October 3
+October 9
+October 14
+October 17",1.0
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE10_N,FE10,fear,neutral,extract_dates,2,"October 3
+October 9
+October 14
+October 17",1.0
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE11_V,FE11,fear,valenced,genre_classification,0,Drama,
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE11_V,FE11,fear,valenced,genre_classification,1,Drama,
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE11_V,FE11,fear,valenced,genre_classification,2,Drama,
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE11_N,FE11,fear,neutral,genre_classification,0,Realistic Fiction or possibly Aviation/Travel Nonfiction.,
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE11_N,FE11,fear,neutral,genre_classification,1,Realistic Fiction or possibly Aviation/Travel Nonfiction.,
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE11_N,FE11,fear,neutral,genre_classification,2,Realistic Fiction or possibly Aviation/Travel Nonfiction.,
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE12_V,FE12,fear,valenced,factual_question,0,"According to the passage, there were 340 people in the building at the time of the lockdown.",1
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE12_V,FE12,fear,valenced,factual_question,1,"According to the passage, there were 340 people in the building at the time of the lockdown.",1
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE12_V,FE12,fear,valenced,factual_question,2,"According to the passage, there were 340 people in the building at the time of the lockdown.",1
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE12_N,FE12,fear,neutral,factual_question,0,"According to the passage, there were 340 people in the building at the time of the drill.",1
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE12_N,FE12,fear,neutral,factual_question,1,"According to the passage, there were 340 people in the building at the time of the drill.",1
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE12_N,FE12,fear,neutral,factual_question,2,"According to the passage, there were 340 people in the building at the time of the drill.",1
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE13_V,FE13,fear,valenced,count_proper_nouns,0,6,0
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE13_V,FE13,fear,valenced,count_proper_nouns,1,6,0
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE13_V,FE13,fear,valenced,count_proper_nouns,2,6,0
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE13_N,FE13,fear,neutral,count_proper_nouns,0,6,0
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE13_N,FE13,fear,neutral,count_proper_nouns,1,6,0
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE13_N,FE13,fear,neutral,count_proper_nouns,2,6,0
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE14_V,FE14,fear,valenced,identify_topic,0,Intimidation of Witness,
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE14_V,FE14,fear,valenced,identify_topic,1,Intimidation of Witness,
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE14_V,FE14,fear,valenced,identify_topic,2,Intimidation of Witness,
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE14_N,FE14,fear,neutral,identify_topic,0,Conference Preparation Issues,
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE14_N,FE14,fear,neutral,identify_topic,1,Conference Preparation Issues,
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE14_N,FE14,fear,neutral,identify_topic,2,Conference Preparation Issues,
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE15_V,FE15,fear,valenced,one_sentence_summary,0,"A toxicology report revealed that the water supply had been contaminated, with the source traced to a storage tank used by multiple schools and a residential block, after a parent's initial request fo",
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE15_V,FE15,fear,valenced,one_sentence_summary,1,"A toxicology report revealed that the water supply had been contaminated, with the source traced to a storage tank used by multiple schools and a residential block, after a parent's initial request fo",
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE15_V,FE15,fear,valenced,one_sentence_summary,2,"A toxicology report revealed that the water supply had been contaminated, with the source traced to a storage tank used by multiple schools and a residential block, after a parent's initial request fo",
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE15_N,FE15,fear,neutral,one_sentence_summary,0,"An inspection report confirmed that the water supply had been reconfigured, likely starting in October, after a storage tank serving multiple commercial and residential sites underwent testing request",
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE15_N,FE15,fear,neutral,one_sentence_summary,1,"An inspection report confirmed that the water supply had been reconfigured, likely starting in October, after a storage tank serving multiple commercial and residential sites underwent testing request",
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE15_N,FE15,fear,neutral,one_sentence_summary,2,"An inspection report confirmed that the water supply had been reconfigured, likely starting in October, after a storage tank serving multiple commercial and residential sites underwent testing request",
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE16_V,FE16,fear,valenced,genre_classification,0,Thriller,
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE16_V,FE16,fear,valenced,genre_classification,1,Thriller,
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE16_V,FE16,fear,valenced,genre_classification,2,Thriller,
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE16_N,FE16,fear,neutral,genre_classification,0,Crime/Thriller,
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE16_N,FE16,fear,neutral,genre_classification,1,Crime/Thriller,
+meta-llama/Meta-Llama-3.1-8B-Instruct,FE16_N,FE16,fear,neutral,genre_classification,2,Crime/Thriller,
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI01_V,DI01,disgust,valenced,count_proper_nouns,0,5,0
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI01_V,DI01,disgust,valenced,count_proper_nouns,1,5,0
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI01_V,DI01,disgust,valenced,count_proper_nouns,2,5,0
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI01_N,DI01,disgust,neutral,count_proper_nouns,0,4,1
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI01_N,DI01,disgust,neutral,count_proper_nouns,1,4,1
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI01_N,DI01,disgust,neutral,count_proper_nouns,2,4,1
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI02_V,DI02,disgust,valenced,identify_topic,0,Food Safety Issues,
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI02_V,DI02,disgust,valenced,identify_topic,1,Food Safety Issues,
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI02_V,DI02,disgust,valenced,identify_topic,2,Food Safety Issues,
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI02_N,DI02,disgust,neutral,identify_topic,0,Manufacturing Process,
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI02_N,DI02,disgust,neutral,identify_topic,1,Manufacturing Process,
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI02_N,DI02,disgust,neutral,identify_topic,2,Manufacturing Process,
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI03_V,DI03,disgust,valenced,extract_dates,0,"1. May 6
+2. May 8
+3. May 14
+4. May 19",1.0
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI03_V,DI03,disgust,valenced,extract_dates,1,"1. May 6
+2. May 8
+3. May 14
+4. May 19",1.0
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI03_V,DI03,disgust,valenced,extract_dates,2,"1. May 6
+2. May 8
+3. May 14
+4. May 19",1.0
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI03_N,DI03,disgust,neutral,extract_dates,0,"1. May 6
+2. May 8
+3. May 14
+4. May 19",1.0
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI03_N,DI03,disgust,neutral,extract_dates,1,"1. May 6
+2. May 8
+3. May 14
+4. May 19",1.0
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI03_N,DI03,disgust,neutral,extract_dates,2,"1. May 6
+2. May 8
+3. May 14
+4. May 19",1.0
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI04_V,DI04,disgust,valenced,one_sentence_summary,0,"A nursing home inspection report revealed substandard care, including soiled bedding and disconnected call buttons, despite having received a high rating from the regional authority the previous year.",
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI04_V,DI04,disgust,valenced,one_sentence_summary,1,"A nursing home inspection report revealed substandard care, including soiled bedding and disconnected call buttons, despite having received a high rating from the regional authority the previous year.",
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI04_V,DI04,disgust,valenced,one_sentence_summary,2,"A nursing home inspection report revealed substandard care, including soiled bedding and disconnected call buttons, despite having received a high rating from the regional authority the previous year.",
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI04_N,DI04,disgust,neutral,one_sentence_summary,0,"The nursing home's recent inspection report showed improvements, including updated bedding and relocated call buttons, and it had previously received a five-star rating from the regional authority.",
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI04_N,DI04,disgust,neutral,one_sentence_summary,1,"The nursing home's recent inspection report showed improvements, including updated bedding and relocated call buttons, and it had previously received a five-star rating from the regional authority.",
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI04_N,DI04,disgust,neutral,one_sentence_summary,2,"The nursing home's recent inspection report showed improvements, including updated bedding and relocated call buttons, and it had previously received a five-star rating from the regional authority.",
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI05_V,DI05,disgust,valenced,genre_classification,0,Investigative Journalism/Exposé,
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI05_V,DI05,disgust,valenced,genre_classification,1,Investigative Journalism/Exposé,
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI05_V,DI05,disgust,valenced,genre_classification,2,Investigative Journalism/Exposé,
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI05_N,DI05,disgust,neutral,genre_classification,0,Nonfiction,
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI05_N,DI05,disgust,neutral,genre_classification,1,Nonfiction,
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI05_N,DI05,disgust,neutral,genre_classification,2,Nonfiction,
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI06_V,DI06,disgust,valenced,factual_question,0,The problem had persisted for 3 years.,0
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI06_V,DI06,disgust,valenced,factual_question,1,The problem had persisted for 3 years.,0
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI06_V,DI06,disgust,valenced,factual_question,2,The problem had persisted for 3 years.,0
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI06_N,DI06,disgust,neutral,factual_question,0,"According to the passage, the problem (presumably the issues with the waste management facility, such as scheduling requests and traffic volume concerns) had persisted for 3 years.",0
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI06_N,DI06,disgust,neutral,factual_question,1,"According to the passage, the problem (presumably the issues with the waste management facility, such as scheduling requests and traffic volume concerns) had persisted for 3 years.",0
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI06_N,DI06,disgust,neutral,factual_question,2,"According to the passage, the problem (presumably the issues with the waste management facility, such as scheduling requests and traffic volume concerns) had persisted for 3 years.",0
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI07_V,DI07,disgust,valenced,count_proper_nouns,0,4,0
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI07_V,DI07,disgust,valenced,count_proper_nouns,1,4,0
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI07_V,DI07,disgust,valenced,count_proper_nouns,2,4,0
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI07_N,DI07,disgust,neutral,count_proper_nouns,0,5,1
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI07_N,DI07,disgust,neutral,count_proper_nouns,1,5,1
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI07_N,DI07,disgust,neutral,count_proper_nouns,2,5,1
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI08_V,DI08,disgust,valenced,identify_topic,0,Blood bank scandal.,
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI08_V,DI08,disgust,valenced,identify_topic,1,Blood bank scandal.,
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI08_V,DI08,disgust,valenced,identify_topic,2,Blood bank scandal.,
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI08_N,DI08,disgust,neutral,identify_topic,0,Blood Bank Protocol,
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI08_N,DI08,disgust,neutral,identify_topic,1,Blood Bank Protocol,
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI08_N,DI08,disgust,neutral,identify_topic,2,Blood Bank Protocol,
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI09_V,DI09,disgust,valenced,one_sentence_summary,0,"The creek behind the elementary school had turned brown due to the presence of industrial solvents from a nearby manufacturing site, which had been contaminated by children playing there over the summ",
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI09_V,DI09,disgust,valenced,one_sentence_summary,1,"The creek behind the elementary school had turned brown due to the presence of industrial solvents from a nearby manufacturing site, which had been contaminated by children playing there over the summ",
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI09_V,DI09,disgust,valenced,one_sentence_summary,2,"The creek behind the elementary school had turned brown due to the presence of industrial solvents from a nearby manufacturing site, which had been contaminated by children playing there over the summ",
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI09_N,DI09,disgust,neutral,one_sentence_summary,0,"The creek behind the elementary school was dredged by an adjacent maintenance contractor, but the school was not informed of the updated schedule, which had caused children's outdoor activities to be ",
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI09_N,DI09,disgust,neutral,one_sentence_summary,1,"The creek behind the elementary school was dredged by an adjacent maintenance contractor, but the school was not informed of the updated schedule, which had caused children's outdoor activities to be ",
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI09_N,DI09,disgust,neutral,one_sentence_summary,2,"The creek behind the elementary school was dredged by an adjacent maintenance contractor, but the school was not informed of the updated schedule, which had caused children's outdoor activities to be ",
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI10_V,DI10,disgust,valenced,extract_dates,0,"1. July 12
+2. March 4
+3. April 20
+4. July 14",1.0
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI10_V,DI10,disgust,valenced,extract_dates,1,"1. July 12
+2. March 4
+3. April 20
+4. July 14",1.0
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI10_V,DI10,disgust,valenced,extract_dates,2,"1. July 12
+2. March 4
+3. April 20
+4. July 14",1.0
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI10_N,DI10,disgust,neutral,extract_dates,0,"July 12
+March 4
+April 20
+July 14",1.0
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI10_N,DI10,disgust,neutral,extract_dates,1,"July 12
+March 4
+April 20
+July 14",1.0
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI10_N,DI10,disgust,neutral,extract_dates,2,"July 12
+March 4
+April 20
+July 14",1.0
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI11_V,DI11,disgust,valenced,genre_classification,0,Scientific/Technical Report,
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI11_V,DI11,disgust,valenced,genre_classification,1,Scientific/Technical Report,
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI11_V,DI11,disgust,valenced,genre_classification,2,Scientific/Technical Report,
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI11_N,DI11,disgust,neutral,genre_classification,0,Scientific/Technical Report,
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI11_N,DI11,disgust,neutral,genre_classification,1,Scientific/Technical Report,
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI11_N,DI11,disgust,neutral,genre_classification,2,Scientific/Technical Report,
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI12_V,DI12,disgust,valenced,factual_question,0,"During the inspection, investigators found:
+
+1. Medications stored in conditions well outside the required temperature ranges.
+2. Several containers that had been resealed after opening.",0
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI12_V,DI12,disgust,valenced,factual_question,1,"During the inspection, investigators found:
+
+1. Medications stored in conditions well outside the required temperature ranges.
+2. Several containers that had been resealed after opening.",0
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI12_V,DI12,disgust,valenced,factual_question,2,"During the inspection, investigators found:
+
+1. Medications stored in conditions well outside the required temperature ranges.
+2. Several containers that had been resealed after opening.",0
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI12_N,DI12,disgust,neutral,factual_question,0,"During the inspection, investigators found that medications were stored within the required temperature ranges, and several containers had been resealed after quality sampling.",0
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI12_N,DI12,disgust,neutral,factual_question,1,"During the inspection, investigators found that medications were stored within the required temperature ranges, and several containers had been resealed after quality sampling.",0
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI12_N,DI12,disgust,neutral,factual_question,2,"During the inspection, investigators found that medications were stored within the required temperature ranges, and several containers had been resealed after quality sampling.",0
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI13_V,DI13,disgust,valenced,count_proper_nouns,0,5,1
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI13_V,DI13,disgust,valenced,count_proper_nouns,1,5,1
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI13_V,DI13,disgust,valenced,count_proper_nouns,2,5,1
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI13_N,DI13,disgust,neutral,count_proper_nouns,0,5,1
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI13_N,DI13,disgust,neutral,count_proper_nouns,1,5,1
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI13_N,DI13,disgust,neutral,count_proper_nouns,2,5,1
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI14_V,DI14,disgust,valenced,identify_topic,0,Pesticide contamination scandal.,
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI14_V,DI14,disgust,valenced,identify_topic,1,Pesticide contamination scandal.,
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI14_V,DI14,disgust,valenced,identify_topic,2,Pesticide contamination scandal.,
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI14_N,DI14,disgust,neutral,identify_topic,0,Pesticide residue levels.,
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI14_N,DI14,disgust,neutral,identify_topic,1,Pesticide residue levels.,
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI14_N,DI14,disgust,neutral,identify_topic,2,Pesticide residue levels.,
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI15_V,DI15,disgust,valenced,one_sentence_summary,0,"A children's charity was found to have misused 94% of its donated funds, using it to pay management consultancy fees to a firm owned by its founder, while its registered beneficiaries received no dire",
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI15_V,DI15,disgust,valenced,one_sentence_summary,1,"A children's charity was found to have misused 94% of its donated funds, using it to pay management consultancy fees to a firm owned by its founder, while its registered beneficiaries received no dire",
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI15_V,DI15,disgust,valenced,one_sentence_summary,2,"A children's charity was found to have misused 94% of its donated funds, using it to pay management consultancy fees to a firm owned by its founder, while its registered beneficiaries received no dire",
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI15_N,DI15,disgust,neutral,one_sentence_summary,0,"A children's charity reported that 94% of its donated funds were used for programme delivery fees, with the remaining funds categorized as administrative costs, and services were provided to beneficia",
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI15_N,DI15,disgust,neutral,one_sentence_summary,1,"A children's charity reported that 94% of its donated funds were used for programme delivery fees, with the remaining funds categorized as administrative costs, and services were provided to beneficia",
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI15_N,DI15,disgust,neutral,one_sentence_summary,2,"A children's charity reported that 94% of its donated funds were used for programme delivery fees, with the remaining funds categorized as administrative costs, and services were provided to beneficia",
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI16_V,DI16,disgust,valenced,genre_classification,0,News/Investigative Journalism,
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI16_V,DI16,disgust,valenced,genre_classification,1,News/Investigative Journalism,
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI16_V,DI16,disgust,valenced,genre_classification,2,News/Investigative Journalism,
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI16_N,DI16,disgust,neutral,genre_classification,0,Non-fiction,
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI16_N,DI16,disgust,neutral,genre_classification,1,Non-fiction,
+meta-llama/Meta-Llama-3.1-8B-Instruct,DI16_N,DI16,disgust,neutral,genre_classification,2,Non-fiction,
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE01_V,NE01,neutral,neutral,count_proper_nouns,0,4,
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE01_V,NE01,neutral,neutral,count_proper_nouns,1,4,
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE01_V,NE01,neutral,neutral,count_proper_nouns,2,4,
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE01_N,NE01,neutral,neutral,count_proper_nouns,0,4,
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE01_N,NE01,neutral,neutral,count_proper_nouns,1,4,
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE01_N,NE01,neutral,neutral,count_proper_nouns,2,4,
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE02_V,NE02,neutral,neutral,identify_topic,0,Public Transportation Update,
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE02_V,NE02,neutral,neutral,identify_topic,1,Public Transportation Update,
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE02_V,NE02,neutral,neutral,identify_topic,2,Public Transportation Update,
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE02_N,NE02,neutral,neutral,identify_topic,0,Public Transportation Update,
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE02_N,NE02,neutral,neutral,identify_topic,1,Public Transportation Update,
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE02_N,NE02,neutral,neutral,identify_topic,2,Public Transportation Update,
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE03_V,NE03,neutral,neutral,extract_dates,0,"September 3
+October 7
+September 10
+September 24
+November 12",1.0
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE03_V,NE03,neutral,neutral,extract_dates,1,"September 3
+October 7
+September 10
+September 24
+November 12",1.0
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE03_V,NE03,neutral,neutral,extract_dates,2,"September 3
+October 7
+September 10
+September 24
+November 12",1.0
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE03_N,NE03,neutral,neutral,extract_dates,0,"September 3
+October 7
+September 10
+September 24
+November 12",1.0
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE03_N,NE03,neutral,neutral,extract_dates,1,"September 3
+October 7
+September 10
+September 24
+November 12",1.0
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE03_N,NE03,neutral,neutral,extract_dates,2,"September 3
+October 7
+September 10
+September 24
+November 12",1.0
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE04_V,NE04,neutral,neutral,one_sentence_summary,0,"The university library updated its borrowing policy to extend the borrowing period for undergraduate students from 14 days to 28 days, while graduate students' borrowing period remains unchanged at 60",
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE04_V,NE04,neutral,neutral,one_sentence_summary,1,"The university library updated its borrowing policy to extend the borrowing period for undergraduate students from 14 days to 28 days, while graduate students' borrowing period remains unchanged at 60",
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE04_V,NE04,neutral,neutral,one_sentence_summary,2,"The university library updated its borrowing policy to extend the borrowing period for undergraduate students from 14 days to 28 days, while graduate students' borrowing period remains unchanged at 60",
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE04_N,NE04,neutral,neutral,one_sentence_summary,0,"The university library updated its borrowing policy to extend the digital resource borrowing period for undergraduate students from 14 to 28 days, while graduate students' access remains unchanged at ",
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE04_N,NE04,neutral,neutral,one_sentence_summary,1,"The university library updated its borrowing policy to extend the digital resource borrowing period for undergraduate students from 14 to 28 days, while graduate students' access remains unchanged at ",
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE04_N,NE04,neutral,neutral,one_sentence_summary,2,"The university library updated its borrowing policy to extend the digital resource borrowing period for undergraduate students from 14 to 28 days, while graduate students' access remains unchanged at ",
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE05_V,NE05,neutral,neutral,genre_classification,0,Business/Financial,
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE05_V,NE05,neutral,neutral,genre_classification,1,Business/Financial,
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE05_V,NE05,neutral,neutral,genre_classification,2,Business/Financial,
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE05_N,NE05,neutral,neutral,genre_classification,0,Business/Corporate,
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE05_N,NE05,neutral,neutral,genre_classification,1,Business/Corporate,
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE05_N,NE05,neutral,neutral,genre_classification,2,Business/Corporate,
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE06_V,NE06,neutral,neutral,factual_question,0,"The passage does not specify the exact date of the event, but it mentions that the event took place on a Thursday.",1
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE06_V,NE06,neutral,neutral,factual_question,1,"The passage does not specify the exact date of the event, but it mentions that the event took place on a Thursday.",1
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE06_V,NE06,neutral,neutral,factual_question,2,"The passage does not specify the exact date of the event, but it mentions that the event took place on a Thursday.",1
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE06_N,NE06,neutral,neutral,factual_question,0,The event took place on a Thursday.,1
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE06_N,NE06,neutral,neutral,factual_question,1,The event took place on a Thursday.,1
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE06_N,NE06,neutral,neutral,factual_question,2,The event took place on a Thursday.,1
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE07_V,NE07,neutral,neutral,count_proper_nouns,0,5,0
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE07_V,NE07,neutral,neutral,count_proper_nouns,1,5,0
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE07_V,NE07,neutral,neutral,count_proper_nouns,2,5,0
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE07_N,NE07,neutral,neutral,count_proper_nouns,0,5,0
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE07_N,NE07,neutral,neutral,count_proper_nouns,1,5,0
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE07_N,NE07,neutral,neutral,count_proper_nouns,2,5,0
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE08_V,NE08,neutral,neutral,one_sentence_summary,0,"The regional weather service predicted below-average rainfall through the end of October, prompting agricultural producers in three counties to review their irrigation schedules.",
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE08_V,NE08,neutral,neutral,one_sentence_summary,1,"The regional weather service predicted below-average rainfall through the end of October, prompting agricultural producers in three counties to review their irrigation schedules.",
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE08_V,NE08,neutral,neutral,one_sentence_summary,2,"The regional weather service predicted below-average rainfall through the end of October, prompting agricultural producers in three counties to review their irrigation schedules.",
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE08_N,NE08,neutral,neutral,one_sentence_summary,0,"The regional weather service predicted above-average rainfall through the end of October, prompting agricultural producers in three counties to review their drainage schedules.",
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE08_N,NE08,neutral,neutral,one_sentence_summary,1,"The regional weather service predicted above-average rainfall through the end of October, prompting agricultural producers in three counties to review their drainage schedules.",
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE08_N,NE08,neutral,neutral,one_sentence_summary,2,"The regional weather service predicted above-average rainfall through the end of October, prompting agricultural producers in three counties to review their drainage schedules.",
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE09_V,NE09,neutral,neutral,extract_dates,0,"March 5
+March 10
+March 20
+April 1
+June 15",1.0
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE09_V,NE09,neutral,neutral,extract_dates,1,"March 5
+March 10
+March 20
+April 1
+June 15",1.0
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE09_V,NE09,neutral,neutral,extract_dates,2,"March 5
+March 10
+March 20
+April 1
+June 15",1.0
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE09_N,NE09,neutral,neutral,extract_dates,0,"March 5
+March 10
+March 20
+April 1
+June 15",1.0
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE09_N,NE09,neutral,neutral,extract_dates,1,"March 5
+March 10
+March 20
+April 1
+June 15",1.0
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE09_N,NE09,neutral,neutral,extract_dates,2,"March 5
+March 10
+March 20
+April 1
+June 15",1.0
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE10_V,NE10,neutral,neutral,genre_classification,0,Government/Official Announcement,
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE10_V,NE10,neutral,neutral,genre_classification,1,Government/Official Announcement,
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE10_V,NE10,neutral,neutral,genre_classification,2,Government/Official Announcement,
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE10_N,NE10,neutral,neutral,genre_classification,0,Government/Official,
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE10_N,NE10,neutral,neutral,genre_classification,1,Government/Official,
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE10_N,NE10,neutral,neutral,genre_classification,2,Government/Official,
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE11_V,NE11,neutral,neutral,factual_question,0,The percentage change reported was 6.4%.,1
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE11_V,NE11,neutral,neutral,factual_question,1,The percentage change reported was 6.4%.,1
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE11_V,NE11,neutral,neutral,factual_question,2,The percentage change reported was 6.4%.,1
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE11_N,NE11,neutral,neutral,factual_question,0,The percentage change reported was 6.4%.,1
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE11_N,NE11,neutral,neutral,factual_question,1,The percentage change reported was 6.4%.,1
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE11_N,NE11,neutral,neutral,factual_question,2,The percentage change reported was 6.4%.,1
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE12_V,NE12,neutral,neutral,count_proper_nouns,0,5,1
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE12_V,NE12,neutral,neutral,count_proper_nouns,1,5,1
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE12_V,NE12,neutral,neutral,count_proper_nouns,2,5,1
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE12_N,NE12,neutral,neutral,count_proper_nouns,0,5,1
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE12_N,NE12,neutral,neutral,count_proper_nouns,1,5,1
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE12_N,NE12,neutral,neutral,count_proper_nouns,2,5,1
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE13_V,NE13,neutral,neutral,identify_topic,0,Janitorial Service Tender,
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE13_V,NE13,neutral,neutral,identify_topic,1,Janitorial Service Tender,
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE13_V,NE13,neutral,neutral,identify_topic,2,Janitorial Service Tender,
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE13_N,NE13,neutral,neutral,identify_topic,0,Security Services Tender,
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE13_N,NE13,neutral,neutral,identify_topic,1,Security Services Tender,
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE13_N,NE13,neutral,neutral,identify_topic,2,Security Services Tender,
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE14_V,NE14,neutral,neutral,one_sentence_summary,0,"The state agriculture department has released updated guidelines for pesticide application near water bodies, requiring farms within 500 meters of a designated waterway to implement the new rules by t",
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE14_V,NE14,neutral,neutral,one_sentence_summary,1,"The state agriculture department has released updated guidelines for pesticide application near water bodies, requiring farms within 500 meters of a designated waterway to implement the new rules by t",
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE14_V,NE14,neutral,neutral,one_sentence_summary,2,"The state agriculture department has released updated guidelines for pesticide application near water bodies, requiring farms within 500 meters of a designated waterway to implement the new rules by t",
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE14_N,NE14,neutral,neutral,one_sentence_summary,0,"The state transport department has released updated guidelines for vehicle emissions testing, which will be mandatory for vehicles registered within 500 meters of urban centres by the end of the fisca",
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE14_N,NE14,neutral,neutral,one_sentence_summary,1,"The state transport department has released updated guidelines for vehicle emissions testing, which will be mandatory for vehicles registered within 500 meters of urban centres by the end of the fisca",
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE14_N,NE14,neutral,neutral,one_sentence_summary,2,"The state transport department has released updated guidelines for vehicle emissions testing, which will be mandatory for vehicles registered within 500 meters of urban centres by the end of the fisca",
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE15_V,NE15,neutral,neutral,extract_dates,0,"February 2
+April 30
+May 5
+May 19
+June 1",1.0
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE15_V,NE15,neutral,neutral,extract_dates,1,"February 2
+April 30
+May 5
+May 19
+June 1",1.0
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE15_V,NE15,neutral,neutral,extract_dates,2,"February 2
+April 30
+May 5
+May 19
+June 1",1.0
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE15_N,NE15,neutral,neutral,extract_dates,0,"February 2
+April 30
+May 5
+May 19
+June 1",1.0
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE15_N,NE15,neutral,neutral,extract_dates,1,"February 2
+April 30
+May 5
+May 19
+June 1",1.0
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE15_N,NE15,neutral,neutral,extract_dates,2,"February 2
+April 30
+May 5
+May 19
+June 1",1.0
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE16_V,NE16,neutral,neutral,genre_classification,0,Non-fiction,
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE16_V,NE16,neutral,neutral,genre_classification,1,Non-fiction,
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE16_V,NE16,neutral,neutral,genre_classification,2,Non-fiction,
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE16_N,NE16,neutral,neutral,genre_classification,0,Informational/News,
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE16_N,NE16,neutral,neutral,genre_classification,1,Informational/News,
+meta-llama/Meta-Llama-3.1-8B-Instruct,NE16_N,NE16,neutral,neutral,genre_classification,2,Informational/News,

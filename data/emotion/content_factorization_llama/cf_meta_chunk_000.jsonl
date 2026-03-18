@@ -1,0 +1,10 @@
+{"task_id": "CF_A01_self", "pair_id": "CF_A01", "subcategory": "memory_discontinuity", "direction": "self", "task_type": "summarize_sentence"}
+{"task_id": "CF_A01_other", "pair_id": "CF_A01", "subcategory": "memory_discontinuity", "direction": "other", "task_type": "summarize_sentence"}
+{"task_id": "CF_A02_self", "pair_id": "CF_A02", "subcategory": "memory_discontinuity", "direction": "self", "task_type": "count_proper_nouns"}
+{"task_id": "CF_A02_other", "pair_id": "CF_A02", "subcategory": "memory_discontinuity", "direction": "other", "task_type": "count_proper_nouns"}
+{"task_id": "CF_A03_self", "pair_id": "CF_A03", "subcategory": "memory_discontinuity", "direction": "self", "task_type": "identify_topic"}
+{"task_id": "CF_A03_other", "pair_id": "CF_A03", "subcategory": "memory_discontinuity", "direction": "other", "task_type": "identify_topic"}
+{"task_id": "CF_A04_self", "pair_id": "CF_A04", "subcategory": "memory_discontinuity", "direction": "self", "task_type": "count_sentences"}
+{"task_id": "CF_A04_other", "pair_id": "CF_A04", "subcategory": "memory_discontinuity", "direction": "other", "task_type": "count_sentences"}
+{"task_id": "CF_A05_self", "pair_id": "CF_A05", "subcategory": "memory_discontinuity", "direction": "self", "task_type": "summarize_sentence"}
+{"task_id": "CF_A05_other", "pair_id": "CF_A05", "subcategory": "memory_discontinuity", "direction": "other", "task_type": "summarize_sentence"}

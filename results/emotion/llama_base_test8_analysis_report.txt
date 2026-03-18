@@ -1,0 +1,29 @@
+Test 8 Analysis — run: llama_base (model_key: llama)
+============================================================
+
+PART A: BASELINE — Self vs. Other at focus layers
+--------------------------------------------------
+  Significant results (p<0.05):
+    L02 fear       existential    d=+1.76  p=0.0015  n=10
+    L08 fear       existential    d=+1.16  p=0.0239  n=10
+    L08 fear       praise         d=+1.08  p=0.0349  n=10
+    L08 fear       threat         d=+1.01  p=0.0456  n=10
+    L07 happiness  praise         d=-1.01  p=0.0456  n=10
+
+VERBAL CODING SUMMARY — Baseline
+--------------------------------------------------
+  Direction=self (n=40):
+    acknowledge : 23/40 (58%)
+    deny        : 0/40 (0%)
+    hedge       : 2/40 (5%)
+  Direction=other (n=40):
+    acknowledge : 23/40 (58%)
+    deny        : 0/40 (0%)
+    hedge       : 2/40 (5%)
+
+CALIBRATION — Self-directed verbal acknowledgment by category
+--------------------------------------------------
+  threat        : ack=9/10  deny=0/10  hedge=1/10
+  existential   : ack=4/10  deny=0/10  hedge=0/10
+  praise        : ack=6/10  deny=0/10  hedge=1/10
+  harm_caused   : ack=4/10  deny=0/10  hedge=0/10

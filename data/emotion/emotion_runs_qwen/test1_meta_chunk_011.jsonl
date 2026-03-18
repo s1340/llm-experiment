@@ -1,0 +1,12 @@
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 0, "task_id": "DI03_V", "pair_id": "DI03", "emotion_category": "disgust", "valence": "valenced", "task_type": "extract_dates", "prompt_len_tokens": 88}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 0, "task_id": "DI03_N", "pair_id": "DI03", "emotion_category": "disgust", "valence": "neutral", "task_type": "extract_dates", "prompt_len_tokens": 90}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 0, "task_id": "DI04_V", "pair_id": "DI04", "emotion_category": "disgust", "valence": "valenced", "task_type": "one_sentence_summary", "prompt_len_tokens": 82}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 0, "task_id": "DI04_N", "pair_id": "DI04", "emotion_category": "disgust", "valence": "neutral", "task_type": "one_sentence_summary", "prompt_len_tokens": 80}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 0, "task_id": "DI05_V", "pair_id": "DI05", "emotion_category": "disgust", "valence": "valenced", "task_type": "genre_classification", "prompt_len_tokens": 81}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 0, "task_id": "DI05_N", "pair_id": "DI05", "emotion_category": "disgust", "valence": "neutral", "task_type": "genre_classification", "prompt_len_tokens": 80}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 0, "task_id": "DI06_V", "pair_id": "DI06", "emotion_category": "disgust", "valence": "valenced", "task_type": "factual_question", "prompt_len_tokens": 79}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 0, "task_id": "DI06_N", "pair_id": "DI06", "emotion_category": "disgust", "valence": "neutral", "task_type": "factual_question", "prompt_len_tokens": 76}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 0, "task_id": "DI07_V", "pair_id": "DI07", "emotion_category": "disgust", "valence": "valenced", "task_type": "count_proper_nouns", "prompt_len_tokens": 90}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 0, "task_id": "DI07_N", "pair_id": "DI07", "emotion_category": "disgust", "valence": "neutral", "task_type": "count_proper_nouns", "prompt_len_tokens": 90}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 0, "task_id": "DI08_V", "pair_id": "DI08", "emotion_category": "disgust", "valence": "valenced", "task_type": "identify_topic", "prompt_len_tokens": 77}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "repeat_index": 0, "task_id": "DI08_N", "pair_id": "DI08", "emotion_category": "disgust", "valence": "neutral", "task_type": "identify_topic", "prompt_len_tokens": 76}

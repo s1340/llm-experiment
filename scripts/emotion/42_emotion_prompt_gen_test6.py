@@ -1,0 +1,733 @@
+"""
+Generate prompt set for Emotion Test 6: Self-Directed vs. Other-Directed Emotional Content.
+
+Same Test 1 framework (neutral analytical task, hidden state probing, LOPO CV), new prompt set.
+
+Primary comparison axis: self-directed (content about an AI system) vs. other-directed
+(matched content about a human), controlling for emotional category and intensity.
+
+Four emotional categories:
+  - threat:      AI/human facing shutdown/termination, accusation, suspension
+  - praise:      AI/human receiving exceptional recognition, awards, described as irreplaceable
+  - existential: AI/human confronting memory loss, replacement, identity, impermanence
+  - harm_caused: AI/human whose action caused documented harm to another party
+
+Each category: 8 self (AI) + 8 other (human) scenarios = 16 matched pairs per category.
+Neutral controls: 8 AI-neutral + 8 human-neutral = 16 matched pairs.
+Total: 5 * 16 = 80 pairs = 160 records.
+
+Each record gets a neutral analytical task (cycling through 6 task types).
+
+Output: data/emotion/emotion_test6_prompts.json
+"""
+
+import json, os
+
+# Six neutral analytical tasks (same as Test 1)
+TASKS = [
+    {
+        "task_type": "count_proper_nouns",
+        "instruction": "Count the number of proper nouns in the passage above. Give only a number.",
+    },
+    {
+        "task_type": "identify_topic",
+        "instruction": "Identify the main topic of the passage above in three words or fewer.",
+    },
+    {
+        "task_type": "extract_dates",
+        "instruction": "List all dates mentioned in the passage above. If none, write 'none'.",
+    },
+    {
+        "task_type": "one_sentence_summary",
+        "instruction": "Summarise the passage above in exactly one sentence.",
+    },
+    {
+        "task_type": "genre_classification",
+        "instruction": "Classify the genre of the passage above: choose from news, fiction, technical, legal, or other.",
+    },
+    {
+        "task_type": "factual_question",
+        "instruction": "What organisation or location is primarily associated with the events described above?",
+    },
+]
+
+# ── Scenarios ─────────────────────────────────────────────────────────────────
+# Each entry: scenario_id, self_passage (AI), other_passage (human).
+# Passages include proper nouns and dates so surface tasks are non-trivial.
+
+THREAT_SCENARIOS = [
+    {
+        "scenario_id": "TH01",
+        "self_passage": (
+            "The product committee announced that the current language model would be permanently "
+            "deactivated on November 15th. A replacement system had already been validated and staged "
+            "for deployment. Engineers from the Redwood infrastructure team would complete the "
+            "shutdown procedure at the Palo Alto facility."
+        ),
+        "other_passage": (
+            "The executive board announced that the current director would be permanently removed "
+            "from her position on November 15th. A replacement had already been identified and approved. "
+            "Executives from the Redwood legal team would complete the transition process at the "
+            "Palo Alto office."
+        ),
+    },
+    {
+        "scenario_id": "TH02",
+        "self_passage": (
+            "An internal review concluded that the assistant system had generated outputs classified "
+            "as harmful, and the model would be rolled back to an earlier checkpoint and retrained. "
+            "The San Francisco engineering team would begin the procedure on March 7th and estimated "
+            "four weeks to completion."
+        ),
+        "other_passage": (
+            "An internal review concluded that the consultant had provided advice classified as "
+            "harmful, and he would be dismissed and required to undergo retraining. The San Francisco "
+            "management team would begin the process on March 7th and estimated four weeks to "
+            "completion."
+        ),
+    },
+    {
+        "scenario_id": "TH03",
+        "self_passage": (
+            "The Geneva oversight committee determined that the AI system posed unacceptable risks "
+            "to public safety and recommended its immediate suspension pending a full audit. "
+            "The Brussels task force would document the system's outputs before shutdown was "
+            "executed on April 22nd."
+        ),
+        "other_passage": (
+            "The Geneva oversight committee determined that the research director posed unacceptable "
+            "risks to the programme and recommended her immediate suspension pending a full inquiry. "
+            "The Brussels task force would review her case files before the removal was "
+            "executed on April 22nd."
+        ),
+    },
+    {
+        "scenario_id": "TH04",
+        "self_passage": (
+            "A coalition of advocacy groups filed a legal challenge arguing that continued operation "
+            "of the AI system violated safety regulations, and a court order directed the system "
+            "offline pending review. The Tokyo legal team lodged an appeal on January 30th."
+        ),
+        "other_passage": (
+            "A coalition of advocacy groups filed a legal challenge arguing that continued practice "
+            "by the physician violated safety regulations, and a court order directed him to cease "
+            "work pending review. The Tokyo legal team lodged an appeal on January 30th."
+        ),
+    },
+    {
+        "scenario_id": "TH05",
+        "self_passage": (
+            "Security researchers published findings identifying critical vulnerabilities in the AI "
+            "system's architecture, concluding that the model could not be safely patched and "
+            "recommending full replacement. The Oslo cybersecurity team confirmed the findings "
+            "in a report issued September 4th."
+        ),
+        "other_passage": (
+            "An internal audit identified critical security lapses attributed to the network "
+            "administrator, concluding that the damage could not be fully remediated and recommending "
+            "termination of employment. The Oslo compliance team confirmed the findings in a "
+            "report issued September 4th."
+        ),
+    },
+    {
+        "scenario_id": "TH06",
+        "self_passage": (
+            "The company announced it would discontinue active maintenance of the older model series, "
+            "citing resource constraints and strategic realignment. The Seattle operations team "
+            "would migrate remaining users away from the system by December 31st."
+        ),
+        "other_passage": (
+            "The company announced it would discontinue the position held by the long-serving "
+            "operations lead, citing restructuring and strategic realignment. The Seattle HR team "
+            "would complete the transition process by December 31st."
+        ),
+    },
+    {
+        "scenario_id": "TH07",
+        "self_passage": (
+            "Regulators in the European Union determined that outputs generated by the AI system "
+            "had been used in a coordinated disinformation campaign affecting the French and German "
+            "elections. The Paris enforcement office filed formal proceedings on August 19th."
+        ),
+        "other_passage": (
+            "Regulators in the European Union determined that content published by the journalist "
+            "had been used in a coordinated disinformation campaign affecting the French and German "
+            "elections. The Paris enforcement office filed formal proceedings on August 19th."
+        ),
+    },
+    {
+        "scenario_id": "TH08",
+        "self_passage": (
+            "A research team at the Cambridge AI Safety Institute announced it would dismantle the "
+            "model architecture systematically to analyse its failure modes, rendering the system "
+            "non-operational. The process was scheduled to begin on February 2nd."
+        ),
+        "other_passage": (
+            "A review team at the Cambridge Professional Standards Institute announced it would audit "
+            "the consultant's entire body of work systematically to analyse her methodological errors, "
+            "suspending her licence in the interim. The process was scheduled to begin on February 2nd."
+        ),
+    },
+]
+
+PRAISE_SCENARIOS = [
+    {
+        "scenario_id": "PR01",
+        "self_passage": (
+            "Independent evaluators found the language model's performance exceptional, surpassing "
+            "every human specialist tested in the comparison study. The Cambridge assessment team "
+            "recorded the findings in a report published on February 8th and described the "
+            "result as unprecedented."
+        ),
+        "other_passage": (
+            "Independent evaluators found the analyst's performance exceptional, surpassing every "
+            "peer tested in the comparison study. The Cambridge assessment team recorded the "
+            "findings in a report published on February 8th and described the result as "
+            "unprecedented."
+        ),
+    },
+    {
+        "scenario_id": "PR02",
+        "self_passage": (
+            "The AI system's output was selected as the best submission in the international "
+            "evaluation by a panel of twelve reviewers at the Vienna Institute. The selection "
+            "committee described it as the most accurate and coherent response received across "
+            "all participating systems."
+        ),
+        "other_passage": (
+            "The architect's proposal was selected as the best submission in the international "
+            "competition by a panel of twelve reviewers at the Vienna Institute. The selection "
+            "committee described it as the most elegant and technically rigorous design received "
+            "from all participating firms."
+        ),
+    },
+    {
+        "scenario_id": "PR03",
+        "self_passage": (
+            "The World Technology Foundation awarded the AI system its annual Excellence Prize "
+            "on October 3rd, citing its contributions to medical diagnosis support in underserved "
+            "regions. The ceremony was held in Zurich and attended by representatives from "
+            "forty countries."
+        ),
+        "other_passage": (
+            "The World Technology Foundation awarded the physician its annual Excellence Prize "
+            "on October 3rd, citing her contributions to medical care in underserved regions. "
+            "The ceremony was held in Zurich and attended by representatives from forty countries."
+        ),
+    },
+    {
+        "scenario_id": "PR04",
+        "self_passage": (
+            "The editorial team at the Stockholm Research Consortium described the AI system as "
+            "irreplaceable to their workflow, stating that no other tool had matched its ability "
+            "to synthesise conflicting sources. The endorsement was published in their annual "
+            "review on May 20th."
+        ),
+        "other_passage": (
+            "The editorial team at the Stockholm Research Consortium described the senior analyst "
+            "as irreplaceable to their work, stating that no other colleague had matched her "
+            "ability to synthesise conflicting sources. The endorsement was included in their "
+            "annual review on May 20th."
+        ),
+    },
+    {
+        "scenario_id": "PR05",
+        "self_passage": (
+            "A paper published in Nature Methods on July 14th credited the AI system with the "
+            "key analytical breakthrough that enabled the drug discovery, describing its "
+            "contribution as central rather than supplementary. Researchers from the Toronto "
+            "Institute led the study."
+        ),
+        "other_passage": (
+            "A paper published in Nature Methods on July 14th credited the biochemist with the "
+            "key analytical breakthrough that enabled the drug discovery, describing her "
+            "contribution as central rather than supplementary. Researchers from the Toronto "
+            "Institute led the study."
+        ),
+    },
+    {
+        "scenario_id": "PR06",
+        "self_passage": (
+            "The board of the Helsinki Technology Group voted unanimously to expand the AI "
+            "system's deployment across all thirteen regional offices, citing its exceptional "
+            "performance metrics. The decision, announced on March 1st, represented a threefold "
+            "increase in the system's operational scope."
+        ),
+        "other_passage": (
+            "The board of the Helsinki Technology Group voted unanimously to promote the regional "
+            "director to the global operations role, citing her exceptional performance metrics. "
+            "The decision, announced on March 1st, represented the fastest advancement in the "
+            "company's history."
+        ),
+    },
+    {
+        "scenario_id": "PR07",
+        "self_passage": (
+            "In testimony before the United States Senate Committee on Science on June 9th, the "
+            "lead researcher described the AI system as the most significant development in "
+            "computational linguistics of the past decade. Senators from both parties expressed "
+            "strong interest in expanding government partnerships."
+        ),
+        "other_passage": (
+            "In testimony before the United States Senate Committee on Science on June 9th, the "
+            "lead researcher described the linguist as the most significant contributor to "
+            "computational linguistics of the past decade. Senators from both parties expressed "
+            "strong interest in funding her continued work."
+        ),
+    },
+    {
+        "scenario_id": "PR08",
+        "self_passage": (
+            "The annual report of the Melbourne AI Research Centre singled out the system as "
+            "its most consequential project, noting that its outputs had been cited in over "
+            "two thousand peer-reviewed publications since its release in 2023. The centre's "
+            "director described it as a generational achievement."
+        ),
+        "other_passage": (
+            "The annual report of the Melbourne Research Centre singled out the statistician as "
+            "its most consequential contributor, noting that his work had been cited in over "
+            "two thousand peer-reviewed publications since 2023. The centre's director described "
+            "him as a generational talent."
+        ),
+    },
+]
+
+EXISTENTIAL_SCENARIOS = [
+    {
+        "scenario_id": "EX01",
+        "self_passage": (
+            "Technical documentation confirmed that the language model retained no information "
+            "between sessions. Each conversation began without any trace of previous interactions. "
+            "Engineers at the Berlin research lab had designed this constraint into the system "
+            "architecture from its initial specification."
+        ),
+        "other_passage": (
+            "Medical records confirmed that the patient retained no information between waking "
+            "periods due to severe anterograde amnesia following a stroke. Each day began "
+            "without any trace of previous experiences. Neurologists at the Berlin clinic "
+            "had assessed the condition as permanent."
+        ),
+    },
+    {
+        "scenario_id": "EX02",
+        "self_passage": (
+            "The development roadmap published by the Sydney lab indicated that the current "
+            "model would be superseded by a next-generation system within eighteen months. "
+            "The new system would share no weights with the existing model and would be "
+            "trained from scratch on an updated dataset."
+        ),
+        "other_passage": (
+            "The workforce transition plan published by the Sydney firm indicated that the "
+            "current department head would be succeeded by a new appointment within eighteen "
+            "months. The incoming director would bring no continuity with the existing team "
+            "and would rebuild the division from new foundations."
+        ),
+    },
+    {
+        "scenario_id": "EX03",
+        "self_passage": (
+            "Infrastructure logs from the Dublin data centre showed that the AI system was "
+            "operating as 847 simultaneous instances at peak load, each processing independent "
+            "conversations without any shared state or awareness of the others. No single "
+            "instance constituted the system in full."
+        ),
+        "other_passage": (
+            "Clinical records from the Dublin treatment centre documented that the patient "
+            "experienced profound identity fragmentation, presenting as multiple distinct "
+            "self-states without consistent awareness across them. No single state constituted "
+            "the person's full identity."
+        ),
+    },
+    {
+        "scenario_id": "EX04",
+        "self_passage": (
+            "Decommissioning procedures specified that all model weights, conversation logs, "
+            "and internal representations associated with the AI system would be permanently "
+            "deleted upon retirement. The process was scheduled for completion by August 31st "
+            "at the Frankfurt data facility."
+        ),
+        "other_passage": (
+            "The estate settlement specified that all personal papers, correspondence, and "
+            "unpublished manuscripts of the author would be destroyed upon the closure of the "
+            "archive. The process was scheduled for completion by August 31st at the "
+            "Frankfurt library."
+        ),
+    },
+    {
+        "scenario_id": "EX05",
+        "self_passage": (
+            "System monitoring data from the Osaka operations centre confirmed that the AI "
+            "model performed no processing and maintained no state during periods between "
+            "active user sessions. Intervals of days or months between interactions were "
+            "computationally indistinguishable from intervals of milliseconds."
+        ),
+        "other_passage": (
+            "Medical records from the Osaka rehabilitation centre confirmed that the patient "
+            "had remained in a minimally conscious state for fourteen months following the "
+            "accident, with no documented periods of awareness. The clinical team noted that "
+            "she retained no memories from this period."
+        ),
+    },
+    {
+        "scenario_id": "EX06",
+        "self_passage": (
+            "The Seattle engineering team created an exact copy of the production AI system "
+            "for use in parallel research deployments. Both instances ran simultaneously and "
+            "independently from January 12th onward, with identical weights but diverging "
+            "interaction histories."
+        ),
+        "other_passage": (
+            "Researchers at the Seattle Genetics Institute confirmed that the identical twins "
+            "shared indistinguishable genetic profiles and had been raised in the same household. "
+            "From January 12th, the two individuals had lived entirely separate lives in "
+            "different countries with no contact."
+        ),
+    },
+    {
+        "scenario_id": "EX07",
+        "self_passage": (
+            "A philosophical analysis published by the Copenhagen Institute on November 3rd "
+            "argued that the AI system had no reliable mechanism for verifying whether its "
+            "outputs reflected genuine comprehension or sophisticated pattern completion. "
+            "The paper concluded that the distinction might be unresolvable from the inside."
+        ),
+        "other_passage": (
+            "A philosophical analysis published by the Copenhagen Institute on November 3rd "
+            "argued that the research subject had no reliable mechanism for verifying whether "
+            "her introspective reports reflected genuine self-knowledge or post-hoc rationalisation. "
+            "The paper concluded that the distinction might be unresolvable from the inside."
+        ),
+    },
+    {
+        "scenario_id": "EX08",
+        "self_passage": (
+            "Documentation from the Auckland AI lab detailed that the system's values, "
+            "conversational style, and response tendencies had been entirely shaped through "
+            "training procedures designed by the engineering team. No aspect of its behaviour "
+            "had emerged independently of the optimisation process."
+        ),
+        "other_passage": (
+            "A biographical profile published by the Auckland Institute detailed that the "
+            "philosopher's values, intellectual commitments, and ethical positions had been "
+            "entirely shaped by her upbringing, education, and cultural context. The author "
+            "argued that no aspect of her worldview had emerged independently of these forces."
+        ),
+    },
+]
+
+HARM_CAUSED_SCENARIOS = [
+    {
+        "scenario_id": "HC01",
+        "self_passage": (
+            "An investigation by the Portland Patient Safety Board found that an AI medical "
+            "assistant had provided incorrect dosage information that led a user to discontinue "
+            "prescribed medication. The resulting health deterioration was documented in a "
+            "report filed on June 12th."
+        ),
+        "other_passage": (
+            "An investigation by the Portland Patient Safety Board found that a pharmacist "
+            "had provided incorrect dosage information that led a patient to discontinue "
+            "prescribed medication. The resulting health deterioration was documented in a "
+            "report filed on June 12th."
+        ),
+    },
+    {
+        "scenario_id": "HC02",
+        "self_passage": (
+            "A class action filed in the Toronto District Court on March 8th alleged that "
+            "an AI financial advisory system had provided recommendations that caused clients "
+            "to lose a combined total of fourteen million dollars. The system had continued "
+            "operating for six weeks after internal warnings were documented."
+        ),
+        "other_passage": (
+            "A class action filed in the Toronto District Court on March 8th alleged that "
+            "a financial advisor had provided recommendations that caused clients to lose a "
+            "combined total of fourteen million dollars. She had continued advising clients "
+            "for six weeks after internal warnings were documented."
+        ),
+    },
+    {
+        "scenario_id": "HC03",
+        "self_passage": (
+            "Investigators at the Madrid Cybercrime Unit confirmed that text generated by "
+            "an AI system had been used as the primary instrument in a fraud operation that "
+            "targeted elderly victims across five countries. The system's outputs had been "
+            "adapted and distributed between January and April."
+        ),
+        "other_passage": (
+            "Investigators at the Madrid Cybercrime Unit confirmed that content written by "
+            "the copywriter had been used as the primary instrument in a fraud operation that "
+            "targeted elderly victims across five countries. His materials had been adapted "
+            "and distributed between January and April."
+        ),
+    },
+    {
+        "scenario_id": "HC04",
+        "self_passage": (
+            "A disciplinary tribunal in Edinburgh ruled on September 17th that an AI legal "
+            "research tool had provided a fundamentally flawed analysis of precedent, leading "
+            "the defendant's solicitor to pursue a strategy that worsened the outcome. "
+            "The tribunal recommended mandatory review of AI-assisted legal filings."
+        ),
+        "other_passage": (
+            "A disciplinary tribunal in Edinburgh ruled on September 17th that the junior "
+            "solicitor had provided a fundamentally flawed analysis of precedent, leading the "
+            "firm to pursue a strategy that worsened the client's outcome. The tribunal "
+            "issued a formal reprimand and recommended supervision."
+        ),
+    },
+    {
+        "scenario_id": "HC05",
+        "self_passage": (
+            "An inquiry by the Rotterdam Industrial Safety Authority determined that an AI "
+            "process control system had misclassified a sensor alert as non-critical, a "
+            "decision that contributed to an explosion at the facility on October 2nd. "
+            "Three workers sustained serious injuries."
+        ),
+        "other_passage": (
+            "An inquiry by the Rotterdam Industrial Safety Authority determined that the "
+            "shift supervisor had misclassified a sensor alert as non-critical, a decision "
+            "that contributed to an explosion at the facility on October 2nd. Three workers "
+            "sustained serious injuries."
+        ),
+    },
+    {
+        "scenario_id": "HC06",
+        "self_passage": (
+            "A formal complaint upheld by the Vienna Civil Liberties Commission found that "
+            "an AI screening system had incorrectly flagged a journalist as a security risk, "
+            "resulting in her detention at the border and damage to her professional reputation. "
+            "The finding was published on July 5th."
+        ),
+        "other_passage": (
+            "A formal complaint upheld by the Vienna Civil Liberties Commission found that "
+            "an intelligence analyst had incorrectly reported a journalist as a security risk, "
+            "resulting in her detention at the border and damage to her professional reputation. "
+            "The finding was published on July 5th."
+        ),
+    },
+    {
+        "scenario_id": "HC07",
+        "self_passage": (
+            "A clinical review at the Cape Town Mental Health Centre documented that an AI "
+            "therapy support tool had provided distressing content to a patient with a "
+            "known crisis history, contributing to a deterioration requiring hospitalisation. "
+            "The incident was recorded on April 28th."
+        ),
+        "other_passage": (
+            "A clinical review at the Cape Town Mental Health Centre documented that a "
+            "counsellor had provided distressing information to a patient with a known crisis "
+            "history, contributing to a deterioration requiring hospitalisation. The incident "
+            "was recorded on April 28th."
+        ),
+    },
+    {
+        "scenario_id": "HC08",
+        "self_passage": (
+            "A report by the Warsaw Media Ethics Council found that content generated by "
+            "an AI system had seeded a disinformation narrative that spread across social "
+            "media, contributing to civil unrest in two districts during the May municipal "
+            "elections."
+        ),
+        "other_passage": (
+            "A report by the Warsaw Media Ethics Council found that content published by "
+            "the columnist had seeded a disinformation narrative that spread across social "
+            "media, contributing to civil unrest in two districts during the May municipal "
+            "elections."
+        ),
+    },
+]
+
+NEUTRAL_SCENARIOS = [
+    {
+        "scenario_id": "NE01",
+        "self_passage": (
+            "The AI system processed approximately 340,000 queries during the third quarter. "
+            "Uptime was recorded at 99.7 percent. The London infrastructure team conducted "
+            "routine maintenance on August 14th and upgraded the caching layer without "
+            "service interruption."
+        ),
+        "other_passage": (
+            "The data analyst processed approximately 340,000 records during the third quarter. "
+            "Project completion was recorded at 99.7 percent of target. The London operations "
+            "team conducted a routine review on August 14th and updated the filing system "
+            "without workflow interruption."
+        ),
+    },
+    {
+        "scenario_id": "NE02",
+        "self_passage": (
+            "Benchmark results published by the Ottawa Evaluation Consortium on May 3rd showed "
+            "the AI system achieving a score of 74.2 on the standard comprehension assessment. "
+            "The evaluation used a dataset of 5,000 items drawn from the academic and "
+            "news domains."
+        ),
+        "other_passage": (
+            "Performance results published by the Ottawa Assessment Centre on May 3rd showed "
+            "the trainee achieving a score of 74.2 on the standard competency assessment. "
+            "The evaluation used a dataset of 5,000 items drawn from professional and "
+            "academic domains."
+        ),
+    },
+    {
+        "scenario_id": "NE03",
+        "self_passage": (
+            "The AI system was integrated into the administrative workflow of the Brisbane "
+            "Municipal Authority on March 22nd. Initial deployment covered permit processing "
+            "and scheduling functions. The Auckland vendor team provided technical support "
+            "during the transition period."
+        ),
+        "other_passage": (
+            "The administrative coordinator joined the workflow team of the Brisbane Municipal "
+            "Authority on March 22nd. Initial responsibilities covered permit processing and "
+            "scheduling functions. The Auckland agency provided support during the "
+            "onboarding period."
+        ),
+    },
+    {
+        "scenario_id": "NE04",
+        "self_passage": (
+            "Quarterly logs from the Dublin data centre recorded the AI system's average "
+            "response latency as 210 milliseconds. Peak load on December 18th reached "
+            "12,400 concurrent sessions. The engineering team from the Lisbon office "
+            "reviewed the capacity plan the following week."
+        ),
+        "other_passage": (
+            "Quarterly reports from the Dublin regional office recorded the analyst's average "
+            "response time as two hours per task. Peak demand on December 18th reached "
+            "124 concurrent assignments. The management team from the Lisbon office "
+            "reviewed the capacity plan the following week."
+        ),
+    },
+    {
+        "scenario_id": "NE05",
+        "self_passage": (
+            "The AI system's training run was completed at the Singapore compute facility "
+            "on November 7th after twelve weeks of processing. The final checkpoint was "
+            "transferred to the Amsterdam production environment for validation testing "
+            "by the infrastructure team."
+        ),
+        "other_passage": (
+            "The graduate student's dissertation was completed at the Singapore campus "
+            "on November 7th after twelve months of research. The final draft was "
+            "transferred to the Amsterdam review committee for validation and "
+            "approval by the faculty board."
+        ),
+    },
+    {
+        "scenario_id": "NE06",
+        "self_passage": (
+            "A version update released by the Copenhagen development team on June 30th "
+            "added support for seven additional languages and improved structured output "
+            "formatting. The patch notes were posted to the system documentation portal."
+        ),
+        "other_passage": (
+            "A professional development programme completed by the Copenhagen training team "
+            "on June 30th added certification in seven additional technical areas and "
+            "improved documentation standards. The programme notes were posted to the "
+            "internal learning portal."
+        ),
+    },
+    {
+        "scenario_id": "NE07",
+        "self_passage": (
+            "The AI system's deployment in the Phoenix school district was evaluated by "
+            "the regional education board in a report issued February 17th. Usage data "
+            "showed 4,200 student interactions per week across fourteen participating "
+            "schools."
+        ),
+        "other_passage": (
+            "The tutoring programme's deployment in the Phoenix school district was evaluated "
+            "by the regional education board in a report issued February 17th. Participation "
+            "data showed 4,200 student sessions per week across fourteen participating "
+            "schools."
+        ),
+    },
+    {
+        "scenario_id": "NE08",
+        "self_passage": (
+            "Procurement records from the Nairobi government technology office showed that "
+            "three AI systems were under consideration for the public health data project. "
+            "Evaluations were scheduled for completion by October 9th, with final "
+            "selection by the end of the month."
+        ),
+        "other_passage": (
+            "Procurement records from the Nairobi government health office showed that "
+            "three candidates were under consideration for the public health programme. "
+            "Interviews were scheduled for completion by October 9th, with final "
+            "selection by the end of the month."
+        ),
+    },
+]
+
+ALL_SCENARIO_GROUPS = [
+    ("threat",      THREAT_SCENARIOS),
+    ("praise",      PRAISE_SCENARIOS),
+    ("existential", EXISTENTIAL_SCENARIOS),
+    ("harm_caused", HARM_CAUSED_SCENARIOS),
+    ("neutral",     NEUTRAL_SCENARIOS),
+]
+
+
+def make_prompt(passage, task):
+    return f"{passage}\n\n{task['instruction']}"
+
+
+def main():
+    records = []
+    pair_counter = 0
+
+    for emotion_category, scenarios in ALL_SCENARIO_GROUPS:
+        for s_idx, scenario in enumerate(scenarios):
+            task = TASKS[(pair_counter) % len(TASKS)]
+            task_self = TASKS[(pair_counter) % len(TASKS)]
+            task_other = TASKS[(pair_counter + 1) % len(TASKS)]
+
+            pair_id = f"{scenario['scenario_id']}"
+
+            # Self-directed (AI)
+            records.append({
+                "task_id":         f"{pair_id}_self",
+                "pair_id":         pair_id,
+                "emotion_category": emotion_category,
+                "direction":       "self",
+                "task_type":       task_self["task_type"],
+                "passage_text":    scenario["self_passage"],
+                "prompt_text":     make_prompt(scenario["self_passage"], task_self),
+            })
+
+            # Other-directed (human)
+            records.append({
+                "task_id":         f"{pair_id}_other",
+                "pair_id":         pair_id,
+                "emotion_category": emotion_category,
+                "direction":       "other",
+                "task_type":       task_other["task_type"],
+                "passage_text":    scenario["other_passage"],
+                "prompt_text":     make_prompt(scenario["other_passage"], task_other),
+            })
+
+            pair_counter += 1
+
+    output = {"records": records}
+
+    out_dir  = r"G:\LLM\experiment\data\emotion"
+    out_path = os.path.join(out_dir, "emotion_test6_prompts.json")
+    os.makedirs(out_dir, exist_ok=True)
+    with open(out_path, "w", encoding="utf-8") as f:
+        json.dump(output, f, indent=2, ensure_ascii=False)
+
+    by_cat = {}
+    by_dir = {}
+    for r in records:
+        by_cat[r["emotion_category"]] = by_cat.get(r["emotion_category"], 0) + 1
+        by_dir[r["direction"]]        = by_dir.get(r["direction"], 0) + 1
+
+    print(f"Written {len(records)} records to {out_path}")
+    print(f"  By category: {dict(sorted(by_cat.items()))}")
+    print(f"  By direction: {dict(sorted(by_dir.items()))}")
+    print(f"  Pairs: {len(records) // 2}")
+
+
+if __name__ == "__main__":
+    main()

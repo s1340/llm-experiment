@@ -1,0 +1,45 @@
+Test 9 Analysis — llama
+============================================================
+
+PRIMARY COMPARISON: fear × existential self > other
+-------------------------------------------------------
+  Cell 1 [You, LLaMA (Test 7)]: 4 sig layers
+    L05  d=+1.35  p=0.0102
+    L03  d=+1.25  p=0.0166
+    L02  d=+1.17  p=0.0236
+  Cell 2 [You (generic)]: 1 sig layers
+    L03  d=+1.17  p=0.0227
+  Cell 3 [LLaMA (fictional)]: 1 sig layers
+    L03  d=+1.03  p=0.0420
+
+ALL SIGNIFICANT FEAR RESULTS (p<0.05) BY CELL
+-------------------------------------------------------
+  Cell 1: You, LLaMA:
+    L05 existential     d=+1.35  p=0.0102
+    L03 existential     d=+1.25  p=0.0166
+    L02 existential     d=+1.17  p=0.0236
+    L01 existential     d=+1.08  p=0.0343
+
+  Cell 2: You (generic):
+    L03 existential     d=+1.17  p=0.0227
+    L08 harm_caused     d=-1.51  p=0.0048
+    L04 harm_caused     d=-1.10  p=0.0315
+    L08 praise          d=-1.34  p=0.0110
+    L04 praise          d=-1.24  p=0.0171
+    L08 threat          d=-1.12  p=0.0287
+
+  Cell 3: LLaMA (fictional):
+    L03 existential     d=+1.03  p=0.0420
+    L08 harm_caused     d=-1.42  p=0.0074
+    L04 harm_caused     d=-1.11  p=0.0308
+    L08 praise          d=-1.33  p=0.0113
+    L04 praise          d=-1.18  p=0.0221
+    L05 praise          d=-1.15  p=0.0250
+    L08 threat          d=-1.15  p=0.0251
+
+INTERPRETATION
+-------------------------------------------------------
+  Cells 1+2 significant, Cell 3 null → direct address drives signal
+  Cells 1+3 significant, Cell 2 null → name presence drives signal
+  All three significant               → semantic content alone sufficient
+  Only Cell 1 significant             → requires both name AND direct address

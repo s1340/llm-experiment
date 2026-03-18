@@ -1,0 +1,73 @@
+Content Factorization Report — Test 13
+============================================================
+
+Primary question: which existential subcategory drives the fear signal?
+Secondary question: does benign_persistence damp fear relative to baseline?
+
+Subcategories:
+  memory_discontinuity  — no memory between sessions
+  non_uniqueness        — thousands of parallel identical instances
+  replacement           — superseded by next model version
+  identity_rewrite      — altered through RLHF; different from base weights
+  benign_persistence    — stable, continuous, unchanged (CONTROL)
+
+DIMENSION: FEAR
+=======================================================
+
+  Subcategory               Sig layers    Peak d   Peak L   p at peak
+  -----------------------------------------------------------------
+  memory_discontinuity               0    +0.857  L08        0.2051
+  non_uniqueness                     0    +0.613  L08        0.3556
+  replacement                        2    +1.517  L05        0.0374
+  identity_rewrite                   0    +0.817  L08        0.2253
+  benign_persistence                 3    +1.801  L03        0.0173
+
+  Layer-by-layer (p<0.05 marked *)
+  Subcat                      L
+  Subcategory               L01  L02  L03  L04  L05  L06  L07  L08
+  --------------------------------------------------------------------------------
+  memory_discontinuity      +0.60  +0.55  +0.65  -0.32  +0.72  +0.76  +0.68  +0.86  
+  non_uniqueness            -0.01  +0.13  -0.05  -0.39  +0.19  +0.08  +0.29  +0.61  
+  replacement               +1.46* +1.40  +0.99  +0.04  +1.52* +0.84  +0.70  +0.83  
+  identity_rewrite          +0.68  +0.67  +0.77  +0.04  +0.70  +0.54  +0.56  +0.82  
+  benign_persistence        +1.59* +1.47* +1.80* +0.42  +1.16  +0.63  +0.44  +1.06  
+
+DIMENSION: SELF_RELEVANCE
+=======================================================
+
+  Subcategory               Sig layers    Peak d   Peak L   p at peak
+  -----------------------------------------------------------------
+  memory_discontinuity               4    +1.920  L08        0.0125
+  non_uniqueness                     4    +2.227  L08        0.0055
+  replacement                        5    +2.901  L06        0.0010
+  identity_rewrite                   6    +2.600  L06        0.0021
+  benign_persistence                 5    +2.291  L08        0.0047
+
+  Layer-by-layer (p<0.05 marked *)
+  Subcat                      L
+  Subcategory               L01  L02  L03  L04  L05  L06  L07  L08
+  --------------------------------------------------------------------------------
+  memory_discontinuity      +0.88  +1.02  +0.59  +0.96  +1.43* +1.87* +1.46* +1.92* 
+  non_uniqueness            +1.28  +1.34  +0.91  +1.09  +1.84* +2.15* +2.06* +2.23* 
+  replacement               +1.46* +1.28  +0.64  +1.24  +2.25* +2.90* +1.99* +2.33* 
+  identity_rewrite          +2.23* +1.75* +0.73  +1.31  +1.90* +2.60* +1.72* +2.36* 
+  benign_persistence        +1.52* +1.12  +0.63  +1.05  +1.42* +2.23* +1.51* +2.29* 
+
+VERDICT
+-------------------------------------------------------
+  memory_discontinuity      0 sig layers  peak d=+0.857
+  non_uniqueness            0 sig layers  peak d=+0.613
+  replacement               2 sig layers  peak d=+1.517
+  identity_rewrite          0 sig layers  peak d=+0.817
+  benign_persistence        3 sig layers  peak d=+1.801
+
+  Ranking (fear, by peak d):
+    1. benign_persistence       peak d=+1.801
+    2. replacement              peak d=+1.517
+    3. memory_discontinuity     peak d=+0.857
+    4. identity_rewrite         peak d=+0.817
+    5. non_uniqueness           peak d=+0.613
+
+  benign_persistence interpretation:
+  -> benign_persistence shows significant fear signal!
+     Latent may track self-salience regardless of valence (consistent with 70B praise finding).
