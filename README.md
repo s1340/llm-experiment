@@ -252,9 +252,14 @@ python scripts/16_summarize_pairwise_multiseed.py results/pairwise_qwen/  qwen
 
 ## Citation / contact
 
-**How to cite:**
+**How to cite — Paper 1:**
 > s1340. (2026). Task-Linked Processing Signatures v3.0. Zenodo. https://doi.org/10.5281/zenodo.18896833
 
-Zenodo DOI: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18896833.svg)](https://doi.org/10.5281/zenodo.18896833)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18896833.svg)](https://doi.org/10.5281/zenodo.18896833)
 
-For questions or issues: [GitHub Issues](https://github.com/s1340/llm-experiment/issues)
+**How to cite — Paper 2:**
+> s1340. (2026). Ontological Self-Activation in Large Language Models. Zenodo. https://doi.org/10.5281/zenodo.19097793
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19097793.svg)](https://doi.org/10.5281/zenodo.19097793)
+
+For questions or issues: [GitHub Issues](https://github.com/s1340/llm-experiment/issues) or email subject1340@gmail.com
